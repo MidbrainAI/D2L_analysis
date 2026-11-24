@@ -2,6 +2,8 @@
 
 # Doc-to-LoRA Analysis
 
+[![arXiv](https://img.shields.io/badge/arXiv-2611.30825-b31b1b.svg)](https://arxiv.org/abs/2611.30825)
+
 [Read the paper on arXiv](https://arxiv.org/abs/2611.30825) · [MidBrain](https://www.midbrain.ai/) · [Create a MidBrain Memory account](https://memory.midbrain.ai)
 
 Companion repository for [**Doc-to-LoRA Analysis: Query Conditioning, Wrong Facts, and Distractor Interference**](https://arxiv.org/abs/2611.30825). The paper studies single-document factual errors, distractor interference during composition, and serving tradeoffs when compiled state replaces text memory.
