@@ -1,0 +1,96 @@
+\begin{figure*}[t]
+\centering
+\resizebox{0.92\textwidth}{!}{%
+\begin{tikzpicture}[font=\footnotesize,>={Stealth[length=4pt]},
+ box/.style={draw,rounded corners=2pt,align=center,inner sep=3pt,line width=0.5pt},
+ input/.style={box,fill=orange!12,draw=orange!60!black},
+ frozen/.style={box,fill=gray!10,draw=gray!70},
+ trained/.style={box,fill=violet!10,draw=violet!60},
+ gen/.style={box,fill=teal!12,draw=teal!70!black},
+ flow/.style={->,draw=gray!70!black,line width=0.6pt},
+ tap/.style={->,draw=teal!60!black,line width=0.6pt},
+ rowlabel/.style={anchor=west,font=\footnotesize\bfseries,text=gray!70!black}]
+\def\xa{3.6}\def\xb{7.3}\def\xc{11.9}
+% ---------------- write time ----------------
+\node[rowlabel] at (-1.2,1.05) {Write time (once per document)};
+\node[input,minimum width=2.2cm,minimum height=1.0cm] (d3) at (0.24,-0.16) {};
+\node[input,minimum width=2.2cm,minimum height=1.0cm] (d2) at (0.12,-0.08) {};
+\node[input,minimum width=2.2cm,minimum height=1.0cm] (doc) at (0,0) {Document $d$};
+\node[anchor=north,align=center,font=\scriptsize] at (0.1,-0.75)
+  {bank: source $d_1$,\\distractors $d_2,\dots,d_K$};
+\foreach \x/\n/\t in {\xa/w0/Layer $0$,\xb/w1/Layer $1$,\xc/wl/Layer $l$}
+  \node[frozen,minimum width=2.3cm,minimum height=0.8cm] (\n) at (\x,0) {\t};
+\node at ($(w1)!0.5!(wl)$) {$\cdots$};
+\node (wend) at (\xc+2.0,0) {$\cdots$};
+\draw[flow] (d3.east |- doc) -- (w0);
+\draw[flow] (w0) -- (w1);
+\draw[flow] (w1.east) -- ++(0.6,0);
+\draw[flow] ($(w1)!0.5!(wl)+(0.4,0)$) -- (wl);
+\draw[flow] (wl) -- (wend);
+% ---------------- compiler ----------------
+\foreach \x/\n/\i in {\xa/h0/0,\xb/h1/1,\xc/hl/l}
+  \node[trained,minimum width=2.3cm,minimum height=0.85cm] (\n) at (\x,-2.0)
+    {Perceiver $\psi$};
+\foreach \x/\w/\h/\i in {\xa/w0/h0/0,\xb/w1/h1/1,\xc/wl/hl/l}{
+  \draw[tap] (\x-1.55,0) -- (\x-1.55,-1.0) -- (\x,-1.0) -- (\h.north);
+  \node[anchor=west,font=\scriptsize] at (\x+0.05,-0.95) {layer-$\i$ input};
+}
+% ---------------- generated factors ----------------
+\foreach \x/\n/\i in {\xa/a0/0,\xb/a1/1,\xc/al/l}
+  \node[gen,minimum width=2.3cm,minimum height=0.75cm] (\n) at (\x,-3.45)
+    {LoRA};
+\foreach \h/\a in {h0/a0,h1/a1,hl/al} \draw[tap] (\h) -- (\a);
+\node[anchor=west,align=left,font=\scriptsize] at (\xc+1.35,-3.45)
+  {For a bank, the factors of\\$d_1,\dots,d_K$ are concatenated\\along the rank dimension:\\$8K$ components, unit weight};
+% ---------------- serving time ----------------
+\node[rowlabel] at (-1.2,-4.55) {Serving time (every request)};
+\node[input,minimum width=2.2cm,minimum height=0.9cm] (q) at (0,-5.7) {Question\\(no document text)};
+\foreach \x/\n/\t in {\xa/s0/Layer $0$,\xb/s1/Layer $1$,\xc/sl/Layer $l$}{
+  \node[frozen,minimum width=3.15cm,minimum height=2.0cm] (\n) at (\x,-6.0) {};
+  \node[font=\footnotesize] at (\x,-5.2) {\t};
+  \node[box,fill=white,font=\scriptsize,inner sep=2pt] (\n-attn) at (\x-.85,-5.75) {Attention};
+  \node[box,fill=white,font=\scriptsize,inner sep=2pt] (\n-mlp) at (\x+.35,-5.75) {MLP\\up/gate};
+  \node[box,fill=teal!8,draw=teal!70!black,font=\scriptsize,inner sep=2pt]
+    (\n-down) at (\x+.35,-6.45) {Down-proj.};
+  \node[draw=teal!70!black,circle,fill=white,inner sep=1pt,font=\scriptsize]
+    (\n-add) at (\x+1.25,-6.45) {$+$};
+  \draw[flow] (\n-attn) -- (\n-mlp);
+  \draw[flow] (\n-mlp) -- (\n-down);
+  \draw[flow] (\n-down) -- (\n-add);
+}
+\node (gap) at (9.55,-5.75) {$\cdots$};
+\node (send) at (\xc+2.1,-6.45) {$\cdots$};
+\node[box,minimum width=1.5cm,minimum height=0.9cm] (ans) at (\xc+3.6,-6.45) {Answer};
+\draw[flow] (q) -- (s0-attn);
+\draw[flow] (s0-add) -- ++(.5,0) |- (s1-attn);
+\draw[flow] (s1-add) -- ++(.5,0) |- (gap);
+\draw[flow] (gap) -- (sl-attn);
+\draw[flow] (sl-add) -- (send);
+\draw[flow] (send) -- (ans);
+\foreach \x/\a/\s in {\xa/a0/s0,\xb/a1/s1,\xc/al/sl}
+  \draw[tap] (\a.south) -- (\x,-4.75) -- (\x+1.25,-4.75) -- (\s-add.north);
+% ---------------- legend ----------------
+\begin{scope}[shift={(-1.15,-7.65)},font=\scriptsize]
+\node[input,minimum width=0.35cm,minimum height=0.25cm,inner sep=0pt] (k1) at (0,0) {};
+\node[anchor=west] at (0.25,0) {input text};
+\node[frozen,minimum width=0.35cm,minimum height=0.25cm,inner sep=0pt] at (2.0,0) {};
+\node[anchor=west] at (2.25,0) {frozen model};
+\node[trained,minimum width=0.35cm,minimum height=0.25cm,inner sep=0pt] at (4.3,0) {};
+\node[anchor=west] at (4.55,0) {trained compiler};
+\node[gen,minimum width=0.35cm,minimum height=0.25cm,inner sep=0pt] at (6.9,0) {};
+\node[anchor=west] at (7.15,0) {generated adapter};
+\end{scope}
+\end{tikzpicture}}
+\caption{Doc-to-LoRA. At write time the frozen model reads a document, and the
+Perceiver compiler $\psi$ turns the input to each layer $l$ into rank-8 factors $A_{l,d}$ and
+$B_{l,d}$. The retention probe reads the latent between the Perceiver and the output
+head. One compiler serves all layers, with a separate output head for each layer. At serving time the prompt
+holds only the question. The teal arrows show where LoRA adds
+the document and shared bias contributions to the base down-projection output
+$z$, producing the modified output $z'$ (Equation~\ref{eq:sum}).
+The student-layer detail omits normalization and residual connections.
+Each document in a bank is compiled
+separately, and the factors of the source and the distractors are concatenated along
+the rank dimension.}
+\label{fig:architecture}
+\end{figure*}

@@ -1,0 +1,65 @@
+[project]
+name = "d2l-analysis"
+version = "0.1.0"
+description = "Companion experiments for Doc-to-LoRA Analysis"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "accelerate==1.6.0",
+    "datasets==3.6.0",
+    "einops==0.8.1",
+    "huggingface-hub>=0.32,<1",
+    "jaxtyping>=0.3,<1",
+    "numpy>=1.24,<3",
+    "peft==0.15.2",
+    "rouge-score==0.1.2",
+    "scipy>=1.11,<2",
+    "transformers==4.51.3",
+]
+
+[dependency-groups]
+cpu = ["torch==2.7.1"]
+cuda = ["torch==2.9.0", "bitsandbytes==0.50.2"]
+dev = ["pytest>=8,<9", "ruff>=0.14,<0.16", "reuse>=5,<7"]
+
+[tool.uv]
+package = false
+environments = ["sys_platform == 'linux' and platform_machine == 'x86_64'"]
+default-groups = ["cpu", "dev"]
+conflicts = [[{ group = "cpu" }, { group = "cuda" }]]
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cpu", group = "cpu" },
+    { index = "pytorch-cu130", group = "cuda" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
+
+[tool.pytest.ini_options]
+pythonpath = [
+    "experiments",
+    "experiments/scripts/d2l_readers_k1",
+    "experiments/scripts/d2l_scale",
+    "experiments/scripts/k1_write_capacity",
+    "experiments/scripts/paper_claims",
+    "experiments/scripts/personamem",
+]
+testpaths = ["experiments/scripts", "tests"]
+python_files = ["test_*.py", "*_test.py"]
+
+[tool.ruff]
+target-version = "py311"
+
+[tool.ruff.lint]
+# Catch syntax and name-resolution errors without reformatting historical runners.
+select = ["E9", "F63", "F7", "F82"]

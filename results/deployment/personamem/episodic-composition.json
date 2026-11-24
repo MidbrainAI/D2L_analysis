@@ -1,0 +1,32 @@
+{
+  "contrasts": {
+    "d2l_entries_native_episodic-d2l_joint_episodic": {
+      "difference": -0.11685116851168512,
+      "high": -0.09678098043341048,
+      "low": -0.13550529155426436,
+      "personas": 195
+    },
+    "d2l_entries_norm_episodic-d2l_joint_episodic": {
+      "difference": -0.004100041000410004,
+      "high": 0.004918032786885246,
+      "low": -0.012946979038224414,
+      "personas": 195
+    }
+  },
+  "test": {
+    "arms": {
+      "d2l_entries_native_episodic": {
+        "accuracy": 0.2744977449774498,
+        "memory_tokens_mean": 8760.926609266093,
+        "memory_tokens_median": 8736.0
+      },
+      "d2l_entries_norm_episodic": {
+        "accuracy": 0.38724887248872486,
+        "memory_tokens_mean": 8760.926609266093,
+        "memory_tokens_median": 8736.0
+      }
+    },
+    "personas": 195,
+    "questions": 4878
+  }
+}

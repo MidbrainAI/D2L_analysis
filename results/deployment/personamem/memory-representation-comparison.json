@@ -1,0 +1,41 @@
+{
+  "contrasts": {
+    "icl_pk_episodic-episodic": {
+      "difference": 0.013325133251332513,
+      "high": 0.021908573836107014,
+      "low": 0.00472764645426516,
+      "personas": 195
+    }
+  },
+  "test": {
+    "arms": {
+      "d2l_joint_episodic": {
+        "accuracy": 0.39134891348913486,
+        "memory_tokens_mean": 8760.926609266093,
+        "memory_tokens_median": 8736.0
+      },
+      "episodic": {
+        "accuracy": 0.3761787617876179,
+        "memory_tokens_mean": 8760.926609266093,
+        "memory_tokens_median": 8736.0
+      },
+      "full_history": {
+        "accuracy": 0.3638786387863879,
+        "memory_tokens_mean": 31578.575235752356,
+        "memory_tokens_median": 31847.0
+      },
+      "icl_pk": {
+        "accuracy": 0.35342353423534234,
+        "memory_tokens_mean": 1421.019885198852,
+        "memory_tokens_median": 1451.0
+      },
+      "icl_pk_episodic": {
+        "accuracy": 0.3895038950389504,
+        "memory_tokens_mean": 10181.946494464944,
+        "memory_tokens_median": 10159.0
+      }
+    },
+    "personas": 195,
+    "questions": 4878
+  }
+}

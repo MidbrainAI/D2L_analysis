@@ -1,0 +1,118 @@
+{
+  "sources": {
+    "experiments/artifacts/answer_attribution/answer_attributiona-write-salience-heldout400.json": "18c281d6096b28f555e8c817b58eba64b4f7a99ee726fd69f168cab69af6e9cf",
+    "experiments/artifacts/passage_fitting-a2-v1/report-all.json": "214d4455821f5b4cc6efbd8d3c800eb24f9addebd81282dfa6808dc634e599f9"
+  },
+  "error_denominators": {
+    "native_d2l": 65,
+    "rank": 59,
+    "base": 291
+  },
+  "latent_probe": {
+    "correct": {
+      "eligible": 302,
+      "probe_available": 222,
+      "mean_percentile": 0.8795697570974114
+    },
+    "incorrect": {
+      "eligible": 65,
+      "probe_available": 44,
+      "mean_percentile": 0.849149524150464
+    }
+  },
+  "passage_fits": [
+    {
+      "rank": 8,
+      "f1": 0.7430561764119454,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "fit_kl": 0.0109735279363684,
+      "fit_agreement": 0.9798013419304856,
+      "delta_vs_native_ci95": [
+        -0.021247045937628384,
+        0.024228976041834018
+      ],
+      "covered": {
+        "n": 466,
+        "f1": 0.8822096556351262,
+        "native": 0.8456432088047114
+      },
+      "uncovered": {
+        "n": 398,
+        "f1": 0.5879628141795208,
+        "native": 0.6257619271309043
+      }
+    },
+    {
+      "rank": 16,
+      "f1": 0.745948449936034,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "fit_kl": 0.010614637230086443,
+      "fit_agreement": 0.9791045361492866,
+      "delta_vs_native_ci95": [
+        -0.019298466990538745,
+        0.027432637157363313
+      ],
+      "covered": {
+        "n": 466,
+        "f1": 0.8877378371009826,
+        "native": 0.8456432088047114
+      },
+      "uncovered": {
+        "n": 398,
+        "f1": 0.5873005170440838,
+        "native": 0.6257619271309043
+      }
+    },
+    {
+      "rank": 32,
+      "f1": 0.7517907772588834,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "fit_kl": 0.010487777411577325,
+      "fit_agreement": 0.9775453155088408,
+      "delta_vs_native_ci95": [
+        -0.012513227830410754,
+        0.03309677939329298
+      ],
+      "covered": {
+        "n": 466,
+        "f1": 0.898787264237908,
+        "native": 0.8456432088047114
+      },
+      "uncovered": {
+        "n": 398,
+        "f1": 0.5836738206727733,
+        "native": 0.6257619271309043
+      }
+    },
+    {
+      "rank": 64,
+      "f1": 0.7382425630172019,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "fit_kl": 0.011113935373246803,
+      "fit_agreement": 0.9766601975811614,
+      "delta_vs_native_ci95": [
+        -0.02595047625246256,
+        0.019951566612545713
+      ],
+      "covered": {
+        "n": 466,
+        "f1": 0.9031897742431567,
+        "native": 0.8456432088047114
+      },
+      "uncovered": {
+        "n": 398,
+        "f1": 0.5533953586826343,
+        "native": 0.6257619271309043
+      }
+    }
+  ],
+  "teacher_coverage": {
+    "covered": 0.9099198567653627,
+    "uncovered": 0.6830007495414132
+  },
+  "coverage_definition": "Covered = blind_elicited + oracle_elicited (strict training probes); uncovered = relaxed_elicited + unelicited. Exhaustive over 864 questions."
+}

@@ -1,0 +1,230 @@
+\section{Results}
+\label{sec:results}
+
+\subsection{RQ1: one compiled document}
+\label{sec:res-single}
+% See results/composition/distractor-curves/ for the untouched SQuAD evaluation.
+As can be seen in Figure~\ref{fig:composition}, D2L falls below ICL even at
+$K=1$, and adding distractors widens the gap. The trained readers recover only
+part of the loss and do not prevent accuracy from declining as more documents
+are added. We first examine the single-document gap.
+
+\input{figures/composition}
+
+\subsubsection{Retention and attribution (RQ1.1)}
+% See results/single-document/answer-attribution/.
+Using the answer-matching procedure described in Section~\ref{sec:diagnostics},
+we compare incorrect responses with reference answers to other questions about
+the same passage. Among teacher-correct questions each model misses, 46\% of
+D2L's responses match another passage answer, compared with 10\% for the base
+model. This describes passage-content attribution rather than a chance-corrected
+binding error rate, since the base model has no document access.
+The separate token-presence probe detects answer tokens in the
+compiler latent even when generation fails, although it does not establish
+whether those tokens survive conversion into LoRA factors.
+
+\subsubsection{Readout and passage fitting (RQ1.2)}
+% See results/single-document/reader-controls/ and passage-fitting/.
+As shown in Table~\ref{tab:readout-summary}, the $K=1$-only post-block readers
+improve over native D2L but remain below ICL. Using individual rank effects
+gives only a small improvement over summed effects or compiler latents.
+Changing reader width or layer sharing does not close the remaining gap.
+Compiler fine-tuning and
+question-conditioned writes reduce training losses without improving
+accuracy on held-out questions.
+
+\input{figures/single_controls}
+
+Fitting adapters separately to each passage also leaves overall accuracy close
+to native D2L on the 160-passage set. Answers covered by the generated training
+questions approach teacher accuracy, while uncovered answers become less
+accurate. At the selected budget of ten forward-KL steps, increasing rank
+from 8 to 64 does not reliably improve overall accuracy or prevent the
+decline on uncovered answers.
+Appendix~\ref{sec:single-tables} provides supporting results for answer
+attribution, the latent probe, and passage fitting.
+
+\subsubsection{The document read at the answer positions (RQ1.3)}
+% The transplant and direct read mask were measured separately on the reused 402-question set.
+As shown in Table~\ref{tab:causal}, replacing question-position states with
+teacher states does not improve native D2L, whereas including answer-history
+positions recovers part of the gap. Improving the question-position states
+alone is therefore insufficient in this intervention.
+
+The document-read masks in the same table show that both question and answer
+positions contribute to ICL accuracy. Adding answer-position document reads
+improves native D2L but does not reach the teacher, indicating that some of
+the missing computation occurs during answer generation.
+
+\begin{table}[t]
+\centering
+\caption{Effects of teacher-state transplants and document-attention masks
+on answer accuracy. Gemma-2-2B, macro F1; each panel has its own measured baseline.}
+\label{tab:causal}
+\small
+\begin{tabular}{@{}lr@{}}
+\toprule
+Intervention & F1 \\
+\midrule
+\multicolumn{2}{@{}l}{\emph{Hidden-state transplant}} \\
+ICL (baseline) & .683 \\
+Native D2L, self-transplant & .638 \\
+Teacher states: question positions & .624 \\
+Teacher states: question + answer history & .661 \\
+\midrule
+\multicolumn{2}{@{}l}{\emph{Direct document-read mask}} \\
+ICL (baseline) & .688 \\
+No positions read the document & .208 \\
+Question positions only & .444 \\
+Answer positions only & .427 \\
+Native D2L & .633 \\
+Native D2L + answer-position reads & .658 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{RQ2: multi-document diagnostics}
+\label{sec:res-composition}
+\label{sec:res-gap}
+\subsubsection{Composition and update size (RQ2.1)}
+As can be seen in Figure~\ref{fig:composition}, adding distractors reduces
+D2L accuracy substantially on both models, while ICL remains comparatively
+stable. The normalization described in Section~\ref{sec:composition-diagnostics}
+gives a modest improvement at larger bank sizes, while accuracy remains well
+below ICL.
+
+\subsubsection{Layer localization (RQ2.2)}
+\label{sec:res-layers}
+% See results/composition/layer-interventions/.
+At $K=8$, applying the full bank in the initial layers gives similar measured
+accuracy to withholding all document contributions there, with the source
+alone applied in subsequent layers (Figure~\ref{fig:layers}(a)).
+At layer 8 the two conditions reach .611 and .633 F1; at layer 13 they reach
+.466 and .480. Interference accumulates across depth at this bank size,
+whereas at $K=16$ retaining the full bank through layer 7 already reduces
+F1 to .111, against .740 for the source alone.
+
+Additionally, in Table~\ref{tab:prompt-interventions} we can see that delaying source application
+until after prompt processing also reduces accuracy, despite using the known
+source-only mask. Conversely, removing distractors only after prompt processing
+does not recover the single-document result. The document contributions during
+prompt processing therefore affect accuracy beyond the point at which the
+adapters are changed.
+
+\begin{table}[t]
+\centering
+\caption{Effects of delaying source application and distractor removal during
+prompt processing. Gemma-2-2B, F1 at $K=8$. Cache replay updates cached
+keys and values using source-induced residual corrections without fully
+recomputing subsequent attention and MLP outputs.}
+\label{tab:prompt-interventions}
+\small
+\begin{tabular}{@{}lr@{}}
+\toprule
+Condition & F1 \\
+\midrule
+ICL (baseline) & .870 \\
+Native D2L, source alone & .740 \\
+Native D2L, all documents & .198 \\
+Uniform normalization & .301 \\
+\midrule
+\multicolumn{2}{@{}l}{\emph{Bank silent during prompt processing}} \\
+Source at last prompt and response positions & .437 \\
+Source applied with cache replay & .569 \\
+\midrule
+\multicolumn{2}{@{}l}{\emph{All documents active during prompt processing}} \\
+Distractors removed at response positions & .313 \\
+Also removed at last prompt position & .430 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\input{figures/layers}
+
+\label{sec:res-generality}
+Figure~\ref{fig:layer-generality}(b) shows a similar pattern across models and
+datasets: removing distractors earlier preserves more accuracy, while
+withholding early source contributions also reduces accuracy.
+However, the preregistered criterion that the loss at one-third depth reach
+at least half the loss at two-thirds depth is not met: the observed fraction
+is .36--.37 across all three model/task evaluations.
+
+\subsubsection{Membership probes and gates (RQ2.3)}
+\label{sec:res-probes}
+Using the membership probes described in Section~\ref{sec:composition-diagnostics},
+we measure how well each layer's hidden state and rank keys distinguish the
+source from distractors. As shown in Figure~\ref{fig:layer-probes}, source membership is most readily
+predicted around layers 6--10 on Gemma. Figure~\ref{fig:layers} shows that
+document contributions in the preceding layers already affect answer accuracy,
+so the strongest membership predictions become available after interference
+has begun. The clean-prompt probe shows that source membership is also
+detectable without first applying the document bank.
+
+\subsubsection{Trained readers (RQ2.3)}
+\label{sec:res-readers}
+As shown in Figure~\ref{fig:composition}, none of the readers managed to learn
+to reliably separate query-dependent facts from distractors.
+
+On Qwen, the gated reader improves token F1 but reduces answer containment
+at $K=1$. Its containment is close to normalization at $K=2,4,8$ and lower
+at $K=16$, so the F1 gains do not establish better fact retention.
+
+The localization results do not explain the reader failures by timing alone.
+At $K=8$, a source-only oracle applied from layer 8 retains .611 F1 on the
+development set, despite interference in the preceding layers. There is
+therefore substantial scope for correction at intermediate depth; the tested
+readers do not establish that this scope can be realized through their
+architectures and training objectives.
+
+\subsection{RQ3: D2L on MidBrain}
+\label{sec:res-delivers}
+
+\subsubsection{MidBrain on PersonaMem-v2}
+% See results/deployment/personamem/; question-weighted, persona-cluster bootstrap.
+\begin{table}[t]
+\centering
+\caption{MidBrain on PersonaMem-v2. Qwen3-4B accuracy and median memory
+tokens per request. Adapter conditions retain the same retrieved episodes as text.}
+\label{tab:user-memory-summary}
+\small\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Memory representation & Accuracy & Tokens \\
+\midrule
+Full history as text (baseline) & .364 & 31{,}847 \\
+\midrule
+Episodic (text) & .376 & 8{,}736 \\
+Consolidated (text) & .353 & 1{,}451 \\
+Episodic + consolidated (text) & .390 & 10{,}159 \\
+Episodic + consolidated (LoRA) & .391 & 8{,}736 \\
+Episodic + consolidated (LoRA sum) & .274 & 8{,}736 \\
+Episodic + consolidated (LoRA norm.) & .387 & 8{,}736 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+As shown in Table~\ref{tab:user-memory-summary}, compiling consolidated memory
+jointly preserves similar measured accuracy to supplying it as text.
+Summing separately compiled adapters substantially reduces accuracy even
+with episodic text available. Normalization recovers most of this loss,
+bringing accuracy close to joint compilation and text memory.
+It should be noted that absolute scores are not directly comparable with the original PersonaMem-v2
+evaluation because our protocol omits generated reasoning.
+
+\subsubsection{Serving cost}
+% See results/deployment/serving-cost/. MACs, not FLOPs.
+\input{figures/serving_tradeoff}
+
+As shown in Figure~\ref{fig:serving-tradeoff}(a), D2L's recurring compute
+advantage grows with document length: ICL processes more document tokens,
+whereas the compiled adapter has fixed size. These estimates cover
+request-time prefill and decoding, excluding compilation.
+
+As shown in Figure~\ref{fig:serving-tradeoff}(b), increasing batch size from
+1 to 16 raises D2L's throughput relative to ICL from $0.83\times$ to
+$1.09\times$ on Gemma and from $0.80\times$ to $1.66\times$ on Qwen.
+We hypothesize that batching amortizes model-weight reads and execution
+overhead, making the cost of ICL's longer contexts more prominent.
+At small batch sizes, the additional LoRA operations may instead cost more
+time than the document computation they replace, particularly when execution
+is limited by memory access or kernel-launch overhead rather than arithmetic.

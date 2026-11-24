@@ -1,0 +1,398 @@
+\begin{thebibliography}{54}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Askell et~al.(2021)Askell, Bai, Chen, Drain, Ganguli, Henighan, Jones,
+  Joseph, Mann, DasSarma, Elhage, Hatfield-Dodds, Hernandez, Kernion, Ndousse,
+  Olsson, Amodei, Brown, Clark, McCandlish, Olah, and
+  Kaplan]{askell2021general}
+Askell, A. et~al.
+\newblock {A General Language Assistant as a Laboratory for Alignment}.
+\newblock \emph{arXiv preprint arXiv:2112.00861}, 2021.
+\newblock \doi{10.48550/arXiv.2112.00861}.
+
+\bibitem[Back et~al.(2026)Back, Lee, Kang, Lee, Hong, Gwon, and
+  Ahn]{back2026understanding}
+Back, S. et~al.
+\newblock {Understanding LoRA as Knowledge Memory: An Empirical Analysis}.
+\newblock In \emph{International Conference on Machine Learning (ICML)}, 2026.
+
+\bibitem[Bhargava et~al.(2024)Bhargava, Witkowski, Detkov, and
+  Thomson]{bhargava2024prompt}
+Bhargava, A., Witkowski, C., Detkov, A., and Thomson, M.
+\newblock {Prompt Baking}.
+\newblock \emph{arXiv preprint arXiv:2409.13697}, 2024.
+
+\bibitem[Caccia et~al.(2025)Caccia, Ansell, Ponti, Vuli{\'c}, and
+  Sordoni]{caccia2025training}
+Caccia, L., Ansell, A., Ponti, E., Vuli{\'c}, I., and Sordoni, A.
+\newblock {Training Plug-n-Play Knowledge Modules with Deep Context
+  Distillation}.
+\newblock In \emph{Conference on Language Modeling (COLM)}, 2025.
+
+\bibitem[Charakorn et~al.(2025)Charakorn, Cetin, Tang, and
+  Lange]{charakorn2025texttolora}
+Charakorn, R., Cetin, E., Tang, Y., and Lange, R.~T.
+\newblock {Text-to-LoRA: Instant Transformer Adaption}.
+\newblock In \emph{International Conference on Machine Learning (ICML)}, 2025.
+
+\bibitem[Charakorn et~al.(2026)Charakorn, Cetin, Uesaka, and
+  Lange]{charakorn2026doctolora}
+Charakorn, R., Cetin, E., Uesaka, S., and Lange, R.~T.
+\newblock {Doc-to-LoRA: Learning to Instantly Internalize Contexts}.
+\newblock \emph{arXiv preprint arXiv:2602.15902}, 2026.
+
+\bibitem[Chen et~al.(2025)Chen, Fang, Xia, Liu, Van~Durme, Zettlemoyer, Gao,
+  and Cheng]{chen2025generative}
+Chen, T. et~al.
+\newblock {Generative Adapter: Contextualizing Language Models in Parameters
+  with A Single Forward Pass}.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2025.
+
+\bibitem[Chen et~al.(2026)Chen, Liu, Shi, Hong, Cheng, Ding, Wang, Li, Liu, and
+  Xu]{chen2026dppm}
+Chen, Y. et~al.
+\newblock {DPPM}: Dual-path parametric memory for personalized language models.
+\newblock \emph{arXiv preprint arXiv:2610.11776}, 2026.
+
+\bibitem[Cheng et~al.(2026)Cheng, Shi, Zhang, and Li]{cheng2026override}
+Cheng, S., Shi, X., Zhang, Z., and Li, M.
+\newblock {The Override Gap: A Magnitude Account of Knowledge Conflict Failure
+  in Hypernetwork-Based Instant LLM Adaptation}.
+\newblock \emph{arXiv preprint arXiv:2604.23750}, 2026.
+
+\bibitem[Chhikara et~al.(2025)Chhikara, Khant, Aryan, Singh, and
+  Yadav]{chhikara2025mem0}
+Chhikara, P., Khant, D., Aryan, S., Singh, T., and Yadav, D.
+\newblock {Mem0: Building Production-Ready AI Agents with Scalable Long-Term
+  Memory}.
+\newblock \emph{arXiv preprint arXiv:2504.19413}, 2025.
+
+\bibitem[Choi et~al.(2023)Choi, Jo, Jang, Jang, and Seo]{choi2023fixed}
+Choi, E., Jo, Y., Jang, J., Jang, J., and Seo, M.
+\newblock {Fixed Input Parameterization for Efficient Prompting}.
+\newblock In \emph{Findings of the Association for Computational Linguistics:
+  ACL 2023}, pp.\  8428--8441, 2023.
+\newblock \doi{10.18653/v1/2023.findings-acl.533}.
+
+\bibitem[Derehag et~al.(2026)Derehag, Calva, and
+  Ghiurau]{derehag2026smartsearch}
+Derehag, J., Calva, C., and Ghiurau, T.
+\newblock {SmartSearch}: How ranking beats structure for conversational memory
+  retrieval.
+\newblock \emph{arXiv preprint arXiv:2603.15599}, 2026.
+\newblock \doi{10.48550/arXiv.2603.15599}.
+
+\bibitem[Diao et~al.(2026)Diao, Li, Saidutta, Amballa, Valkov, and
+  Chappidi]{diao2026doctoatom}
+Diao, X., Li, W., Saidutta, Y.~M., Amballa, A., Valkov, L., and Chappidi, S.
+\newblock {Doc-to-Atom: Learning to Compile and Compose Memory Atoms}.
+\newblock \emph{arXiv preprint arXiv:2606.12400}, 2026.
+
+\bibitem[Dua et~al.(2019)Dua, Wang, Dasigi, Stanovsky, Singh, and
+  Gardner]{dua2019drop}
+Dua, D., Wang, Y., Dasigi, P., Stanovsky, G., Singh, S., and Gardner, M.
+\newblock {DROP}: A reading comprehension benchmark requiring discrete
+  reasoning over paragraphs.
+\newblock In \emph{Proceedings of the Conference of the North American Chapter
+  of the Association for Computational Linguistics (NAACL)}, pp.\  2368--2378,
+  2019.
+\newblock \doi{10.18653/v1/N19-1246}.
+\newblock URL \url{https://aclanthology.org/N19-1246/}.
+
+\bibitem[Eyuboglu et~al.(2026)Eyuboglu, Ehrlich, Arora, Guha, Zinsley, Liu,
+  Tennien, Rudra, Zou, Mirhoseini, and R{\'e}]{eyuboglu2026cartridges}
+Eyuboglu, S. et~al.
+\newblock {Cartridges: Lightweight and general-purpose long context
+  representations via self-study}.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2026.
+
+\bibitem[{Gemma Team}(2024)]{gemmateam2024gemma2}
+{Gemma Team}.
+\newblock Gemma 2: Improving open language models at a practical size.
+\newblock \emph{arXiv preprint arXiv:2408.00118}, 2024.
+
+\bibitem[Geva et~al.(2021)Geva, Schuster, Berant, and
+  Levy]{geva2021transformer}
+Geva, M., Schuster, R., Berant, J., and Levy, O.
+\newblock {Transformer Feed-Forward Layers Are Key-Value Memories}.
+\newblock In \emph{Proceedings of the 2021 Conference on Empirical Methods in
+  Natural Language Processing}, pp.\  5484--5495, 2021.
+\newblock \doi{10.18653/v1/2021.emnlp-main.446}.
+
+\bibitem[Hu et~al.(2022)Hu, Shen, Wallis, Allen-Zhu, Li, Wang, Wang, and
+  Chen]{hu2022lora}
+Hu, E.~J. et~al.
+\newblock {LoRA}: Low-rank adaptation of large language models.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2022.
+\newblock \doi{10.48550/arXiv.2106.09685}.
+\newblock URL \url{https://openreview.net/forum?id=nZeVKeeFYf9}.
+
+\bibitem[Huang et~al.(2024)Huang, Liu, Lin, Pang, Du, and
+  Lin]{huang2024lorahub}
+Huang, C., Liu, Q., Lin, B.~Y., Pang, T., Du, C., and Lin, M.
+\newblock {LoraHub: Efficient Cross-Task Generalization via Dynamic LoRA
+  Composition}.
+\newblock In \emph{Conference on Language Modeling (COLM)}, 2024.
+
+\bibitem[Ilharco et~al.(2023)Ilharco, Ribeiro, Wortsman, Gururangan, Schmidt,
+  Hajishirzi, and Farhadi]{ilharco2023editing}
+Ilharco, G. et~al.
+\newblock {Editing Models with Task Arithmetic}.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2023.
+
+\bibitem[Ivison et~al.(2023)Ivison, Bhagia, Wang, Hajishirzi, and
+  Peters]{ivison2023hint}
+Ivison, H., Bhagia, A., Wang, Y., Hajishirzi, H., and Peters, M.
+\newblock {{HINT}: Hypernetwork Instruction Tuning for Efficient Zero- and
+  Few-Shot Generalisation}.
+\newblock In \emph{Proceedings of the 61st Annual Meeting of the Association
+  for Computational Linguistics (Volume 1: Long Papers)}, pp.\  11272--11288,
+  2023.
+\newblock \doi{10.18653/v1/2023.acl-long.631}.
+
+\bibitem[Jiang et~al.(2025)Jiang, Yuan, Shen, Hao, Xu, Chen, Liu, Vijjini, He,
+  Yu, Poovendran, Wornell, Ungar, Roth, Chen, and
+  Taylor]{jiang2025personamemv2}
+Jiang, B. et~al.
+\newblock {PersonaMem-v2}: Towards personalized intelligence via learning
+  implicit user personas and agentic memory.
+\newblock \emph{arXiv preprint arXiv:2512.06688}, 2025.
+
+\bibitem[Jiang et~al.(2023)Jiang, Wu, Lin, Yang, and Qiu]{jiang2023llmlingua}
+Jiang, H., Wu, Q., Lin, C.-Y., Yang, Y., and Qiu, L.
+\newblock {{LLMLingua}: Compressing Prompts for Accelerated Inference of Large
+  Language Models}.
+\newblock In \emph{Proceedings of the 2023 Conference on Empirical Methods in
+  Natural Language Processing}, pp.\  13358--13376, 2023.
+\newblock \doi{10.18653/v1/2023.emnlp-main.825}.
+
+\bibitem[Kujanp{\"a}{\"a} et~al.(2025)Kujanp{\"a}{\"a}, Marttinen, Valpola, and
+  Ilin]{kujanpaa2025efficient}
+Kujanp{\"a}{\"a}, K., Marttinen, P., Valpola, H., and Ilin, A.
+\newblock {Efficient Knowledge Injection in LLMs via Self-Distillation}.
+\newblock \emph{Transactions on Machine Learning Research}, 2025.
+
+\bibitem[Li et~al.(2024{\natexlab{a}})Li, Huang, Yang, Venkitesh, Locatelli,
+  Ye, Cai, Lewis, and Chen]{li2024snapkv}
+Li, Y. et~al.
+\newblock {SnapKV: LLM Knows What You are Looking for Before Generation}.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, 2024{\natexlab{a}}.
+
+\bibitem[Li et~al.(2024{\natexlab{b}})Li, Ma, Lu, Lee, Liu, and
+  Guo]{li2024mend}
+Li, Y., Ma, X., Lu, S., Lee, K., Liu, X., and Guo, C.
+\newblock {{MEND}: Meta Demonstration Distillation for Efficient and Effective
+  In-Context Learning}.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2024{\natexlab{b}}.
+
+\bibitem[Lin et~al.(2019)Lin, Tafjord, Clark, and Gardner]{lin2019ropes}
+Lin, K., Tafjord, O., Clark, P., and Gardner, M.
+\newblock Reasoning over paragraph effects in situations.
+\newblock In \emph{Proceedings of the Workshop on Machine Reading for Question
+  Answering (MRQA)}, pp.\  58--62, 2019.
+\newblock \doi{10.18653/v1/D19-5808}.
+\newblock URL \url{https://aclanthology.org/D19-5808/}.
+
+\bibitem[Liu et~al.(2026)Liu, Wang, Mao, Gelbery, Maron, and
+  Zhang]{liu2026shine}
+Liu, Y., Wang, X., Mao, Y., Gelbery, Y., Maron, H., and Zhang, M.
+\newblock {SHINE: A Scalable In-Context Hypernetwork for Mapping Context to
+  LoRA in a Single Pass}.
+\newblock In \emph{International Conference on Machine Learning (ICML)}, 2026.
+
+\bibitem[Maharana et~al.(2024)Maharana, Lee, Tulyakov, Bansal, Barbieri, and
+  Fang]{maharana2024evaluating}
+Maharana, A., Lee, D.-H., Tulyakov, S., Bansal, M., Barbieri, F., and Fang, Y.
+\newblock {Evaluating Very Long-Term Conversational Memory of {LLM} Agents}.
+\newblock In \emph{Proceedings of the 62nd Annual Meeting of the Association
+  for Computational Linguistics (Volume 1: Long Papers)}, pp.\  13851--13870,
+  2024.
+\newblock \doi{10.18653/v1/2024.acl-long.747}.
+
+\bibitem[Meng et~al.(2022)Meng, Bau, Andonian, and Belinkov]{meng2022locating}
+Meng, K., Bau, D., Andonian, A., and Belinkov, Y.
+\newblock {Locating and Editing Factual Associations in GPT}.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, 2022.
+
+\bibitem[Meng et~al.(2023)Meng, Sharma, Andonian, Belinkov, and
+  Bau]{meng2023massediting}
+Meng, K., Sharma, A.~S., Andonian, A., Belinkov, Y., and Bau, D.
+\newblock {Mass-Editing Memory in a Transformer}.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2023.
+
+\bibitem[Mitchell et~al.(2022)Mitchell, Lin, Bosselut, Finn, and
+  Manning]{mitchell2022fast}
+Mitchell, E., Lin, C., Bosselut, A., Finn, C., and Manning, C.~D.
+\newblock {Fast Model Editing at Scale}.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2022.
+
+\bibitem[Mu et~al.(2023)Mu, Li, and Goodman]{mu2023learning}
+Mu, J., Li, X.~L., and Goodman, N.
+\newblock {Learning to Compress Prompts with Gist Tokens}.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, 2023.
+
+\bibitem[Packer et~al.(2023)Packer, Wooders, Lin, Fang, Patil, Stoica, and
+  Gonzalez]{packer2023memgpt}
+Packer, C. et~al.
+\newblock {MemGPT: Towards LLMs as Operating Systems}.
+\newblock \emph{arXiv preprint arXiv:2310.08560}, 2023.
+
+\bibitem[Padmanabhan et~al.(2023)Padmanabhan, Onoe, Zhang, Durrett, and
+  Choi]{padmanabhan2023propagating}
+Padmanabhan, S., Onoe, Y., Zhang, M. J.~Q., Durrett, G., and Choi, E.
+\newblock {Propagating Knowledge Updates to LMs Through Distillation}.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, 2023.
+
+\bibitem[Pan et~al.(2024)Pan, Wu, Jiang, Xia, Luo, Zhang, Lin, R{\"u}hle, Yang,
+  Lin, Zhao, Qiu, and Zhang]{pan2024llmlingua2}
+Pan, Z. et~al.
+\newblock {{LLMLingua-2}: Data Distillation for Efficient and Faithful
+  Task-Agnostic Prompt Compression}.
+\newblock In \emph{Findings of the Association for Computational Linguistics:
+  ACL 2024}, pp.\  963--981, 2024.
+\newblock \doi{10.18653/v1/2024.findings-acl.57}.
+
+\bibitem[Phang et~al.(2023)Phang, Mao, He, and Chen]{phang2023hypertuning}
+Phang, J., Mao, Y., He, P., and Chen, W.
+\newblock {HyperTuning: Toward Adapting Large Language Models without
+  Back-propagation}.
+\newblock In \emph{International Conference on Machine Learning (ICML)}, volume
+  202 of \emph{Proceedings of Machine Learning Research}, pp.\  27854--27875,
+  2023.
+
+\bibitem[Pulici et~al.(2026)Pulici, Chu, Kharlamov, and
+  Tresp]{pulici2026mostlyreading}
+Pulici, M. M.~L., Chu, C.~X., Kharlamov, E., and Tresp, V.
+\newblock {Mostly Reading: What Open-Book Scores Measure in Document-Level LoRA
+  Adapters}.
+\newblock \emph{arXiv preprint arXiv:2610.31017}, 2026.
+
+\bibitem[Rajpurkar et~al.(2016)Rajpurkar, Zhang, Lopyrev, and
+  Liang]{rajpurkar2016squad}
+Rajpurkar, P., Zhang, J., Lopyrev, K., and Liang, P.
+\newblock {SQuAD}: 100,000+ questions for machine comprehension of text.
+\newblock In \emph{Proceedings of the Conference on Empirical Methods in
+  Natural Language Processing (EMNLP)}, pp.\  2383--2392, 2016.
+\newblock \doi{10.18653/v1/D16-1264}.
+\newblock URL \url{https://aclanthology.org/D16-1264/}.
+
+\bibitem[Ren et~al.(2026)Ren, Luo, Yang, Zhu, Huang, Wu, Chou, Ye, Liang, Li,
+  and Peng]{ren2026scaling}
+Ren, T. et~al.
+\newblock {Scaling Self-Evolving Agents via Parametric Memory}.
+\newblock \emph{arXiv preprint arXiv:2606.04536}, 2026.
+
+\bibitem[Snell et~al.(2022)Snell, Klein, and Zhong]{snell2022learning}
+Snell, C., Klein, D., and Zhong, R.
+\newblock {Learning by Distilling Context}.
+\newblock \emph{arXiv preprint arXiv:2209.15189}, 2022.
+\newblock \doi{10.48550/arXiv.2209.15189}.
+
+\bibitem[Taylor(1953)]{taylor1953cloze}
+Taylor, W.~L.
+\newblock ``cloze procedure'': A new tool for measuring readability.
+\newblock \emph{Journalism Quarterly}, 30\penalty0 (4):\penalty0 415--433,
+  1953.
+\newblock \doi{10.1177/107769905303000401}.
+
+\bibitem[Tulving(1972)]{tulving1972episodic}
+Tulving, E.
+\newblock Episodic and semantic memory.
+\newblock In Tulving, E. and Donaldson, W. (eds.), \emph{Organization of
+  Memory}, pp.\  381--403. Academic Press, 1972.
+\newblock ISBN 0-12-703650-4.
+\newblock URL \url{https://books.google.com/books?id=42R9AAAAMAAJ}.
+
+\bibitem[Wang et~al.(2024)Wang, Li, Zhang, Xu, Yao, Jiang, Xie, Huang, and
+  Chen]{wang2024wise}
+Wang, P. et~al.
+\newblock {WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of
+  Large Language Models}.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, 2024.
+
+\bibitem[Wang et~al.(2025)Wang, Liu, Chen, O'Brien, Wu, and
+  McAuley]{wang2025selfupdatable}
+Wang, Y., Liu, X., Chen, X., O'Brien, S., Wu, J., and McAuley, J.
+\newblock {Self-Updatable Large Language Models by Integrating Context into
+  Model Parameters}.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2025.
+
+\bibitem[Wu et~al.(2025)Wu, Wang, Yu, Zhang, Chang, and Yu]{wu2025longmemeval}
+Wu, D., Wang, H., Yu, W., Zhang, Y., Chang, K.-W., and Yu, D.
+\newblock {LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive
+  Memory}.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2025.
+
+\bibitem[Xu et~al.(2025)Xu, Liang, Mei, Gao, Tan, and Zhang]{xu2025amem}
+Xu, W., Liang, Z., Mei, K., Gao, H., Tan, J., and Zhang, Y.
+\newblock {A-Mem: Agentic Memory for {LLM} Agents}.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, 2025.
+
+\bibitem[Xu et~al.(2026)Xu, Hong, Yu, Cui, Huang, Xue, and Zhang]{xu2026lora}
+Xu, Z. et~al.
+\newblock {How LoRA Remembers? A Parametric Memory Law for LLM Finetuning}.
+\newblock \emph{arXiv preprint arXiv:2605.30260}, 2026.
+
+\bibitem[Yadav et~al.(2023)Yadav, Tam, Choshen, Raffel, and
+  Bansal]{yadav2023tiesmerging}
+Yadav, P., Tam, D., Choshen, L., Raffel, C., and Bansal, M.
+\newblock {TIES-Merging: Resolving Interference When Merging Models}.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, 2023.
+
+\bibitem[Yang et~al.(2025)Yang, Li, Yang, Zhang, Hui, Zheng, Yu, Gao, Huang,
+  Lv, Zheng, Liu, Zhou, Huang, Hu, Ge, Wei, Lin, Tang, Yang, Tu, Zhang, Yang,
+  Yang, Zhou, Zhou, Lin, Dang, Bao, Yang, Yu, Deng, Li, Xue, Li, Zhang, Wang,
+  Zhu, Men, Gao, Liu, Luo, Li, Tang, Yin, Ren, Wang, Zhang, Ren, Fan, Su,
+  Zhang, Zhang, Wan, Liu, Wang, Cui, Zhang, Zhou, and Qiu]{yang2025qwen3}
+Yang, A. et~al.
+\newblock Qwen3 technical report.
+\newblock \emph{arXiv preprint arXiv:2505.09388}, 2025.
+
+\bibitem[Zhang et~al.(2023)Zhang, Sheng, Zhou, Chen, Zheng, Cai, Song, Tian,
+  R{\'e}, Barrett, Wang, and Chen]{zhang2023h2o}
+Zhang, Z. et~al.
+\newblock {{H$_2$O}: Heavy-Hitter Oracle for Efficient Generative Inference of
+  Large Language Models}.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, 2023.
+
+\bibitem[Zhao et~al.(2026)Zhao, Cao, Dong, Yao, Xu, Jiang, Zhang, Zhao, and
+  Li]{zhao2026rpmem}
+Zhao, F. et~al.
+\newblock {RPMem}: Learning long-term recurrent parametric memory across
+  sessions for {LLM} agents.
+\newblock \emph{arXiv preprint arXiv:2609.23466}, 2026.
+
+\bibitem[Zhou et~al.(2026)Zhou, Zhang, Wu, Ye, Zhang, Chen, and
+  Ren]{zhou2026coin}
+Zhou, Z. et~al.
+\newblock {Uncovering Context Reliance in Unstructured Knowledge Editing}.
+\newblock \emph{arXiv preprint arXiv:2602.19043}, 2026.
+
+\bibitem[Zuo et~al.(2026)Zuo, Wang, Jurayj, Fleshman, and
+  Van~Durme]{zuo2026rethinking}
+Zuo, C., Wang, L., Jurayj, W., Fleshman, W., and Van~Durme, B.
+\newblock {Rethinking LoRA Memory Through the Lens of KV Cache Compression}.
+\newblock \emph{arXiv preprint arXiv:2606.05698}, 2026.
+
+\end{thebibliography}

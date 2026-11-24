@@ -1,0 +1,80 @@
+{
+  "config": "gemma2_qa_protocol",
+  "family_files": {
+    "drop": {
+      "path": "inputs/qa_protocol/sources/pinned-v1/drop.jsonl",
+      "rows": 86796,
+      "sha256": "f9b7a819f2010bc367636b794a2abb5a40bc251563c59b7dc2cb3075c856a815"
+    },
+    "ropes": {
+      "path": "inputs/qa_protocol/sources/pinned-v1/ropes.jsonl",
+      "rows": 12612,
+      "sha256": "52210d9779b6c843f1da915d441ab14e906bb5a814a5e5773c82f3aa6e45db38"
+    },
+    "squad": {
+      "path": "inputs/qa_protocol/sources/pinned-v1/squad.jsonl",
+      "rows": 98166,
+      "sha256": "658fb7131bdd2cbb764f271bacec8ca8f8130ed8084119d8fe11ab11b1e3b052"
+    }
+  },
+  "prepared_by": "qa_protocol_prepare_sources.py",
+  "source_manifest": "inputs/qa_protocol/sources/pinned-v1/source_rows.jsonl",
+  "source_manifest_sha256": "e6e9ce69a86ab2d87a97d5f4ab0a4b313a5468a9893b508923eadfd6532d9ba2",
+  "sources": [
+    {
+      "dataset": "squad",
+      "fingerprint": "f1987d620e8fac37",
+      "path": "rajpurkar/squad",
+      "resolved_revision": "7b6d24c440a36b6815f21b70d25016731768db1f",
+      "revision": "7b6d24c440a36b6815f21b70d25016731768db1f",
+      "role": "train",
+      "split": "train"
+    },
+    {
+      "dataset": "drop",
+      "fingerprint": "9bfcbcf63dcdf1ad",
+      "path": "ucinlp/drop",
+      "resolved_revision": "95cda593fae71b60b5b19f82de3fcf3298c1239c",
+      "revision": "95cda593fae71b60b5b19f82de3fcf3298c1239c",
+      "role": "train",
+      "split": "train"
+    },
+    {
+      "dataset": "ropes",
+      "fingerprint": "d9e1c2fc5ecafa4b",
+      "path": "allenai/ropes",
+      "resolved_revision": "d59f1e2ee2b423d7c6ba71edd47fceb4158b07dd",
+      "revision": "d59f1e2ee2b423d7c6ba71edd47fceb4158b07dd",
+      "role": "train",
+      "split": "train"
+    },
+    {
+      "dataset": "squad",
+      "fingerprint": "6614e223193ae5a9",
+      "path": "rajpurkar/squad",
+      "resolved_revision": "7b6d24c440a36b6815f21b70d25016731768db1f",
+      "revision": "7b6d24c440a36b6815f21b70d25016731768db1f",
+      "role": "test",
+      "split": "validation"
+    },
+    {
+      "dataset": "drop",
+      "fingerprint": "165bf8643f16979e",
+      "path": "ucinlp/drop",
+      "resolved_revision": "95cda593fae71b60b5b19f82de3fcf3298c1239c",
+      "revision": "95cda593fae71b60b5b19f82de3fcf3298c1239c",
+      "role": "test",
+      "split": "validation"
+    },
+    {
+      "dataset": "ropes",
+      "fingerprint": "78fdcdee860e1975",
+      "path": "allenai/ropes",
+      "resolved_revision": "d59f1e2ee2b423d7c6ba71edd47fceb4158b07dd",
+      "revision": "d59f1e2ee2b423d7c6ba71edd47fceb4158b07dd",
+      "role": "test",
+      "split": "validation"
+    }
+  ],
+  "training_documents_excluded_for_test_overlap": 13
+}

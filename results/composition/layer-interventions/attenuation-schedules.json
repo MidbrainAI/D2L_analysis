@@ -1,0 +1,233 @@
+{
+  "arms": [
+    "schedule_A",
+    "schedule_B8",
+    "schedule_C",
+    "schedule_none"
+  ],
+  "prefix": "schedule_",
+  "f1": {
+    "random:1": {
+      "questions": 1260,
+      "f1": {
+        "icl": 0.8874960020141648,
+        "native": 0.739846583725363,
+        "native_k1": 0.739846583725363,
+        "schedule_A": 0.435218572045002,
+        "schedule_B8": 0.6364176478954656,
+        "schedule_C": 0.5683251165298804,
+        "schedule_none": 0.11000056067999348
+      },
+      "em": {
+        "icl": 0.7626984126984127,
+        "native": 0.5896825396825397,
+        "native_k1": 0.0,
+        "schedule_A": 0.31507936507936507,
+        "schedule_B8": 0.4849206349206349,
+        "schedule_C": 0.4357142857142857,
+        "schedule_none": 0.06190476190476191
+      }
+    },
+    "random:8": {
+      "questions": 1260,
+      "f1": {
+        "icl": 0.8695546363663044,
+        "native": 0.1984915754667181,
+        "native_k1": 0.739846583725363,
+        "normalized_b0.5": 0.30083548237869645,
+        "schedule_A": 0.436520327790035,
+        "schedule_B8": 0.6334696194222271,
+        "schedule_C": 0.5692859519505964,
+        "schedule_none": 0.10996484382096836
+      },
+      "em": {
+        "icl": 0.7492063492063492,
+        "native": 0.10158730158730159,
+        "native_k1": 0.0,
+        "normalized_b0.5": 0.19206349206349208,
+        "schedule_A": 0.31746031746031744,
+        "schedule_B8": 0.48253968253968255,
+        "schedule_C": 0.43492063492063493,
+        "schedule_none": 0.06190476190476191
+      }
+    }
+  },
+  "from0_equals_native_k1": {
+    "1": {
+      "rows": 0,
+      "mismatching": 0
+    },
+    "8": {
+      "rows": 0,
+      "mismatching": 0
+    }
+  },
+  "contrasts": {
+    "1": {
+      "schedule_A": {
+        "vs_native": {
+          "difference": -0.2951052559459343,
+          "low": -0.32674545313497855,
+          "high": -0.2614184270569335,
+          "clusters": 180,
+          "excludes_zero": true
+        },
+        "vs_normalized": null,
+        "vs_native_k1": {
+          "difference": -0.2951052559459343,
+          "low": -0.32674545313497855,
+          "high": -0.2614184270569335,
+          "clusters": 180,
+          "excludes_zero": true
+        }
+      },
+      "schedule_B8": {
+        "vs_native": {
+          "difference": -0.10038302156442587,
+          "low": -0.12193996146928525,
+          "high": -0.07969114432641612,
+          "clusters": 180,
+          "excludes_zero": true
+        },
+        "vs_normalized": null,
+        "vs_native_k1": {
+          "difference": -0.10038302156442587,
+          "low": -0.12193996146928525,
+          "high": -0.07969114432641612,
+          "clusters": 180,
+          "excludes_zero": true
+        }
+      },
+      "schedule_C": {
+        "vs_native": {
+          "difference": -0.16825916845860042,
+          "low": -0.19504558994951526,
+          "high": -0.139886528889381,
+          "clusters": 180,
+          "excludes_zero": true
+        },
+        "vs_normalized": null,
+        "vs_native_k1": {
+          "difference": -0.16825916845860042,
+          "low": -0.19504558994951526,
+          "high": -0.139886528889381,
+          "clusters": 180,
+          "excludes_zero": true
+        }
+      },
+      "schedule_none": {
+        "vs_native": {
+          "difference": -0.63215796281779,
+          "low": -0.6608878147305193,
+          "high": -0.6032025964331494,
+          "clusters": 180,
+          "excludes_zero": true
+        },
+        "vs_normalized": null,
+        "vs_native_k1": {
+          "difference": -0.63215796281779,
+          "low": -0.6608878147305193,
+          "high": -0.6032025964331494,
+          "clusters": 180,
+          "excludes_zero": true
+        }
+      }
+    },
+    "8": {
+      "schedule_A": {
+        "vs_native": {
+          "difference": 0.23549940253375595,
+          "low": 0.20198595964805013,
+          "high": 0.2694974980789634,
+          "clusters": 180,
+          "excludes_zero": true
+        },
+        "vs_normalized": {
+          "difference": 0.14529352348316246,
+          "low": 0.11293490214001592,
+          "high": 0.1779458961442188,
+          "clusters": 180,
+          "excludes_zero": true
+        },
+        "vs_native_k1": {
+          "difference": -0.2944963619350795,
+          "low": -0.3265972780947765,
+          "high": -0.2608260193614336,
+          "clusters": 180,
+          "excludes_zero": true
+        }
+      },
+      "schedule_B8": {
+        "vs_native": {
+          "difference": 0.4274498839768448,
+          "low": 0.3922282708659422,
+          "high": 0.4620311254417747,
+          "clusters": 180,
+          "excludes_zero": true
+        },
+        "vs_normalized": {
+          "difference": 0.3372440049262511,
+          "low": 0.30307902748359883,
+          "high": 0.37062691285149424,
+          "clusters": 180,
+          "excludes_zero": true
+        },
+        "vs_native_k1": {
+          "difference": -0.10254588049199068,
+          "low": -0.12398545454943609,
+          "high": -0.08225783994445846,
+          "clusters": 180,
+          "excludes_zero": true
+        }
+      },
+      "schedule_C": {
+        "vs_native": {
+          "difference": 0.36296891303785545,
+          "low": 0.3302245611905921,
+          "high": 0.39620862884646335,
+          "clusters": 180,
+          "excludes_zero": true
+        },
+        "vs_normalized": {
+          "difference": 0.272763033987262,
+          "low": 0.2397933688689162,
+          "high": 0.30496619614157094,
+          "clusters": 180,
+          "excludes_zero": true
+        },
+        "vs_native_k1": {
+          "difference": -0.16702685143097976,
+          "low": -0.19380927061273262,
+          "high": -0.13887817790769638,
+          "clusters": 180,
+          "excludes_zero": true
+        }
+      },
+      "schedule_none": {
+        "vs_native": {
+          "difference": -0.10287936884901991,
+          "low": -0.13371020926910698,
+          "high": -0.07359305101332873,
+          "clusters": 180,
+          "excludes_zero": true
+        },
+        "vs_normalized": {
+          "difference": -0.1930852478996134,
+          "low": -0.22030006317830292,
+          "high": -0.166718674779948,
+          "clusters": 180,
+          "excludes_zero": true
+        },
+        "vs_native_k1": {
+          "difference": -0.6328751333178554,
+          "low": -0.6614577605837062,
+          "high": -0.6039026656811388,
+          "clusters": 180,
+          "excludes_zero": true
+        }
+      }
+    }
+  },
+  "units": 36,
+  "questions": 1260
+}

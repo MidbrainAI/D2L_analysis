@@ -1,0 +1,65 @@
+version = 1
+
+[[annotations]]
+path = [
+    ".gitignore", ".python-version", "pyproject.toml", "uv.lock",
+    "paper/Makefile", "experiments/*.py", "experiments/run-paper",
+    "experiments/scripts/**/*.py", "experiments/inputs/configs/**/*.json", "tests/*.py",
+]
+SPDX-FileCopyrightText = "2026 Doc-to-LoRA Analysis contributors"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = [
+    "LICENSE", "REUSE.toml", "THIRD_PARTY.md", "README.md", "REPRODUCING.md", "CITATION.cff",
+    "paper/*.tex", "paper/*.bbl", "paper/analysis/*.tex", "paper/figures/*.tex", "paper/bib/*.bib",
+    "results/README.md", "results/deployment/serving-cost/*.json",
+    "results/single-document/answer-attribution/README.md",
+    "results/single-document/answer-attribution/paper-counts.json",
+    "results/single-document/passage-fitting/*.json",
+    "results/single-document/question-conditioned-writes/*.json",
+    "results/single-document/read-interventions/answer-position-mask.json",
+]
+SPDX-FileCopyrightText = "2026 Jesper Derehag and Doc-to-LoRA Analysis contributors"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = [
+    "experiments/inputs/distractor_curves/**/*.json",
+    "experiments/inputs/distractor_curves/*.json",
+    "experiments/inputs/gated_readers/*.json",
+    "experiments/inputs/layer_interventions/**/*.json",
+    "experiments/inputs/paper-runs/*.json",
+    "experiments/inputs/passage_fit_suite/**/*.json",
+    "experiments/inputs/passage_fit_suite/*.json",
+    "experiments/inputs/passage_fitting/**/*.json",
+    "experiments/inputs/qa_protocol/**/*.json",
+    "experiments/inputs/single_document_writes/*.json",
+    "experiments/inputs/write_site_readers/**/*.json",
+    "experiments/inputs/write_site_readers/*.json",
+    "results/composition/**/*.json",
+    "results/composition/**/*.tar.gz",
+    "results/single-document/**/*.tar.gz",
+    "results/single-document/reader-controls/*.json",
+    "results/single-document/answer-attribution/probe-and-generation-rows.json",
+    "results/single-document/answer-attribution/reference-passages-and-answers.json",
+    "results/single-document/read-interventions/question-position-transplant.json",
+]
+SPDX-FileCopyrightText = [
+    "2026 Doc-to-LoRA Analysis contributors",
+    "Dataset authors and original content contributors as identified in THIRD_PARTY.md",
+]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = ["results/deployment/personamem/*.json", "results/deployment/personamem/*.tar.gz"]
+SPDX-FileCopyrightText = [
+    "2026 Doc-to-LoRA Analysis contributors",
+    "2025 PersonaMem-v2 contributors (benchmark identifiers)",
+]
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = "assets/midbrain-logo.svg"
+SPDX-FileCopyrightText = "MidBrain"
+SPDX-License-Identifier = "LicenseRef-MidBrain-Wordmark"

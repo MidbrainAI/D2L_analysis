@@ -1,0 +1,68 @@
+\section{Discussion}
+\label{sec:discussion}
+
+Our results identify a gap between retaining document information and using it
+reliably. Incorrect D2L responses frequently match answers to other questions
+about the same passage, while passage-token information remains detectable in
+the compiler latent. Passage-specific fitting improves answers covered by its
+supervision but degrades uncovered answers, suggesting that internalization
+must preserve question--answer associations as well as content. Increasing
+adapter rank alone did not resolve this problem at the tested fitting budget.
+
+The distribution of composition damage depends on bank size. On Gemma, with eight
+documents, interference accumulates across depth, and applying the full bank
+in the initial layers provides little advantage over withholding document
+contributions there. With sixteen documents, much of the damage has already
+occurred by layer 8. Although this constrains late interventions, the
+source-only oracle at $K=8$ retains substantial accuracy at intermediate depth,
+so timing alone cannot account for the trained readers' failures.
+The results identify a limitation of the tested composition and reader
+configurations, while leaving open whether more effective selectivity can
+be learned during compilation or reading.
+
+Although compiling consolidated memory largely preserves its benefit on
+PersonaMem, the resulting token savings are modest because episodic memories
+remain text, and the serving measurements show that lower analytical compute
+does not consistently translate into higher throughput. These limited gains
+must be weighed against compilation cost and the attribution and interference
+failures observed in factual QA, leaving little evidence that D2L offers a
+compelling alternative to text-based memory in the production settings studied
+here.
+
+\subsection{Limitations and threats to validity}
+We test only two models and one type of trained hypernetwork. It is unclear
+whether other hypernetwork architectures or training methods would produce
+the same failures.
+
+\subsection{Future work: efficient online and continual learning}
+At MidBrain, we want to turn semantic and procedural memories into internalized
+behavior, so a model does not have to spend as much compute reading the same
+memories in context on every request. D2L provides one way to do this, but the
+failures studied here motivate continuing with other continual-learning
+approaches.
+
+We are particularly interested in learning from interactions in which a memory
+is actually used. Such interactions provide both the request and an example
+of how the memory should affect the response, offering supervision beyond the
+memory text alone. For procedural memory, the objective is to learn how to
+carry out a preference or instruction and recognize when it applies. Learning
+across several interactions may help preserve this relationship while reducing
+the need to repeatedly supply the instruction as text.
+
+We believe online-learning may provide an interesting avenue of research.
+Learning personalized behaviors at inference time could reduce the need for
+separate training infrastructure. In principle, much of the information needed
+for learning is already available during inference; if the necessary
+activations are retained, what remains is largely a backward pass and parameter
+update. However, online-learning also introduces challenges, including
+catastrophic forgetting and difficult convergence properties.
+
+Over time, these updates must accommodate new information without disrupting
+behavior that remains valid. Our interest is therefore in bounded per-user
+state that can accumulate compatible memories, adapt when preferences change,
+and preserve the applicability of earlier instructions. We want to evaluate
+this on sequences of interactions, measuring whether learning improves later
+responses, how well previously acquired behavior is retained, and how much
+context and serving computation can be avoided. This would connect the
+immediate cost of an update to its value over the subsequent lifetime of the
+memory.

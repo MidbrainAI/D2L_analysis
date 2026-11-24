@@ -1,0 +1,2314 @@
+{
+  "00490c1aee74110c3cd1afd78d24a5278d94f9a92455ff33a952663986874447": {
+    "answers_by_question": {
+      "squad:validation:1096": [
+        "Deabolis",
+        "Deabolis",
+        "Deabolis"
+      ],
+      "squad:validation:1097": [
+        "Bohemond",
+        "Bohemond",
+        "Bohemond"
+      ],
+      "squad:validation:1098": [
+        "Deabolis",
+        "the river Deabolis",
+        "Deabolis"
+      ]
+    },
+    "passage": "A few years after the First Crusade, in 1107, the Normans under the command of Bohemond, Robert's son, landed in Valona and besieged Dyrrachium using the most sophisticated military equipment of the time, but to no avail. Meanwhile, they occupied Petrela, the citadel of Mili at the banks of the river Deabolis, Gllavenica (Ballsh), Kanina and Jericho. This time, the Albanians sided with the Normans, dissatisfied by the heavy taxes the Byzantines had imposed upon them. With their help, the Normans secured the Arbanon passes and opened their way to Dibra. The lack of supplies, disease and Byzantine resistance forced Bohemond to retreat from his campaign and sign a peace treaty with the Byzantines in the city of Deabolis."
+  },
+  "00b76f48835bfc2434242a5dea1681e9e4d9c363cc74180aa0b9b9fec6f02bef": {
+    "answers_by_question": {
+      "squad:validation:1697": [
+        "2000",
+        "2000",
+        "2000"
+      ],
+      "squad:validation:1698": [
+        "round trip through all sites in Milan",
+        "asking for a round trip through all sites in Milan whose total length is at most 10 km",
+        "a round trip through all sites in Milan whose total length is at most 10 km"
+      ],
+      "squad:validation:1699": [
+        "computational problems",
+        "computational problems",
+        "computational problems"
+      ]
+    },
+    "passage": "To further highlight the difference between a problem and an instance, consider the following instance of the decision version of the traveling salesman problem: Is there a route of at most 2000 kilometres passing through all of Germany's 15 largest cities? The quantitative answer to this particular problem instance is of little use for solving other instances of the problem, such as asking for a round trip through all sites in Milan whose total length is at most 10 km. For this reason, complexity theory addresses computational problems and not particular problem instances."
+  },
+  "00c84baa77993a3ac494e18297fb45693d3de708a3172de621d68d140b0a1bcf": {
+    "answers_by_question": {
+      "squad:validation:1156": [
+        "early 11th century",
+        "11th century",
+        "in the early 11th century"
+      ],
+      "squad:validation:1157": [
+        "dukes",
+        "the dukes",
+        "dukes"
+      ]
+    },
+    "passage": "In the visual arts, the Normans did not have the rich and distinctive traditions of the cultures they conquered. However, in the early 11th century the dukes began a programme of church reform, encouraging the Cluniac reform of monasteries and patronising intellectual pursuits, especially the proliferation of scriptoria and the reconstitution of a compilation of lost illuminated manuscripts. The church was utilised by the dukes as a unifying force for their disparate duchy. The chief monasteries taking part in this \"renaissance\" of Norman art and scholarship were Mont-Saint-Michel, F\u00e9camp, Jumi\u00e8ges, Bec, Saint-Ouen, Saint-Evroul, and Saint-Wandrille. These centres were in contact with the so-called \"Winchester school\", which channeled a pure Carolingian artistic tradition to Normandy. In the final decade of the 11th and first of the 12th century, Normandy experienced a golden age of illustrated manuscripts, but it was brief and the major scriptoria of Normandy ceased to function after the midpoint of the century."
+  },
+  "01fbee86abe8e1fdb157b2ec40b6bdbb181baa78b7843fc6874859b9c6d9e482": {
+    "answers_by_question": {
+      "squad:validation:1000": [
+        "New Orangery",
+        "New Orangery",
+        "New Orangery"
+      ],
+      "squad:validation:1001": [
+        "Pole Mokotowskie",
+        "Mokot\u00f3w",
+        "Pole Mokotowskie"
+      ],
+      "squad:validation:1002": [
+        "Park Ujazdowski",
+        "Park Ujazdowski",
+        "Park Ujazdowski"
+      ],
+      "squad:validation:1003": [
+        "1927",
+        "1927",
+        "1927"
+      ],
+      "squad:validation:999": [
+        "green",
+        "green",
+        "green"
+      ]
+    },
+    "passage": "Other green spaces in the city include the Botanic Garden and the University Library garden. They have extensive botanical collection of rare domestic and foreign plants, while a palm house in the New Orangery displays plants of subtropics from all over the world. Besides, within the city borders, there are also: Pole Mokotowskie (a big park in the northern Mokot\u00f3w, where was the first horse racetrack and then the airport), Park Ujazdowski (close to the Sejm and John Lennon street), Park of Culture and Rest in Powsin, by the southern city border, Park Skaryszewski by the right Vistula bank, in Praga. The oldest park in Praga, the Praga Park, was established in 1865\u20131871 and designed by Jan Dobrowolski. In 1927 a zoological garden (Ogr\u00f3d Zoologiczny) was established on the park grounds, and in 1952 a bear run, still open today."
+  },
+  "031cb7b9619b103886071029f2af2e0384c139f516b807a0a70e71d92edf297d": {
+    "answers_by_question": {
+      "squad:validation:1497": [
+        "Morgan",
+        "Morgan",
+        "Morgan"
+      ],
+      "squad:validation:1498": [
+        "Panic of 1901",
+        "the Panic of 1901",
+        "the Panic of 1901"
+      ],
+      "squad:validation:1499": [
+        "shocked",
+        "shocked",
+        "shocked by the reminder of his part in the stock market crash and by Tesla's breach of contract"
+      ]
+    },
+    "passage": "Tesla later approached Morgan to ask for more funds to build a more powerful transmitter. When asked where all the money had gone, Tesla responded by saying that he was affected by the Panic of 1901, which he (Morgan) had caused. Morgan was shocked by the reminder of his part in the stock market crash and by Tesla's breach of contract by asking for more funds. Tesla wrote another plea to Morgan, but it was also fruitless. Morgan still owed Tesla money on the original agreement, and Tesla had been facing foreclosure even before construction of the tower began."
+  },
+  "0500dcf91ad6681a7202730d78e85eed22c2b829b1bfc4d44a2560223db14913": {
+    "answers_by_question": {
+      "squad:validation:1159": [
+        "embroidery",
+        "embroidery",
+        "embroidery"
+      ],
+      "squad:validation:1160": [
+        "Bayeux Tapestry",
+        "the Bayeux Tapestry",
+        "the Bayeux Tapestry"
+      ],
+      "squad:validation:1161": [
+        "Odo",
+        "Odo",
+        "Odo"
+      ]
+    },
+    "passage": "By far the most famous work of Norman art is the Bayeux Tapestry, which is not a tapestry but a work of embroidery. It was commissioned by Odo, the Bishop of Bayeux and first Earl of Kent, employing natives from Kent who were learned in the Nordic traditions imported in the previous half century by the Danish Vikings."
+  },
+  "05e6b70a4c996f49687d72f7a373609343967f6fed5be1f3bda6965dcfad141e": {
+    "answers_by_question": {
+      "squad:validation:989": [
+        "bourgeois",
+        "bourgeois",
+        "bourgeois"
+      ],
+      "squad:validation:990": [
+        "not restored by the communist authorities",
+        "were not restored",
+        "not restored by the communist authorities after the war"
+      ],
+      "squad:validation:991": [
+        "socialist realism",
+        "socialist realism",
+        "socialist realism"
+      ],
+      "squad:validation:992": [
+        "Warsaw University of Technology building",
+        "Warsaw University of Technology building",
+        "Warsaw University of Technology"
+      ],
+      "squad:validation:993": [
+        "the most distinctive buildings",
+        "the most distinctive buildings",
+        "most distinctive buildings"
+      ]
+    },
+    "passage": "Exceptional examples of the bourgeois architecture of the later periods were not restored by the communist authorities after the war (like mentioned Kronenberg Palace and Insurance Company Rosja building) or they were rebuilt in socialist realism style (like Warsaw Philharmony edifice originally inspired by Palais Garnier in Paris). Despite that the Warsaw University of Technology building (1899\u20131902) is the most interesting of the late 19th-century architecture. Some 19th-century buildings in the Praga district (the Vistula\u2019s right bank) have been restored although many have been poorly maintained. Warsaw\u2019s municipal government authorities have decided to rebuild the Saxon Palace and the Br\u00fchl Palace, the most distinctive buildings in prewar Warsaw."
+  },
+  "0647d147367db34d8108a9fd785f9e4e6909853050082dd01b4b0f7d527e30c8": {
+    "answers_by_question": {
+      "squad:validation:835": [
+        "1816",
+        "1816",
+        "1816"
+      ],
+      "squad:validation:836": [
+        "over two million",
+        "over two million",
+        "over two million"
+      ],
+      "squad:validation:837": [
+        "architects",
+        "architects",
+        "architects"
+      ],
+      "squad:validation:838": [
+        "Irena Bajerska",
+        "Irena Bajerska",
+        "Irena Bajerska"
+      ],
+      "squad:validation:839": [
+        "10,000 m2",
+        "more than 10,000 m2",
+        "10,000 m2"
+      ]
+    },
+    "passage": "Another important library \u2013 the University Library, founded in 1816, is home to over two million items. The building was designed by architects Marek Budzy\u0144ski and Zbigniew Badowski and opened on 15 December 1999. It is surrounded by green. The University Library garden, designed by Irena Bajerska, was opened on 12 June 2002. It is one of the largest and most beautiful roof gardens in Europe with an area of more than 10,000 m2 (107,639.10 sq ft), and plants covering 5,111 m2 (55,014.35 sq ft). As the university garden it is open to the public every day."
+  },
+  "069b4a3fa60f06127abe5ec0bd5a3d0a5361be579543ef02959d85eed997cf36": {
+    "answers_by_question": {
+      "squad:validation:1477": [
+        "power outage",
+        "a power outage",
+        "power outage"
+      ],
+      "squad:validation:1478": [
+        "repeatedly burned out",
+        "repeatedly burned out",
+        "repeatedly burned out"
+      ],
+      "squad:validation:1479": [
+        "powerful high frequency currents",
+        "powerful high frequency currents",
+        "powerful high frequency currents"
+      ],
+      "squad:validation:1480": [
+        "destroy",
+        "destroy",
+        "jump through the windings and destroy the insulation"
+      ]
+    },
+    "passage": "While experimenting, Tesla inadvertently faulted a power station generator, causing a power outage. In August 1917, Tesla explained what had happened in The Electrical Experimenter: \"As an example of what has been done with several hundred kilowatts of high frequency energy liberated, it was found that the dynamos in a power house six miles away were repeatedly burned out, due to the powerful high frequency currents set up in them, and which caused heavy sparks to jump through the windings and destroy the insulation!\""
+  },
+  "069e21e2e1d44c53ecd8f15a91dd88f41c8c41ba3608bc69461d8d74313fafc3": {
+    "answers_by_question": {
+      "squad:validation:994": [
+        "many places",
+        "many places"
+      ],
+      "squad:validation:995": [
+        "Pawiak",
+        "Pawiak",
+        "Pawiak"
+      ],
+      "squad:validation:996": [
+        "The Warsaw Citadel",
+        "Warsaw Citadel",
+        "The Warsaw Citadel"
+      ],
+      "squad:validation:997": [
+        "children",
+        "children who served as messengers and frontline troops in the Warsaw Uprising",
+        "children"
+      ],
+      "squad:validation:998": [
+        "Warsaw Uprising Monument",
+        "Warsaw Uprising Monument",
+        "Warsaw Uprising Monument"
+      ]
+    },
+    "passage": "There are also many places commemorating the heroic history of Warsaw. Pawiak, an infamous German Gestapo prison now occupied by a Mausoleum of Memory of Martyrdom and the museum, is only the beginning of a walk in the traces of Heroic City. The Warsaw Citadel, an impressive 19th-century fortification built after the defeat of the November Uprising, was a place of martyr for the Poles. Another important monument, the statue of Little Insurgent located at the ramparts of the Old Town, commemorates the children who served as messengers and frontline troops in the Warsaw Uprising, while the impressive Warsaw Uprising Monument by Wincenty Ku\u0107ma was erected in memory of the largest insurrection of World War II."
+  },
+  "093de06e8c12a4baf21172ed75bb3d170f3e784a75fcc329894f9e08ae2da50e": {
+    "answers_by_question": {
+      "squad:validation:457": [
+        "Moscone Center",
+        "the Moscone Center",
+        "Moscone Center"
+      ],
+      "squad:validation:458": [
+        "San Francisco",
+        "San Francisco",
+        "San Francisco"
+      ],
+      "squad:validation:459": [
+        "Ed Lee",
+        "Ed Lee",
+        "Lee"
+      ],
+      "squad:validation:460": [
+        "Jane Kim",
+        "Jane Kim",
+        "Kim"
+      ],
+      "squad:validation:461": [
+        "January 30",
+        "January 30",
+        "January 30"
+      ],
+      "squad:validation:462": [
+        "1 million",
+        "More than 1 million",
+        "1 million"
+      ],
+      "squad:validation:463": [
+        "Ed Lee",
+        "Ed Lee",
+        "Lee"
+      ],
+      "squad:validation:464": [
+        "Moscone Center",
+        "the Moscone Center",
+        "Moscone Center"
+      ],
+      "squad:validation:465": [
+        "Super Bowl City",
+        "Super Bowl City",
+        "Super Bowl City"
+      ],
+      "squad:validation:466": [
+        "Moscone Center",
+        "at the Moscone Center",
+        "Moscone Center"
+      ],
+      "squad:validation:467": [
+        "Super Bowl City",
+        "Super Bowl City\" opened",
+        "\"Super Bowl City"
+      ],
+      "squad:validation:468": [
+        "Ed Lee",
+        "Ed Lee",
+        "Lee"
+      ],
+      "squad:validation:469": [
+        "Super Bowl City",
+        "\"Super Bowl City\"",
+        "Super Bowl City"
+      ],
+      "squad:validation:470": [
+        "More than 1 million",
+        "More than 1 million",
+        "1 million"
+      ],
+      "squad:validation:471": [
+        "mayor Ed Lee",
+        "Ed Lee",
+        "mayor Ed Lee"
+      ],
+      "squad:validation:472": [
+        "$5 million.",
+        "0",
+        "$5 million"
+      ],
+      "squad:validation:473": [
+        "The annual NFL Experience",
+        "The annual NFL Experience",
+        "NFL Experience"
+      ]
+    },
+    "passage": "The annual NFL Experience was held at the Moscone Center in San Francisco. In addition, \"Super Bowl City\" opened on January 30 at Justin Herman Plaza on The Embarcadero, featuring games and activities that will highlight the Bay Area's technology, culinary creations, and cultural diversity. More than 1 million people are expected to attend the festivities in San Francisco during Super Bowl Week. San Francisco mayor Ed Lee said of the highly visible homeless presence in this area \"they are going to have to leave\". San Francisco city supervisor Jane Kim unsuccessfully lobbied for the NFL to reimburse San Francisco for city services in the amount of $5 million."
+  },
+  "0be71852d1cb60f83a2cf3b6dd0bffd363dec529e88d9e07c844c29814e78d9b": {
+    "answers_by_question": {
+      "squad:validation:889": [
+        "legend",
+        "The best-known legend",
+        "legend"
+      ],
+      "squad:validation:890": [
+        "depths of the oceans and seas",
+        "depths of the oceans and seas",
+        "depths of the oceans and seas"
+      ],
+      "squad:validation:891": [
+        "coast of Denmark",
+        "coast of Denmark",
+        "coast of Denmark"
+      ],
+      "squad:validation:892": [
+        "Warszowa",
+        "village of Warszowa",
+        "Warszowa"
+      ],
+      "squad:validation:893": [
+        "captured",
+        "captured the mermaid",
+        "captured"
+      ]
+    },
+    "passage": "The origin of the legendary figure is not fully known. The best-known legend, by Artur Oppman, is that long ago two of Triton's daughters set out on a journey through the depths of the oceans and seas. One of them decided to stay on the coast of Denmark and can be seen sitting at the entrance to the port of Copenhagen. The second mermaid reached the mouth of the Vistula River and plunged into its waters. She stopped to rest on a sandy beach by the village of Warszowa, where fishermen came to admire her beauty and listen to her beautiful voice. A greedy merchant also heard her songs; he followed the fishermen and captured the mermaid."
+  },
+  "0fc4e54e36ca9a7e7bcc6307e06678b838dfe2a7345f8724167d8c070764fd86": {
+    "answers_by_question": {
+      "squad:validation:55": [
+        "Von Miller",
+        "Von Miller",
+        "Miller"
+      ],
+      "squad:validation:56": [
+        "2",
+        "two",
+        "two"
+      ],
+      "squad:validation:57": [
+        "Broncos",
+        "The Broncos",
+        "Broncos"
+      ],
+      "squad:validation:58": [
+        "linebacker Von Miller",
+        "Von Miller",
+        "Miller"
+      ],
+      "squad:validation:59": [
+        "five solo tackles",
+        "five",
+        "five"
+      ],
+      "squad:validation:60": [
+        "Newton was limited by Denver's defense",
+        "Newton",
+        "Newton"
+      ],
+      "squad:validation:61": [
+        "seven",
+        "seven",
+        "seven"
+      ],
+      "squad:validation:62": [
+        "Von Miller",
+        "The Broncos",
+        "Miller"
+      ],
+      "squad:validation:63": [
+        "three",
+        "three",
+        "three"
+      ],
+      "squad:validation:64": [
+        "two",
+        "two",
+        "two"
+      ],
+      "squad:validation:65": [
+        "Von Miller",
+        "Von Miller",
+        "Miller"
+      ],
+      "squad:validation:66": [
+        "linebacker",
+        "linebacker",
+        "linebacker"
+      ],
+      "squad:validation:67": [
+        "5",
+        "five",
+        "five"
+      ],
+      "squad:validation:68": [
+        "2",
+        "two",
+        "two"
+      ],
+      "squad:validation:69": [
+        "Von Miller",
+        "Von Miller",
+        "Von Miller"
+      ],
+      "squad:validation:70": [
+        "5",
+        "five",
+        "five"
+      ],
+      "squad:validation:71": [
+        "seven",
+        "seven",
+        "seven"
+      ],
+      "squad:validation:72": [
+        "three",
+        "three",
+        "three"
+      ],
+      "squad:validation:73": [
+        "a fumble",
+        "a fumble",
+        "fumble"
+      ],
+      "squad:validation:74": [
+        "Von Miller",
+        "Von Miller",
+        "Von Miller"
+      ],
+      "squad:validation:75": [
+        "linebacker",
+        "linebacker",
+        "linebacker"
+      ],
+      "squad:validation:76": [
+        "seven",
+        "seven",
+        "seven"
+      ],
+      "squad:validation:77": [
+        "three",
+        "three",
+        "three"
+      ],
+      "squad:validation:78": [
+        "Von Miller",
+        "Von Miller",
+        "Von Miller"
+      ],
+      "squad:validation:79": [
+        "five",
+        "five",
+        "five"
+      ]
+    },
+    "passage": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked him seven times and forced him into three turnovers, including a fumble which they recovered for a touchdown. Denver linebacker Von Miller was named Super Bowl MVP, recording five solo tackles, 2\u00bd sacks, and two forced fumbles."
+  },
+  "11c93b768b6c23ea9ac8532e397d9a735f4023af2ebcf2b5632a04130479ba42": {
+    "answers_by_question": {
+      "squad:validation:1248": [
+        "1875",
+        "1875",
+        "1875"
+      ],
+      "squad:validation:1249": [
+        "Austrian Polytechnic",
+        "Austrian Polytechnic",
+        "Austrian Polytechnic"
+      ],
+      "squad:validation:1250": [
+        "1879",
+        "1879",
+        "1879"
+      ],
+      "squad:validation:1251": [
+        "gambling",
+        "gambling",
+        "gambling"
+      ],
+      "squad:validation:1252": [
+        "no",
+        "not",
+        "He never graduated"
+      ],
+      "squad:validation:1253": [
+        "Graz, Austria",
+        "in Graz, Austria",
+        "Graz, Austria"
+      ],
+      "squad:validation:1254": [
+        "1875",
+        "In 1875",
+        "1875"
+      ],
+      "squad:validation:1255": [
+        "1879",
+        "in 1879",
+        "1879"
+      ],
+      "squad:validation:1256": [
+        "gambled",
+        "gambling",
+        "gambling"
+      ],
+      "squad:validation:1257": [
+        "Tesla would be killed through overwork",
+        "killed through overwork",
+        "would be killed through overwork"
+      ]
+    },
+    "passage": "In 1875, Tesla enrolled at Austrian Polytechnic in Graz, Austria, on a Military Frontier scholarship. During his first year, Tesla never missed a lecture, earned the highest grades possible, passed nine exams (nearly twice as many required), started a Serbian culture club, and even received a letter of commendation from the dean of the technical faculty to his father, which stated, \"Your son is a star of first rank.\" Tesla claimed that he worked from 3 a.m. to 11 p.m., no Sundays or holidays excepted. He was \"mortified when [his] father made light of [those] hard won honors.\" After his father's death in 1879, Tesla found a package of letters from his professors to his father, warning that unless he were removed from the school, Tesla would be killed through overwork. During his second year, Tesla came into conflict with Professor Poeschl over the Gramme dynamo, when Tesla suggested that commutators weren't necessary. At the end of his second year, Tesla lost his scholarship and became addicted to gambling. During his third year, Tesla gambled away his allowance and his tuition money, later gambling back his initial losses and returning the balance to his family. Tesla said that he \"conquered [his] passion then and there,\" but later he was known to play billiards in the US. When exam time came, Tesla was unprepared and asked for an extension to study, but was denied. He never graduated from the university and did not receive grades for the last semester."
+  },
+  "1528580bc2058d45cdd129ff6d57b3bea2285696665f15d901ba2da423232cfb": {
+    "answers_by_question": {
+      "squad:validation:1567": [
+        "steal the invention",
+        "steal",
+        "steal"
+      ],
+      "squad:validation:1568": [
+        "in his mind.",
+        "in his mind",
+        "all in his mind"
+      ],
+      "squad:validation:1569": [
+        "his papers",
+        "his papers",
+        "his papers"
+      ]
+    },
+    "passage": "During the period in which the negotiations were being conducted, Tesla said that efforts had been made to steal the invention. His room had been entered and his papers had been scrutinized, but the thieves, or spies, left empty-handed. He said that there was no danger that his invention could be stolen, for he had at no time committed any part of it to paper; the blueprint for the teleforce weapon was all in his mind."
+  },
+  "174fee07c9abc96a288e343b7f9a30e342ec3f2bc640b0e05cb09d176800fdd8": {
+    "answers_by_question": {
+      "squad:validation:1638": [
+        "electron",
+        "an electron"
+      ],
+      "squad:validation:1639": [
+        "ether",
+        "ether"
+      ],
+      "squad:validation:1640": [
+        "transmitted electrical energy",
+        "transmitted electrical energy",
+        "transmitted electrical energy"
+      ],
+      "squad:validation:1641": [
+        "19th",
+        "the 19th",
+        "19th"
+      ]
+    },
+    "passage": "Tesla exhibited a pre-atomic understanding of physics in his writings; he disagreed with the theory of atoms being composed of smaller subatomic particles, stating there was no such thing as an electron creating an electric charge (he believed that if electrons existed at all, they were some fourth state of matter or \"sub-atom\" that could only exist in an experimental vacuum and that they had nothing to do with electricity).:249 Tesla believed that atoms are immutable\u2014they could not change state or be split in any way. He was a believer in the 19th century concept of an all pervasive \"ether\" that transmitted electrical energy."
+  },
+  "179a01214dccbb06687d0834a18663d5644d2a6c1f3e439f4c7da6eb4aa7fba4": {
+    "answers_by_question": {
+      "squad:validation:1320": [
+        "forced Tesla out",
+        "forced Tesla out",
+        "forced Tesla out leaving him penniless"
+      ],
+      "squad:validation:1321": [
+        "penniless",
+        "penniless",
+        "penniless"
+      ],
+      "squad:validation:1322": [
+        "ditch digger",
+        "ditch digger",
+        "ditch digger"
+      ],
+      "squad:validation:1323": [
+        "1886/1887",
+        "1886/1887",
+        "1886/1887"
+      ],
+      "squad:validation:1324": [
+        "assigned them to the company in lieu of stock.",
+        "assigned them to the company",
+        "assigned them to the company in lieu of stock"
+      ],
+      "squad:validation:1325": [
+        "ditch digger",
+        "ditch digger",
+        "ditch digger"
+      ],
+      "squad:validation:1326": [
+        "various electrical repair jobs",
+        "various electrical repair jobs",
+        "He had to work at various electrical repair jobs"
+      ]
+    },
+    "passage": "The investors showed little interest in Tesla's ideas for new types of motors and electrical transmission equipment and also seemed to think it was better to develop an electrical utility than invent new systems. They eventually forced Tesla out leaving him penniless. He even lost control of the patents he had generated since he had assigned them to the company in lieu of stock. He had to work at various electrical repair jobs and even as a ditch digger for $2 per day. Tesla considered the winter of 1886/1887 as a time of \"terrible headaches and bitter tears.\" During this time, he questioned the value of his education."
+  },
+  "17c0a262a47d933cca8588fdf4fb01d73e2bf74c949220579509fe492e9b19a5": {
+    "answers_by_question": {
+      "squad:validation:1526": [
+        "Thomas Edison and Nikola Tesla",
+        "Thomas Edison and Nikola Tesla",
+        "Thomas Edison and Nikola Tesla"
+      ],
+      "squad:validation:1527": [
+        "Sir William Henry Bragg and William Lawrence Bragg",
+        "Sir William Henry Bragg and William Lawrence Bragg",
+        "Sir William Henry Bragg and William Lawrence Bragg"
+      ],
+      "squad:validation:1528": [
+        "Tesla and/or Edison had refused the prize",
+        "Tesla and/or Edison had refused the prize",
+        "Tesla and/or Edison had refused the prize"
+      ],
+      "squad:validation:1529": [
+        "announced a winner",
+        "he is announced a winner",
+        "after he is announced a winner"
+      ]
+    },
+    "passage": "On 6 November 1915, a Reuters news agency report from London had the 1915 Nobel Prize in Physics awarded to Thomas Edison and Nikola Tesla; however, on 15 November, a Reuters story from Stockholm stated the prize that year was being awarded to Sir William Henry Bragg and William Lawrence Bragg \"for their services in the analysis of crystal structure by means of X-rays.\":245 There were unsubstantiated rumors at the time that Tesla and/or Edison had refused the prize.:245 The Nobel Foundation said, \"Any rumor that a person has not been given a Nobel Prize because he has made known his intention to refuse the reward is ridiculous\"; a recipient could only decline a Nobel Prize after he is announced a winner.:245"
+  },
+  "184d8e2bfbbe465d571014652c9207a041ec5654986198ec457160d7a42c77dc": {
+    "answers_by_question": {
+      "squad:validation:840": [
+        "infrastructure",
+        "infrastructure",
+        "infrastructure"
+      ],
+      "squad:validation:841": [
+        "Three-Year Plan",
+        "Three-Year Plan",
+        "Three-Year Plan"
+      ],
+      "squad:validation:842": [
+        "solid economic growth",
+        "solid economic growth",
+        "economic growth"
+      ],
+      "squad:validation:843": [
+        "improved markedly",
+        "improved markedly",
+        "improved markedly"
+      ]
+    },
+    "passage": "Like many cities in Central and Eastern Europe, infrastructure in Warsaw suffered considerably during its time as an Eastern Bloc economy \u2013 though it is worth mentioning that the initial Three-Year Plan to rebuild Poland (especially Warsaw) was a major success, but what followed was very much the opposite. However, over the past decade Warsaw has seen many improvements due to solid economic growth, an increase in foreign investment as well as funding from the European Union. In particular, the city's metro, roads, sidewalks, health care facilities and sanitation facilities have improved markedly."
+  },
+  "186c795fe861d8bad74e488122924e14b2c6efaf4d1a6ed0280e0279dae378a8": {
+    "answers_by_question": {
+      "squad:validation:1082": [
+        "Kitab Rudjdjar",
+        "Kitab Rudjdjar",
+        "Kitab Rudjdjar"
+      ],
+      "squad:validation:1083": [
+        "The Book of Roger",
+        "The Book of Roger",
+        "The Book of Roger"
+      ],
+      "squad:validation:1084": [
+        "meritocratic",
+        "meritocratic",
+        "meritocratic"
+      ]
+    },
+    "passage": "Institutionally, the Normans combined the administrative machinery of the Byzantines, Arabs, and Lombards with their own conceptions of feudal law and order to forge a unique government. Under this state, there was great religious freedom, and alongside the Norman nobles existed a meritocratic bureaucracy of Jews, Muslims and Christians, both Catholic and Eastern Orthodox. The Kingdom of Sicily thus became characterized by Norman, Byzantine Greek, Arab, Lombard and \"native\" Sicilian populations living in harmony, and its Norman rulers fostered plans of establishing an Empire that would have encompassed Fatimid Egypt as well as the Crusader states in the Levant. One of the great geographical treatises of the Middle Ages, the \"Tabula Rogeriana\", was written by the Andalusian al-Idrisi for king Roger II of Sicily, and entitled \"Kitab Rudjdjar\" (\"The Book of Roger\")."
+  },
+  "18fb66889bd625c49662834ea441b66eb3a9e9ae157e57615623f27186d7c1f3": {
+    "answers_by_question": {
+      "squad:validation:1169": [
+        "1856",
+        "1856",
+        "1856"
+      ],
+      "squad:validation:1170": [
+        "Serbian",
+        "Serbian",
+        "Serbian"
+      ],
+      "squad:validation:1171": [
+        "1943",
+        "1943",
+        "1943"
+      ],
+      "squad:validation:1172": [
+        "1856",
+        "10 July 1856",
+        "1856"
+      ],
+      "squad:validation:1173": [
+        "1943",
+        "1943",
+        "1943"
+      ],
+      "squad:validation:1174": [
+        "Serbian",
+        "Serbian",
+        "Serbian"
+      ],
+      "squad:validation:1175": [
+        "alternating current",
+        "alternating current",
+        "alternating current"
+      ]
+    },
+    "passage": "Nikola Tesla (Serbian Cyrillic: \u041d\u0438\u043a\u043e\u043b\u0430 \u0422\u0435\u0441\u043b\u0430; 10 July 1856 \u2013 7 January 1943) was a Serbian American inventor, electrical engineer, mechanical engineer, physicist, and futurist best known for his contributions to the design of the modern alternating current (AC) electricity supply system."
+  },
+  "19080652b49baa4a83753bd1a5069adfb49ce7695db68c123e3463c704230dac": {
+    "answers_by_question": {
+      "squad:validation:178": [
+        "John Fox",
+        "John Fox",
+        "Fox"
+      ],
+      "squad:validation:179": [
+        "ten",
+        "ten",
+        "six"
+      ],
+      "squad:validation:180": [
+        "six",
+        "six",
+        "six"
+      ],
+      "squad:validation:181": [
+        "Carolina Panthers",
+        "The Carolina Panthers",
+        "Panthers"
+      ],
+      "squad:validation:182": [
+        "Super Bowl XLVIII",
+        "Super Bowl XLVIII",
+        "XLVIII"
+      ],
+      "squad:validation:183": [
+        "John Fox",
+        "John Fox",
+        "Fox"
+      ],
+      "squad:validation:184": [
+        "eight",
+        "eight",
+        "eight"
+      ],
+      "squad:validation:185": [
+        "ten",
+        "ten",
+        "ten"
+      ],
+      "squad:validation:186": [
+        "Super Bowl XXXVIII",
+        "Super Bowl XXXVIII",
+        "XXXVIII"
+      ],
+      "squad:validation:187": [
+        "six",
+        "ten",
+        "ten"
+      ],
+      "squad:validation:188": [
+        "number one",
+        "number one",
+        "one"
+      ],
+      "squad:validation:189": [
+        "number one",
+        "number one",
+        "one"
+      ],
+      "squad:validation:190": [
+        "Super Bowl XLVIII",
+        "Super Bowl XLVIII",
+        "Super Bowl XLVIII"
+      ],
+      "squad:validation:191": [
+        "Super Bowl XXXVIII.",
+        "Super Bowl XXXVIII",
+        "Super Bowl XXXVIII"
+      ],
+      "squad:validation:192": [
+        "six",
+        "ten",
+        "ten"
+      ],
+      "squad:validation:193": [
+        "one",
+        "1",
+        "1"
+      ],
+      "squad:validation:194": [
+        "four",
+        "four",
+        "four"
+      ],
+      "squad:validation:195": [
+        "John Fox",
+        "John Fox",
+        "John Fox"
+      ]
+    },
+    "passage": "For the third straight season, the number one seeds from both conferences met in the Super Bowl. The Carolina Panthers became one of only ten teams to have completed a regular season with only one loss, and one of only six teams to have acquired a 15\u20131 record, while the Denver Broncos became one of four teams to have made eight appearances in the Super Bowl. The Broncos made their second Super Bowl appearance in three years, having reached Super Bowl XLVIII, while the Panthers made their second Super Bowl appearance in franchise history, their other appearance being Super Bowl XXXVIII. Coincidentally, both teams were coached by John Fox in their last Super Bowl appearance prior to Super Bowl 50."
+  },
+  "196983e68e85513a7fe6690715cedcdf5521e1e6f3f26798c48cc4618989f754": {
+    "answers_by_question": {
+      "squad:validation:904": [
+        "1313",
+        "1313",
+        "1313"
+      ],
+      "squad:validation:905": [
+        "Krak\u00f3w",
+        "Krak\u00f3w",
+        "Krak\u00f3w"
+      ],
+      "squad:validation:906": [
+        "1596",
+        "1596",
+        "1596"
+      ],
+      "squad:validation:907": [
+        "King Sigismund III Vasa",
+        "King Sigismund III Vasa",
+        "King Sigismund III Vasa"
+      ],
+      "squad:validation:908": [
+        "survived many wars, conflicts and invasions",
+        "it has survived many wars, conflicts and invasions",
+        "because it has survived many wars, conflicts and invasions throughout its long history"
+      ]
+    },
+    "passage": "The first historical reference to Warsaw dates back to the year 1313, at a time when Krak\u00f3w served as the Polish capital city. Due to its central location between the Polish\u2013Lithuanian Commonwealth's capitals of Krak\u00f3w and Vilnius, Warsaw became the capital of the Commonwealth and of the Crown of the Kingdom of Poland when King Sigismund III Vasa moved his court from Krak\u00f3w to Warsaw in 1596. After the Third Partition of Poland in 1795, Warsaw was incorporated into the Kingdom of Prussia. In 1806 during the Napoleonic Wars, the city became the official capital of the Grand Duchy of Warsaw, a puppet state of the First French Empire established by Napoleon Bonaparte. In accordance with the decisions of the Congress of Vienna, the Russian Empire annexed Warsaw in 1815 and it became part of the \"Congress Kingdom\". Only in 1918 did it regain independence from the foreign rule and emerge as a new capital of the independent Republic of Poland. The German invasion in 1939, the massacre of the Jewish population and deportations to concentration camps led to the uprising in the Warsaw ghetto in 1943 and to the major and devastating Warsaw Uprising between August and October 1944. Warsaw gained the title of the \"Phoenix City\" because it has survived many wars, conflicts and invasions throughout its long history. Most notably, the city required painstaking rebuilding after the extensive damage it suffered in World War II, which destroyed 85% of its buildings. On 9 November 1940, the city was awarded Poland's highest military decoration for heroism, the Virtuti Militari, during the Siege of Warsaw (1939)."
+  },
+  "1b6b54e8c8b9ed8a8cd2a8ba1a4fecc7094aad721964a7ddb65b5eb788d029ec": {
+    "answers_by_question": {
+      "squad:validation:844": [
+        "Warsaw",
+        "Warsaw",
+        "Warsaw"
+      ],
+      "squad:validation:845": [
+        "Children's Memorial Health Institute",
+        "Children's Memorial Health Institute",
+        "Children's Memorial Health Institute"
+      ],
+      "squad:validation:846": [
+        "Maria Sk\u0142odowska-Curie Institute of Oncology",
+        "Maria Sk\u0142odowska-Curie Institute of Oncology",
+        "Maria Sk\u0142odowska-Curie Institute of Oncology"
+      ],
+      "squad:validation:847": [
+        "700",
+        "700",
+        "700"
+      ],
+      "squad:validation:848": [
+        "developed",
+        "developed",
+        "developed"
+      ]
+    },
+    "passage": "Today, Warsaw has some of the best medical facilities in Poland and East-Central Europe. The city is home to the Children's Memorial Health Institute (CMHI), the highest-reference hospital in all of Poland, as well as an active research and education center. While the Maria Sk\u0142odowska-Curie Institute of Oncology it is one of the largest and most modern oncological institutions in Europe. The clinical section is located in a 10-floor building with 700 beds, 10 operating theatres, an intensive care unit, several diagnostic departments as well as an outpatient clinic. The infrastructure has developed a lot over the past years."
+  },
+  "1ca2302fd634aa0085f93b98e63237af006b99668697bdf786550f7e24570a3a": {
+    "answers_by_question": {
+      "squad:validation:562": [
+        "NFL Mobile",
+        "NFL Mobile",
+        "NFL Mobile service."
+      ],
+      "squad:validation:563": [
+        "WatchESPN",
+        "WatchESPN",
+        "WatchESPN"
+      ],
+      "squad:validation:564": [
+        "CBSSports.com",
+        "CBSSports.com",
+        "CBSSports"
+      ],
+      "squad:validation:565": [
+        "Xbox One",
+        "Xbox One",
+        "Xbox One"
+      ],
+      "squad:validation:566": [
+        "10",
+        "10",
+        "10"
+      ],
+      "squad:validation:567": [
+        "CBSSports.com",
+        "CBSSports.com",
+        "CBSSports.com"
+      ],
+      "squad:validation:568": [
+        "Xbox One",
+        "Xbox One",
+        "Xbox"
+      ],
+      "squad:validation:569": [
+        "Verizon Wireless customers",
+        "Verizon",
+        "Verizon"
+      ],
+      "squad:validation:570": [
+        "NFL Mobile service",
+        "the CBS Sports apps",
+        "NFL"
+      ],
+      "squad:validation:571": [
+        "Verizon",
+        "Verizon",
+        "Verizon"
+      ],
+      "squad:validation:572": [
+        "NFL Mobile service.",
+        "NFL Mobile",
+        "NFL"
+      ],
+      "squad:validation:573": [
+        "digital streams of the game",
+        "digital streams",
+        "digital streams"
+      ],
+      "squad:validation:574": [
+        "Verizon",
+        "Verizon",
+        "Verizon"
+      ],
+      "squad:validation:575": [
+        "WatchESPN.",
+        "through WatchESPN",
+        "WatchESPN"
+      ]
+    },
+    "passage": "CBS provided digital streams of the game via CBSSports.com, and the CBS Sports apps on tablets, Windows 10, Xbox One and other digital media players (such as Chromecast and Roku). Due to Verizon Communications exclusivity, streaming on smartphones was only provided to Verizon Wireless customers via the NFL Mobile service. The ESPN Deportes Spanish broadcast was made available through WatchESPN."
+  },
+  "1ccdc3ecc98f2ce8281960f061b48c4e568a881f46f589eec7f333b13afb85de": {
+    "answers_by_question": {
+      "squad:validation:1022": [
+        "Warsaw City Council",
+        "Warsaw City Council",
+        "Warsaw City Council"
+      ],
+      "squad:validation:1023": [
+        "60",
+        "60",
+        "60"
+      ],
+      "squad:validation:1024": [
+        "every four years",
+        "four years",
+        "every four years."
+      ],
+      "squad:validation:1025": [
+        "committees",
+        "committees",
+        "committees"
+      ],
+      "squad:validation:1026": [
+        "30 days",
+        "30",
+        "30"
+      ]
+    },
+    "passage": "Legislative power in Warsaw is vested in a unicameral Warsaw City Council (Rada Miasta), which comprises 60 members. Council members are elected directly every four years. Like most legislative bodies, the City Council divides itself into committees which have the oversight of various functions of the city government. Bills passed by a simple majority are sent to the mayor (the President of Warsaw), who may sign them into law. If the mayor vetoes a bill, the Council has 30 days to override the veto by a two-thirds majority vote."
+  },
+  "1d33295f2773ddb3059dfe7d4ad93c8fb997e9a71d2a1acc974733b918c56c49": {
+    "answers_by_question": {
+      "squad:validation:1434": [
+        "X-rays were longitudinal waves",
+        "were longitudinal waves",
+        "that X-rays were longitudinal waves, such as those produced in waves in plasmas."
+      ],
+      "squad:validation:1435": [
+        "damage to the skin was not caused by the Roentgen rays, but by the ozone generated in contact with the skin",
+        "ozone generated in contact with the skin",
+        "the ozone generated in contact with the skin, and to a lesser extent, by nitrous acid"
+      ],
+      "squad:validation:1436": [
+        "skin damage",
+        "damage to the skin",
+        "damage to the skin"
+      ],
+      "squad:validation:1437": [
+        "his circuit and single-node X-ray-producing devices",
+        "X-ray-producing devices",
+        "circuit and single-node X-ray-producing devices"
+      ],
+      "squad:validation:1438": [
+        "force-free magnetic fields",
+        "force-free magnetic fields",
+        "in force-free magnetic fields"
+      ],
+      "squad:validation:1439": [
+        "ozone generated in contact with the skin",
+        "ozone generated in contact with the skin",
+        "the ozone generated in contact with the skin, and to a lesser extent, by nitrous acid."
+      ],
+      "squad:validation:1440": [
+        "longitudinal waves",
+        "longitudinal waves",
+        "longitudinal waves, such as those produced in waves in plasmas"
+      ],
+      "squad:validation:1441": [
+        "force-free magnetic fields",
+        "waves in plasmas",
+        "in force-free magnetic fields"
+      ],
+      "squad:validation:1442": [
+        "In his many notes",
+        "In his many notes"
+      ]
+    },
+    "passage": "Tesla noted the hazards of working with his circuit and single-node X-ray-producing devices. In his many notes on the early investigation of this phenomenon, he attributed the skin damage to various causes. He believed early on that damage to the skin was not caused by the Roentgen rays, but by the ozone generated in contact with the skin, and to a lesser extent, by nitrous acid. Tesla incorrectly believed that X-rays were longitudinal waves, such as those produced in waves in plasmas. These plasma waves can occur in force-free magnetic fields."
+  },
+  "1db0cd5d7127a86b1a900c37558ba9c8baccde5ae42c65591dfe73499f5d89b7": {
+    "answers_by_question": {
+      "squad:validation:106": [
+        "Roger Goodell",
+        "Roger Goodell",
+        "Goodell"
+      ],
+      "squad:validation:107": [
+        "the 50th Super Bowl",
+        "the 50th",
+        "50th"
+      ],
+      "squad:validation:108": [
+        "2012",
+        "2012",
+        "2012"
+      ],
+      "squad:validation:109": [
+        "Roger Goodell",
+        "Roger Goodell",
+        "Goodell"
+      ],
+      "squad:validation:110": [
+        "early 2012",
+        "In early 2012",
+        "2012"
+      ],
+      "squad:validation:111": [
+        "Roger Goodell",
+        "Roger Goodell",
+        "Goodell"
+      ],
+      "squad:validation:112": [
+        "Roger Goodell",
+        "Roger Goodell",
+        "Goodell"
+      ],
+      "squad:validation:113": [
+        "Roger Goodell",
+        "Roger Goodell",
+        "Goodell"
+      ],
+      "squad:validation:114": [
+        "spectacular",
+        "an important game for us as a league",
+        "spectacular"
+      ],
+      "squad:validation:115": [
+        "spectacular",
+        "spectacular",
+        "spectacular"
+      ],
+      "squad:validation:116": [
+        "2012",
+        "2012",
+        "2012"
+      ]
+    },
+    "passage": "In early 2012, NFL Commissioner Roger Goodell stated that the league planned to make the 50th Super Bowl \"spectacular\" and that it would be \"an important game for us as a league\"."
+  },
+  "1ee054960af2cb13d01d078eed20dfadd863516b441fe8058124d9f1afb4dd69": {
+    "answers_by_question": {
+      "squad:validation:1079": [
+        "Saracens",
+        "the Saracens",
+        "Saracens"
+      ],
+      "squad:validation:1080": [
+        "1130",
+        "1130",
+        "1130"
+      ],
+      "squad:validation:1081": [
+        "Squillace",
+        "Squillace",
+        "Squillace"
+      ]
+    },
+    "passage": "From these bases, the Normans eventually captured Sicily and Malta from the Saracens, under the leadership of the famous Robert Guiscard, a Hauteville, and his younger brother Roger the Great Count. Roger's son, Roger II of Sicily, was crowned king in 1130 (exactly one century after Rainulf was \"crowned\" count) by Antipope Anacletus II. The Kingdom of Sicily lasted until 1194, when it was transferred to the House of Hohenstaufen through marriage. The Normans left their legacy in many castles, such as William Iron Arm's citadel at Squillace, and cathedrals, such as Roger II's Cappella Palatina chapel at Palermo, which dot the landscape and give a wholly distinct architectural flavor to accompany its unique history."
+  },
+  "1eeac96b11db3be66a0a54fbf44c45e97cb5df9cd0c4fbee0e2f1342aab6b8d7": {
+    "answers_by_question": {
+      "squad:validation:909": [
+        "Roman Catholic",
+        "Roman Catholic",
+        "Roman Catholic"
+      ],
+      "squad:validation:910": [
+        "Polish Academy of Sciences",
+        "Polish Academy of Sciences",
+        "Polish Academy of Sciences"
+      ],
+      "squad:validation:911": [
+        "a UNESCO World Heritage Site",
+        "UNESCO World Heritage Site",
+        "UNESCO World Heritage Site"
+      ],
+      "squad:validation:912": [
+        "architectural",
+        "architectural",
+        "architectural"
+      ],
+      "squad:validation:913": [
+        "luxurious parks and royal gardens",
+        "luxurious parks and royal gardens",
+        "luxurious parks and royal gardens"
+      ]
+    },
+    "passage": "The city is the seat of a Roman Catholic archdiocese (left bank of the Vistula) and diocese (right bank), and possesses various universities, most notably the Polish Academy of Sciences and the University of Warsaw, two opera houses, theatres, museums, libraries and monuments. The historic city-centre of Warsaw with its picturesque Old Town in 1980 was listed as a UNESCO World Heritage Site. Other main architectural attractions include the Castle Square with the Royal Castle and the iconic King Sigismund's Column, St. John's Cathedral, Market Square, palaces, churches and mansions all displaying a richness of colour and architectural detail. Buildings represent examples of nearly every European architectural style and historical period. Warsaw provides many examples of architecture from the gothic, renaissance, baroque and neoclassical periods, and around a quarter of the city is filled with luxurious parks and royal gardens."
+  },
+  "2040b02c1c6b01d5338300b80a1c0ae71f9b266eb95d141e6f008328e7ad6251": {
+    "answers_by_question": {
+      "squad:validation:1102": [
+        "King Ethelred II",
+        "Ethelred II",
+        "King Ethelred II"
+      ],
+      "squad:validation:1103": [
+        "Duke Richard II",
+        "Duke Richard II",
+        "Duke Richard II"
+      ],
+      "squad:validation:1104": [
+        "Normandy",
+        "Normandy",
+        "Normandy"
+      ],
+      "squad:validation:1105": [
+        "Sweyn Forkbeard",
+        "Sweyn Forkbeard",
+        "Sweyn Forkbeard"
+      ]
+    },
+    "passage": "The Normans were in contact with England from an early date. Not only were their original Viking brethren still ravaging the English coasts, they occupied most of the important ports opposite England across the English Channel. This relationship eventually produced closer ties of blood through the marriage of Emma, sister of Duke Richard II of Normandy, and King Ethelred II of England. Because of this, Ethelred fled to Normandy in 1013, when he was forced from his kingdom by Sweyn Forkbeard. His stay in Normandy (until 1016) influenced him and his sons by Emma, who stayed in Normandy after Cnut the Great's conquest of the isle."
+  },
+  "20e502c5589b046d2ff5af04f1eb121472870964f751ab6cda67e9a705f620b8": {
+    "answers_by_question": {
+      "squad:validation:934": [
+        "from 4 August 1915 until November 1918",
+        "4 August 1915 until November 1918",
+        "from 4 August 1915 until November 1918"
+      ],
+      "squad:validation:935": [
+        "areas controlled by Russia in 1914",
+        "areas controlled by Russia in 1914",
+        "areas controlled by Russia"
+      ],
+      "squad:validation:936": [
+        "underground leader Pi\u0142sudski",
+        "Pi\u0142sudski",
+        "Pi\u0142sudski"
+      ],
+      "squad:validation:937": [
+        "1920",
+        "1920",
+        "1920"
+      ],
+      "squad:validation:938": [
+        "the Red Army",
+        "Red Army",
+        "Red Army"
+      ]
+    },
+    "passage": "Warsaw was occupied by Germany from 4 August 1915 until November 1918. The Allied Armistice terms required in Article 12 that Germany withdraw from areas controlled by Russia in 1914, which included Warsaw. Germany did so, and underground leader Pi\u0142sudski returned to Warsaw on 11 November and set up what became the Second Polish Republic, with Warsaw the capital. In the course of the Polish-Bolshevik War of 1920, the huge Battle of Warsaw was fought on the eastern outskirts of the city in which the capital was successfully defended and the Red Army defeated. Poland stopped by itself the full brunt of the Red Army and defeated an idea of the \"export of the revolution\"."
+  },
+  "218bcafd4ea9a6566900672f26303adc874834255c2b12646ddef2c72e9093f2": {
+    "answers_by_question": {
+      "squad:validation:1132": [
+        "380 years",
+        "380 years",
+        "380 years"
+      ]
+    },
+    "passage": "The conquest of Cyprus by the Anglo-Norman forces of the Third Crusade opened a new chapter in the history of the island, which would be under Western European domination for the following 380 years. Although not part of a planned operation, the conquest had much more permanent results than initially expected."
+  },
+  "21a5317e05c09edb48b02601d04d7ba36ba9815aadb646dcc85a76d7b156ac3d": {
+    "answers_by_question": {
+      "squad:validation:715": [
+        "Jonathan Stewart",
+        "Jonathan Stewart",
+        "Stewart"
+      ],
+      "squad:validation:716": [
+        "Brad Nortman",
+        "Brad Nortman",
+        "Nortman"
+      ],
+      "squad:validation:717": [
+        "28",
+        "28",
+        "28"
+      ],
+      "squad:validation:718": [
+        "61",
+        "61",
+        "61"
+      ],
+      "squad:validation:719": [
+        "33",
+        "33",
+        "33"
+      ],
+      "squad:validation:720": [
+        "51",
+        "51",
+        "51"
+      ],
+      "squad:validation:721": [
+        "Jonathan Stewart",
+        "Jonathan Stewart",
+        "Stewart"
+      ],
+      "squad:validation:722": [
+        "11:28",
+        "11:28",
+        "11:28"
+      ],
+      "squad:validation:723": [
+        "Jordan Norwood",
+        "Jordan Norwood",
+        "Norwood"
+      ],
+      "squad:validation:724": [
+        "33",
+        "33",
+        "33"
+      ],
+      "squad:validation:725": [
+        "Jonathan Stewart",
+        "Jonathan Stewart",
+        "Stewart"
+      ],
+      "squad:validation:726": [
+        "field goal",
+        "field goal",
+        "field goal"
+      ]
+    },
+    "passage": "After a punt from both teams, Carolina got on track with a 9-play, 73-yard scoring drive. Newton completed 4 of 4 passes for 51 yards and rushed twice for 25 yards, while Jonathan Stewart finished the drive with a 1-yard touchdown run, cutting the score to 10\u20137 with 11:28 left in the second quarter. Later on, Broncos receiver Jordan Norwood received Brad Nortman's short 28-yard punt surrounded by Panthers players, but none of them attempted to make a tackle, apparently thinking Norwood had called a fair catch. Norwood had not done so, and with no resistance around him, he took off for a Super Bowl record 61-yard return before Mario Addison dragged him down on the Panthers 14-yard line. Despite Denver's excellent field position, they could not get the ball into the end zone, so McManus kicked a 33-yard field goal that increased their lead to 13\u20137."
+  },
+  "21cd8d70eeef50e51e5635d18b93ab7779f49d4bf9028e22f1b3e6082932741e": {
+    "answers_by_question": {
+      "squad:validation:1517": [
+        "overseas",
+        "overseas",
+        "overseas"
+      ],
+      "squad:validation:1518": [
+        "lost",
+        "lost",
+        "lost the funding"
+      ],
+      "squad:validation:1519": [
+        "sold",
+        "sold",
+        "sold"
+      ],
+      "squad:validation:1520": [
+        "$20,000",
+        "$20,000",
+        "$20,000"
+      ],
+      "squad:validation:1521": [
+        "the Edison Medal.",
+        "the Edison Medal",
+        "the Edison Medal."
+      ]
+    },
+    "passage": "Before World War I, Tesla sought overseas investors. After the war started, Tesla lost the funding he was receiving from his patents in European countries. Eventually, he sold Wardenclyffe for $20,000 ($472,500 in today's dollars). In 1917, around the time that the Wardenclyffe Tower was demolished by Boldt to make the land a more viable real estate asset, Tesla received AIEE's highest honor, the Edison Medal."
+  },
+  "22915bfb97c1fc5d417620b16d9dd7eccf9a9d2904fe28a676b71a1267c2c17a": {
+    "answers_by_question": {
+      "squad:validation:1579": [
+        "New York City mayor Fiorello La Guardia",
+        "Fiorello La Guardia",
+        "New York City mayor Fiorello La Guardia"
+      ],
+      "squad:validation:1580": [
+        "Louis Adamic",
+        "Louis Adamic",
+        "Slovene-American author Louis Adamic"
+      ],
+      "squad:validation:1581": [
+        "12 January",
+        "12 January",
+        "12 January"
+      ],
+      "squad:validation:1582": [
+        "two thousand",
+        "two thousand",
+        "two thousand people"
+      ],
+      "squad:validation:1583": [
+        "the Cathedral of Saint John the Divine",
+        "the Cathedral of Saint John the Divine",
+        "the Cathedral of Saint John the Divine"
+      ]
+    },
+    "passage": "On 10 January 1943, New York City mayor Fiorello La Guardia read a eulogy written by Slovene-American author Louis Adamic live over the WNYC radio while violin pieces \"Ave Maria\" and \"Tamo daleko\" were played in the background. On 12 January, two thousand people attended a state funeral for Tesla at the Cathedral of Saint John the Divine. After the funeral, Tesla's body was taken to the Ferncliff Cemetery in Ardsley, New York, where it was later cremated. The following day, a second service was conducted by prominent priests in the Trinity Chapel (today's Serbian Orthodox Cathedral of Saint Sava) in New York City."
+  },
+  "231a015181e1e06c442f571a8baa25ce2ec844e939e02b2955b0aee6945c648b": {
+    "answers_by_question": {
+      "squad:validation:1067": [
+        "911",
+        "911",
+        "911"
+      ],
+      "squad:validation:1068": [
+        "King Charles III",
+        "King Charles III",
+        "King Charles III"
+      ],
+      "squad:validation:1069": [
+        "Seine",
+        "Epte",
+        "Seine"
+      ]
+    },
+    "passage": "In the course of the 10th century, the initially destructive incursions of Norse war bands into the rivers of France evolved into more permanent encampments that included local women and personal property. The Duchy of Normandy, which began in 911 as a fiefdom, was established by the treaty of Saint-Clair-sur-Epte between King Charles III of West Francia and the famed Viking ruler Rollo, and was situated in the former Frankish kingdom of Neustria. The treaty offered Rollo and his men the French lands between the river Epte and the Atlantic coast in exchange for their protection against further Viking incursions. The area corresponded to the northern part of present-day Upper Normandy down to the river Seine, but the Duchy would eventually extend west beyond the Seine. The territory was roughly equivalent to the old province of Rouen, and reproduced the Roman administrative structure of Gallia Lugdunensis II (part of the former Gallia Lugdunensis)."
+  },
+  "249e7dd9097cf32279e4070d1e596566d672e27c553552a71b189b824b660a5d": {
+    "answers_by_question": {
+      "squad:validation:1460": [
+        "1900",
+        "1900",
+        "1900"
+      ],
+      "squad:validation:1461": [
+        "Marconi",
+        "Guglielmo Marconi",
+        "Guglielmo Marconi"
+      ],
+      "squad:validation:1462": [
+        "1901",
+        "1901",
+        "1901"
+      ],
+      "squad:validation:1463": [
+        "1943",
+        "1943",
+        "1943"
+      ],
+      "squad:validation:1464": [
+        "Supreme Court of the United States",
+        "Supreme Court of the United States",
+        "Supreme Court of the United States"
+      ]
+    },
+    "passage": "In 1900, Tesla was granted patents for a \"system of transmitting electrical energy\" and \"an electrical transmitter.\" When Guglielmo Marconi made his famous first-ever transatlantic radio transmission in 1901, Tesla quipped that it was done with 17 Tesla patents, though there is little to support this claim. This was the beginning of years of patent battles over radio with Tesla's patents being upheld in 1903, followed by a reverse decision in favor of Marconi in 1904. In 1943, a Supreme Court of the United States decision restored the prior patents of Tesla, Oliver Lodge, and John Stone. The court declared that their decision had no bearing on Marconi's claim as the first to achieve radio transmission, just that since Marconi's claim to certain patents were questionable, he could not claim infringement on those same patents (there are claims the high court was trying to nullify a World War I claim against the U.S. government by the Marconi Company via simply restoring Tesla's prior patent)."
+  },
+  "24a811fb9878c8e663b0d3ec8b7828cf7bb059f07e78dc6c544e243f9c3dbf4d": {
+    "answers_by_question": {
+      "squad:validation:100": [
+        "Beyonc\u00e9 and Bruno Mars",
+        "Beyonc\u00e9 and Bruno Mars",
+        "Beyonc\u00e9 and Bruno Mars"
+      ],
+      "squad:validation:101": [
+        "Super Bowl XLVII",
+        "Super Bowl XLVII",
+        "Super Bowl XLVII"
+      ],
+      "squad:validation:102": [
+        "$5 million",
+        "$5 million",
+        "$5 million for a 30-second"
+      ],
+      "squad:validation:103": [
+        "Coldplay",
+        "Coldplay",
+        "Coldplay"
+      ],
+      "squad:validation:104": [
+        "Beyonc\u00e9 and Bruno Mars",
+        "Beyonc\u00e9 and Bruno Mars",
+        "Beyonc\u00e9 and Bruno Mars"
+      ],
+      "squad:validation:105": [
+        "Bruno Mars",
+        "Coldplay",
+        "Coldplay"
+      ],
+      "squad:validation:80": [
+        "CBS",
+        "CBS",
+        "CBS"
+      ],
+      "squad:validation:81": [
+        "$5 million",
+        "$5 million",
+        "$5 million"
+      ],
+      "squad:validation:82": [
+        "Coldplay",
+        "Coldplay",
+        "Coldplay"
+      ],
+      "squad:validation:83": [
+        "Beyonc\u00e9 and Bruno Mars",
+        "Beyonc\u00e9 and Bruno Mars",
+        "Beyonc\u00e9 and Bruno Mars"
+      ],
+      "squad:validation:84": [
+        "Super Bowl XLVII",
+        "Super Bowl XLVII",
+        "XLVII"
+      ],
+      "squad:validation:85": [
+        "CBS",
+        "CBS",
+        "CBS"
+      ],
+      "squad:validation:86": [
+        "$5 million",
+        "$5 million",
+        "$5 million"
+      ],
+      "squad:validation:87": [
+        "Beyonc\u00e9",
+        "Beyonc\u00e9",
+        "Beyonc\u00e9"
+      ],
+      "squad:validation:88": [
+        "Bruno Mars",
+        "Bruno Mars",
+        "Mars"
+      ],
+      "squad:validation:89": [
+        "Coldplay",
+        "Coldplay",
+        "Coldplay"
+      ],
+      "squad:validation:90": [
+        "CBS",
+        "CBS",
+        "CBS"
+      ],
+      "squad:validation:91": [
+        "$5 million",
+        "$5 million",
+        "$5 million"
+      ],
+      "squad:validation:92": [
+        "Bruno Mars",
+        "Bruno Mars",
+        "Bruno Mars,"
+      ],
+      "squad:validation:93": [
+        "third",
+        "third",
+        "third"
+      ],
+      "squad:validation:94": [
+        "CBS",
+        "CBS",
+        "CBS"
+      ],
+      "squad:validation:95": [
+        "$5 million",
+        "$5 million",
+        "$5 million"
+      ],
+      "squad:validation:96": [
+        "Coldplay",
+        "Coldplay",
+        "Coldplay"
+      ],
+      "squad:validation:97": [
+        "Beyonc\u00e9 and Bruno Mars",
+        "Beyonc\u00e9 and Bruno Mars",
+        "Beyonc\u00e9 and Bruno Mars"
+      ],
+      "squad:validation:98": [
+        "CBS",
+        "CBS",
+        "CBS"
+      ],
+      "squad:validation:99": [
+        "Coldplay",
+        "Coldplay",
+        "Coldplay"
+      ]
+    },
+    "passage": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million for a 30-second commercial during the game. The Super Bowl 50 halftime show was headlined by the British rock group Coldplay with special guest performers Beyonc\u00e9 and Bruno Mars, who headlined the Super Bowl XLVII and Super Bowl XLVIII halftime shows, respectively. It was the third-most watched U.S. broadcast ever."
+  },
+  "24b4d3d468a99dc24678fa41404ebc587c0ca31c1b5d11159f3cce03dbeb4124": {
+    "answers_by_question": {
+      "squad:validation:432": [
+        "June 4, 2014",
+        "On June 4, 2014",
+        "2014"
+      ],
+      "squad:validation:433": [
+        "Super Bowl V",
+        "Super Bowl V",
+        "V"
+      ],
+      "squad:validation:434": [
+        "Jaime Weston",
+        "Jaime Weston",
+        "Weston"
+      ],
+      "squad:validation:435": [
+        "Super Bowl XLV",
+        "Super Bowl XLV",
+        "V"
+      ],
+      "squad:validation:436": [
+        "Vince Lombardi",
+        "Vince Lombardi Trophy",
+        "Lombardi"
+      ],
+      "squad:validation:437": [
+        "2014",
+        "2014",
+        "2014"
+      ],
+      "squad:validation:438": [
+        "Super Bowl LI",
+        "LI",
+        "LI"
+      ],
+      "squad:validation:439": [
+        "L",
+        "L",
+        "L"
+      ],
+      "squad:validation:440": [
+        "gold",
+        "gold",
+        "gold"
+      ],
+      "squad:validation:441": [
+        "June 4, 2014",
+        "On June 4, 2014",
+        "2014"
+      ],
+      "squad:validation:442": [
+        "Arabic numerals",
+        "Arabic numerals",
+        "Arabic"
+      ],
+      "squad:validation:443": [
+        "L.",
+        "L",
+        "L"
+      ],
+      "squad:validation:444": [
+        "gold",
+        "gold",
+        "gold"
+      ],
+      "squad:validation:445": [
+        "Super Bowl LI.",
+        "Super Bowl LI",
+        "Super Bowl LI"
+      ],
+      "squad:validation:446": [
+        "Arabic",
+        "Arabic numerals",
+        "Arabic"
+      ],
+      "squad:validation:447": [
+        "LI.",
+        "LI",
+        "LI"
+      ]
+    },
+    "passage": "On June 4, 2014, the NFL announced that the practice of branding Super Bowl games with Roman numerals, a practice established at Super Bowl V, would be temporarily suspended, and that the game would be named using Arabic numerals as Super Bowl 50 as opposed to Super Bowl L. The use of Roman numerals will be reinstated for Super Bowl LI. Jaime Weston, the league's vice president of brand and creative, explained that a primary reason for the change was the difficulty of designing an aesthetically pleasing logo with the letter \"L\" using the standardized logo template introduced at Super Bowl XLV. The logo also deviates from the template by featuring large numerals, colored in gold, behind the Vince Lombardi Trophy, instead of underneath and in silver as in the standard logo."
+  },
+  "25632077ec283d4cc31c80588ea6810e247141a57355bd6b1a28a5238b8acb10": {
+    "answers_by_question": {
+      "squad:validation:949": [
+        "\"Bricks for Warsaw\"",
+        "Bricks for Warsaw",
+        "Bricks for Warsaw"
+      ],
+      "squad:validation:950": [
+        "prefabricated",
+        "prefabricated",
+        "prefabricated"
+      ],
+      "squad:validation:951": [
+        "an Eastern Bloc city",
+        "an Eastern Bloc city"
+      ],
+      "squad:validation:952": [
+        "Palace of Culture and Science",
+        "Palace of Culture and Science",
+        "Palace of Culture and Science"
+      ],
+      "squad:validation:953": [
+        "UNESCO's World Heritage list",
+        "UNESCO's World Heritage",
+        "UNESCO's World Heritage"
+      ]
+    },
+    "passage": "After World War II, under a Communist regime set up by the conquering Soviets, the \"Bricks for Warsaw\" campaign was initiated, and large prefabricated housing projects were erected in Warsaw to address the housing shortage, along with other typical buildings of an Eastern Bloc city, such as the Palace of Culture and Science, a gift from the Soviet Union. The city resumed its role as the capital of Poland and the country's centre of political and economic life. Many of the historic streets, buildings, and churches were restored to their original form. In 1980, Warsaw's historic Old Town was inscribed onto UNESCO's World Heritage list."
+  },
+  "27749618f729fa62e79b34e0666fb6ce7980b9e0e582584b2a78d0294543512a": {
+    "answers_by_question": {
+      "squad:validation:1073": [
+        "fighting horsemen",
+        "fighting horsemen",
+        "fighting horsemen"
+      ]
+    },
+    "passage": "The Normans thereafter adopted the growing feudal doctrines of the rest of France, and worked them into a functional hierarchical system in both Normandy and in England. The new Norman rulers were culturally and ethnically distinct from the old French aristocracy, most of whom traced their lineage to Franks of the Carolingian dynasty. Most Norman knights remained poor and land-hungry, and by 1066 Normandy had been exporting fighting horsemen for more than a generation. Many Normans of Italy, France and England eventually served as avid Crusaders under the Italo-Norman prince Bohemund I and the Anglo-Norman king Richard the Lion-Heart."
+  },
+  "280b492999eb9dfb26d1ae2fae6534020b32046a7306f0fef949f217a05c5061": {
+    "answers_by_question": {
+      "squad:validation:979": [
+        "Gothic",
+        "Gothic",
+        "Gothic"
+      ],
+      "squad:validation:980": [
+        "14th century",
+        "14th century",
+        "14th century"
+      ],
+      "squad:validation:981": [
+        "Masovian gothic",
+        "Gothic architecture",
+        "Masovian gothic"
+      ],
+      "squad:validation:982": [
+        "Renaissance",
+        "Renaissance",
+        "Renaissance"
+      ],
+      "squad:validation:983": [
+        "mannerist architecture",
+        "mannerist architecture",
+        "mannerist"
+      ]
+    },
+    "passage": "Gothic architecture is represented in the majestic churches but also at the burgher houses and fortifications. The most significant buildings are St. John's Cathedral (14th century), the temple is a typical example of the so-called Masovian gothic style, St. Mary's Church (1411), a town house of Burbach family (14th century), Gunpowder Tower (after 1379) and the Royal Castle Curia Maior (1407\u20131410). The most notable examples of Renaissance architecture in the city are the house of Baryczko merchant family (1562), building called \"The Negro\" (early 17th century) and Salwator tenement (1632). The most interesting examples of mannerist architecture are the Royal Castle (1596\u20131619) and the Jesuit Church (1609\u20131626) at Old Town. Among the first structures of the early baroque the most important are St. Hyacinth's Church (1603\u20131639) and Sigismund's Column (1644)."
+  },
+  "29fcf6218856cfd64395c81351e873a0769b0f291577dd5933cc1ac378f40976": {
+    "answers_by_question": {
+      "squad:validation:1692": [
+        "problem instance",
+        "a problem instance",
+        "problem instance"
+      ],
+      "squad:validation:1693": [
+        "the problem",
+        "a problem",
+        "problem"
+      ],
+      "squad:validation:1694": [
+        "concrete",
+        "concrete",
+        "abstract"
+      ],
+      "squad:validation:1695": [
+        "instances",
+        "the instance",
+        "instance"
+      ],
+      "squad:validation:1696": [
+        "solution",
+        "the solution",
+        "solution"
+      ]
+    },
+    "passage": "A computational problem can be viewed as an infinite collection of instances together with a solution for every instance. The input string for a computational problem is referred to as a problem instance, and should not be confused with the problem itself. In computational complexity theory, a problem refers to the abstract question to be solved. In contrast, an instance of this problem is a rather concrete utterance, which can serve as the input for a decision problem. For example, consider the problem of primality testing. The instance is a number (e.g. 15) and the solution is \"yes\" if the number is prime and \"no\" otherwise (in this case \"no\"). Stated another way, the instance is a particular input to the problem, and the solution is the output corresponding to the given input."
+  },
+  "2a2d7de23fc2703c161905cc08266edd06d7bee6136dd40821787bcb87036708": {
+    "answers_by_question": {
+      "squad:validation:944": [
+        "the Red Army",
+        "Red Army",
+        "e Red Army"
+      ],
+      "squad:validation:945": [
+        "Stalin was hostile to the idea of an independent Poland",
+        "Stalin was hostile to the idea of an independent Poland",
+        "Stalin was hostile to the idea of an independent Poland"
+      ],
+      "squad:validation:946": [
+        "August 1944",
+        "the Red Army was nearing the city",
+        "1 August 1944"
+      ],
+      "squad:validation:947": [
+        "63 days",
+        "63",
+        "63 days"
+      ],
+      "squad:validation:948": [
+        "between 150,000 and 200,000",
+        "between 150,000 and 200,000",
+        "between 150,000 and 200,000"
+      ]
+    },
+    "passage": "By July 1944, the Red Army was deep into Polish territory and pursuing the Germans toward Warsaw. Knowing that Stalin was hostile to the idea of an independent Poland, the Polish government-in-exile in London gave orders to the underground Home Army (AK) to try to seize control of Warsaw from the Germans before the Red Army arrived. Thus, on 1 August 1944, as the Red Army was nearing the city, the Warsaw Uprising began. The armed struggle, planned to last 48 hours, was partially successful, however it went on for 63 days. Eventually the Home Army fighters and civilians assisting them were forced to capitulate. They were transported to PoW camps in Germany, while the entire civilian population was expelled. Polish civilian deaths are estimated at between 150,000 and 200,000."
+  },
+  "2a767fb53840ff842fd95e84c33c5cabea9623636c4e3476048af94cdffca25b": {
+    "answers_by_question": {
+      "squad:validation:741": [
+        "Ted Ginn Jr.",
+        "Ted Ginn Jr",
+        "Ted Ginn Jr"
+      ],
+      "squad:validation:742": [
+        "Graham Gano",
+        "Graham Gano",
+        "Gano"
+      ],
+      "squad:validation:743": [
+        "44",
+        "44",
+        "44"
+      ],
+      "squad:validation:744": [
+        "McManus",
+        "McManus",
+        "McManus"
+      ],
+      "squad:validation:745": [
+        "T. J. Ward",
+        "T. J. Ward",
+        "Ward"
+      ],
+      "squad:validation:746": [
+        "Ted Ginn Jr.",
+        "Ted Ginn Jr.",
+        "Ted Ginn Jr"
+      ],
+      "squad:validation:747": [
+        "the uprights",
+        "the uprights",
+        "uprights"
+      ],
+      "squad:validation:748": [
+        "T. J. Ward.",
+        "T. J. Ward",
+        "Ward"
+      ],
+      "squad:validation:749": [
+        "Trevathan",
+        "Trevathan",
+        "Trevathan"
+      ],
+      "squad:validation:750": [
+        "Ted Ginn Jr.",
+        "Ted Ginn Jr"
+      ],
+      "squad:validation:751": [
+        "26-yard line",
+        "26"
+      ],
+      "squad:validation:752": [
+        "Graham Gano",
+        "Graham Gano",
+        "Gano"
+      ],
+      "squad:validation:753": [
+        "Emmanuel Sanders",
+        "Emmanuel Sanders",
+        "Sanders"
+      ]
+    },
+    "passage": "The Panthers seemed primed to score on their opening drive of the second half when Newton completed a 45-yard pass to Ted Ginn Jr. on the Denver 35-yard line on their second offensive play. But the Broncos defense halted the drive on the 26-yard line, and it ended with no points when Graham Gano hit the uprights on a 44-yard field goal attempt. After the miss, Manning completed a pair of passes to Emmanuel Sanders for gains of 25 and 22 yards, setting up McManus' 33-yard field goal that gave the Broncos a 16\u20137 lead. Carolina got off to another strong start after the kickoff, with Newton completing a 42-yard pass to Corey Brown. But once again they came up empty, this time as a result of a Newton pass that bounced off the hands of Ginn and was intercepted by safety T. J. Ward. Ward fumbled the ball during the return, but Trevathan recovered it to enable Denver to keep possession."
+  },
+  "2d5e9f304697ac88e70d959415ed2a0826e4e17344d07025e79fe80526e13c31": {
+    "answers_by_question": {
+      "squad:validation:1158": [
+        "16th century",
+        "the 16th century",
+        "in the 16th century"
+      ]
+    },
+    "passage": "The French Wars of Religion in the 16th century and French Revolution in the 18th successively destroyed much of what existed in the way of the architectural and artistic remnant of this Norman creativity. The former, with their violence, caused the wanton destruction of many Norman edifices; the latter, with its assault on religion, caused the purposeful destruction of religious objects of any type, and its destabilisation of society resulted in rampant pillaging."
+  },
+  "2da393fb589cbf7b6f063f9302c42784f695ecf72e9bb9eaea1e721d343ddafd": {
+    "answers_by_question": {
+      "squad:validation:1631": [
+        "Mark Twain",
+        "Mark Twain",
+        "Mark Twain"
+      ],
+      "squad:validation:1632": [
+        "lab",
+        "in his lab",
+        "in his lab and elsewhere"
+      ],
+      "squad:validation:1633": [
+        "late 1920s",
+        "the late 1920s",
+        "the late 1920s"
+      ]
+    },
+    "passage": "Tesla was a good friend of Francis Marion Crawford, Robert Underwood Johnson, Stanford White, Fritz Lowenstein, George Scherff, and Kenneth Swezey. In middle age, Tesla became a close friend of Mark Twain; they spent a lot of time together in his lab and elsewhere. Twain notably described Tesla's induction motor invention as \"the most valuable patent since the telephone.\" In the late 1920s, Tesla also befriended George Sylvester Viereck, a poet, writer, mystic, and later, a Nazi propagandist. Tesla occasionally attended dinner parties held by Viereck and his wife."
+  },
+  "2e5828966f68b286924eddd76f36cc1c2586af683a39f0ff4ce936db29102840": {
+    "answers_by_question": {
+      "squad:validation:1513": [
+        "application of electricity",
+        "application of electricity to the brain",
+        "the application of electricity"
+      ],
+      "squad:validation:1514": [
+        "saturating them unconsciously with electricity",
+        "saturating them unconsciously with electricity",
+        "saturating them unconsciously with electricity"
+      ],
+      "squad:validation:1515": [
+        "William H. Maxwell",
+        "William H. Maxwell",
+        "William H. Maxwell"
+      ],
+      "squad:validation:1516": [
+        "superintendent of New York City schools",
+        "superintendent of New York City schools",
+        "superintendent of New York City schools"
+      ]
+    },
+    "passage": "Tesla theorized that the application of electricity to the brain enhanced intelligence. In 1912, he crafted \"a plan to make dull students bright by saturating them unconsciously with electricity,\" wiring the walls of a schoolroom and, \"saturating [the schoolroom] with infinitesimal electric waves vibrating at high frequency. The whole room will thus, Mr. Tesla claims, be converted into a health-giving and stimulating electromagnetic field or 'bath.'\" The plan was, at least provisionally approved by then superintendent of New York City schools, William H. Maxwell."
+  },
+  "2eb036f29c316461f4c29577e8a7d145eaf561304aa07090de17f07637b9b838": {
+    "answers_by_question": {
+      "squad:validation:1106": [
+        "Harthacnut",
+        "Harthacnut",
+        "Harthacnut"
+      ],
+      "squad:validation:1107": [
+        "1041",
+        "in 1041",
+        "1041"
+      ],
+      "squad:validation:1108": [
+        "Robert of Jumi\u00e8ges",
+        "Robert of Jumi\u00e8ges",
+        "Robert of Jumi\u00e8ges"
+      ]
+    },
+    "passage": "When finally Edward the Confessor returned from his father's refuge in 1041, at the invitation of his half-brother Harthacnut, he brought with him a Norman-educated mind. He also brought many Norman counsellors and fighters, some of whom established an English cavalry force. This concept never really took root, but it is a typical example of the attitudes of Edward. He appointed Robert of Jumi\u00e8ges archbishop of Canterbury and made Ralph the Timid earl of Hereford. He invited his brother-in-law Eustace II, Count of Boulogne to his court in 1051, an event which resulted in the greatest of early conflicts between Saxon and Norman and ultimately resulted in the exile of Earl Godwin of Wessex."
+  },
+  "2f7eea6e6a7242acb020e7cad060930a90414f2e82adaaeaa86c69d7e2afd9f6": {
+    "answers_by_question": {
+      "squad:validation:1310": [
+        "Robert Lane and Benjamin Vail",
+        "Robert Lane and Benjamin Vail",
+        "Robert Lane and Benjamin Vail"
+      ],
+      "squad:validation:1311": [
+        "Tesla Electric Light & Manufacturing",
+        "Tesla Electric Light & Manufacturing",
+        "an electric lighting company in Tesla's name"
+      ],
+      "squad:validation:1312": [
+        "installed electrical arc light based illumination systems designed by Tesla",
+        "installed electrical arc light based illumination systems",
+        "installed electrical arc light based illumination systems designed by Tesla and also had designs for dynamo electric machine commutators"
+      ],
+      "squad:validation:1313": [
+        "patents",
+        "patents",
+        "patents"
+      ],
+      "squad:validation:1314": [
+        "dynamo electric machine commutators",
+        "electrical arc light based illumination systems",
+        "electrical arc light based illumination systems"
+      ],
+      "squad:validation:1315": [
+        "Robert Lane and Benjamin Vail",
+        "Robert Lane and Benjamin Vail",
+        "Robert Lane and Benjamin Vail"
+      ],
+      "squad:validation:1316": [
+        "1886",
+        "in 1886",
+        "1886"
+      ],
+      "squad:validation:1317": [
+        "Tesla Electric Light & Manufacturing",
+        "Tesla Electric Light & Manufacturing",
+        "Tesla Electric Light & Manufacturing"
+      ],
+      "squad:validation:1318": [
+        "installed electrical arc light based illumination systems",
+        "installed electrical arc light based illumination systems",
+        "installed electrical arc light based illumination systems designed by Tesla and also had designs for dynamo electric machine commutators"
+      ],
+      "squad:validation:1319": [
+        "Tesla",
+        "Tesla",
+        "Tesla"
+      ]
+    },
+    "passage": "After leaving Edison's company Tesla partnered with two businessmen in 1886, Robert Lane and Benjamin Vail, who agreed to finance an electric lighting company in Tesla's name, Tesla Electric Light & Manufacturing. The company installed electrical arc light based illumination systems designed by Tesla and also had designs for dynamo electric machine commutators, the first patents issued to Tesla in the US."
+  },
+  "308326ce8e8a00212b35957ebc9a655b0ea0f166d9dfe56b9c3159dfb8d95066": {
+    "answers_by_question": {
+      "squad:validation:1165": [
+        "southern Italy",
+        "southern Italy",
+        "southern Italy"
+      ],
+      "squad:validation:1166": [
+        "Latin monastery at Sant'Eufemia.",
+        "a Latin monastery at Sant'Eufemia",
+        "Sant'Eufemia"
+      ],
+      "squad:validation:1167": [
+        "Robert Guiscard",
+        "Robert Guiscard",
+        "Robert Guiscard"
+      ],
+      "squad:validation:1168": [
+        "singing",
+        "singing",
+        "singing"
+      ]
+    },
+    "passage": "At Saint Evroul, a tradition of singing had developed and the choir achieved fame in Normandy. Under the Norman abbot Robert de Grantmesnil, several monks of Saint-Evroul fled to southern Italy, where they were patronised by Robert Guiscard and established a Latin monastery at Sant'Eufemia. There they continued the tradition of singing."
+  },
+  "30a92259456d4c547ebb859022c34787b1a05975e52eaaf715dc18fac9a054d1": {
+    "answers_by_question": {
+      "squad:validation:796": [
+        "194",
+        "194",
+        "194"
+      ],
+      "squad:validation:797": [
+        "11",
+        "11",
+        "11"
+      ],
+      "squad:validation:798": [
+        "Baltimore Ravens",
+        "the Baltimore Ravens",
+        "Ravens"
+      ],
+      "squad:validation:799": [
+        "Jordan Norwood",
+        "Jordan Norwood",
+        "Norwood"
+      ],
+      "squad:validation:800": [
+        "Manning",
+        "Manning",
+        "Manning"
+      ],
+      "squad:validation:801": [
+        "194",
+        "194",
+        "194"
+      ],
+      "squad:validation:802": [
+        "11",
+        "11",
+        "11"
+      ],
+      "squad:validation:803": [
+        "Chicago Bears",
+        "the Chicago Bears",
+        "Bears"
+      ],
+      "squad:validation:804": [
+        "Broncos",
+        "Denver",
+        "Denver"
+      ],
+      "squad:validation:805": [
+        "21",
+        "21",
+        "21"
+      ],
+      "squad:validation:806": [
+        "11",
+        "11",
+        "11"
+      ],
+      "squad:validation:807": [
+        "The Broncos",
+        "Denver",
+        "Denver"
+      ],
+      "squad:validation:808": [
+        "Chicago Bears",
+        "the Chicago Bears",
+        "Bears"
+      ],
+      "squad:validation:809": [
+        "two",
+        "two",
+        "two"
+      ]
+    },
+    "passage": "Super Bowl 50 featured numerous records from individuals and teams. Denver won despite being massively outgained in total yards (315 to 194) and first downs (21 to 11). Their 194 yards and 11 first downs were both the lowest totals ever by a Super Bowl winning team. The previous record was 244 yards by the Baltimore Ravens in Super Bowl XXXV. Only seven other teams had ever gained less than 200 yards in a Super Bowl, and all of them had lost. The Broncos' seven sacks tied a Super Bowl record set by the Chicago Bears in Super Bowl XX. Kony Ealy tied a Super Bowl record with three sacks. Jordan Norwood's 61-yard punt return set a new record, surpassing the old record of 45 yards set by John Taylor in Super Bowl XXIII. Denver was just 1-of-14 on third down, while Carolina was barely better at 3-of-15. The two teams' combined third down conversion percentage of 13.8 was a Super Bowl low. Manning and Newton had quarterback passer ratings of 56.6 and 55.4, respectively, and their added total of 112 is a record lowest aggregate passer rating for a Super Bowl. Manning became the oldest quarterback ever to win a Super Bowl at age 39, and the first quarterback ever to win a Super Bowl with two different teams, while Gary Kubiak became the first head coach to win a Super Bowl with the same franchise he went to the Super Bowl with as a player."
+  },
+  "327e5aac317a5630882f2b8eab0f4d59710bd0145e317e6b2cf9cdd13dec9ef9": {
+    "answers_by_question": {
+      "squad:validation:196": [
+        "DeAngelo Williams",
+        "DeAngelo Williams",
+        "Williams"
+      ],
+      "squad:validation:197": [
+        "Kelvin Benjamin",
+        "Kelvin Benjamin",
+        "Benjamin"
+      ],
+      "squad:validation:198": [
+        "7",
+        "seventh",
+        "seventh"
+      ],
+      "squad:validation:199": [
+        "1978",
+        "1978",
+        "1978"
+      ],
+      "squad:validation:200": [
+        "Carolina Panthers",
+        "the Panthers",
+        "Carolina"
+      ],
+      "squad:validation:201": [
+        "Ten",
+        "Ten",
+        "Ten"
+      ],
+      "squad:validation:202": [
+        "eight",
+        "eight",
+        "eight"
+      ],
+      "squad:validation:203": [
+        "Kelvin Benjamin",
+        "Kelvin Benjamin",
+        "Benjamin"
+      ],
+      "squad:validation:204": [
+        "1978",
+        "1978",
+        "1978"
+      ],
+      "squad:validation:205": [
+        "2009",
+        "2009",
+        "2009"
+      ],
+      "squad:validation:206": [
+        "2011",
+        "2011",
+        "2011"
+      ],
+      "squad:validation:207": [
+        "torn ACL",
+        "a torn ACL",
+        "torn ACL"
+      ],
+      "squad:validation:208": [
+        "Kelvin Benjamin",
+        "Kelvin Benjamin",
+        "Benjamin"
+      ],
+      "squad:validation:209": [
+        "DeAngelo Williams",
+        "DeAngelo Williams",
+        "Williams"
+      ],
+      "squad:validation:210": [
+        "1978",
+        "1978",
+        "1978"
+      ],
+      "squad:validation:211": [
+        "Ten",
+        "Ten",
+        "Ten"
+      ],
+      "squad:validation:212": [
+        "Carolina Panthers",
+        "the Panthers",
+        "Carolina"
+      ],
+      "squad:validation:213": [
+        "1978.",
+        "1978",
+        "1978"
+      ],
+      "squad:validation:214": [
+        "Carolina Panthers",
+        "the Panthers",
+        "Carolina"
+      ],
+      "squad:validation:215": [
+        "Ten",
+        "Ten",
+        "Ten"
+      ]
+    },
+    "passage": "Despite waiving longtime running back DeAngelo Williams and losing top wide receiver Kelvin Benjamin to a torn ACL in the preseason, the Carolina Panthers had their best regular season in franchise history, becoming the seventh team to win at least 15 regular season games since the league expanded to a 16-game schedule in 1978. Carolina started the season 14\u20130, not only setting franchise records for the best start and the longest single-season winning streak, but also posting the best start to a season by an NFC team in NFL history, breaking the 13\u20130 record previously shared with the 2009 New Orleans Saints and the 2011 Green Bay Packers. With their NFC-best 15\u20131 regular season record, the Panthers clinched home-field advantage throughout the NFC playoffs for the first time in franchise history. Ten players were selected to the Pro Bowl (the most in franchise history) along with eight All-Pro selections."
+  },
+  "32f1d49e6b958e880577c9c83726576c51612eb59ee4feed222e2ea9dbc77561": {
+    "answers_by_question": {
+      "squad:validation:1258": [
+        "left Graz",
+        "left Graz",
+        "left Graz and severed all relations with his family"
+      ],
+      "squad:validation:1259": [
+        "to hide the fact that he dropped out of school",
+        "hide the fact that he dropped out of school",
+        "to hide the fact that he dropped out of school"
+      ],
+      "squad:validation:1260": [
+        "a draftsman",
+        "a draftsman",
+        "as a draftsman"
+      ],
+      "squad:validation:1261": [
+        "return home",
+        "return home",
+        "return home"
+      ],
+      "squad:validation:1262": [
+        "nervous breakdown",
+        "nervous breakdown",
+        "nervous breakdown"
+      ],
+      "squad:validation:1263": [
+        "1878",
+        "December 1878",
+        "to hide the fact that he dropped out of school"
+      ],
+      "squad:validation:1264": [
+        "that he dropped out of school",
+        "the fact that he dropped out of school",
+        "he dropped out of school"
+      ],
+      "squad:validation:1265": [
+        "His friends thought that he had drowned in the Mur River.",
+        "drowned in the Mur River",
+        "drowned in the Mur River"
+      ],
+      "squad:validation:1266": [
+        "draftsman",
+        "he worked as a draftsman",
+        "draftsman"
+      ],
+      "squad:validation:1267": [
+        "nervous breakdown",
+        "a nervous breakdown",
+        "nervous breakdown"
+      ]
+    },
+    "passage": "In December 1878, Tesla left Graz and severed all relations with his family to hide the fact that he dropped out of school. His friends thought that he had drowned in the Mur River. Tesla went to Maribor (now in Slovenia), where he worked as a draftsman for 60 florins a month. He spent his spare time playing cards with local men on the streets. In March 1879, Milutin Tesla went to Maribor to beg his son to return home, but Nikola refused. Nikola suffered a nervous breakdown at around the same time."
+  },
+  "34f4c7f88f1532c000f4cc56988d360c128c9cc3c2e0a8de7a8ab897dc873f7b": {
+    "answers_by_question": {
+      "squad:validation:634": [
+        "KRFX",
+        "KRFX",
+        "KRFX"
+      ],
+      "squad:validation:635": [
+        "Dave Logan",
+        "KOA (850 AM) and KRFX (103.5 FM)",
+        "Dave Logan"
+      ],
+      "squad:validation:636": [
+        "1110 AM",
+        "1110 AM",
+        "(1110 AM)"
+      ],
+      "squad:validation:637": [
+        "Chester, South Carolina",
+        "Chester",
+        "Chester, South Carolina"
+      ],
+      "squad:validation:638": [
+        "Mick Mixon",
+        "Mick Mixon",
+        "Mick Mixon"
+      ],
+      "squad:validation:639": [
+        "Dave Logan",
+        "Dave Logan",
+        "Dave Logan"
+      ],
+      "squad:validation:640": [
+        "Ed McCaffrey",
+        "Ed McCaffrey",
+        "Ed McCaffrey"
+      ],
+      "squad:validation:641": [
+        "WBT",
+        "WBT (1110 AM)",
+        "WBT (1110 AM)"
+      ],
+      "squad:validation:642": [
+        "Mick Mixon",
+        "Mick Mixon",
+        "Mick Mixon"
+      ],
+      "squad:validation:643": [
+        "KOA (850 AM) and KRFX (103.5 FM)",
+        "KOA (850 AM) and KRFX (103.5 FM)",
+        "KOA (850 AM) and KRFX (103.5 FM)"
+      ],
+      "squad:validation:644": [
+        "WBT-FM (99.3 FM)",
+        "WBT (1110 AM)",
+        "WBT-FM"
+      ]
+    },
+    "passage": "The flagship stations of each station in the markets of each team will carry their local play-by-play calls. In Denver, KOA (850 AM) and KRFX (103.5 FM) will carry the game, with Dave Logan on play-by-play and Ed McCaffrey on color commentary. In North Carolina, WBT (1110 AM) will carry the game, with Mick Mixon on play-by-play and Eugene Robinson and Jim Szoke on color commentary. WBT will also simulcast the game on its sister station WBT-FM (99.3 FM), which is based in Chester, South Carolina. As KOA and WBT are both clear-channel stations, the local broadcasts will be audible over much of the western United States after sunset (for Denver) and the eastern United States throughout the game (for Carolina). In accordance with contractual rules, the rest of the stations in the Broncos and Panthers radio networks will either carry the Westwood One feed or not carry the game at all."
+  },
+  "351056890a62d35fc00c249166dfecf19c61864b010c6023736e0bb90064374c": {
+    "answers_by_question": {
+      "squad:validation:1387": [
+        "Richard Dean Adams",
+        "Richard Dean Adams",
+        "Richard Dean Adams"
+      ],
+      "squad:validation:1388": [
+        "Niagara Falls",
+        "Niagara Falls",
+        "Niagara Falls"
+      ],
+      "squad:validation:1389": [
+        "Westinghouse Electric",
+        "Westinghouse Electric",
+        "Westinghouse Electric"
+      ],
+      "squad:validation:1390": [
+        "General Electric",
+        "General Electric",
+        "Westinghouse Electric"
+      ],
+      "squad:validation:1391": [
+        "a two-phased system",
+        "a two-phased system",
+        "two-phased system"
+      ],
+      "squad:validation:1392": [
+        "Richard Dean Adams",
+        "Richard Dean Adams"
+      ],
+      "squad:validation:1393": [
+        "1893",
+        "In 1893",
+        "1893"
+      ],
+      "squad:validation:1394": [
+        "two-phased system",
+        "a two-phased system",
+        "two-phased system"
+      ],
+      "squad:validation:1395": [
+        "most reliable",
+        "most reliable",
+        "would be the most reliable and that there was a Westinghouse system to light incandescent bulbs using two-phase alternating current"
+      ]
+    },
+    "passage": "In 1893 Richard Dean Adams, who headed up the Niagara Falls Cataract Construction Company sought Tesla's opinion on what system would be best to transmit power generated at the falls. Over several years there had been a series of proposals and open competitions on how best to utilize power generated by the falls with many systems being proposed by several US and European companies including two-phase and three-phase AC, high-voltage DC, and even compressed air. Adams pumped Tesla for information about the current state of all the competing systems. Tesla advised Adams that a two-phased system would be the most reliable and that there was a Westinghouse system to light incandescent bulbs using two-phase alternating current. Based on Tesla's advice and Westinghouse's demonstration that they could build a complete AC system at the Columbian Exposition, a contract for building a two-phase AC generating system at the Niagara Falls was awarded to Westinghouse Electric. A further contract to build the AC distribution system was awarded to General Electric."
+  }
+}

@@ -1,0 +1,5479 @@
+{
+  "excluded": [],
+  "coverage": {
+    "documents": 184,
+    "blind_rows_mean": 62.233695652173914,
+    "blind_rows_min_max": [
+      4,
+      166
+    ],
+    "oracle_rows_mean": 64.96739130434783,
+    "sentences_short_of_spans_fraction": 0.5222500813693268,
+    "natural_strata": {
+      "blind_elicited": {
+        "questions": 347,
+        "fraction": 0.35085945399393326
+      },
+      "oracle_elicited": {
+        "questions": 188,
+        "fraction": 0.19009100101112233
+      },
+      "relaxed_elicited": {
+        "questions": 77,
+        "fraction": 0.07785642062689585
+      },
+      "unelicited": {
+        "questions": 377,
+        "fraction": 0.38119312436804853
+      }
+    },
+    "oracle_attempts": 642,
+    "oracle_covered": 184,
+    "oracle_relaxed_covered": 261,
+    "oracle_rejected_overlap_fraction": 0.1536863966770509,
+    "oracle_relaxed_rows_mean": 66.02173913043478,
+    "max_oracle_overlap": 0.5,
+    "max_relaxed_overlap": 0.8
+  },
+  "baseline": {
+    "teacher": 0.8022451301730118,
+    "native": 0.7417275209877444,
+    "bias_only": 0.10950153222123933
+  },
+  "selection": {
+    "8": {
+      "lr": 1e-05,
+      "step": 10,
+      "gate_met": true,
+      "agreement": 0.9825033104882529,
+      "kl": 0.011074230221323427,
+      "documents": 24
+    },
+    "16": {
+      "lr": 1e-05,
+      "step": 10,
+      "gate_met": true,
+      "agreement": 0.9773033288234734,
+      "kl": 0.011450871307254753,
+      "documents": 24
+    },
+    "32": {
+      "lr": 1e-05,
+      "step": 10,
+      "gate_met": true,
+      "agreement": 0.9777412749236101,
+      "kl": 0.010744902188345095,
+      "documents": 24
+    },
+    "64": {
+      "lr": 1e-05,
+      "step": 10,
+      "gate_met": true,
+      "agreement": 0.9817393016126816,
+      "kl": 0.010958792172024147,
+      "documents": 24
+    }
+  },
+  "cells": [
+    {
+      "stage": "dev",
+      "rank": 8,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 0,
+      "documents": 24,
+      "f1": 0.7429851019866499,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        0.0,
+        0.0
+      ],
+      "gap_closure": 0.0,
+      "fit_agreement": 0.6878691697275298,
+      "fit_kl": 0.2804432797241576,
+      "retention": 0.2791666666666666,
+      "retention_native": 0.2791666666666666,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8642328042328041,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8333333333333334,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.6004901960784313,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.5929961349852991,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 8,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 5,
+      "documents": 24,
+      "f1": 0.6930254005254005,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.10209697911952163,
+        0.005091420425979267
+      ],
+      "gap_closure": -1.8210753843054857,
+      "fit_agreement": 0.9674322060745407,
+      "fit_kl": 0.027369943038571636,
+      "retention": 0.27875,
+      "retention_native": 0.2791666666666666,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8352092352092352,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8888888888888888,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.3958333333333333,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.5016381766381767,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 8,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 10,
+      "documents": 24,
+      "f1": 0.7005494505494506,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.08919504853376757,
+        0.0036520525935193
+      ],
+      "gap_closure": -1.546817094357368,
+      "fit_agreement": 0.9825033104882529,
+      "fit_kl": 0.011074230221323427,
+      "retention": 0.27875,
+      "retention_native": 0.2791666666666666,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8511463844797177,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.861111111111111,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.49583333333333335,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.49231277981277977,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 8,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 25,
+      "documents": 24,
+      "f1": 0.6770970695970696,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.1196605825518364,
+        -0.010748907518063839
+      ],
+      "gap_closure": -2.401677159701478,
+      "fit_agreement": 0.9855447131395284,
+      "fit_kl": 0.003469743841279349,
+      "retention": 0.27999999999999997,
+      "retention_native": 0.2791666666666666,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8807760141093474,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.861111111111111,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.49583333333333335,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.40590404965404964,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 8,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 50,
+      "documents": 24,
+      "f1": 0.6843192918192917,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.11338535016969614,
+        -0.005389443696138713
+      ],
+      "gap_closure": -2.1384207605599794,
+      "fit_agreement": 0.9886542354096682,
+      "fit_kl": 0.001527887466342092,
+      "retention": 0.28791666666666665,
+      "retention_native": 0.2791666666666666,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8807760141093474,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8777777777777778,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.49583333333333335,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.42604293854293857,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 8,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 100,
+      "documents": 24,
+      "f1": 0.6847233322233323,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.11359339715009222,
+        -0.004136099098270133
+      ],
+      "gap_closure": -2.123693129838772,
+      "fit_agreement": 0.9903162325802363,
+      "fit_kl": 0.0008815596928946666,
+      "retention": 0.2916666666666667,
+      "retention_native": 0.2791666666666666,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8881834215167549,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.861111111111111,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.5,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.42774748399748397,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 8,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 200,
+      "documents": 24,
+      "f1": 0.6786122211122212,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.1171038793257253,
+        -0.010898205563356479
+      ],
+      "gap_closure": -2.3464485444969645,
+      "fit_agreement": 0.9908662937872069,
+      "fit_kl": 0.0005004340543974061,
+      "retention": 0.2904166666666667,
+      "retention_native": 0.2791666666666666,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8807760141093474,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8194444444444443,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.5416666666666666,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.4228863728863728,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 8,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 400,
+      "documents": 24,
+      "f1": 0.6786122211122212,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.1171038793257253,
+        -0.010898205563356479
+      ],
+      "gap_closure": -2.3464485444969645,
+      "fit_agreement": 0.9905825967159027,
+      "fit_kl": 0.0003451588344665574,
+      "retention": 0.2895833333333333,
+      "retention_native": 0.2791666666666666,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8807760141093474,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8194444444444443,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.5416666666666666,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.4228863728863728,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 8,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 0,
+      "documents": 24,
+      "f1": 0.7429851019866499,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        0.0,
+        0.0
+      ],
+      "gap_closure": 0.0,
+      "fit_agreement": 0.6878691697275298,
+      "fit_kl": 0.2804432797241576,
+      "retention": 0.2791666666666666,
+      "retention_native": 0.2791666666666666,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8642328042328041,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8333333333333334,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.6004901960784313,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.5929961349852991,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 8,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 5,
+      "documents": 24,
+      "f1": 0.6610775335775335,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.12668367152713123,
+        -0.03864759872480461
+      ],
+      "gap_closure": -2.9856034414828003,
+      "fit_agreement": 0.9467138891530409,
+      "fit_kl": 0.03314691905801504,
+      "retention": 0.2758333333333333,
+      "retention_native": 0.2791666666666666,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.836331569664903,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8777777777777778,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.3958333333333333,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.4200218762718763,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 8,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 10,
+      "documents": 24,
+      "f1": 0.6502548377548377,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.13608447355448128,
+        -0.04828269218526568
+      ],
+      "gap_closure": -3.3801002935071085,
+      "fit_agreement": 0.9755163694712196,
+      "fit_kl": 0.01241662355082958,
+      "retention": 0.29458333333333336,
+      "retention_native": 0.2791666666666666,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8648388648388649,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8361111111111111,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.37083333333333335,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.3974895474895475,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 8,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 25,
+      "documents": 24,
+      "f1": 0.6583262108262108,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.1405288977520015,
+        -0.02541098601547513
+      ],
+      "gap_closure": -3.085891593536705,
+      "fit_agreement": 0.9812874191177622,
+      "fit_kl": 0.003125955398746568,
+      "retention": 0.3045833333333334,
+      "retention_native": 0.2791666666666666,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8585537918871252,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8777777777777778,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.29006410256410253,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.41618844118844117,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 8,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 50,
+      "documents": 24,
+      "f1": 0.6759859584859585,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.12061291905119306,
+        -0.008519062608071889
+      ],
+      "gap_closure": -2.4421781441847843,
+      "fit_agreement": 0.9868098052029963,
+      "fit_kl": 0.0011475690249121038,
+      "retention": 0.3045833333333333,
+      "retention_native": 0.2791666666666666,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8807760141093474,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8777777777777778,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.431547619047619,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.4159238909238909,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 8,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 100,
+      "documents": 24,
+      "f1": 0.6763827838827838,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.12449891327068188,
+        -0.006067313201504371
+      ],
+      "gap_closure": -2.427713506869321,
+      "fit_agreement": 0.99109636979684,
+      "fit_kl": 0.0005500271059373423,
+      "retention": 0.30291666666666667,
+      "retention_native": 0.2791666666666666,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8733686067019399,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8361111111111111,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.4375,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.44370166870166866,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 8,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 200,
+      "documents": 24,
+      "f1": 0.6827852702852703,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.11733283740897907,
+        -0.0008120737621511459
+      ],
+      "gap_closure": -2.1943372046717973,
+      "fit_agreement": 0.9910691606675958,
+      "fit_kl": 0.0003265201425001845,
+      "retention": 0.3,
+      "retention_native": 0.2791666666666666,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8807760141093474,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8361111111111111,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.4375,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.45276344026344023,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 8,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 400,
+      "documents": 24,
+      "f1": 0.6744519369519368,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.12523232765328357,
+        -0.008648712710148441
+      ],
+      "gap_closure": -2.4980945882966106,
+      "fit_agreement": 0.9907785340314051,
+      "fit_kl": 0.00021141774953377176,
+      "retention": 0.2975,
+      "retention_native": 0.2791666666666666,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8807760141093474,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8361111111111111,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.3125,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.45276344026344023,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 8,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 0,
+      "documents": 24,
+      "f1": 0.7429851019866499,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        0.0,
+        0.0
+      ],
+      "gap_closure": 0.0,
+      "fit_agreement": 0.6878691697275298,
+      "fit_kl": 0.2804432797241576,
+      "retention": 0.2791666666666666,
+      "retention_native": 0.2791666666666666,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8642328042328041,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8333333333333334,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.6004901960784313,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.5929961349852991,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 8,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 5,
+      "documents": 24,
+      "f1": 0.5810719373219374,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.22296753208092213,
+        -0.10405603074614296
+      ],
+      "gap_closure": -5.901878312755933,
+      "fit_agreement": 0.9072619242679115,
+      "fit_kl": 0.08666490636331158,
+      "retention": 0.27999999999999997,
+      "retention_native": 0.2791666666666666,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8320987654320987,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8222222222222223,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.14583333333333331,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.29967058404558405,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 8,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 10,
+      "documents": 24,
+      "f1": 0.5996190567095739,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.20555877100528033,
+        -0.0826676101969268
+      ],
+      "gap_closure": -5.225819377680077,
+      "fit_agreement": 0.9642681044221421,
+      "fit_kl": 0.02251358162813132,
+      "retention": 0.2866666666666667,
+      "retention_native": 0.2791666666666666,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8585537918871252,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8361111111111111,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.109375,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.30647985076864387,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 8,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 25,
+      "documents": 24,
+      "f1": 0.6249594155844155,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.1754439397336553,
+        -0.06017418690628828
+      ],
+      "gap_closure": -4.3021408442478055,
+      "fit_agreement": 0.9884753170112036,
+      "fit_kl": 0.0033798820227581416,
+      "retention": 0.25666666666666665,
+      "retention_native": 0.2791666666666666,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.847442680776014,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.9194444444444444,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.109375,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.3385807479557479,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 8,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 50,
+      "documents": 24,
+      "f1": 0.6040103415103415,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.2005358486256319,
+        -0.07848318084134645
+      ],
+      "gap_closure": -5.065753155860172,
+      "fit_agreement": 0.9907426798706128,
+      "fit_kl": 0.0008179814929004727,
+      "retention": 0.24375000000000002,
+      "retention_native": 0.2791666666666666,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.847442680776014,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8569444444444444,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.0625,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.32527056277056277,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 8,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 100,
+      "documents": 24,
+      "f1": 0.6121551827801827,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.19062424307969006,
+        -0.070886759686392
+      ],
+      "gap_closure": -4.7688664749602125,
+      "fit_agreement": 0.9888971010105143,
+      "fit_kl": 0.00041492235058418134,
+      "retention": 0.23958333333333334,
+      "retention_native": 0.2791666666666666,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.847442680776014,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8480158730158731,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.109375,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.34228445165945165,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 8,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 200,
+      "documents": 24,
+      "f1": 0.6093774050024049,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.19311186722419307,
+        -0.07293736560280678
+      ],
+      "gap_closure": -4.870118936168482,
+      "fit_agreement": 0.9911068663261275,
+      "fit_kl": 0.0002600630976342642,
+      "retention": 0.23500000000000001,
+      "retention_native": 0.2791666666666666,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8400352733686066,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8480158730158731,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.109375,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.34228445165945165,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 8,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 400,
+      "documents": 24,
+      "f1": 0.606252405002405,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.1973264341688297,
+        -0.07443992642705877
+      ],
+      "gap_closure": -4.984027955027783,
+      "fit_agreement": 0.9925134632317015,
+      "fit_kl": 0.00015278831734266048,
+      "retention": 0.2354166666666667,
+      "retention_native": 0.2791666666666666,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8400352733686066,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8480158730158731,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.0625,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.34228445165945165,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 16,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 0,
+      "documents": 24,
+      "f1": 0.7429851019866499,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        0.0,
+        0.0
+      ],
+      "gap_closure": 0.0,
+      "fit_agreement": 0.6873837772440584,
+      "fit_kl": 0.28044877252618106,
+      "retention": 0.2775,
+      "retention_native": 0.2775,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8642328042328041,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8333333333333334,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.6004901960784313,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.5929961349852991,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 16,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 5,
+      "documents": 24,
+      "f1": 0.6905254005254005,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.10439164767550992,
+        0.002857875054082512
+      ],
+      "gap_closure": -1.9122025993929306,
+      "fit_agreement": 0.9629095810466932,
+      "fit_kl": 0.02717718825495626,
+      "retention": 0.2783333333333333,
+      "retention_native": 0.2775,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8352092352092352,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8638888888888889,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.3958333333333333,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.5016381766381767,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 16,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 10,
+      "documents": 24,
+      "f1": 0.6799938949938951,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.11484354533638585,
+        -0.012179489219930374
+      ],
+      "gap_closure": -2.296085307298566,
+      "fit_agreement": 0.9773033288234733,
+      "fit_kl": 0.011450871307254753,
+      "retention": 0.2829166666666667,
+      "retention_native": 0.2775,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.836331569664903,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8527777777777779,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.49583333333333335,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.46314611314611315,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 16,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 25,
+      "documents": 24,
+      "f1": 0.6792191577485696,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.11242835615465258,
+        -0.015276522944576333
+      ],
+      "gap_closure": -2.3243251663349778,
+      "fit_agreement": 0.9859071183448814,
+      "fit_kl": 0.0031397450211272117,
+      "retention": 0.28541666666666665,
+      "retention_native": 0.2775,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8881834215167549,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8777777777777778,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.43995098039215685,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.4156618844118844,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 16,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 50,
+      "documents": 24,
+      "f1": 0.6810398860398861,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.11296267643819888,
+        -0.01171643654548065
+      ],
+      "gap_closure": -2.2579580068875407,
+      "fit_agreement": 0.9901009865124933,
+      "fit_kl": 0.0014037353258442055,
+      "retention": 0.29291666666666666,
+      "retention_native": 0.2775,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8807760141093474,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.9027777777777777,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.46726190476190477,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.41010632885632886,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 16,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 100,
+      "documents": 24,
+      "f1": 0.6752005402005402,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.12530427118604362,
+        -0.011121954853282228
+      ],
+      "gap_closure": -2.470807336596355,
+      "fit_agreement": 0.9899732001225615,
+      "fit_kl": 0.0007783573195590142,
+      "retention": 0.29416666666666663,
+      "retention_native": 0.2775,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8807760141093474,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8361111111111111,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.5,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.42338494838494833,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 16,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 200,
+      "documents": 24,
+      "f1": 0.6806492581492581,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.12644611075986853,
+        0.00493497490140291
+      ],
+      "gap_closure": -2.2721967396109033,
+      "fit_agreement": 0.9922241388354669,
+      "fit_kl": 0.00046358977588437664,
+      "retention": 0.295,
+      "retention_native": 0.2775,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8733686067019399,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8361111111111111,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.5,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.4439511877011877,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 16,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 400,
+      "documents": 24,
+      "f1": 0.6848159248159248,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.12077663568443368,
+        0.008022522508880855
+      ],
+      "gap_closure": -2.1203180477984986,
+      "fit_agreement": 0.9914960197126591,
+      "fit_kl": 0.00030884240952801977,
+      "retention": 0.2941666666666667,
+      "retention_native": 0.2775,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8807760141093474,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8361111111111111,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.5,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.44742340992340984,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 16,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 0,
+      "documents": 24,
+      "f1": 0.7429851019866499,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        0.0,
+        0.0
+      ],
+      "gap_closure": 0.0,
+      "fit_agreement": 0.6873837772440584,
+      "fit_kl": 0.28044877252618106,
+      "retention": 0.2775,
+      "retention_native": 0.2775,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8642328042328041,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8333333333333334,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.6004901960784313,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.5929961349852991,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 16,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 5,
+      "documents": 24,
+      "f1": 0.6509065934065935,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.14125594535753203,
+        -0.04495288113302818
+      ],
+      "gap_closure": -3.3563432225223058,
+      "fit_agreement": 0.9505526126116804,
+      "fit_kl": 0.03534952698143585,
+      "retention": 0.2791666666666667,
+      "retention_native": 0.2775,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8585537918871252,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8361111111111111,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.3958333333333333,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.3945945258445258,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 16,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 10,
+      "documents": 24,
+      "f1": 0.6324770599770599,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.1591183644034844,
+        -0.0604750795622506
+      ],
+      "gap_closure": -4.028116045240036,
+      "fit_agreement": 0.9752751519519204,
+      "fit_kl": 0.012691639183216927,
+      "retention": 0.29375,
+      "retention_native": 0.2775,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.887061087061087,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8194444444444443,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.2708333333333333,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.35721176971176966,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 16,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 25,
+      "documents": 24,
+      "f1": 0.6510355616605616,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.14529937567592366,
+        -0.031266184772328315
+      ],
+      "gap_closure": -3.3516422153947834,
+      "fit_agreement": 0.9836305828128232,
+      "fit_kl": 0.0031500999173630743,
+      "retention": 0.3016666666666667,
+      "retention_native": 0.2775,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8807760141093474,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.9027777777777777,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.359375,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.3530766687016687,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 16,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 50,
+      "documents": 24,
+      "f1": 0.6638827838827838,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.13386674377608976,
+        -0.017719598659710865
+      ],
+      "gap_closure": -2.8833495823065385,
+      "fit_agreement": 0.9903693764435125,
+      "fit_kl": 0.001054692531867234,
+      "retention": 0.3066666666666667,
+      "retention_native": 0.2775,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8807760141093474,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8777777777777778,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.375,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.3950905575905576,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 16,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 100,
+      "documents": 24,
+      "f1": 0.656054501054501,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.141922102310744,
+        -0.024482326429017615
+      ],
+      "gap_closure": -3.1686974275298416,
+      "fit_agreement": 0.9901550444569446,
+      "fit_kl": 0.0004988143351463651,
+      "retention": 0.3016666666666667,
+      "retention_native": 0.2775,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8733686067019399,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8777777777777778,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.3125,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.3928809616309616,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 16,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 200,
+      "documents": 24,
+      "f1": 0.6627852702852702,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.13586648755369732,
+        -0.01851428668940278
+      ],
+      "gap_closure": -2.923354925371342,
+      "fit_agreement": 0.9890302638069786,
+      "fit_kl": 0.0002971308529632799,
+      "retention": 0.3,
+      "retention_native": 0.2775,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8733686067019399,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8777777777777778,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.3125,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.4097078847078846,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 16,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 400,
+      "documents": 24,
+      "f1": 0.6638963813963814,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.13327443427888472,
+        -0.01769624888713511
+      ],
+      "gap_closure": -2.882853940888032,
+      "fit_agreement": 0.991125554134818,
+      "fit_kl": 0.00018999148465802425,
+      "retention": 0.29541666666666666,
+      "retention_native": 0.2775,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8733686067019399,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.9027777777777777,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.3125,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.3999856624856624,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 16,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 0,
+      "documents": 24,
+      "f1": 0.7429851019866499,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        0.0,
+        0.0
+      ],
+      "gap_closure": 0.0,
+      "fit_agreement": 0.6873837772440584,
+      "fit_kl": 0.28044877252618106,
+      "retention": 0.2775,
+      "retention_native": 0.2775,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8642328042328041,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8333333333333334,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.6004901960784313,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.5929961349852991,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 16,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 5,
+      "documents": 24,
+      "f1": 0.6129611081766254,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.1929197907263223,
+        -0.0701723832239806
+      ],
+      "gap_closure": -4.739489780181784,
+      "fit_agreement": 0.923323182340285,
+      "fit_kl": 0.08274370600981418,
+      "retention": 0.27625,
+      "retention_native": 0.2775,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.836331569664903,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.9472222222222223,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.14583333333333331,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.3025085905473836,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 16,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 10,
+      "documents": 24,
+      "f1": 0.6172164593069766,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.18279719024532934,
+        -0.06981314119286353
+      ],
+      "gap_closure": -4.584378461090543,
+      "fit_agreement": 0.9540111733866605,
+      "fit_kl": 0.025297664393647005,
+      "retention": 0.2966666666666667,
+      "retention_native": 0.2775,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8770723104056437,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8638888888888889,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.109375,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.33311224615103924,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 16,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 25,
+      "documents": 24,
+      "f1": 0.6180558697838109,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.18423446039791821,
+        -0.06668711547847578
+      ],
+      "gap_closure": -4.553781205462889,
+      "fit_agreement": 0.985303147978977,
+      "fit_kl": 0.0035352027789304352,
+      "retention": 0.24708333333333335,
+      "retention_native": 0.2775,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8881834215167549,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.9027777777777777,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.109375,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.3053496612320141,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 16,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 50,
+      "documents": 24,
+      "f1": 0.618398569023569,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.17794690221915455,
+        -0.07149316268956363
+      ],
+      "gap_closure": -4.541289514530191,
+      "fit_agreement": 0.9889621858387376,
+      "fit_kl": 0.0007817301409658878,
+      "retention": 0.23291666666666666,
+      "retention_native": 0.2775,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8807760141093474,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.9027777777777777,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.109375,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.30967863155363157,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 16,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 100,
+      "documents": 24,
+      "f1": 0.6254605348355348,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.1719860565346246,
+        -0.06362124511374703
+      ],
+      "gap_closure": -4.283874603535323,
+      "fit_agreement": 0.9910090617150485,
+      "fit_kl": 0.000378276669819726,
+      "retention": 0.22916666666666666,
+      "retention_native": 0.2775,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8807760141093474,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.9027777777777777,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.109375,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.32733354608354603,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 16,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 200,
+      "documents": 24,
+      "f1": 0.5953628547378548,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.20460634636297367,
+        -0.08890636090345841
+      ],
+      "gap_closure": -5.380961710693058,
+      "fit_agreement": 0.990940499948585,
+      "fit_kl": 0.000219943319541944,
+      "retention": 0.2241666666666667,
+      "retention_native": 0.2775,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8696649029982363,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8313492063492062,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.109375,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.2982202982202982,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 16,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 400,
+      "documents": 24,
+      "f1": 0.598610717985718,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.20188508200892102,
+        -0.08555139095904381
+      ],
+      "gap_closure": -5.262574217588006,
+      "fit_agreement": 0.9919784690208179,
+      "fit_kl": 0.00013730658378604857,
+      "retention": 0.22375000000000003,
+      "retention_native": 0.2775,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8696649029982363,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8313492063492062,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.109375,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.3063399563399563,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 32,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 0,
+      "documents": 24,
+      "f1": 0.7429851019866499,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        0.0,
+        0.0
+      ],
+      "gap_closure": 0.0,
+      "fit_agreement": 0.6865758132213132,
+      "fit_kl": 0.28055309946869716,
+      "retention": 0.2808333333333333,
+      "retention_native": 0.2808333333333333,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8642328042328041,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8333333333333334,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.6004901960784313,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.5929961349852991,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 32,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 5,
+      "documents": 24,
+      "f1": 0.6989777814777814,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.09853157147719839,
+        0.011421452418840211
+      ],
+      "gap_closure": -1.6041058245734792,
+      "fit_agreement": 0.9662317727517987,
+      "fit_kl": 0.02550910925881721,
+      "retention": 0.2775,
+      "retention_native": 0.2808333333333333,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8722462722462723,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8888888888888888,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.2708333333333333,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.5026302401302402,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 32,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 10,
+      "documents": 24,
+      "f1": 0.6779063529063528,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.1142157370922851,
+        -0.018295309169244874
+      ],
+      "gap_closure": -2.3721780660247864,
+      "fit_agreement": 0.9777412749236101,
+      "fit_kl": 0.010744902188345095,
+      "retention": 0.28458333333333335,
+      "retention_native": 0.2808333333333333,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.887061087061087,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8777777777777778,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.37083333333333335,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.43536833536833536,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 32,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 25,
+      "documents": 24,
+      "f1": 0.6669008769008768,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.12937211916623684,
+        -0.023501996068946533
+      ],
+      "gap_closure": -2.7733374176610672,
+      "fit_agreement": 0.9864168166437791,
+      "fit_kl": 0.002916382258258861,
+      "retention": 0.29083333333333333,
+      "retention_native": 0.2808333333333333,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8881834215167549,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8361111111111111,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.4412878787878788,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.4054766992266992,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 32,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 50,
+      "documents": 24,
+      "f1": 0.6725015262515263,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.125993615950756,
+        -0.01585500362783644
+      ],
+      "gap_closure": -2.5691887864586764,
+      "fit_agreement": 0.990547493939531,
+      "fit_kl": 0.0013047934869271952,
+      "retention": 0.29541666666666666,
+      "retention_native": 0.2808333333333333,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8807760141093474,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8361111111111111,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.46726190476190477,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.42209376271876264,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 32,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 100,
+      "documents": 24,
+      "f1": 0.6724618437118437,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.13788396200605957,
+        -0.00864206961052934
+      ],
+      "gap_closure": -2.570635250190224,
+      "fit_agreement": 0.9883426441976741,
+      "fit_kl": 0.000729402094646673,
+      "retention": 0.29625,
+      "retention_native": 0.2808333333333333,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8955908289241622,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8361111111111111,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.375,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.4234826516076516,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 32,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 200,
+      "documents": 24,
+      "f1": 0.6806883394383393,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.13618072934404205,
+        0.010238323961040699
+      ],
+      "gap_closure": -2.2707721919965063,
+      "fit_agreement": 0.9906485189999371,
+      "fit_kl": 0.0004079096892208797,
+      "retention": 0.29708333333333337,
+      "retention_native": 0.2808333333333333,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8807760141093474,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8361111111111111,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.41666666666666663,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.4509933353683353,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 32,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 400,
+      "documents": 24,
+      "f1": 0.6792994505494505,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.13688637938715337,
+        0.008128842415897411
+      ],
+      "gap_closure": -2.321398422600637,
+      "fit_agreement": 0.9905512534746329,
+      "fit_kl": 0.0002669482951858836,
+      "retention": 0.29583333333333334,
+      "retention_native": 0.2808333333333333,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8733686067019399,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8361111111111111,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.41666666666666663,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.4544655575905576,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 32,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 0,
+      "documents": 24,
+      "f1": 0.7429851019866499,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        0.0,
+        0.0
+      ],
+      "gap_closure": 0.0,
+      "fit_agreement": 0.6865758132213132,
+      "fit_kl": 0.28055309946869716,
+      "retention": 0.2808333333333333,
+      "retention_native": 0.2808333333333333,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8642328042328041,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8333333333333334,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.6004901960784313,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.5929961349852991,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 32,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 5,
+      "documents": 24,
+      "f1": 0.6316746679246679,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.1544215285595897,
+        -0.06616360182430227
+      ],
+      "gap_closure": -4.057363946497151,
+      "fit_agreement": 0.9493034189705677,
+      "fit_kl": 0.040928532122328797,
+      "retention": 0.29333333333333333,
+      "retention_native": 0.2808333333333333,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8574314574314573,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8777777777777778,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.2708333333333333,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.35381690069190075,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 32,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 10,
+      "documents": 24,
+      "f1": 0.6491142653642653,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.14807994900767735,
+        -0.03585969417006561
+      ],
+      "gap_closure": -3.421675167730505,
+      "fit_agreement": 0.9720996507423351,
+      "fit_kl": 0.013133794021541296,
+      "retention": 0.30291666666666667,
+      "retention_native": 0.2808333333333333,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8807760141093474,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8194444444444443,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.3958333333333333,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.3838637057387057,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 32,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 25,
+      "documents": 24,
+      "f1": 0.646243894993895,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.1565557665087464,
+        -0.03179225337284546
+      ],
+      "gap_closure": -3.5263027109790483,
+      "fit_agreement": 0.9816659457830316,
+      "fit_kl": 0.002839511663670994,
+      "retention": 0.3016666666666667,
+      "retention_native": 0.2808333333333333,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8733686067019399,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8361111111111111,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.3125,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.3891877798127798,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 32,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 50,
+      "documents": 24,
+      "f1": 0.6521121933621933,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.14832283704284477,
+        -0.02691886208691547
+      ],
+      "gap_closure": -3.3123980359369654,
+      "fit_agreement": 0.9873552100821099,
+      "fit_kl": 0.000868019806426794,
+      "retention": 0.30666666666666664,
+      "retention_native": 0.2808333333333333,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8733686067019399,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8361111111111111,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.3125,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.40385852573352565,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 32,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 100,
+      "documents": 24,
+      "f1": 0.6549433899433899,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.14424780891479808,
+        -0.025087818034218917
+      ],
+      "gap_closure": -3.209198412013152,
+      "fit_agreement": 0.9916235815807678,
+      "fit_kl": 0.0004590855811958132,
+      "retention": 0.29833333333333334,
+      "retention_native": 0.2808333333333333,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8733686067019399,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8361111111111111,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.3125,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.41093651718651714,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 32,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 200,
+      "documents": 24,
+      "f1": 0.6528600566100565,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.14748910571569246,
+        -0.02632716812699399
+      ],
+      "gap_closure": -3.285137757919354,
+      "fit_agreement": 0.9928452769256763,
+      "fit_kl": 0.0002600857535037571,
+      "retention": 0.29291666666666666,
+      "retention_native": 0.2808333333333333,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8733686067019399,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8361111111111111,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.3125,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.4057281838531838,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 32,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 400,
+      "documents": 24,
+      "f1": 0.6554241591741592,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.14429216519706073,
+        -0.023984703731511004
+      ],
+      "gap_closure": -3.191673947573255,
+      "fit_agreement": 0.9912406000841507,
+      "fit_kl": 0.00016577346480281183,
+      "retention": 0.29125,
+      "retention_native": 0.2808333333333333,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8733686067019399,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8361111111111111,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.3125,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.4121384402634402,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 32,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 0,
+      "documents": 24,
+      "f1": 0.7429851019866499,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        0.0,
+        0.0
+      ],
+      "gap_closure": 0.0,
+      "fit_agreement": 0.6865758132213132,
+      "fit_kl": 0.28055309946869716,
+      "retention": 0.2808333333333333,
+      "retention_native": 0.2808333333333333,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8642328042328041,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8333333333333334,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.6004901960784313,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.5929961349852991,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 32,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 5,
+      "documents": 24,
+      "f1": 0.5559102423757597,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.25714162682916686,
+        -0.11998427423092806
+      ],
+      "gap_closure": -6.819044387685918,
+      "fit_agreement": 0.846313466806781,
+      "fit_kl": 0.13185524408246826,
+      "retention": 0.2625,
+      "retention_native": 0.2808333333333333,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8355908289241623,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.7638888888888888,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.08333333333333333,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.2591869816007747,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 32,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 10,
+      "documents": 24,
+      "f1": 0.6015647499052671,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.19451347929990873,
+        -0.08772693689327882
+      ],
+      "gap_closure": -5.154897136744836,
+      "fit_agreement": 0.9610978188579488,
+      "fit_kl": 0.037037500867334254,
+      "retention": 0.2654166666666667,
+      "retention_native": 0.2808333333333333,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.9029982363315696,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.7972222222222222,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.109375,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.3002329726467657,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 32,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 25,
+      "documents": 24,
+      "f1": 0.574494389709907,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.22441948353321392,
+        -0.1117446068763893
+      ],
+      "gap_closure": -6.141635751151691,
+      "fit_agreement": 0.986248817082239,
+      "fit_kl": 0.004266945807558553,
+      "retention": 0.20041666666666666,
+      "retention_native": 0.2808333333333333,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8511463844797179,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8293650793650794,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.0625,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.2687425880313811,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 32,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 50,
+      "documents": 24,
+      "f1": 0.5939880952380953,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.20649389684103303,
+        -0.09105655269151783
+      ],
+      "gap_closure": -5.431072912544295,
+      "fit_agreement": 0.9893415980846744,
+      "fit_kl": 0.0008834846239129338,
+      "retention": 0.18791666666666665,
+      "retention_native": 0.2808333333333333,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.87336860670194,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8361111111111111,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.09821428571428571,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.2873181216931217,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 32,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 100,
+      "documents": 24,
+      "f1": 0.6031968494468495,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.19685381646933503,
+        -0.08036083633142457
+      ],
+      "gap_closure": -5.095405662356877,
+      "fit_agreement": 0.9905137682767234,
+      "fit_kl": 0.00037155305725240523,
+      "retention": 0.18499999999999997,
+      "retention_native": 0.2808333333333333,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.87336860670194,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8777777777777778,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.09821428571428571,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.2895066738816739,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 32,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 200,
+      "documents": 24,
+      "f1": 0.5847780460280461,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.21574593864454542,
+        -0.09976174742583409
+      ],
+      "gap_closure": -5.766787366676329,
+      "fit_agreement": 0.9903665982877351,
+      "fit_kl": 0.00021763663291528496,
+      "retention": 0.18500000000000003,
+      "retention_native": 0.2808333333333333,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.87336860670194,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8361111111111111,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.09821428571428571,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.2747096653346653,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 32,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 400,
+      "documents": 24,
+      "f1": 0.5827443158693159,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.216498335479808,
+        -0.10227943227652977
+      ],
+      "gap_closure": -5.8409186329181,
+      "fit_agreement": 0.9928937994816031,
+      "fit_kl": 0.00012904985213766726,
+      "retention": 0.18458333333333332,
+      "retention_native": 0.2808333333333333,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.87336860670194,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8222222222222223,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.109375,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.2747096653346653,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 64,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 0,
+      "documents": 24,
+      "f1": 0.7412694157121402,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.005147058823529407,
+        0.0
+      ],
+      "gap_closure": -0.06253828486392721,
+      "fit_agreement": 0.6852676378329124,
+      "fit_kl": 0.2802566514473837,
+      "retention": 0.2791666666666667,
+      "retention_native": 0.2791666666666667,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8642328042328041,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8333333333333334,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.6004901960784313,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.5887069192990245,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 64,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 5,
+      "documents": 24,
+      "f1": 0.664017464017464,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.1391397455850823,
+        -0.016872021769080574
+      ],
+      "gap_closure": -2.8784403720661347,
+      "fit_agreement": 0.9565364594769273,
+      "fit_kl": 0.029044277011868513,
+      "retention": 0.28458333333333335,
+      "retention_native": 0.2791666666666667,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8426166426166426,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8638888888888889,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.2708333333333333,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.45550722425722423,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 64,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 10,
+      "documents": 24,
+      "f1": 0.6653219928219928,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.14217511951412878,
+        -0.014536875512688162
+      ],
+      "gap_closure": -2.8308891412829102,
+      "fit_agreement": 0.9817393016126816,
+      "fit_kl": 0.010958792172024147,
+      "retention": 0.29458333333333336,
+      "retention_native": 0.2791666666666667,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8796536796536796,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8361111111111111,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.35416666666666663,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.424046324046324,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 64,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 25,
+      "documents": 24,
+      "f1": 0.6650114468864469,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.14187460598325538,
+        -0.02025769173350438
+      ],
+      "gap_closure": -2.84220881578812,
+      "fit_agreement": 0.9863334086389975,
+      "fit_kl": 0.0031388540230143456,
+      "retention": 0.29791666666666666,
+      "retention_native": 0.2791666666666667,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8881834215167549,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8361111111111111,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.3177083333333333,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.421349715099715,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 64,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 50,
+      "documents": 24,
+      "f1": 0.6696642246642247,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.14437955724401155,
+        -0.0011048928604075485
+      ],
+      "gap_closure": -2.6726109432642655,
+      "fit_agreement": 0.9862717491658385,
+      "fit_kl": 0.0012944888058729522,
+      "retention": 0.3020833333333333,
+      "retention_native": 0.2791666666666667,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8807760141093474,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8361111111111111,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.3958333333333333,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.42690527065527056,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 64,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 100,
+      "documents": 24,
+      "f1": 0.6585653235653236,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.15255906850072873,
+        -0.016139652354725854
+      ],
+      "gap_closure": -3.0771757223337928,
+      "fit_agreement": 0.9881214520802142,
+      "fit_kl": 0.0005857113398328456,
+      "retention": 0.2995833333333333,
+      "retention_native": 0.2791666666666667,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8733686067019399,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8361111111111111,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.1875,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.4408246845746846,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 64,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 200,
+      "documents": 24,
+      "f1": 0.6563827838827838,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.15487105840066367,
+        -0.017791078202842883
+      ],
+      "gap_closure": -3.1567312275688657,
+      "fit_agreement": 0.9910544080207307,
+      "fit_kl": 0.00032989243372620055,
+      "retention": 0.29791666666666666,
+      "retention_native": 0.2791666666666667,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8733686067019399,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8361111111111111,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.1875,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.4353683353683353,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 64,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 400,
+      "documents": 24,
+      "f1": 0.6643878343878343,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.14831448329290822,
+        -0.010589741617315147
+      ],
+      "gap_closure": -2.8649400439050328,
+      "fit_agreement": 0.9917300449466843,
+      "fit_kl": 0.00021830515035982517,
+      "retention": 0.29916666666666664,
+      "retention_native": 0.2791666666666667,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8733686067019399,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8361111111111111,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.3125,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.4345476282976282,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 64,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 0,
+      "documents": 24,
+      "f1": 0.7412694157121402,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.005147058823529407,
+        0.0
+      ],
+      "gap_closure": -0.06253828486392721,
+      "fit_agreement": 0.6852676378329124,
+      "fit_kl": 0.2802566514473837,
+      "retention": 0.2791666666666667,
+      "retention_native": 0.2791666666666667,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8642328042328041,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8333333333333334,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.6004901960784313,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.5887069192990245,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 64,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 5,
+      "documents": 24,
+      "f1": 0.6547690272690273,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.13836370263150446,
+        -0.033029205611926196
+      ],
+      "gap_closure": -3.215554085985095,
+      "fit_agreement": 0.9421864075850426,
+      "fit_kl": 0.05092034086502819,
+      "retention": 0.3095833333333333,
+      "retention_native": 0.2791666666666667,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8671957671957671,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8805555555555555,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.2708333333333333,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.3912876475376475,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 64,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 10,
+      "documents": 24,
+      "f1": 0.6594617882117881,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.13832169487074678,
+        -0.02473395660711839
+      ],
+      "gap_closure": -3.0444987916711277,
+      "fit_agreement": 0.9655245135005684,
+      "fit_kl": 0.017277928530737622,
+      "retention": 0.3229166666666667,
+      "retention_native": 0.2791666666666667,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8648388648388649,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.9432539682539683,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.2708333333333333,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.3836021617271617,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 64,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 25,
+      "documents": 24,
+      "f1": 0.6618749999999999,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.13794873007682606,
+        -0.02267555300092066
+      ],
+      "gap_closure": -2.956535083800758,
+      "fit_agreement": 0.9845075107926804,
+      "fit_kl": 0.003413333215325984,
+      "retention": 0.30541666666666667,
+      "retention_native": 0.2791666666666667,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8807760141093474,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.9194444444444444,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.359375,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.3718419312169312,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 64,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 50,
+      "documents": 24,
+      "f1": 0.6484027777777778,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.15115120675463165,
+        -0.03474048452908748
+      ],
+      "gap_closure": -3.4476095206608632,
+      "fit_agreement": 0.9900583829914291,
+      "fit_kl": 0.0007954077104529987,
+      "retention": 0.295,
+      "retention_native": 0.2791666666666667,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8807760141093474,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.9194444444444444,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.234375,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.35899470899470903,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 64,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 100,
+      "documents": 24,
+      "f1": 0.6423899711399712,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.1570719373720535,
+        -0.03990837556907602
+      ],
+      "gap_closure": -3.666781650165905,
+      "fit_agreement": 0.9877550659154707,
+      "fit_kl": 0.00039791098806267916,
+      "retention": 0.29291666666666666,
+      "retention_native": 0.2791666666666667,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8696649029982363,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.9194444444444444,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.1875,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.36219185906685897,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 64,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 200,
+      "documents": 24,
+      "f1": 0.6428661616161616,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.15631848108318702,
+        -0.03962752383495416
+      ],
+      "gap_closure": -3.6494240853873468,
+      "fit_agreement": 0.9910838645238927,
+      "fit_kl": 0.0002327371309490104,
+      "retention": 0.2904166666666667,
+      "retention_native": 0.2791666666666667,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8696649029982363,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.9194444444444444,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.1875,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.36338233525733515,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 64,
+      "coverage": "oracle",
+      "lr": 3e-05,
+      "step": 400,
+      "documents": 24,
+      "f1": 0.6333621933621933,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.16098406526608927,
+        -0.058444091837957894
+      ],
+      "gap_closure": -3.9958521490927854,
+      "fit_agreement": 0.9916792918061249,
+      "fit_kl": 0.0001425352875437986,
+      "retention": 0.2966666666666667,
+      "retention_native": 0.2791666666666667,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8696649029982363,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.9194444444444444,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.1875,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.33962241462241466,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 64,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 0,
+      "documents": 24,
+      "f1": 0.7412694157121402,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.005147058823529407,
+        0.0
+      ],
+      "gap_closure": -0.06253828486392721,
+      "fit_agreement": 0.6852676378329124,
+      "fit_kl": 0.2802566514473837,
+      "retention": 0.2791666666666667,
+      "retention_native": 0.2791666666666667,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8642328042328041,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8333333333333334,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.6004901960784313,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.5887069192990245,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 64,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 5,
+      "documents": 24,
+      "f1": 0.4769380455910628,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.34302481248577416,
+        -0.19234072673391894
+      ],
+      "gap_closure": -9.697650932616698,
+      "fit_agreement": 0.8590358346368804,
+      "fit_kl": 0.17511834604208745,
+      "retention": 0.21583333333333332,
+      "retention_native": 0.2791666666666667,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.7034920634920635,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.6180555555555555,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.125,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.23638033223162533,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 64,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 10,
+      "documents": 24,
+      "f1": 0.5433476545006717,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.2621139893392049,
+        -0.14185336517489286
+      ],
+      "gap_closure": -7.276961846625138,
+      "fit_agreement": 0.933944177673078,
+      "fit_kl": 0.07042428507554661,
+      "retention": 0.18500000000000003,
+      "retention_native": 0.2791666666666667,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8092833092833093,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.7256944444444443,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.2544642857142857,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.2521337917350848,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 64,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 25,
+      "documents": 24,
+      "f1": 0.5569332124612297,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.2444605905399124,
+        -0.12662038122468275
+      ],
+      "gap_closure": -6.781756221683259,
+      "fit_agreement": 0.987974936889558,
+      "fit_kl": 0.0057059843211640995,
+      "retention": 0.10666666666666667,
+      "retention_native": 0.2791666666666667,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8289241622574954,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.7638888888888888,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.109375,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.27276871237000544,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 64,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 50,
+      "documents": 24,
+      "f1": 0.5538773148148147,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.24569399259366367,
+        -0.12847283866249132
+      ],
+      "gap_closure": -6.893146398527287,
+      "fit_agreement": 0.9914516773607858,
+      "fit_kl": 0.000876863902152965,
+      "retention": 0.09125,
+      "retention_native": 0.2791666666666667,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8696649029982363,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.8055555555555555,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.0625,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.22606646825396826,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 64,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 100,
+      "documents": 24,
+      "f1": 0.555286044973545,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.24553747026250894,
+        -0.12615605479133438
+      ],
+      "gap_closure": -6.841796936057377,
+      "fit_agreement": 0.9926750875092085,
+      "fit_kl": 0.00035541961227649865,
+      "retention": 0.09333333333333332,
+      "retention_native": 0.2791666666666667,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8548500881834216,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.7638888888888888,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.09821428571428571,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.25314980158730155,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 64,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 200,
+      "documents": 24,
+      "f1": 0.5441749338624339,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.26215447581672424,
+        -0.13622822588631409
+      ],
+      "gap_closure": -7.246806780890456,
+      "fit_agreement": 0.9905675663305132,
+      "fit_kl": 0.00020302351281215207,
+      "retention": 0.09999999999999999,
+      "retention_native": 0.2791666666666667,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8178130511463844,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.7638888888888888,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.09821428571428571,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.25314980158730155,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "dev",
+      "rank": 64,
+      "coverage": "oracle",
+      "lr": 0.0001,
+      "step": 400,
+      "documents": 24,
+      "f1": 0.5458416005291005,
+      "native": 0.7429851019866499,
+      "teacher": 0.7704192773600669,
+      "delta_vs_native_ci95": [
+        -0.2605142107231649,
+        -0.13405180255581767
+      ],
+      "gap_closure": -7.186055304165496,
+      "fit_agreement": 0.9915024259972062,
+      "fit_kl": 0.00012112259384963204,
+      "retention": 0.1025,
+      "retention_native": 0.2791666666666667,
+      "strata": {
+        "blind_elicited": {
+          "questions": 45,
+          "f1": 0.8178130511463844,
+          "native": 0.8642328042328041
+        },
+        "oracle_elicited": {
+          "questions": 24,
+          "f1": 0.7638888888888888,
+          "native": 0.8333333333333334
+        },
+        "relaxed_elicited": {
+          "questions": 8,
+          "f1": 0.09821428571428571,
+          "native": 0.6004901960784313
+        },
+        "unelicited": {
+          "questions": 48,
+          "f1": 0.2573164682539682,
+          "native": 0.5929961349852991
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 8,
+      "coverage": "blind",
+      "lr": 1e-05,
+      "step": 0,
+      "documents": 160,
+      "f1": 0.7415388838379086,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        0.0,
+        0.0
+      ],
+      "gap_closure": 0.0,
+      "fit_agreement": 0.7109586832251134,
+      "fit_kl": 0.25167910771702007,
+      "retention": 0.2835625,
+      "retention_native": 0.2835625,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.8576695730114943,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.8234970991068552,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.7915804002760525,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5909854084469675,
+          "native": 0.5909854084469675
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 8,
+      "coverage": "blind",
+      "lr": 1e-05,
+      "step": 5,
+      "documents": 160,
+      "f1": 0.7258186433494318,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        -0.03919971506916667,
+        0.0067239851465764255
+      ],
+      "gap_closure": -0.24007652194987048,
+      "fit_agreement": 0.9616212525621055,
+      "fit_kl": 0.026235580221017945,
+      "retention": 0.2819375,
+      "retention_native": 0.2835625,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.908166446713696,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.7453515319368978,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.7298826777087648,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5607487053245144,
+          "native": 0.5909854084469675
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 8,
+      "coverage": "blind",
+      "lr": 1e-05,
+      "step": 10,
+      "documents": 160,
+      "f1": 0.7185568926516253,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        -0.0461202376376103,
+        -0.0009973584456921354
+      ],
+      "gap_closure": -0.35097659705205286,
+      "fit_agreement": 0.9781396742052519,
+      "fit_kl": 0.011045383988944947,
+      "retention": 0.283875,
+      "retention_native": 0.2835625,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.9045160546922992,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.73627294115099,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.7534851621808144,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.544053616801347,
+          "native": 0.5909854084469675
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 8,
+      "coverage": "blind",
+      "lr": 1e-05,
+      "step": 25,
+      "documents": 160,
+      "f1": 0.7059102392401426,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        -0.05987385428334116,
+        -0.011066528526231613
+      ],
+      "gap_closure": -0.5441138819148247,
+      "fit_agreement": 0.9842905606319874,
+      "fit_kl": 0.003360015951349435,
+      "retention": 0.29281250000000003,
+      "retention_native": 0.2835625,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.9099027352338612,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.6922156434351556,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.6800552104899931,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5447765147961178,
+          "native": 0.5909854084469675
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 8,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 0,
+      "documents": 160,
+      "f1": 0.7415388838379086,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        0.0,
+        0.0
+      ],
+      "gap_closure": 0.0,
+      "fit_agreement": 0.7176131343736742,
+      "fit_kl": 0.24714309262120251,
+      "retention": 0.28343749999999995,
+      "retention_native": 0.28343749999999995,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.8576695730114943,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.8234970991068552,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.7915804002760525,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5909854084469675,
+          "native": 0.5909854084469675
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 8,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 5,
+      "documents": 160,
+      "f1": 0.7502600264348805,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        -0.013755411735214367,
+        0.031015177580963428
+      ],
+      "gap_closure": 0.13318763053559193,
+      "fit_agreement": 0.9640472528664834,
+      "fit_kl": 0.026079684613885414,
+      "retention": 0.28025,
+      "retention_native": 0.28343749999999995,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.9102679466521966,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.8429800478183299,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.6933057280883368,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5781317360054173,
+          "native": 0.5909854084469675
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 8,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 10,
+      "documents": 160,
+      "f1": 0.7430561764119454,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        -0.021247045937628384,
+        0.024228976041834018
+      ],
+      "gap_closure": 0.023171803524389727,
+      "fit_agreement": 0.9798013419304856,
+      "fit_kl": 0.0109735279363684,
+      "retention": 0.2821875,
+      "retention_native": 0.28343749999999995,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.8960600779020291,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.8567046097533902,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.7289855072463769,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5583866262718823,
+          "native": 0.5909854084469675
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 8,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 25,
+      "documents": 160,
+      "f1": 0.7413311960405735,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        -0.024217366326240462,
+        0.02222166312898962
+      ],
+      "gap_closure": -0.003171768528107177,
+      "fit_agreement": 0.9843372658236905,
+      "fit_kl": 0.0033557026239391134,
+      "retention": 0.29212499999999997,
+      "retention_native": 0.28343749999999995,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.9020895077293282,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.8648830843952796,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.6594893029675639,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5579241454589919,
+          "native": 0.5909854084469675
+        }
+      },
+      "wrongdoc_f1": 0.07409707283949206,
+      "wrongdoc_pair_bias_only_f1": 0.10917374770766086
+    },
+    {
+      "stage": "final",
+      "rank": 8,
+      "coverage": "oracle_relaxed",
+      "lr": 1e-05,
+      "step": 0,
+      "documents": 160,
+      "f1": 0.7415388838379086,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        0.0,
+        0.0
+      ],
+      "gap_closure": 0.0,
+      "fit_agreement": 0.721464388592013,
+      "fit_kl": 0.24515683380558378,
+      "retention": 0.2834375,
+      "retention_native": 0.2834375,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.8576695730114943,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.8234970991068552,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.7915804002760525,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5909854084469675,
+          "native": 0.5909854084469675
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 8,
+      "coverage": "oracle_relaxed",
+      "lr": 1e-05,
+      "step": 5,
+      "documents": 160,
+      "f1": 0.7659005080279238,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        0.0023917479790131722,
+        0.046792617579488285
+      ],
+      "gap_closure": 0.3720460898086042,
+      "fit_agreement": 0.9636067480726644,
+      "fit_kl": 0.026170469992211974,
+      "retention": 0.279875,
+      "retention_native": 0.2834375,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.9117536431816873,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.8429800478183299,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.881334607421564,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5786547305030231,
+          "native": 0.5909854084469675
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 8,
+      "coverage": "oracle_relaxed",
+      "lr": 1e-05,
+      "step": 10,
+      "documents": 160,
+      "f1": 0.7606714423604637,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        -0.003442551052070162,
+        0.041193840911301495
+      ],
+      "gap_closure": 0.2921887937696851,
+      "fit_agreement": 0.9810386166637027,
+      "fit_kl": 0.011036875347243406,
+      "retention": 0.2813125,
+      "retention_native": 0.2834375,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.8987457067359168,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.8518265609729025,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.909247757073844,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5644513123805889,
+          "native": 0.5909854084469675
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 8,
+      "coverage": "oracle_relaxed",
+      "lr": 1e-05,
+      "step": 25,
+      "documents": 160,
+      "f1": 0.7653982889603624,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        0.00021350317718908923,
+        0.04677682723577054
+      ],
+      "gap_closure": 0.3643762957564452,
+      "fit_agreement": 0.9865199056407918,
+      "fit_kl": 0.0033777648607106634,
+      "retention": 0.29056249999999995,
+      "retention_native": 0.2834375,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.9026838361382261,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.8618343039074747,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.9154589371980676,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5645776957680045,
+          "native": 0.5909854084469675
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 16,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 0,
+      "documents": 160,
+      "f1": 0.7415388838379086,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        0.0,
+        0.0
+      ],
+      "gap_closure": 0.0,
+      "fit_agreement": 0.7173233533222494,
+      "fit_kl": 0.2471166430380119,
+      "retention": 0.2836875,
+      "retention_native": 0.2836875,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.8576695730114943,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.8234970991068552,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.7915804002760525,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5909854084469675,
+          "native": 0.5909854084469675
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 16,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 5,
+      "documents": 160,
+      "f1": 0.746697247324663,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        -0.018272590487097447,
+        0.027809355574787687
+      ],
+      "gap_closure": 0.07877754578633785,
+      "fit_agreement": 0.9590495079406468,
+      "fit_kl": 0.02591970200304164,
+      "retention": 0.28125,
+      "retention_native": 0.2836875,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.9011250736127202,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.839931267330525,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.7077984817115252,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5756169712342607,
+          "native": 0.5909854084469675
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 16,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 10,
+      "documents": 160,
+      "f1": 0.745948449936034,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        -0.019298466990538745,
+        0.027432637157363313
+      ],
+      "gap_closure": 0.06734205452658477,
+      "fit_agreement": 0.9791045361492866,
+      "fit_kl": 0.010614637230086443,
+      "retention": 0.284375,
+      "retention_native": 0.2836875,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.8976366757930526,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.8695094878021707,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.7314009661835749,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5570788423005432,
+          "native": 0.5909854084469675
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 16,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 25,
+      "documents": 160,
+      "f1": 0.7393194889976163,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        -0.026216710445433413,
+        0.021050086987487858
+      ],
+      "gap_closure": -0.03389417575904217,
+      "fit_agreement": 0.9876079435498898,
+      "fit_kl": 0.003172505616762443,
+      "retention": 0.29425,
+      "retention_native": 0.2836875,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.9022014673393709,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.8633586941513772,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.6457211870255348,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5564896907278883,
+          "native": 0.5909854084469675
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 32,
+      "coverage": "blind",
+      "lr": 1e-05,
+      "step": 0,
+      "documents": 160,
+      "f1": 0.7415388838379086,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        0.0,
+        0.0
+      ],
+      "gap_closure": 0.0,
+      "fit_agreement": 0.7112119057773452,
+      "fit_kl": 0.2516536594270695,
+      "retention": 0.28318750000000004,
+      "retention_native": 0.28318750000000004,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.8576695730114943,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.8234970991068552,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.7915804002760525,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5909854084469675,
+          "native": 0.5909854084469675
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 32,
+      "coverage": "blind",
+      "lr": 1e-05,
+      "step": 5,
+      "documents": 160,
+      "f1": 0.7159074902060654,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        -0.046978559958492955,
+        -0.004307630801443871
+      ],
+      "gap_closure": -0.39143776714940237,
+      "fit_agreement": 0.954236348304676,
+      "fit_kl": 0.02668088519842814,
+      "retention": 0.28300000000000003,
+      "retention_native": 0.28318750000000004,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.9088633580643369,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.7209612880344588,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.7360938578329883,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5422453247033079,
+          "native": 0.5909854084469675
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 32,
+      "coverage": "blind",
+      "lr": 1e-05,
+      "step": 10,
+      "documents": 160,
+      "f1": 0.7124086464561526,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        -0.05423810598676756,
+        -0.003710841212631872
+      ],
+      "gap_closure": -0.4448714432398424,
+      "fit_agreement": 0.9768292156450492,
+      "fit_kl": 0.010569211848587372,
+      "retention": 0.28725,
+      "retention_native": 0.28318750000000004,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.9196613950032023,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.6984122246317369,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.698895790200138,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5422046936055364,
+          "native": 0.5909854084469675
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 32,
+      "coverage": "blind",
+      "lr": 1e-05,
+      "step": 25,
+      "documents": 160,
+      "f1": 0.6953671630404475,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        -0.0706066146837153,
+        -0.022146319869899178
+      ],
+      "gap_closure": -0.7051257358066676,
+      "fit_agreement": 0.9855889082820208,
+      "fit_kl": 0.0029783881956750415,
+      "retention": 0.29862500000000003,
+      "retention_native": 0.28318750000000004,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.9055730957109993,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.6719243155218765,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.6522774327122153,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5357966471170763,
+          "native": 0.5909854084469675
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 32,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 0,
+      "documents": 160,
+      "f1": 0.7415388838379086,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        0.0,
+        0.0
+      ],
+      "gap_closure": 0.0,
+      "fit_agreement": 0.7183813806235557,
+      "fit_kl": 0.24708527859333307,
+      "retention": 0.2830625,
+      "retention_native": 0.2830625,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.8576695730114943,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.8234970991068552,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.7915804002760525,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5909854084469675,
+          "native": 0.5909854084469675
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 32,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 5,
+      "documents": 160,
+      "f1": 0.7407604466060167,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        -0.021788140026602676,
+        0.020585112747784337
+      ],
+      "gap_closure": -0.01188814530705637,
+      "fit_agreement": 0.9559290309151838,
+      "fit_kl": 0.026541299675836388,
+      "retention": 0.28200000000000003,
+      "retention_native": 0.2830625,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.9050554110444694,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.8469289444501534,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.7086266390614218,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5546321233944156,
+          "native": 0.5909854084469675
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 32,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 10,
+      "documents": 160,
+      "f1": 0.7517907772588834,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        -0.012513227830410754,
+        0.03309677939329298
+      ],
+      "gap_closure": 0.15656496589301827,
+      "fit_agreement": 0.9775453155088408,
+      "fit_kl": 0.010487777411577325,
+      "retention": 0.285625,
+      "retention_native": 0.2830625,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.9125315082268723,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.8734777417704247,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.7106280193236715,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5570481680681777,
+          "native": 0.5909854084469675
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 32,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 25,
+      "documents": 160,
+      "f1": 0.7328797766049148,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        -0.030898449815619414,
+        0.013703864821302886
+      ],
+      "gap_closure": -0.13224023825920173,
+      "fit_agreement": 0.9870688228371634,
+      "fit_kl": 0.00299361226034951,
+      "retention": 0.29725,
+      "retention_native": 0.2830625,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.9009087345790029,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.8730712377053841,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.6070738440303658,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5449449903092961,
+          "native": 0.5909854084469675
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 32,
+      "coverage": "oracle_relaxed",
+      "lr": 1e-05,
+      "step": 0,
+      "documents": 160,
+      "f1": 0.7415388838379086,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        0.0,
+        0.0
+      ],
+      "gap_closure": 0.0,
+      "fit_agreement": 0.7217921206585711,
+      "fit_kl": 0.24511629652237815,
+      "retention": 0.2830625,
+      "retention_native": 0.2830625,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.8576695730114943,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.8234970991068552,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.7915804002760525,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5909854084469675,
+          "native": 0.5909854084469675
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 32,
+      "coverage": "oracle_relaxed",
+      "lr": 1e-05,
+      "step": 5,
+      "documents": 160,
+      "f1": 0.7577413720010726,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        -0.004909366536593605,
+        0.03740934622183945
+      ],
+      "gap_closure": 0.2474413166896332,
+      "fit_agreement": 0.9569582078713001,
+      "fit_kl": 0.02639452102556803,
+      "retention": 0.282625,
+      "retention_native": 0.2830625,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.9066800528389931,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.830465529816007,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.9189467537293624,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5596835056494452,
+          "native": 0.5909854084469675
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 32,
+      "coverage": "oracle_relaxed",
+      "lr": 1e-05,
+      "step": 10,
+      "documents": 160,
+      "f1": 0.7668685813991877,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        0.0028795340951528027,
+        0.048125618835219146
+      ],
+      "gap_closure": 0.3868303221577015,
+      "fit_agreement": 0.977533717826175,
+      "fit_kl": 0.01041141842779357,
+      "retention": 0.28568750000000004,
+      "retention_native": 0.2830625,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.9087108255982428,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.8734777417704247,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.9237405106970323,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5567111022295921,
+          "native": 0.5909854084469675
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 32,
+      "coverage": "oracle_relaxed",
+      "lr": 1e-05,
+      "step": 25,
+      "documents": 160,
+      "f1": 0.7618873946416433,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        -0.0018303677090552987,
+        0.04337472936518814
+      ],
+      "gap_closure": 0.31075858567182596,
+      "fit_agreement": 0.9871734630808771,
+      "fit_kl": 0.002963351937720801,
+      "retention": 0.2959375,
+      "retention_native": 0.2830625,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.9024855242352627,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.8608761157541646,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.929951690821256,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5546546007037085,
+          "native": 0.5909854084469675
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 64,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 0,
+      "documents": 160,
+      "f1": 0.7416028719331467,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        -0.0051133928571428545,
+        0.005094010416666667
+      ],
+      "gap_closure": 0.0009772140166827087,
+      "fit_agreement": 0.7176777312554703,
+      "fit_kl": 0.2471117635692927,
+      "retention": 0.28381249999999997,
+      "retention_native": 0.28381249999999997,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.854713092406007,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.8234970991068552,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.7915804002760525,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5948318406368647,
+          "native": 0.5909854084469675
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 64,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 5,
+      "documents": 160,
+      "f1": 0.7293498490296856,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        -0.035396653576665583,
+        0.011557384516341092
+      ],
+      "gap_closure": -0.18614862061614862,
+      "fit_agreement": 0.9535671062985905,
+      "fit_kl": 0.03078126162652156,
+      "retention": 0.28362500000000007,
+      "retention_native": 0.28381249999999997,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.9129075292353442,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.8260520571098513,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.6773636991028296,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5311590467164398,
+          "native": 0.5909854084469675
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 64,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 10,
+      "documents": 160,
+      "f1": 0.7382425630172019,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        -0.02595047625246256,
+        0.019951566612545713
+      ],
+      "gap_closure": -0.050340784445777415,
+      "fit_agreement": 0.9766601975811614,
+      "fit_kl": 0.011113935373246803,
+      "retention": 0.28881249999999997,
+      "retention_native": 0.28381249999999997,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.9187729088751482,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.8744940019330263,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.6720496894409939,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5285104078548933,
+          "native": 0.5909854084469675
+        }
+      }
+    },
+    {
+      "stage": "final",
+      "rank": 64,
+      "coverage": "oracle",
+      "lr": 1e-05,
+      "step": 25,
+      "documents": 160,
+      "f1": 0.7250374691986915,
+      "native": 0.7415388838379086,
+      "teacher": 0.8070190080949537,
+      "delta_vs_native_ci95": [
+        -0.03883761453460588,
+        0.006280939227230383
+      ],
+      "gap_closure": -0.252006464960879,
+      "fit_agreement": 0.9864636015079512,
+      "fit_kl": 0.0028627835543761485,
+      "retention": 0.2990625,
+      "retention_native": 0.28381249999999997,
+      "strata": {
+        "blind_elicited": {
+          "questions": 302,
+          "f1": 0.9030625994130392,
+          "native": 0.8576695730114943
+        },
+        "oracle_elicited": {
+          "questions": 164,
+          "f1": 0.8832338393314002,
+          "native": 0.8234970991068552
+        },
+        "relaxed_elicited": {
+          "questions": 69,
+          "f1": 0.5877501725327812,
+          "native": 0.7915804002760525
+        },
+        "unelicited": {
+          "questions": 329,
+          "f1": 0.5215122899661608,
+          "native": 0.5909854084469675
+        }
+      }
+    }
+  ],
+  "unit_seconds": {
+    "fit.dev": {
+      "units": 288,
+      "mean": 577.3737199753523,
+      "total": 166283.63135290146
+    },
+    "fit.final": {
+      "units": 1280,
+      "mean": 60.822387281619015,
+      "total": 77852.65572047234
+    },
+    "prep": {
+      "units": 184,
+      "mean": 67.08777808624765,
+      "total": 12344.151167869568
+    },
+    "retention": {
+      "units": 1,
+      "mean": 50.492613792419434,
+      "total": 50.492613792419434
+    }
+  }
+}

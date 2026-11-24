@@ -1,0 +1,243 @@
+\section{Details supporting RQ2}
+\label{sec:numerical-results}
+
+\subsection{Matched reader evaluations}
+\label{sec:composition-tables}
+% Evidence: results/composition/distractor-curves/ and
+% results/composition/reader-controls/write-site-reader-confirmation.json (seed mean of arm C, seeds 216/1216/2216).
+Tables~\ref{tab:composition}--\ref{tab:confirmation} report the post-block
+and write-site comparisons underlying Figure~\ref{fig:composition}.
+The gated-reader results follow below. Paired contrasts weight documents
+equally; absolute scores weight questions equally.
+
+\begin{table*}[t]
+\centering
+\caption{Test set: question-mean F1 and answer containment (C), 1,127
+questions per cell. Normalization uses $K^{-0.5}$. The reader is the post-block
+mixed-$K$ reader, averaged over three seeds on Gemma and one on Qwen. ICL
+containment is .831, .824, .820, .818, .786 on Gemma and .880, .877, .883, .892, .894
+on Qwen at $K=1,2,4,8,16$.}
+\label{tab:composition}
+\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrrrrrrrrrrr@{}}
+\toprule
+& \multicolumn{6}{c}{Gemma-2-2B} & \multicolumn{6}{c}{Qwen3-4B} \\
+\cmidrule(lr){2-7}\cmidrule(l){8-13}
+& \multicolumn{4}{c}{F1} & \multicolumn{2}{c}{C} & \multicolumn{4}{c}{F1} & \multicolumn{2}{c}{C} \\
+$K$ & ICL & Native & Norm. & Reader & Native & Reader & ICL & Native & Norm. & Reader & Native & Reader \\
+\midrule
+1 & .873 & .755 & .755 & .761 & .677 & .689 & .764 & .336 & .336 & .723 & .683 & .634 \\
+2 & .863 & .618 & .604 & .624 & .534 & .533 & .732 & .261 & .239 & .581 & .484 & .471 \\
+4 & .858 & .445 & .421 & .465 & .328 & .339 & .702 & .194 & .178 & .462 & .321 & .343 \\
+8 & .849 & .200 & .283 & .268 & .116 & .163 & .674 & .062 & .141 & .294 & .069 & .187 \\
+16 & .825 & .026 & .229 & .117 & .002 & .049 & .661 & .016 & .115 & .155 & .000 & .073 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\caption{Paired document-mean differences and 95\% source-cluster intervals on the
+test set for the post-block mixed-$K$ reader. Qwen containment controls
+for the response-format effect of gold-span training.}
+\label{tab:contrasts}
+\small\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}lrlll@{}}
+\toprule
+Model / metric & $K$ & Normalized $-$ native & Reader $-$ native & Reader $-$ normalized \\
+\midrule
+Gemma F1 & 1 & --- & $+.006$ [$-.008$, $+.020$] & --- \\
+& 2 & $-.011$ [$-.024$, $+.002$] & $+.007$ [$-.009$, $+.024$] & $+.018$ [$+.001$, $+.035$] \\
+& 4 & $-.026$ [$-.047$, $-.006$] & $+.016$ [$-.003$, $+.037$] & $+.042$ [$+.021$, $+.063$] \\
+& 8 & $+.082$ [$+.060$, $+.104$] & $+.070$ [$+.053$, $+.088$] & $-.012$ [$-.032$, $+.008$] \\
+& 16 & $+.206$ [$+.181$, $+.231$] & $+.093$ [$+.077$, $+.109$] & $-.113$ [$-.136$, $-.092$] \\
+\midrule
+Qwen containment & 1 & --- & $-.054$ [$-.080$, $-.029$] & --- \\
+& 2 & $-.052$ [$-.072$, $-.033$] & $-.009$ [$-.039$, $+.020$] & $+.043$ [$+.013$, $+.073$] \\
+& 4 & $-.054$ [$-.076$, $-.032$] & $+.023$ [$-.004$, $+.051$] & $+.078$ [$+.047$, $+.109$] \\
+& 8 & $+.133$ [$+.107$, $+.159$] & $+.120$ [$+.096$, $+.144$] & $-.013$ [$-.040$, $+.013$] \\
+& 16 & $+.147$ [$+.123$, $+.172$] & $+.073$ [$+.056$, $+.092$] & $-.074$ [$-.096$, $-.052$] \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\caption{Write-site deep rank reader on the test set (Gemma-2-2B; 1,127
+questions; question-mean F1; three seeds) with seed-mean paired contrasts.
+The reader was selected on development data and evaluated on the same frozen
+test banks as the post-block reader.}
+\label{tab:confirmation}
+\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrll@{}}
+\toprule
+$K$ & Reader & Reader $-$ native & Reader $-$ normalized \\
+\midrule
+1 & .758 & $+.005$ [$-.010$, $+.019$] & --- \\
+2 & .633 & --- & $+.028$ [$+.010$, $+.045$] \\
+4 & .492 & $+.045$ & $+.071$ [$+.053$, $+.089$] \\
+8 & .348 & $+.151$ & $+.069$ [$+.049$, $+.089$] \\
+16 & .251 & $+.227$ & $+.021$ [$+.004$, $+.039$] \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\subsection{Composition diagnostics}
+\begin{table}[t]
+\centering
+\caption{Qwen gated reader on the matched test banks: 1,127 questions per $K$.
+The $B$-row gate uses one seed and a validation-selected checkpoint.
+Differences in containment
+use paired document means and 95\% bootstrap intervals.}
+\label{tab:qwen-gated-test}
+\small\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}rrrl@{}}
+\toprule
+$K$ & F1 & Contains & Difference [95\% CI] \\
+\midrule
+1 & .431 & .619 & $-.066$ [$-.087$, $-.046$] \\
+2 & .405 & .436 & $+.005$ [$-.022$, $+.035$] \\
+4 & .337 & .272 & $+.007$ [$-.020$, $+.036$] \\
+8 & .267 & .180 & $-.020$ [$-.042$, $+.002$] \\
+16 & .183 & .105 & $-.042$ [$-.062$, $-.022$] \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\raggedright Reference: native D2L at $K=1$, normalization at $K\geq2$.
+Cell scores are question means; 10,000 resamples cluster by source document.
+\end{table}
+
+Table~\ref{tab:qwen-gated-test} extends the gated-reader comparison to Qwen.
+The $B$-row gated-reader configuration was fixed from Gemma; Qwen's checkpoint was selected by inline
+validation macro F1, without test-based selection. This is an additional
+evaluation on the previously used test set, with one seed.
+F1 improves over native D2L at every $K$, but containment is lower at
+$K=1,2,4$. Against normalization, containment intervals include zero at
+$K=2,4,8$ and show a loss at $K=16$.
+
+\begin{table}[t]
+\centering
+\caption{Gated reader on the Gemma test set: 1,127 questions per $K$.
+The $B$-row gate uses one seed and a development-selected checkpoint.
+F1 is question-mean; differences and 95\% intervals use paired document means
+(10,000 source-cluster resamples).}
+\label{tab:gated-test}
+\small\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}rrl@{}}
+\toprule
+$K$ & F1 & Difference [95\% CI] \\
+\midrule
+1 & .750 & $-.005$ [$-.015$, $+.004$] \\
+2 & .605 & $+.001$ [$-.015$, $+.017$] \\
+4 & .418 & $-.001$ [$-.019$, $+.017$] \\
+8 & .289 & $+.008$ [$-.011$, $+.027$] \\
+16 & .184 & $-.045$ [$-.064$, $-.025$] \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\raggedright Differences are against native D2L at $K=1$ and
+uniform normalization at $K\geq2$.
+\end{table}
+
+Table~\ref{tab:gated-test} adds the gated reader to the matched test comparison
+in Figure~\ref{fig:composition}. The $B$-row gate was selected over the
+latent-assisted gate using their mean $K=1,8$ development scores at the
+validation-selected checkpoints. The test set had already
+been used for the post-block and write-site readers. This additional evaluation
+uses the same frozen random banks, with one gated-reader seed.
+
+% Evidence: the probe reports in results/composition/layer-interventions/ and the gated-reader
+% reports in results/composition/gated-readers/.
+Table~\ref{tab:probes} gives the membership-probe measurements supporting
+Section~\ref{sec:res-probes}.
+
+\begin{table}[t]
+\centering
+\caption{Membership probes on the development set (Gemma-2-2B; held-out per-question
+AUC at the document level, best layer in parentheses; chance 0.5). Query
+state: the layer-normed MLP input at the stated positions. Clean: bank silent during
+collection. All probes use $B$-row keys, matching Figure~\ref{fig:layer-probes}.}
+\label{tab:probes}
+\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}llrr@{}}
+\toprule
+Query state & $K$ & Best AUC & Layers 0--5 \\
+\midrule
+Response positions & 8 & .852 (8) & .55--.71 \\
+Response positions & 16 & .743 (6) & .55--.67 \\
+Prompt mean, clean & 8 & .821 (9) & .50--.71 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\input{analysis/composition_controls}
+
+\section{Details supporting RQ3}
+\subsection{PersonaMem-v2}
+Table~\ref{tab:personamem} gives paired accuracy differences for the
+conditions in Table~\ref{tab:user-memory-summary}. Each question has the
+same retrieved episodes across the episodic conditions.
+\begin{table}[t]
+\centering
+\caption{PersonaMem-v2 paired accuracy differences (195 personas,
+4,878 questions). Intervals use 4,000 persona-cluster bootstrap resamples
+with question-weighted estimates. Adapter comparisons retain episodic text.}
+\label{tab:personamem}
+\small\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lrl@{}}
+\toprule
+Comparison & Difference & 95\% CI \\
+\midrule
+Both text $-$ episodic only & $+.0133$ & [$+.0047$, $+.0219$] \\
+Summed $-$ joint LoRA & $-.1169$ & [$-.1355$, $-.0968$] \\
+Normalized $-$ joint LoRA & $-.0041$ & [$-.0129$, $+.0049$] \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Serving}
+Tables~\ref{tab:cost-length} and~\ref{tab:throughput} give the accounting
+and timing measurements underlying Figure~\ref{fig:serving-tradeoff}.
+% Evidence: results/deployment/serving-cost/.
+\begin{table}[t]
+\centering
+\caption{Gemma-2-2B analytical serving cost: one document, 40 question tokens,
+32 generated tokens. D2L state counts the per-user document adapter in bfloat16;
+the global shared bias adds 9.6\,MB once. Per-request MACs include both adapters
+but exclude compilation.}
+\label{tab:cost-length}
+\small\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}rrrrr@{}}
+\toprule
+& \multicolumn{2}{c}{GMAC/request} & \multicolumn{2}{c}{State (MB)} \\
+\cmidrule(lr){2-3}\cmidrule(l){4-5}
+$L$ & ICL & D2L & KV & D2L \\
+\midrule
+150 & 583.0 & 188.8 & 16.0 & 9.6 \\
+512 & 1{,}544.8 & 188.8 & 54.5 & 9.6 \\
+1{,}024 & 2{,}929.1 & 188.8 & 109.1 & 9.6 \\
+2{,}048 & 5{,}781.3 & 188.8 & 218.1 & 9.6 \\
+4{,}096 & 11{,}820.7 & 188.8 & 436.2 & 9.6 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Batched serving on one A100, four documents per user.
+Throughput includes prefill and decoding of 64 tokens per user.
+Peak memory is measured at batch size 16. Compilation is excluded;
+ICL performs full prefill for each request.}
+\label{tab:throughput}
+\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+Model & Method & Batch 1 & Batch 8 & Batch 16 & Peak GB \\
+\midrule
+Gemma & ICL & 24.3 & 165.3 & 290.9 & 21.9 \\
+ & D2L & 20.1 & 157.8 & 315.8 & 18.9 \\
+Qwen & ICL & 21.5 & 122.0 & 162.5 & 35.9 \\
+ & D2L & 17.1 & 134.9 & 269.4 & 22.0 \\
+\bottomrule
+\end{tabular}
+\end{table}

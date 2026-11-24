@@ -1,0 +1,25 @@
+{
+  "model": {"revision": null, "dtype": "bfloat16", "attention": "flash_attention_2", "context_chunk_len": 8192, "max_new_tokens": 256},
+  "data": {
+    "manifest_jsonl": null,
+    "datasets": ["squad", "drop", "ropes", "longbench/qasper_e", "longbench/2wikimqa_e", "longbench/multifieldqa_en_e"],
+    "router_training_datasets": ["squad", "drop", "ropes"],
+    "max_train_documents": 256,
+    "max_eval_documents": 256,
+    "validation_fraction": 0.2,
+    "sources": [
+      {"dataset": "squad", "path": "rajpurkar/squad", "split": "train", "role": "train"},
+      {"dataset": "drop", "path": "ucinlp/drop", "split": "train", "role": "train"},
+      {"dataset": "ropes", "path": "allenai/ropes", "split": "train", "role": "train"},
+      {"dataset": "squad", "path": "rajpurkar/squad", "split": "validation", "role": "test"},
+      {"dataset": "drop", "path": "ucinlp/drop", "split": "validation", "role": "test"},
+      {"dataset": "ropes", "path": "allenai/ropes", "split": "validation", "role": "test"},
+      {"dataset": "longbench/qasper_e", "path": "THUDM/LongBench", "name": "qasper_e", "split": "test", "role": "test", "trust_remote_code": true},
+      {"dataset": "longbench/2wikimqa_e", "path": "THUDM/LongBench", "name": "2wikimqa_e", "split": "test", "role": "test", "trust_remote_code": true},
+      {"dataset": "longbench/multifieldqa_en_e", "path": "THUDM/LongBench", "name": "multifieldqa_en_e", "split": "test", "role": "test", "trust_remote_code": true}
+    ]
+  },
+  "router": {"width": 64, "lr": 0.001, "steps": 2000, "seed": 42, "negatives": 8, "threshold": 0.5, "max_validation_queries": 256},
+  "scaling": {"bank_sizes": [1, 4, 16, 64, 128], "seeds": [42, 7, 19], "anchor_seed": 42, "anchor_docs": 32, "max_queries_per_anchor": 4, "max_loaded_adapter_bytes": 16000000000},
+  "evaluation": {"modes": ["base", "source_teacher", "native_d2l", "all_on", "hard", "soft"], "quality_tolerance": 0.05}
+}

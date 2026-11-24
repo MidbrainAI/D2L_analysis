@@ -1,0 +1,2713 @@
+{
+ "config": {
+  "confirmation_contract": {
+   "arms": {
+    "all_branches": [
+     "attention:0",
+     "attention:1",
+     "attention:2",
+     "attention:3",
+     "attention:4",
+     "attention:5",
+     "attention:6",
+     "attention:7",
+     "attention:8",
+     "attention:9",
+     "attention:10",
+     "attention:11",
+     "attention:12",
+     "attention:13",
+     "attention:14",
+     "attention:15",
+     "attention:16",
+     "attention:17",
+     "attention:18",
+     "attention:19",
+     "attention:20",
+     "attention:21",
+     "attention:22",
+     "attention:23",
+     "attention:24",
+     "attention:25",
+     "down:0",
+     "down:1",
+     "down:2",
+     "down:3",
+     "down:4",
+     "down:5",
+     "down:6",
+     "down:7",
+     "down:8",
+     "down:9",
+     "down:10",
+     "down:11",
+     "down:12",
+     "down:13",
+     "down:14",
+     "down:15",
+     "down:16",
+     "down:17",
+     "down:18",
+     "down:19",
+     "down:20",
+     "down:21",
+     "down:22",
+     "down:23",
+     "down:24",
+     "down:25"
+    ],
+    "all_down": [
+     "down:0",
+     "down:1",
+     "down:2",
+     "down:3",
+     "down:4",
+     "down:5",
+     "down:6",
+     "down:7",
+     "down:8",
+     "down:9",
+     "down:10",
+     "down:11",
+     "down:12",
+     "down:13",
+     "down:14",
+     "down:15",
+     "down:16",
+     "down:17",
+     "down:18",
+     "down:19",
+     "down:20",
+     "down:21",
+     "down:22",
+     "down:23",
+     "down:24",
+     "down:25"
+    ],
+    "attention_late": [
+     "attention:18",
+     "attention:19",
+     "attention:20",
+     "attention:21",
+     "attention:22",
+     "attention:23",
+     "attention:24",
+     "attention:25"
+    ],
+    "final_block_oracle": [
+     "block:25"
+    ],
+    "late": [
+     "down:18",
+     "down:19",
+     "down:20",
+     "down:21",
+     "down:22",
+     "down:23",
+     "down:24",
+     "down:25"
+    ]
+   },
+   "baseline_sha256": "bd00b21bdaaae83b39c1d57846a370ec535b3584f1030df277d3dbe5e590fc27",
+   "execution": "cache-free greedy full replay; teacher shares student answer history",
+   "experiment": "ACTIVATION_TRANSPLANT",
+   "include_attention": true,
+   "k": 1,
+   "late_only": true,
+   "limitations": "source-visible activation oracle; selected development cases; no information-capacity claim",
+   "manifest_sha256": "41f956e306640b15acdafb5ff4be3d476e2d1ae50fc7732acbdd3e38cdb01d55",
+   "max_new_tokens": 32,
+   "patch_positions": "last prompt token and all answer-history tokens",
+   "per_group": 4,
+   "sample": [
+    {
+     "document_id": "qa_protocol-doc-2673c81a87107334f6f34a07",
+     "query_id": "squad:squad:train:12204",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-036b8973b33f99ac57979cb5",
+     "query_id": "squad:squad:train:11709",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1ece9b58c68dbfdca0936e9f",
+     "query_id": "squad:squad:train:34820",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-25d6f98046b0e6496cc5a1df",
+     "query_id": "squad:squad:train:59523",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-03bf2a08e92524cbea7d7c17",
+     "query_id": "squad:squad:train:55915",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-3008ac457b211492eb0e6074",
+     "query_id": "squad:squad:train:48867",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-16465013298c1dadb34c9733",
+     "query_id": "squad:squad:train:57695",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0ddac51d4642c8e4469f0905",
+     "query_id": "squad:squad:train:86065",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-055fdfdc2f2734075e086a8f",
+     "query_id": "squad:squad:train:84455",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2f4c6208df582433368f57e7",
+     "query_id": "squad:squad:train:60274",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2f54ea171d68125ced49f1ea",
+     "query_id": "squad:squad:train:48839",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-28746463f6a6e71ace249747",
+     "query_id": "squad:squad:train:86389",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0d17e8391f90fb6d90b50025",
+     "query_id": "squad:squad:train:14374",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-010b5b67349acb5fc35811d3",
+     "query_id": "squad:squad:train:34381",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-286107616c87e781f10a5f35",
+     "query_id": "squad:squad:train:78414",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2bffdfab77b23efba4036163",
+     "query_id": "squad:squad:train:17507",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-25572cc06049b567f18cd820",
+     "query_id": "squad:squad:train:11496",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-08f985b54b43e328ab5ea618",
+     "query_id": "squad:squad:train:21141",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0bc0ac8b7160d664f91f28d5",
+     "query_id": "squad:squad:train:43148",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1a53de9649f0442cb3c246de",
+     "query_id": "squad:squad:train:39386",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-08d42228811946d5df140768",
+     "query_id": "squad:squad:train:60569",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2275f37a508fbdb3f7851b5e",
+     "query_id": "squad:squad:train:9027",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1923312776e613d188f60e4e",
+     "query_id": "squad:squad:train:85492",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1499d336ec25373335af92f4",
+     "query_id": "squad:squad:train:5508",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0a92d17fd17a79e18cec9114",
+     "query_id": "squad:squad:train:46501",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-25f210a6819b1456025ff715",
+     "query_id": "squad:squad:train:72901",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-30d889fe7f6b5d7c95ab5c6e",
+     "query_id": "squad:squad:train:5462",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1a9666645e73205b32674661",
+     "query_id": "squad:squad:train:82699",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2869d33f261a879117eda939",
+     "query_id": "squad:squad:train:51782",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-106fb42f48ca44c248255c6c",
+     "query_id": "squad:squad:train:68172",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2a0a667228a939759ecbd1d6",
+     "query_id": "squad:squad:train:9256",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2c7799be31ccf94393efdfb0",
+     "query_id": "squad:squad:train:35613",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2c7dbdf072db0fbdb6be25c7",
+     "query_id": "squad:squad:train:53172",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-003f7f06a2247c825f061a5d",
+     "query_id": "squad:squad:train:58638",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-087e3a5bcb3f45dee42db9f7",
+     "query_id": "squad:squad:train:75899",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1b0faec37a52be5b3100c18e",
+     "query_id": "squad:squad:train:65405",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0b31875c805bc1abcc8c6d3b",
+     "query_id": "squad:squad:train:48601",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-296e85de0ce0b5f62dec6be6",
+     "query_id": "squad:squad:train:82266",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2621639797194786b026edd2",
+     "query_id": "squad:squad:train:14158",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0591f888b86d74e2e0b471d5",
+     "query_id": "squad:squad:train:52432",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2f59bdc40d5bc3431b5874b3",
+     "query_id": "squad:squad:train:13505",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-13132869f2bed94bf3273de0",
+     "query_id": "squad:squad:train:30504",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0e9c7f603f8e96fa23e4d459",
+     "query_id": "squad:squad:train:59369",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-00331b15dc5dbfede858ca33",
+     "query_id": "squad:squad:train:49277",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-05077ce6fec8a04337c8c3ec",
+     "query_id": "squad:squad:train:21119",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-10b42b8688fe8a533ae55b0b",
+     "query_id": "squad:squad:train:19556",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-25f04b2af5d7d649222ec08a",
+     "query_id": "squad:squad:train:22927",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1e33030ffdc07263aa676da6",
+     "query_id": "squad:squad:train:46357",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-038d969879c3979b70ef25a1",
+     "query_id": "squad:squad:train:75388",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-27ca73332c5c46294593637e",
+     "query_id": "squad:squad:train:20319",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1e6d2c99b6f0447dc57ff07e",
+     "query_id": "squad:squad:train:85612",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0f3f8fd27af64dbadcaa39c8",
+     "query_id": "squad:squad:train:74692",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0eb6f67f0e0c279cdae2cb84",
+     "query_id": "squad:squad:train:80301",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0e5d492fd97ea641637c0b4d",
+     "query_id": "squad:squad:train:66341",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1427a0c584bf459e56b5f27a",
+     "query_id": "squad:squad:train:82231",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1555ecbb3e6f876e44d15512",
+     "query_id": "squad:squad:train:69203",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2753fbd9198fcf0da84da174",
+     "query_id": "squad:squad:train:78692",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0d39d3557aeb99f432de0001",
+     "query_id": "squad:squad:train:5864",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0ae1f32b86c62a2972c3ae46",
+     "query_id": "squad:squad:train:20161",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-086e8e68bb6021e69ca4b021",
+     "query_id": "squad:squad:train:60870",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-32ea9760f3f5b40974292ff5",
+     "query_id": "squad:squad:train:6729",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-218ce133839cabc71d850288",
+     "query_id": "squad:squad:train:17174",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0edc3a391566a247ae68ceb3",
+     "query_id": "squad:squad:train:42774",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2d0498fb6a8f734f2007d5df",
+     "query_id": "squad:squad:train:72827",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1361f88ad918b67408aabc12",
+     "query_id": "squad:squad:train:7266",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-02921555e48aca03a16404b5",
+     "query_id": "squad:squad:train:13198",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2d23266dec569598bfb28b24",
+     "query_id": "squad:squad:train:27855",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-32cec8163a21b1a50d1e0810",
+     "query_id": "squad:squad:train:5098",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1a9bd3904d74bb07b0cc8fc2",
+     "query_id": "squad:squad:train:28683",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1ae943f848868e0a22728f36",
+     "query_id": "squad:squad:train:4603",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-10ed8b9db561e4220923a1b2",
+     "query_id": "squad:squad:train:33628",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-011a0c6ea271342ef91d5a0f",
+     "query_id": "squad:squad:train:41494",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1a0ecd3ab8d345aa7b16355d",
+     "query_id": "squad:squad:train:14053",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-186c21398a6e4a65c6cdbf2e",
+     "query_id": "squad:squad:train:20405",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-29d16cc1e348cba0008f866d",
+     "query_id": "squad:squad:train:27822",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-25ae6395db92f72150b098e3",
+     "query_id": "squad:squad:train:62646",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-112759e9a11c5f9fe66cded0",
+     "query_id": "squad:squad:train:68379",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0bfdda04b80610e651966ec6",
+     "query_id": "squad:squad:train:25580",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-13da9e69488719cf856677f2",
+     "query_id": "squad:squad:train:10649",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0cde88ad6409f21152748319",
+     "query_id": "squad:squad:train:60418",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-07266699ca874a38e39fff9a",
+     "query_id": "squad:squad:train:27683",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-08a48de0fc358e48f4aa1a37",
+     "query_id": "squad:squad:train:18710",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-31ba350616063926a655c16a",
+     "query_id": "squad:squad:train:12542",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-069fd3c0482ea66f9d976a52",
+     "query_id": "squad:squad:train:68431",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-18550984fe64dc0e72d26166",
+     "query_id": "squad:squad:train:36040",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-10274d576602680a685c6612",
+     "query_id": "squad:squad:train:51307",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2655b09095559e34909f78ed",
+     "query_id": "squad:squad:train:67440",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-00dc41e93724f6aa027d366f",
+     "query_id": "squad:squad:train:14030",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-293cfb95da9b4e4885963f4a",
+     "query_id": "squad:squad:train:82647",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-20a9034632c79baec32c53c2",
+     "query_id": "squad:squad:train:32807",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-278ba1328550b15e95caa3af",
+     "query_id": "squad:squad:train:86888",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1f031e8ce1799129f0fd0ad2",
+     "query_id": "squad:squad:train:11985",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2c4815571b4932af537f33c3",
+     "query_id": "squad:squad:train:2289",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-190477e08d27f91551733ce6",
+     "query_id": "squad:squad:train:78630",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-27a3582645770f632b9ac581",
+     "query_id": "squad:squad:train:77116",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2d54d69328e7605f20dc77d4",
+     "query_id": "squad:squad:train:50073",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-09619af78469d7bb6d229310",
+     "query_id": "squad:squad:train:46125",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-12f2f52d005ac1f624811a00",
+     "query_id": "squad:squad:train:59131",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-330ed9b607ed3c6c2c0930b7",
+     "query_id": "squad:squad:train:17222",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0188630f792db66625b7fb6d",
+     "query_id": "squad:squad:train:83467",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-32d11a54f6c415f68ab946aa",
+     "query_id": "squad:squad:train:14455",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1ab78975fa28049f124f60af",
+     "query_id": "squad:squad:train:28474",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2dea645b32fee876e46cc789",
+     "query_id": "squad:squad:train:60591",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-11ddf40812ae3170666d6c8b",
+     "query_id": "squad:squad:train:30691",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-29be7618a5a1805c710ae122",
+     "query_id": "squad:squad:train:11339",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-18067e569025063f17dab208",
+     "query_id": "squad:squad:train:47700",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1910cfded215505a174ac39c",
+     "query_id": "squad:squad:train:86301",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-099a0cf219a3053f7b142f5b",
+     "query_id": "squad:squad:train:41157",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2f6b5b51e4f3ebf5b4cdb85c",
+     "query_id": "squad:squad:train:33771",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-182dbe26ebd5114b66115394",
+     "query_id": "squad:squad:train:21819",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-24e41a3512b6cb2271d0b462",
+     "query_id": "squad:squad:train:22848",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-301b6e265d52e7fc01adffbf",
+     "query_id": "squad:squad:train:46371",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-292658eb9030797b42149f9d",
+     "query_id": "squad:squad:train:4364",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0bbf19f943156c2dd9731792",
+     "query_id": "squad:squad:train:55410",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-15d2510e567d473215d7cd58",
+     "query_id": "squad:squad:train:45689",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2b1944981295b9ffd7cbabac",
+     "query_id": "squad:squad:train:61861",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1497e368239eb1f9c13f9370",
+     "query_id": "squad:squad:train:72210",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-032433f0ee87e9983f0745df",
+     "query_id": "squad:squad:train:75378",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-12bb87b95214df69f78bc7de",
+     "query_id": "squad:squad:train:46930",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-068284fdb98cd75332addefb",
+     "query_id": "squad:squad:train:24749",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-23d6cc70aef7bc49c0371c3e",
+     "query_id": "squad:squad:train:13975",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-3297eb6e8677b05e8c455a4e",
+     "query_id": "squad:squad:train:45934",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1dd550abdc869a41e37dfd85",
+     "query_id": "squad:squad:train:80140",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-3270c2dd89e78a77c1f99e23",
+     "query_id": "squad:squad:train:19236",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-282d213bc2982fb18766556d",
+     "query_id": "squad:squad:train:30099",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2260132dc3bb55fd3f8c62e1",
+     "query_id": "squad:squad:train:27995",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-319979852c468d004d747051",
+     "query_id": "squad:squad:train:12836",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-21f74724eb76c26cd9c961d9",
+     "query_id": "squad:squad:train:47151",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1e350a16cd36b73474a1f617",
+     "query_id": "squad:squad:train:86996",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2041e0193d2b088a95548344",
+     "query_id": "squad:squad:train:52591",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0631c637ef9b460829bc8d97",
+     "query_id": "squad:squad:train:75872",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-076f3c08758d7aa224346710",
+     "query_id": "squad:squad:train:58057",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-30ea8151d9b9eedf310e2763",
+     "query_id": "squad:squad:train:73354",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-07acbf87c71a1b2711d6b3bf",
+     "query_id": "squad:squad:train:75987",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-196b0ac7053651d2614916bf",
+     "query_id": "drop:drop:train:76994",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-03f4d699236d28359fc71122",
+     "query_id": "drop:drop:train:27991",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-02cb5e00eeb9e2b01a3e3588",
+     "query_id": "drop:drop:train:28939",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2c90d9745870483af263b866",
+     "query_id": "drop:drop:train:71284",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2df1ce96abbd5dec0e00323a",
+     "query_id": "drop:drop:train:6852",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-30ece02b0c607c32a1123c63",
+     "query_id": "drop:drop:train:68463",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-207dc8db562351e8af494f0b",
+     "query_id": "drop:drop:train:49863",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-04c265385fde2f413caca830",
+     "query_id": "drop:drop:train:72314",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1a215b9422cd0892271be172",
+     "query_id": "drop:drop:train:35262",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-10eb513361bc792f8f055ab7",
+     "query_id": "drop:drop:train:72740",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1319ff255514af127f757db3",
+     "query_id": "drop:drop:train:50418",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2ebb365e3ac79e41abf6c519",
+     "query_id": "drop:drop:train:72761",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-058357d4f87678fbaf624eff",
+     "query_id": "drop:drop:train:41554",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0de9bc2efa4f4a92248a96b5",
+     "query_id": "drop:drop:train:52371",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-032c6af3d1ae2d30f9ee3e74",
+     "query_id": "drop:drop:train:15900",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-330d0535b694f24333bbca9a",
+     "query_id": "drop:drop:train:37004",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-118cf51cf158899c38df84c6",
+     "query_id": "drop:drop:train:60570",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-221f15cf281d9b26f91e0901",
+     "query_id": "drop:drop:train:37966",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-19ce126fe04c9c6c46fd59bd",
+     "query_id": "drop:drop:train:19417",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1b5d09f9865ba789ee6902c0",
+     "query_id": "drop:drop:train:67360",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0dcbcc659b88f7f54bccedcb",
+     "query_id": "drop:drop:train:50654",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-24650a81c6e8be7f5b77871f",
+     "query_id": "drop:drop:train:54382",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-25138b2d199234961f4d30e5",
+     "query_id": "drop:drop:train:70403",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0095d31f3ead96ab04449391",
+     "query_id": "drop:drop:train:77233",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-11bfd674ae623457a1544e74",
+     "query_id": "drop:drop:train:40283",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1c5f5290368f84d01bb697de",
+     "query_id": "drop:drop:train:25473",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-22a74e545ec6124916c579d5",
+     "query_id": "drop:drop:train:69794",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-14173b2b2d40fdce5e353d81",
+     "query_id": "drop:drop:train:71554",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1e1890b1e88acb1f101a6b6e",
+     "query_id": "drop:drop:train:72111",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1c674188f20c5db47d5cf68c",
+     "query_id": "drop:drop:train:21648",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2f84c6b2a053574d751c8099",
+     "query_id": "drop:drop:train:50158",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1e40e127fc56653fd7d0c645",
+     "query_id": "drop:drop:train:60204",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-32999e8f032d4e938cd74ed8",
+     "query_id": "drop:drop:train:8791",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0bdc22e3eec4531568dfb5c7",
+     "query_id": "drop:drop:train:74905",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0bedde4392a2cb173839a506",
+     "query_id": "drop:drop:train:38970",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-25358982cda85e749dec20cf",
+     "query_id": "drop:drop:train:28322",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-32b6ae3f072b0180a9762e76",
+     "query_id": "drop:drop:train:7064",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-138be696a6c9a1245478116d",
+     "query_id": "drop:drop:train:60142",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2a516dd13732658cff2dab19",
+     "query_id": "drop:drop:train:76334",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-18fb51ea5480c477b322c2e4",
+     "query_id": "drop:drop:train:16937",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1f755ddf86c90c5e655d82f9",
+     "query_id": "drop:drop:train:32885",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2afa275e5e721d8b839a736f",
+     "query_id": "drop:drop:train:54343",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-27528d974315fad22da1302c",
+     "query_id": "drop:drop:train:37104",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2a37e07802f66d6d3ba75592",
+     "query_id": "drop:drop:train:41464",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2d8b11c2116231eeb276653a",
+     "query_id": "drop:drop:train:59418",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0d81b29f492dd85a699c4c02",
+     "query_id": "drop:drop:train:74467",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-3214921a0065e780abfbe77f",
+     "query_id": "drop:drop:train:58614",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-28b73a07e017b54212ea19f6",
+     "query_id": "drop:drop:train:71878",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2f8ef41041596671e983d7a0",
+     "query_id": "drop:drop:train:51858",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2d3a54c2472609250495d0c4",
+     "query_id": "drop:drop:train:13319",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-10f605205120fa558b32c6f9",
+     "query_id": "drop:drop:train:46126",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-21524e13af4dbc496436dd72",
+     "query_id": "drop:drop:train:39589",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-19c5cdf3d9eb377e9ea6c002",
+     "query_id": "drop:drop:train:4010",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2f12f7cf7f4d50a74cd2dba6",
+     "query_id": "drop:drop:train:37415",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2068a601c273410520a9aba5",
+     "query_id": "drop:drop:train:66741",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-19d8b6750a3cf9db95046de0",
+     "query_id": "drop:drop:train:58794",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-035e88b14c946eb610e57020",
+     "query_id": "drop:drop:train:30690",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1f897be3a7e49e544a975101",
+     "query_id": "drop:drop:train:40551",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-25f2ad7f9ffaaf4c259cb7b5",
+     "query_id": "drop:drop:train:36254",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-194a28b617aa57c2ff9983d7",
+     "query_id": "drop:drop:train:1565",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2f4edfd5d726c16be2ed902d",
+     "query_id": "drop:drop:train:57712",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-101b5c7aa8e862506b03e0a0",
+     "query_id": "drop:drop:train:22472",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0fef5fec8ffb0d88e14e15a1",
+     "query_id": "drop:drop:train:61369",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-21efdec473377a2229136aea",
+     "query_id": "drop:drop:train:1585",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-077cd225b4467bbf6342dc1e",
+     "query_id": "drop:drop:train:64415",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-282d219dc7e71f05b2cad6fd",
+     "query_id": "drop:drop:train:74615",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-27ae6b1bdb8ee6b01d0e80ee",
+     "query_id": "drop:drop:train:69356",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-136a9e100d88836394e6baab",
+     "query_id": "drop:drop:train:7359",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-08865807180e1a0087b00466",
+     "query_id": "drop:drop:train:54531",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2bc2420f882709a78c3c4f33",
+     "query_id": "drop:drop:train:23287",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1c7ffaed995492e72ba7aa87",
+     "query_id": "drop:drop:train:37275",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-31ca45aa17e0e198d33418c4",
+     "query_id": "drop:drop:train:18981",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0915c1628e8f0325e80f6fe9",
+     "query_id": "drop:drop:train:7762",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-21e0880bb09dfc80a347b458",
+     "query_id": "drop:drop:train:61515",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0b8b7b79cb402a5c4731d68f",
+     "query_id": "drop:drop:train:35000",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2aa9dec3cb89fd47ad68bce3",
+     "query_id": "drop:drop:train:64615",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-33183db2980c1496066e8551",
+     "query_id": "drop:drop:train:39029",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-06e4edf131a68c03dc8054cc",
+     "query_id": "drop:drop:train:41062",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-314b0f442ef7395dab7f419d",
+     "query_id": "drop:drop:train:59001",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-04a27d4f8aa5295d409cd471",
+     "query_id": "drop:drop:train:77022",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-15b8b30247819479a229cf96",
+     "query_id": "drop:drop:train:53146",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2f1f194487f584599c7df433",
+     "query_id": "drop:drop:train:13490",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2a9ea20564d8abb1be80f105",
+     "query_id": "drop:drop:train:25135",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-01e51f59c4d56f27e6421e97",
+     "query_id": "drop:drop:train:27909",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-131a36fd4a97c4109d219a99",
+     "query_id": "drop:drop:train:71544",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1e8abe0f11417d1a462441d4",
+     "query_id": "drop:drop:train:47979",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2368359d433c297c7f4f3b67",
+     "query_id": "drop:drop:train:73789",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-303ab43c9f1a70bfd11a3333",
+     "query_id": "drop:drop:train:17735",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-04fcbaa12bf7a40cbd6efd3b",
+     "query_id": "drop:drop:train:28914",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-060ccbaa27cff15f880112ba",
+     "query_id": "drop:drop:train:74641",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-098290dbfe1e1d5b760bcce0",
+     "query_id": "drop:drop:train:23497",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-083eb0fcd8a308bdf016eed0",
+     "query_id": "drop:drop:train:71263",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-03ce86ee22969501a757ce15",
+     "query_id": "drop:drop:train:5288",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2ecddd6954d4e1b8443c7594",
+     "query_id": "drop:drop:train:76803",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-29b12d670788c9c67871fc52",
+     "query_id": "drop:drop:train:43622",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-02837e4ed17a5f7517837a78",
+     "query_id": "drop:drop:train:60799",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-3090c57758ddc67bea00a7e4",
+     "query_id": "drop:drop:train:53057",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-3147705a7401f006e79ac5a2",
+     "query_id": "drop:drop:train:13991",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-004c34042b5e47a21dcea619",
+     "query_id": "drop:drop:train:32748",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-096f400e04b5057518ed52ef",
+     "query_id": "drop:drop:train:73135",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-249de8ec9231e0d2b4e0e3d5",
+     "query_id": "drop:drop:train:57116",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1242b5d8f651fc7a24b250de",
+     "query_id": "drop:drop:train:2615",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-15a332b6dd7fa98fbaef2e6b",
+     "query_id": "drop:drop:train:57877",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-181d624b6554ba94cc307391",
+     "query_id": "drop:drop:train:75958",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0e6ebfbf17dcee2b673dbca9",
+     "query_id": "drop:drop:train:35509",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-036a68c57fffb6777a2eb57e",
+     "query_id": "drop:drop:train:8428",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1002b7ca7b48ffdedd358253",
+     "query_id": "drop:drop:train:13362",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-29e51e464a7d7c5a53587bce",
+     "query_id": "drop:drop:train:26156",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-22c99bfd9a1afc646f99f75a",
+     "query_id": "drop:drop:train:59831",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0dc1e068371ccead9b5781f0",
+     "query_id": "drop:drop:train:62142",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0d07ad9d41c05a9a9f51ef5b",
+     "query_id": "drop:drop:train:49243",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2825dd948842628ca69d72ab",
+     "query_id": "drop:drop:train:76702",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2c561c599fbc8be9d057d47f",
+     "query_id": "drop:drop:train:23616",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2a4dcfa78b8f4dffd650307c",
+     "query_id": "drop:drop:train:56595",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-15ecc21faa48bc80c9721c3f",
+     "query_id": "drop:drop:train:63755",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2964214a0da75fa119c313b2",
+     "query_id": "drop:drop:train:13259",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-094f0ff2bacefb3a3bac1f6d",
+     "query_id": "drop:drop:train:75249",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1bbc10ca11661f70c23ccb57",
+     "query_id": "drop:drop:train:67287",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0bfa6f4605fa62f285151f35",
+     "query_id": "drop:drop:train:30117",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0eaba0d5117cae488c267ed2",
+     "query_id": "drop:drop:train:68375",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-222d033c51f528c7407ab115",
+     "query_id": "drop:drop:train:35701",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1b5c6071561238ba89202d30",
+     "query_id": "drop:drop:train:41094",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2c1425448f1d8c677122786c",
+     "query_id": "drop:drop:train:41273",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0f240a613598613f128e7b04",
+     "query_id": "drop:drop:train:17965",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2e88a1bf541e95a7eb6b90c3",
+     "query_id": "drop:drop:train:28896",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1e5f340971c5c5c6cbb1ed01",
+     "query_id": "drop:drop:train:51901",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-19f9430569b72d6346be51ab",
+     "query_id": "drop:drop:train:30001",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1b7bf4e05516a8711244e366",
+     "query_id": "drop:drop:train:60922",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0c48d2a51ac9daecdd586112",
+     "query_id": "drop:drop:train:50103",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1748584a58f1576b87f6e5ee",
+     "query_id": "drop:drop:train:26857",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1df01b416f10a77eae84ee6f",
+     "query_id": "drop:drop:train:65854",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-18fe2eee4128a74eba136351",
+     "query_id": "drop:drop:train:64433",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1a27672e2db2a8187a4a2d32",
+     "query_id": "drop:drop:train:43165",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-31e3f2d391e1395f347d96f2",
+     "query_id": "drop:drop:train:43497",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0e2562b7e0c7e0a72d3dfc7c",
+     "query_id": "ropes:ropes:train:10712",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-17d0e28bd9a04eb368a20bb6",
+     "query_id": "ropes:ropes:train:2037",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-236f493dc64b0ff8444c1e4f",
+     "query_id": "ropes:ropes:train:1832",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-020b01dc13e192e744a0db5e",
+     "query_id": "ropes:ropes:train:442",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-17f03f824b7c78a1a383fb6b",
+     "query_id": "ropes:ropes:train:3894",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-30278bcab71e2c545a4a4122",
+     "query_id": "ropes:ropes:train:6900",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-09da86a3d576a17c93cf138b",
+     "query_id": "ropes:ropes:train:9148",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-17745a13c629fa1099ffc742",
+     "query_id": "ropes:ropes:train:383",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-09079dbf9bd8fa2b25f75e4a",
+     "query_id": "ropes:ropes:train:1433",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0013134b26fff5c81867d07b",
+     "query_id": "ropes:ropes:train:247",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-29a62941b7480f4d4a66c575",
+     "query_id": "ropes:ropes:train:10701",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-110272cdb22feacd8059e9a3",
+     "query_id": "ropes:ropes:train:4250",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-190dbe97a746b4504cd30575",
+     "query_id": "ropes:ropes:train:117",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-301bb70810b9b1a45e76f38c",
+     "query_id": "ropes:ropes:train:9053",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1044a8074aa8569037fbffff",
+     "query_id": "ropes:ropes:train:9955",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-32cf866eae99f938d96af141",
+     "query_id": "ropes:ropes:train:2936",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-006c8fdf9dd270f2daeb2b52",
+     "query_id": "ropes:ropes:train:547",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-22de74f5ad3bcdd60838eba7",
+     "query_id": "ropes:ropes:train:10528",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-19133509630b3102367d1799",
+     "query_id": "ropes:ropes:train:10845",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-20eafb39199ed85c5c6f9662",
+     "query_id": "ropes:ropes:train:1149",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-16386bf1886ac295068bee12",
+     "query_id": "ropes:ropes:train:539",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-14e81f3eb28e44ae1cf943a6",
+     "query_id": "ropes:ropes:train:5465",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-33127d5bce8f1874a6ede969",
+     "query_id": "ropes:ropes:train:10209",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-20c73767ec013a0237186d53",
+     "query_id": "ropes:ropes:train:1813",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-283454d9d868077aa801c603",
+     "query_id": "ropes:ropes:train:5572",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2c269f4d340441b08189e0b7",
+     "query_id": "ropes:ropes:train:1486",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-25002abfacb7d3e56c28ff92",
+     "query_id": "ropes:ropes:train:9926",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-17b301eed7fcf2d683c963b9",
+     "query_id": "ropes:ropes:train:5140",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-32cbc005eaf1a4744b142c16",
+     "query_id": "ropes:ropes:train:6435",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0992d8b2ae58ef2a63b19687",
+     "query_id": "ropes:ropes:train:6938",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-07c53908d987d402621f91e5",
+     "query_id": "ropes:ropes:train:4082",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-167721b265f0351c41c433c9",
+     "query_id": "ropes:ropes:train:7553",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-207e0039424d497f742ca670",
+     "query_id": "ropes:ropes:train:1583",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1e250bba723d195f64b8c1f8",
+     "query_id": "ropes:ropes:train:10625",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2b93ba1e9ac129936edb2873",
+     "query_id": "ropes:ropes:train:9343",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-25538299010f0115c8cb2af4",
+     "query_id": "ropes:ropes:train:7028",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-19051adc4417f9643396069d",
+     "query_id": "ropes:ropes:train:6888",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2ae3d7a76c55e9f65b09b52f",
+     "query_id": "ropes:ropes:train:7056",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0af3352cd3b8c768ab51d4f9",
+     "query_id": "ropes:ropes:train:8350",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-30e1627244fe508f74b3b552",
+     "query_id": "ropes:ropes:train:504",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2403e2af44f3732fe8be2584",
+     "query_id": "ropes:ropes:train:9534",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-150f9baa1e88c9cf7d85b1a0",
+     "query_id": "ropes:ropes:train:3133",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2e33f4779535e6a20d0cc86e",
+     "query_id": "ropes:ropes:train:10390",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-09b8524e409c1814e609ccee",
+     "query_id": "ropes:ropes:train:10719",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-239b7e845e7a62a4070f7c07",
+     "query_id": "ropes:ropes:train:6976",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-250d45a5cae282608345e319",
+     "query_id": "ropes:ropes:train:1239",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-196e6dd2e42f31bfd55a84ef",
+     "query_id": "ropes:ropes:train:7276",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-30fa9006868f9cf93442d0b6",
+     "query_id": "ropes:ropes:train:10418",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-23b39ab03d2a9daa42c76f02",
+     "query_id": "ropes:ropes:train:5633",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2b80b646a72510114ede8b75",
+     "query_id": "ropes:ropes:train:5772",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0a78685f08d7f0479cb040c9",
+     "query_id": "ropes:ropes:train:8549",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-15446a0d266958f06e000fba",
+     "query_id": "ropes:ropes:train:647",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0acf178ccb701cfa6663c91d",
+     "query_id": "ropes:ropes:train:10433",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-31d3cdceb1726f50696d5b9b",
+     "query_id": "ropes:ropes:train:10623",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1aabaac1da8d2a865e1e9538",
+     "query_id": "ropes:ropes:train:304",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2ceba7aeb06889a9bf3be96f",
+     "query_id": "ropes:ropes:train:0",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1559c322b7b38bc4c0996a7f",
+     "query_id": "ropes:ropes:train:4490",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-18701336681c049fcd3e2f5b",
+     "query_id": "ropes:ropes:train:2765",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-143303d9e2c21514fe347cb0",
+     "query_id": "ropes:ropes:train:6349",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0cbe0977f7fd6d766b347d50",
+     "query_id": "ropes:ropes:train:2059",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-19a4622c853d5e9b5a611502",
+     "query_id": "ropes:ropes:train:7711",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-24d2aace15a4e20d91c157dd",
+     "query_id": "ropes:ropes:train:10781",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2d2304834fcb0ea3a3f13a63",
+     "query_id": "ropes:ropes:train:5902",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2b00f510dd84ea808d2d885f",
+     "query_id": "ropes:ropes:train:4334",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2146f43d22e9fd62aa2a1b13",
+     "query_id": "ropes:ropes:train:5001",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-26d34a2509aaa6be02df4c8b",
+     "query_id": "ropes:ropes:train:6826",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2f9d5ce8645b5992c0a92537",
+     "query_id": "ropes:ropes:train:5837",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-14314c423d4e8655ed02e2a9",
+     "query_id": "ropes:ropes:train:7362",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2f1b92dd3d15f087bcbecf15",
+     "query_id": "ropes:ropes:train:3338",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-07abc3f32bd253e20ff6867e",
+     "query_id": "ropes:ropes:train:1449",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-052e06407374e0de8c206a2b",
+     "query_id": "ropes:ropes:train:5349",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2efd1b0e6877d8208edeefa2",
+     "query_id": "ropes:ropes:train:4574",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2c3c003e7d6346d8ae4114a7",
+     "query_id": "ropes:ropes:train:5322",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-17e72c29d3003a14dd007bdc",
+     "query_id": "ropes:ropes:train:3168",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-14929e4c972ac3ac439b2baf",
+     "query_id": "ropes:ropes:train:9502",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-27922eff72361d6b34ddd9e3",
+     "query_id": "ropes:ropes:train:6491",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2cf110aec679b77656ba38b9",
+     "query_id": "ropes:ropes:train:5167",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0fd703ffbb95e02aa758cb6c",
+     "query_id": "ropes:ropes:train:5200",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2e6ae27488d1b584bab2f62c",
+     "query_id": "ropes:ropes:train:167",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-05ae708992088748b4efee58",
+     "query_id": "ropes:ropes:train:5600",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0caebac76f515f42b1f78448",
+     "query_id": "ropes:ropes:train:8500",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-09cb729453b45c7a3bd08043",
+     "query_id": "ropes:ropes:train:2897",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2818dba31a4152fb9a4646d3",
+     "query_id": "ropes:ropes:train:2257",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-04e38d115788b1cc7aeeca08",
+     "query_id": "ropes:ropes:train:121",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-116306468b8363403bb85870",
+     "query_id": "ropes:ropes:train:3564",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1a5c9653372cab4ea7f70a45",
+     "query_id": "ropes:ropes:train:10814",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-28104ab5e3fea64f07050439",
+     "query_id": "ropes:ropes:train:8379",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-21e1bbbc972d529614b48df9",
+     "query_id": "ropes:ropes:train:3909",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1865fb435fc2a8f153b1e798",
+     "query_id": "ropes:ropes:train:7091",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0ec3e6c977be05ddf2c140f4",
+     "query_id": "ropes:ropes:train:5912",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2caae941c5e83bb3e84da8bd",
+     "query_id": "ropes:ropes:train:6993",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2873d683907d611f140486ef",
+     "query_id": "ropes:ropes:train:9290",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-17408880055e4e9f3d56ecd9",
+     "query_id": "ropes:ropes:train:10387",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-06f0f9ae47bd7c12c8b5e7f9",
+     "query_id": "ropes:ropes:train:7528",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-3296e32f0f89023e3bc65fad",
+     "query_id": "ropes:ropes:train:10494",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-20d1d9241e6bf1059011e163",
+     "query_id": "ropes:ropes:train:5130",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0702e5bf843b98d620e779c3",
+     "query_id": "ropes:ropes:train:923",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-06c5967d5e80bd74adf33e19",
+     "query_id": "ropes:ropes:train:9104",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-25588f472fa7ae60249ff3c3",
+     "query_id": "ropes:ropes:train:1379",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-07df1830d6264f2ddb0c6b2d",
+     "query_id": "ropes:ropes:train:3840",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-009c359f84a46546c832144b",
+     "query_id": "ropes:ropes:train:8107",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-15d08867eda2e72e01c9ba88",
+     "query_id": "ropes:ropes:train:868",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-18bc064f65ea1c68fbcdef68",
+     "query_id": "ropes:ropes:train:1582",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-10bced14dbaf289c5581a69a",
+     "query_id": "ropes:ropes:train:2213",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-18133870e9879c453b51b7da",
+     "query_id": "ropes:ropes:train:8218",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0e71aecd78163aac96182aff",
+     "query_id": "ropes:ropes:train:7393",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-096fd442fdfaebf16ede8c04",
+     "query_id": "ropes:ropes:train:10061",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-086588a6ca387cb130462fb4",
+     "query_id": "ropes:ropes:train:8438",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-3327c7e0a9eb4bd4d236a822",
+     "query_id": "ropes:ropes:train:1155",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-11a286137d19b42a6506c0f5",
+     "query_id": "ropes:ropes:train:10491",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1aea2528ec605ad7735292b2",
+     "query_id": "ropes:ropes:train:10900",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2fbf0f3dd8d5873af6f19483",
+     "query_id": "ropes:ropes:train:10636",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0beffff0a54c78a97fe6ab91",
+     "query_id": "ropes:ropes:train:5510",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-02919b060ae5b1154001c128",
+     "query_id": "ropes:ropes:train:7145",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1c2fd094af9091cb8d3dcc22",
+     "query_id": "ropes:ropes:train:1315",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-15b7e638888ea463d3417696",
+     "query_id": "ropes:ropes:train:8502",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-279f98795b7d6bccc1ed0f5d",
+     "query_id": "ropes:ropes:train:6404",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-0f34374cf8e52978852c6835",
+     "query_id": "ropes:ropes:train:6562",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2bb2324ea1640c4a883e2f3a",
+     "query_id": "ropes:ropes:train:7768",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-135344afb23c3bc1c1ad3e32",
+     "query_id": "ropes:ropes:train:8334",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1b7ae678a4588bb31520c946",
+     "query_id": "ropes:ropes:train:6467",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-01ab282e0e41b53db55b8bbb",
+     "query_id": "ropes:ropes:train:432",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1e323635a39fce3845472781",
+     "query_id": "ropes:ropes:train:7830",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1abc168298e66e8c66eaa0ad",
+     "query_id": "ropes:ropes:train:335",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-286b78a363cc74f3ef5658f3",
+     "query_id": "ropes:ropes:train:3572",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-02707d43b5913620d759f67d",
+     "query_id": "ropes:ropes:train:10320",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1fd59b1fe8eaba8ab105b029",
+     "query_id": "ropes:ropes:train:2353",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-28352509aa1f7fa3524ffff5",
+     "query_id": "ropes:ropes:train:6518",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-2f0360be7f3b7268b45a8a4b",
+     "query_id": "ropes:ropes:train:2309",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-310995f85988ec5d569332f9",
+     "query_id": "ropes:ropes:train:392",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-24828969f078b0fd12a987f0",
+     "query_id": "ropes:ropes:train:6943",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-1b991ae518ad6a5f8a2168eb",
+     "query_id": "ropes:ropes:train:3844",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-05ec0e4c2beebdbec0dbfd42",
+     "query_id": "ropes:ropes:train:6233",
+     "stratum": "fixed_validation"
+    },
+    {
+     "document_id": "qa_protocol-doc-196367ecd1e84de934557f6d",
+     "query_id": "ropes:ropes:train:1480",
+     "stratum": "fixed_validation"
+    }
+   ],
+   "teacher_prompt": "existing source-visible bank_context/render_prompt",
+   "training_updates": 0,
+   "validation_suite_sha256": "8f148e8a924d01205d3384f5b9259b4446e654b802f82da6a123eb86cc2760f3"
+  },
+  "inputs": "artifacts/answer-position-mask-inputs",
+  "limits": null,
+  "smoke": false
+ },
+ "experiment": "answer-position-mask",
+ "schema": "unit-plan-v1",
+ "stages": [
+  {
+   "name": "answer_position_mask"
+  }
+ ],
+ "units": [
+  {
+   "cost": 1.0,
+   "id": "answer_position_mask-exact402-000",
+   "kind": "answer_position_mask",
+   "query_ids": [
+    "squad:squad:train:12204",
+    "squad:squad:train:11709",
+    "squad:squad:train:34820",
+    "squad:squad:train:59523",
+    "squad:squad:train:55915",
+    "squad:squad:train:48867",
+    "squad:squad:train:57695",
+    "squad:squad:train:86065",
+    "squad:squad:train:84455",
+    "squad:squad:train:60274",
+    "squad:squad:train:48839",
+    "squad:squad:train:86389",
+    "squad:squad:train:14374",
+    "squad:squad:train:34381",
+    "squad:squad:train:78414",
+    "squad:squad:train:17507",
+    "squad:squad:train:11496",
+    "squad:squad:train:21141",
+    "squad:squad:train:43148",
+    "squad:squad:train:39386",
+    "squad:squad:train:60569",
+    "squad:squad:train:9027",
+    "squad:squad:train:85492",
+    "squad:squad:train:5508",
+    "squad:squad:train:46501",
+    "squad:squad:train:72901"
+   ],
+   "split": "validation",
+   "stage": "answer_position_mask",
+   "suite": "exact402"
+  },
+  {
+   "cost": 1.0,
+   "id": "answer_position_mask-exact402-001",
+   "kind": "answer_position_mask",
+   "query_ids": [
+    "squad:squad:train:5462",
+    "squad:squad:train:82699",
+    "squad:squad:train:51782",
+    "squad:squad:train:68172",
+    "squad:squad:train:9256",
+    "squad:squad:train:35613",
+    "squad:squad:train:53172",
+    "squad:squad:train:58638",
+    "squad:squad:train:75899",
+    "squad:squad:train:65405",
+    "squad:squad:train:48601",
+    "squad:squad:train:82266",
+    "squad:squad:train:14158",
+    "squad:squad:train:52432",
+    "squad:squad:train:13505",
+    "squad:squad:train:30504",
+    "squad:squad:train:59369",
+    "squad:squad:train:49277",
+    "squad:squad:train:21119",
+    "squad:squad:train:19556",
+    "squad:squad:train:22927",
+    "squad:squad:train:46357",
+    "squad:squad:train:75388",
+    "squad:squad:train:20319",
+    "squad:squad:train:85612",
+    "squad:squad:train:74692"
+   ],
+   "split": "validation",
+   "stage": "answer_position_mask",
+   "suite": "exact402"
+  },
+  {
+   "cost": 1.0,
+   "id": "answer_position_mask-exact402-002",
+   "kind": "answer_position_mask",
+   "query_ids": [
+    "squad:squad:train:80301",
+    "squad:squad:train:66341",
+    "squad:squad:train:82231",
+    "squad:squad:train:69203",
+    "squad:squad:train:78692",
+    "squad:squad:train:5864",
+    "squad:squad:train:20161",
+    "squad:squad:train:60870",
+    "squad:squad:train:6729",
+    "squad:squad:train:17174",
+    "squad:squad:train:42774",
+    "squad:squad:train:72827",
+    "squad:squad:train:7266",
+    "squad:squad:train:13198",
+    "squad:squad:train:27855",
+    "squad:squad:train:5098",
+    "squad:squad:train:28683",
+    "squad:squad:train:4603",
+    "squad:squad:train:33628",
+    "squad:squad:train:41494",
+    "squad:squad:train:14053",
+    "squad:squad:train:20405",
+    "squad:squad:train:27822",
+    "squad:squad:train:62646",
+    "squad:squad:train:68379",
+    "squad:squad:train:25580"
+   ],
+   "split": "validation",
+   "stage": "answer_position_mask",
+   "suite": "exact402"
+  },
+  {
+   "cost": 1.0,
+   "id": "answer_position_mask-exact402-003",
+   "kind": "answer_position_mask",
+   "query_ids": [
+    "squad:squad:train:10649",
+    "squad:squad:train:60418",
+    "squad:squad:train:27683",
+    "squad:squad:train:18710",
+    "squad:squad:train:12542",
+    "squad:squad:train:68431",
+    "squad:squad:train:36040",
+    "squad:squad:train:51307",
+    "squad:squad:train:67440",
+    "squad:squad:train:14030",
+    "squad:squad:train:82647",
+    "squad:squad:train:32807",
+    "squad:squad:train:86888",
+    "squad:squad:train:11985",
+    "squad:squad:train:2289",
+    "squad:squad:train:78630",
+    "squad:squad:train:77116",
+    "squad:squad:train:50073",
+    "squad:squad:train:46125",
+    "squad:squad:train:59131",
+    "squad:squad:train:17222",
+    "squad:squad:train:83467",
+    "squad:squad:train:14455",
+    "squad:squad:train:28474",
+    "squad:squad:train:60591",
+    "squad:squad:train:30691"
+   ],
+   "split": "validation",
+   "stage": "answer_position_mask",
+   "suite": "exact402"
+  },
+  {
+   "cost": 1.0,
+   "id": "answer_position_mask-exact402-004",
+   "kind": "answer_position_mask",
+   "query_ids": [
+    "squad:squad:train:11339",
+    "squad:squad:train:47700",
+    "squad:squad:train:86301",
+    "squad:squad:train:41157",
+    "squad:squad:train:33771",
+    "squad:squad:train:21819",
+    "squad:squad:train:22848",
+    "squad:squad:train:46371",
+    "squad:squad:train:4364",
+    "squad:squad:train:55410",
+    "squad:squad:train:45689",
+    "squad:squad:train:61861",
+    "squad:squad:train:72210",
+    "squad:squad:train:75378",
+    "squad:squad:train:46930",
+    "squad:squad:train:24749",
+    "squad:squad:train:13975",
+    "squad:squad:train:45934",
+    "squad:squad:train:80140",
+    "squad:squad:train:19236",
+    "squad:squad:train:30099",
+    "squad:squad:train:27995",
+    "squad:squad:train:12836",
+    "squad:squad:train:47151",
+    "squad:squad:train:86996",
+    "squad:squad:train:52591"
+   ],
+   "split": "validation",
+   "stage": "answer_position_mask",
+   "suite": "exact402"
+  },
+  {
+   "cost": 1.0,
+   "id": "answer_position_mask-exact402-005",
+   "kind": "answer_position_mask",
+   "query_ids": [
+    "squad:squad:train:75872",
+    "squad:squad:train:58057",
+    "squad:squad:train:73354",
+    "squad:squad:train:75987",
+    "drop:drop:train:76994",
+    "drop:drop:train:27991",
+    "drop:drop:train:28939",
+    "drop:drop:train:71284",
+    "drop:drop:train:6852",
+    "drop:drop:train:68463",
+    "drop:drop:train:49863",
+    "drop:drop:train:72314",
+    "drop:drop:train:35262",
+    "drop:drop:train:72740",
+    "drop:drop:train:50418",
+    "drop:drop:train:72761",
+    "drop:drop:train:41554",
+    "drop:drop:train:52371",
+    "drop:drop:train:15900",
+    "drop:drop:train:37004",
+    "drop:drop:train:60570",
+    "drop:drop:train:37966",
+    "drop:drop:train:19417",
+    "drop:drop:train:67360",
+    "drop:drop:train:50654",
+    "drop:drop:train:54382"
+   ],
+   "split": "validation",
+   "stage": "answer_position_mask",
+   "suite": "exact402"
+  },
+  {
+   "cost": 1.0,
+   "id": "answer_position_mask-exact402-006",
+   "kind": "answer_position_mask",
+   "query_ids": [
+    "drop:drop:train:70403",
+    "drop:drop:train:77233",
+    "drop:drop:train:40283",
+    "drop:drop:train:25473",
+    "drop:drop:train:69794",
+    "drop:drop:train:71554",
+    "drop:drop:train:72111",
+    "drop:drop:train:21648",
+    "drop:drop:train:50158",
+    "drop:drop:train:60204",
+    "drop:drop:train:8791",
+    "drop:drop:train:74905",
+    "drop:drop:train:38970",
+    "drop:drop:train:28322",
+    "drop:drop:train:7064",
+    "drop:drop:train:60142",
+    "drop:drop:train:76334",
+    "drop:drop:train:16937",
+    "drop:drop:train:32885",
+    "drop:drop:train:54343",
+    "drop:drop:train:37104",
+    "drop:drop:train:41464",
+    "drop:drop:train:59418",
+    "drop:drop:train:74467",
+    "drop:drop:train:58614",
+    "drop:drop:train:71878"
+   ],
+   "split": "validation",
+   "stage": "answer_position_mask",
+   "suite": "exact402"
+  },
+  {
+   "cost": 1.0,
+   "id": "answer_position_mask-exact402-007",
+   "kind": "answer_position_mask",
+   "query_ids": [
+    "drop:drop:train:51858",
+    "drop:drop:train:13319",
+    "drop:drop:train:46126",
+    "drop:drop:train:39589",
+    "drop:drop:train:4010",
+    "drop:drop:train:37415",
+    "drop:drop:train:66741",
+    "drop:drop:train:58794",
+    "drop:drop:train:30690",
+    "drop:drop:train:40551",
+    "drop:drop:train:36254",
+    "drop:drop:train:1565",
+    "drop:drop:train:57712",
+    "drop:drop:train:22472",
+    "drop:drop:train:61369",
+    "drop:drop:train:1585",
+    "drop:drop:train:64415",
+    "drop:drop:train:74615",
+    "drop:drop:train:69356",
+    "drop:drop:train:7359",
+    "drop:drop:train:54531",
+    "drop:drop:train:23287",
+    "drop:drop:train:37275",
+    "drop:drop:train:18981",
+    "drop:drop:train:7762",
+    "drop:drop:train:61515"
+   ],
+   "split": "validation",
+   "stage": "answer_position_mask",
+   "suite": "exact402"
+  },
+  {
+   "cost": 1.0,
+   "id": "answer_position_mask-exact402-008",
+   "kind": "answer_position_mask",
+   "query_ids": [
+    "drop:drop:train:35000",
+    "drop:drop:train:64615",
+    "drop:drop:train:39029",
+    "drop:drop:train:41062",
+    "drop:drop:train:59001",
+    "drop:drop:train:77022",
+    "drop:drop:train:53146",
+    "drop:drop:train:13490",
+    "drop:drop:train:25135",
+    "drop:drop:train:27909",
+    "drop:drop:train:71544",
+    "drop:drop:train:47979",
+    "drop:drop:train:73789",
+    "drop:drop:train:17735",
+    "drop:drop:train:28914",
+    "drop:drop:train:74641",
+    "drop:drop:train:23497",
+    "drop:drop:train:71263",
+    "drop:drop:train:5288",
+    "drop:drop:train:76803",
+    "drop:drop:train:43622",
+    "drop:drop:train:60799",
+    "drop:drop:train:53057",
+    "drop:drop:train:13991",
+    "drop:drop:train:32748",
+    "drop:drop:train:73135"
+   ],
+   "split": "validation",
+   "stage": "answer_position_mask",
+   "suite": "exact402"
+  },
+  {
+   "cost": 1.0,
+   "id": "answer_position_mask-exact402-009",
+   "kind": "answer_position_mask",
+   "query_ids": [
+    "drop:drop:train:57116",
+    "drop:drop:train:2615",
+    "drop:drop:train:57877",
+    "drop:drop:train:75958",
+    "drop:drop:train:35509",
+    "drop:drop:train:8428",
+    "drop:drop:train:13362",
+    "drop:drop:train:26156",
+    "drop:drop:train:59831",
+    "drop:drop:train:62142",
+    "drop:drop:train:49243",
+    "drop:drop:train:76702",
+    "drop:drop:train:23616",
+    "drop:drop:train:56595",
+    "drop:drop:train:63755",
+    "drop:drop:train:13259",
+    "drop:drop:train:75249",
+    "drop:drop:train:67287",
+    "drop:drop:train:30117",
+    "drop:drop:train:68375",
+    "drop:drop:train:35701",
+    "drop:drop:train:41094",
+    "drop:drop:train:41273",
+    "drop:drop:train:17965",
+    "drop:drop:train:28896",
+    "drop:drop:train:51901"
+   ],
+   "split": "validation",
+   "stage": "answer_position_mask",
+   "suite": "exact402"
+  },
+  {
+   "cost": 1.0,
+   "id": "answer_position_mask-exact402-010",
+   "kind": "answer_position_mask",
+   "query_ids": [
+    "drop:drop:train:30001",
+    "drop:drop:train:60922",
+    "drop:drop:train:50103",
+    "drop:drop:train:26857",
+    "drop:drop:train:65854",
+    "drop:drop:train:64433",
+    "drop:drop:train:43165",
+    "drop:drop:train:43497",
+    "ropes:ropes:train:10712",
+    "ropes:ropes:train:2037",
+    "ropes:ropes:train:1832",
+    "ropes:ropes:train:442",
+    "ropes:ropes:train:3894",
+    "ropes:ropes:train:6900",
+    "ropes:ropes:train:9148",
+    "ropes:ropes:train:383",
+    "ropes:ropes:train:1433",
+    "ropes:ropes:train:247",
+    "ropes:ropes:train:10701",
+    "ropes:ropes:train:4250",
+    "ropes:ropes:train:117",
+    "ropes:ropes:train:9053",
+    "ropes:ropes:train:9955",
+    "ropes:ropes:train:2936",
+    "ropes:ropes:train:547",
+    "ropes:ropes:train:10528"
+   ],
+   "split": "validation",
+   "stage": "answer_position_mask",
+   "suite": "exact402"
+  },
+  {
+   "cost": 1.0,
+   "id": "answer_position_mask-exact402-011",
+   "kind": "answer_position_mask",
+   "query_ids": [
+    "ropes:ropes:train:10845",
+    "ropes:ropes:train:1149",
+    "ropes:ropes:train:539",
+    "ropes:ropes:train:5465",
+    "ropes:ropes:train:10209",
+    "ropes:ropes:train:1813",
+    "ropes:ropes:train:5572",
+    "ropes:ropes:train:1486",
+    "ropes:ropes:train:9926",
+    "ropes:ropes:train:5140",
+    "ropes:ropes:train:6435",
+    "ropes:ropes:train:6938",
+    "ropes:ropes:train:4082",
+    "ropes:ropes:train:7553",
+    "ropes:ropes:train:1583",
+    "ropes:ropes:train:10625",
+    "ropes:ropes:train:9343",
+    "ropes:ropes:train:7028",
+    "ropes:ropes:train:6888",
+    "ropes:ropes:train:7056",
+    "ropes:ropes:train:8350",
+    "ropes:ropes:train:504",
+    "ropes:ropes:train:9534",
+    "ropes:ropes:train:3133",
+    "ropes:ropes:train:10390",
+    "ropes:ropes:train:10719"
+   ],
+   "split": "validation",
+   "stage": "answer_position_mask",
+   "suite": "exact402"
+  },
+  {
+   "cost": 1.0,
+   "id": "answer_position_mask-exact402-012",
+   "kind": "answer_position_mask",
+   "query_ids": [
+    "ropes:ropes:train:6976",
+    "ropes:ropes:train:1239",
+    "ropes:ropes:train:7276",
+    "ropes:ropes:train:10418",
+    "ropes:ropes:train:5633",
+    "ropes:ropes:train:5772",
+    "ropes:ropes:train:8549",
+    "ropes:ropes:train:647",
+    "ropes:ropes:train:10433",
+    "ropes:ropes:train:10623",
+    "ropes:ropes:train:304",
+    "ropes:ropes:train:0",
+    "ropes:ropes:train:4490",
+    "ropes:ropes:train:2765",
+    "ropes:ropes:train:6349",
+    "ropes:ropes:train:2059",
+    "ropes:ropes:train:7711",
+    "ropes:ropes:train:10781",
+    "ropes:ropes:train:5902",
+    "ropes:ropes:train:4334",
+    "ropes:ropes:train:5001",
+    "ropes:ropes:train:6826",
+    "ropes:ropes:train:5837",
+    "ropes:ropes:train:7362",
+    "ropes:ropes:train:3338",
+    "ropes:ropes:train:1449"
+   ],
+   "split": "validation",
+   "stage": "answer_position_mask",
+   "suite": "exact402"
+  },
+  {
+   "cost": 1.0,
+   "id": "answer_position_mask-exact402-013",
+   "kind": "answer_position_mask",
+   "query_ids": [
+    "ropes:ropes:train:5349",
+    "ropes:ropes:train:4574",
+    "ropes:ropes:train:5322",
+    "ropes:ropes:train:3168",
+    "ropes:ropes:train:9502",
+    "ropes:ropes:train:6491",
+    "ropes:ropes:train:5167",
+    "ropes:ropes:train:5200",
+    "ropes:ropes:train:167",
+    "ropes:ropes:train:5600",
+    "ropes:ropes:train:8500",
+    "ropes:ropes:train:2897",
+    "ropes:ropes:train:2257",
+    "ropes:ropes:train:121",
+    "ropes:ropes:train:3564",
+    "ropes:ropes:train:10814",
+    "ropes:ropes:train:8379",
+    "ropes:ropes:train:3909",
+    "ropes:ropes:train:7091",
+    "ropes:ropes:train:5912",
+    "ropes:ropes:train:6993",
+    "ropes:ropes:train:9290",
+    "ropes:ropes:train:10387",
+    "ropes:ropes:train:7528",
+    "ropes:ropes:train:10494",
+    "ropes:ropes:train:5130"
+   ],
+   "split": "validation",
+   "stage": "answer_position_mask",
+   "suite": "exact402"
+  },
+  {
+   "cost": 1.0,
+   "id": "answer_position_mask-exact402-014",
+   "kind": "answer_position_mask",
+   "query_ids": [
+    "ropes:ropes:train:923",
+    "ropes:ropes:train:9104",
+    "ropes:ropes:train:1379",
+    "ropes:ropes:train:3840",
+    "ropes:ropes:train:8107",
+    "ropes:ropes:train:868",
+    "ropes:ropes:train:1582",
+    "ropes:ropes:train:2213",
+    "ropes:ropes:train:8218",
+    "ropes:ropes:train:7393",
+    "ropes:ropes:train:10061",
+    "ropes:ropes:train:8438",
+    "ropes:ropes:train:1155",
+    "ropes:ropes:train:10491",
+    "ropes:ropes:train:10900",
+    "ropes:ropes:train:10636",
+    "ropes:ropes:train:5510",
+    "ropes:ropes:train:7145",
+    "ropes:ropes:train:1315",
+    "ropes:ropes:train:8502",
+    "ropes:ropes:train:6404",
+    "ropes:ropes:train:6562",
+    "ropes:ropes:train:7768",
+    "ropes:ropes:train:8334",
+    "ropes:ropes:train:6467",
+    "ropes:ropes:train:432"
+   ],
+   "split": "validation",
+   "stage": "answer_position_mask",
+   "suite": "exact402"
+  },
+  {
+   "cost": 0.46153846153846156,
+   "id": "answer_position_mask-exact402-015",
+   "kind": "answer_position_mask",
+   "query_ids": [
+    "ropes:ropes:train:7830",
+    "ropes:ropes:train:335",
+    "ropes:ropes:train:3572",
+    "ropes:ropes:train:10320",
+    "ropes:ropes:train:2353",
+    "ropes:ropes:train:6518",
+    "ropes:ropes:train:2309",
+    "ropes:ropes:train:392",
+    "ropes:ropes:train:6943",
+    "ropes:ropes:train:3844",
+    "ropes:ropes:train:6233",
+    "ropes:ropes:train:1480"
+   ],
+   "split": "validation",
+   "stage": "answer_position_mask",
+   "suite": "exact402"
+  }
+ ]
+}

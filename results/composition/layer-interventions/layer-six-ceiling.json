@@ -1,0 +1,98 @@
+{
+  "arms": [
+    "schedule_B6"
+  ],
+  "prefix": "schedule_",
+  "f1": {
+    "random:1": {
+      "questions": 1260,
+      "f1": {
+        "icl": 0.8874960020141648,
+        "native": 0.739846583725363,
+        "native_k1": 0.739846583725363,
+        "schedule_B6": 0.6774561790550897
+      },
+      "em": {
+        "icl": 0.7626984126984127,
+        "native": 0.5896825396825397,
+        "native_k1": 0.0,
+        "schedule_B6": 0.5206349206349207
+      }
+    },
+    "random:8": {
+      "questions": 1260,
+      "f1": {
+        "icl": 0.8695546363663044,
+        "native": 0.1984915754667181,
+        "native_k1": 0.739846583725363,
+        "normalized_b0.5": 0.30083548237869645,
+        "schedule_B6": 0.6777865365283045
+      },
+      "em": {
+        "icl": 0.7492063492063492,
+        "native": 0.10158730158730159,
+        "native_k1": 0.0,
+        "normalized_b0.5": 0.19206349206349208,
+        "schedule_B6": 0.5198412698412699
+      }
+    }
+  },
+  "from0_equals_native_k1": {
+    "1": {
+      "rows": 0,
+      "mismatching": 0
+    },
+    "8": {
+      "rows": 0,
+      "mismatching": 0
+    }
+  },
+  "contrasts": {
+    "1": {
+      "schedule_B6": {
+        "vs_native": {
+          "difference": -0.04895343110312205,
+          "low": -0.06638910870633287,
+          "high": -0.031904255023342494,
+          "clusters": 180,
+          "excludes_zero": true
+        },
+        "vs_normalized": null,
+        "vs_native_k1": {
+          "difference": -0.04895343110312205,
+          "low": -0.06638910870633287,
+          "high": -0.031904255023342494,
+          "clusters": 180,
+          "excludes_zero": true
+        }
+      }
+    },
+    "8": {
+      "schedule_B6": {
+        "vs_native": {
+          "difference": 0.4805668592513504,
+          "low": 0.44845432910420385,
+          "high": 0.5116528194503854,
+          "clusters": 180,
+          "excludes_zero": true
+        },
+        "vs_normalized": {
+          "difference": 0.39036098020075666,
+          "low": 0.35872035951106923,
+          "high": 0.421892677942613,
+          "clusters": 180,
+          "excludes_zero": true
+        },
+        "vs_native_k1": {
+          "difference": -0.04942890521748505,
+          "low": -0.06686828404127701,
+          "high": -0.032284117429881534,
+          "clusters": 180,
+          "excludes_zero": true
+        }
+      }
+    }
+  },
+  "units": 36,
+  "questions": 1260
+}

@@ -1,0 +1,240 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% ICML 2026 style, two-column preprint format.
+\usepackage[preprint]{icml2026}
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{nicefrac}
+\usepackage{microtype}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepgfplotslibrary{groupplots}
+\usepackage{enumitem}
+\usepackage{array}
+\usetikzlibrary{positioning,arrows.meta,fit,calc,backgrounds}
+
+
+\icmltitlerunning{Doc-to-LoRA Analysis: Query Conditioning and Interference}
+
+\begin{document}
+
+\twocolumn[
+\icmltitle{Doc-to-LoRA Analysis: Query Conditioning, Wrong Facts, and Distractor Interference}
+
+\icmlsetsymbol{equal}{*}
+
+\begin{icmlauthorlist}
+\icmlauthor{Jesper Derehag}{midbrain}
+\end{icmlauthorlist}
+
+\icmlaffiliation{midbrain}{Midbrain}
+
+\icmlcorrespondingauthor{Jesper Derehag}{jesper@midbrain.ai}
+
+\printAffiliationsAndNotice{}
+]
+
+% Fix: \footnotetext inside \twocolumn[...] is silently dropped on some
+% TeX distributions.  Re-emit the affiliation footnote here.
+{\let\thefootnote\relax\footnotetext{\hspace*{-\footnotesep}%
+\textsuperscript{1}\,Midbrain. Correspondence to: Jesper Derehag
+\textless{}jesper@midbrain.ai\textgreater{}.}}
+
+\begin{abstract}
+Doc-to-LoRA (D2L) compiles documents into low-rank adapters, allowing language
+models to use their contents without repeatedly processing the original text.
+We investigate its suitability for internalizing user memories through factual
+question answering, controlled interventions, and a production MidBrain memory
+pipeline. Across Gemma-2-2B and Qwen3-4B, D2L loses accuracy relative to
+in-context learning, with additional documents introducing substantial
+interference. Single-document errors frequently match answers to other questions
+about the same passage, suggesting unreliable question--answer attribution.
+Layer-wise interventions show that interference accumulates across depth,
+with more concentrated early damage at larger bank sizes on Gemma. With eight
+documents, applying the full bank in the initial layers gives similar accuracy
+to withholding all document contributions there. Source membership is
+detectable in intermediate states, but trained readers do not reliably
+resolve the interference.
+On PersonaMem-v2, joint compilation and normalized adapter composition achieve
+accuracy close to consolidated text memory when retrieved episodes remain text,
+but the resulting token savings are modest. Measured throughput gains also
+depend on model and batch size despite substantial reductions in analytical
+compute. Together, these findings limit the practical case for D2L as a
+replacement for text-based memory and motivate investigating online-learning
+methods that acquire personalized behavior from interactions in which memory
+is used.
+\end{abstract}
+
+% ===========================================================================
+\section{Introduction}
+\label{sec:intro}
+
+Our memory system, MidBrain\footnote{\url{https://midbrain.ai}}, gives each
+agent--user pair a consolidated semantic and procedural memory, derived from episodic
+memory that is itself retrieved per query~\citep{tulving1972episodic,derehag2026smartsearch}.
+In MidBrain's production system, the consolidated memory is injected as part of the
+context. The same consolidated memory is added to the majority of requests, and the
+model repeatedly processes that text during inference. We therefore
+investigate whether this memory can be internalized, that is, made part of the model
+rather than part of the context.
+
+Doc-to-LoRA (D2L)~\citep{charakorn2026doctolora} is a candidate for this
+internalization. A hypernetwork, meta-trained to approximate context
+distillation~\citep{snell2022learning}, maps a document to a rank-8
+adapter~\citep{hu2022lora} in one forward pass, and the adapter is installed in the
+model in place of the document. When several documents are supplied, D2L adds their
+adapters before the model processes the request. This composition rule is useful when
+chunks of one document should contribute together, yet it also means that an adapter
+can affect a request even when its document is irrelevant. The released compilers
+recover much of the in-context accuracy on single factual
+documents, while accuracy collapses when several
+document adapters are summed (Section~\ref{sec:res-gap}).
+
+We evaluate D2L as the internalization mechanism for MidBrain. The analysis
+asks where document-conditioned computation is lost, how composition introduces
+interference, and what these failures imply for using compiled user memory.
+It addresses three questions.
+\begin{enumerate}[label=\textbf{RQ\arabic*},leftmargin=*,nosep]
+\item Can D2L adapters reach in-context
+learning (ICL) parity when the memory is a single document?
+\begin{enumerate}[label=\textbf{RQ1.\arabic*},leftmargin=*,nosep]
+\item Is document content detectable in the compiler latent, and what passage
+content appears in incorrect answers?
+\item Can a different readout, compiler fine-tuning, or a write fitted to one passage
+close the gap?
+\item Which part of the in-context computation does the adapter fail to supply?
+\end{enumerate}
+\item Can D2L selectively ignore irrelevant documents in the way attention does
+when the memory consists of several documents?
+\begin{enumerate}[label=\textbf{RQ2.\arabic*},leftmargin=*,nosep]
+\item How much of the composition loss can uniform update normalization recover?
+\item In which layers do the distractors do their damage, and in which does the source
+do its useful work?
+\item Can the model's state in those layers tell the source from the distractors?
+\end{enumerate}
+\item Can compiled memory provide composable user memory with a practical
+serving-cost advantage over text?
+\end{enumerate}
+
+\textbf{This paper makes the following contributions:}
+
+\begin{enumerate}[leftmargin=*,nosep]
+\item We characterize single-document errors: 46\% of incorrect D2L responses
+on teacher-correct questions match another answer from the same passage.
+Readout and fitting controls leave a gap to ICL at the tested budgets
+(Section~\ref{sec:res-single}).
+\item We localize composition damage across model depth. On Gemma at $K=8$, applying
+the full bank below layer 8 gives .611 F1, close to .633 when those layers
+receive no document contributions; at $K=16$, the former falls to .111.
+The interventions distinguish accumulated interference from the cost of
+withholding source information (Figure~\ref{fig:layers}).
+\item We assess compiled production memory and serving cost. Joint compilation
+gives .391 accuracy against .390 for text on PersonaMem-v2, but throughput
+advantages depend on model and batch size. These measurements constrain the
+practical case for replacing text memory (Table~\ref{tab:user-memory-summary}
+and Figure~\ref{fig:serving-tradeoff}).
+\end{enumerate}
+
+% ===========================================================================
+\section{Related Work}
+\label{sec:related}
+
+\textbf{Context distillation and generated adapters.} Context distillation trains a
+model without a context to match the predictions it makes with that context
+available~\citep{askell2021general,snell2022learning}. Prior work applies this idea
+to fixed inputs, entity updates, and prompts~\citep{choi2023fixed,padmanabhan2023propagating,bhargava2024prompt}.
+For knowledge injection, SELF-PARAM, Knowledge Modules, and prompt distillation train
+a student for each context using generated question--answer pairs, a
+document-conditioned teacher's hidden states, or the prompted model
+itself~\citep{wang2025selfupdatable,caccia2025training,kujanpaa2025efficient}.
+Hypernetworks remove the per-context optimization: HyperTuning and HINT generate
+modules from examples or instructions~\citep{phang2023hypertuning,ivison2023hint},
+while Generative Adapter maps a context to low-rank adapters
+\citep{chen2025generative}. Text-to-LoRA maps task descriptions to adapters
+\citep{charakorn2025texttolora}; D2L maps documents by meta-learning context
+distillation~\citep{charakorn2026doctolora}; and SHINE reuses the frozen model's
+layers as the hypernetwork~\citep{liu2026shine}. We use the released D2L compilers
+and leave the hypernetwork frozen except in the compiler-tuning controls.
+
+\textbf{Analyses of adapters as memory.} LoRA capacity has been characterized as a
+function of rank and sequence length~\citep{xu2026lora}, while another study finds
+that adapters restricted to the first half of the layers and to feed-forward weights
+store facts better than late-layer or attention-only adapters on Llama-3.1-8B
+\citep{back2026understanding}. Mostly Reading~\citep{pulici2026mostlyreading}
+argues that open-book scores mostly measure a reading behavior shared by all
+adapters, and uses cloze (fill-in-the-blank) probes~\citep{taylor1953cloze} to
+isolate stored content; merges of sixteen or more adapters keep 87--89\% of the
+open-book advantage and 12--16\% of the cloze advantage. COIN shows that knowledge
+learned by next-token prediction becomes dependent on its preceding context
+\citep{zhou2026coin}. Those studies analyze trained adapters. We analyze generated
+adapters with a fixed compiler and use exact interventions on the composed state to
+localize failure.
+
+\textbf{Work building on D2L.} The Override Gap~\citep{cheng2026override} attributes
+D2L's failure under knowledge conflict to an adapter margin that is roughly constant
+across documents and improves accuracy by scaling the adapter in selected layers.
+Our normalization control measures how much composition loss can be recovered
+by uniformly scaling document updates. Doc-to-Atom compiles typed
+atoms into micro-LoRAs with retrieval keys and assembles a query-specific adapter
+from the top-ranked atoms, attributing D2L's errors to interference from irrelevant
+content in one monolithic adapter~\citep{diao2026doctoatom}. Its composition
+retrieves over a key bank that grows with memory and applies the selection before the
+prompt is processed. The oracles in Section~\ref{sec:res-layers} measure the ceiling
+of source selection from layer zero, while the probes measure source
+membership information in hidden states. Zuo et al.\ compare document adapters
+with compressed KV caches~\citep{zuo2026rethinking}; TMEM updates LoRA weights online
+within an episode~\citep{ren2026scaling}, and RPMem and DPPM build user memory from
+D2L-style compilers trained on each benchmark's own
+questions~\citep{zhao2026rpmem,chen2026dppm}. These works leave the location of
+composition failure within the network unresolved.
+
+\textbf{Knowledge editing, adapter composition, context compression.} Feed-forward
+layers act as key--value memories~\citep{geva2021transformer}, and ROME, MEMIT,
+MEND, and WISE write or route facts into them
+\citep{meng2022locating,meng2023massediting,mitchell2022fast,wang2024wise}; D2L
+adapts the same MLP down-projections while taking free text as input. Task arithmetic,
+TIES-Merging, and LoraHub combine trained adapters by addition, sign resolution, or
+searched weights~\citep{ilharco2023editing,yadav2023tiesmerging,huang2024lorahub}.
+D2L sums independently generated adapters without weights, and the readers we
+analyze reweight that sum per rank. Gisting, MEND, and Cartridges compress a context
+into tokens or a trained KV prefix~\citep{mu2023learning,li2024mend,eyuboglu2026cartridges};
+prompt compression and KV eviction reduce the positions attended
+\citep{jiang2023llmlingua,pan2024llmlingua2,zhang2023h2o,li2024snapkv}.
+Our serving comparison uses full-prefill ICL.
+
+\textbf{Agent memory and user-memory benchmarks.} Agent memory systems manage
+different context tiers and consolidate facts over long histories
+\citep{packer2023memgpt,chhikara2025mem0,xu2025amem,maharana2024evaluating,wu2025longmemeval}.
+PersonaMem-v2 evaluates implicit preference inference over 32K-token histories
+\citep{jiang2025personamemv2}. We use it to measure the utility of compiled state,
+with MidBrain serving as a fixed memory provider.
+
+% ===========================================================================
+\input{analysis/methods}
+
+% ===========================================================================
+\input{analysis/results}
+
+% ===========================================================================
+\input{analysis/discussion}
+
+\bibliography{bib/references}
+\bibliographystyle{icml2026}
+
+\clearpage
+\appendix
+\input{analysis/extended_methods}
+\input{analysis/appendix_single}
+\input{analysis/numerical_results}
+\clearpage
+
+\end{document}

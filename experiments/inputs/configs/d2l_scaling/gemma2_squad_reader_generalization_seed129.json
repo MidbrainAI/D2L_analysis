@@ -1,0 +1,41 @@
+{
+  "extends": "common.json",
+  "variant": "gemma2",
+  "run_name": "gemma2-squad-reader-generalization-seed129",
+  "checkpoint_sha256": "36b0ed4399cef3e1e3a6cbedb551e8f9a9c939d4d424bb1d3864c7d702e62dac",
+  "model": {
+    "revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+    "attention": "eager"
+  },
+  "data": {
+    "manifest_jsonl": "artifacts/d2l_scaling/gemma2-squad-seed42/source_rows.jsonl",
+    "datasets": [
+      "squad"
+    ],
+    "router_training_datasets": [
+      "squad"
+    ],
+    "max_train_documents": 256,
+    "max_eval_documents": 256,
+    "compile_all_documents": true
+  },
+  "scaling": {
+    "bank_sizes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "seeds": [
+      129
+    ],
+    "anchor_docs": 32,
+    "max_queries_per_anchor": 4
+  }
+}

@@ -1,0 +1,104 @@
+\section{Details supporting RQ1}
+\label{sec:single-tables}
+\subsection{Readout and attribution}
+Table~\ref{tab:reader-ablations} provides the width, layer-sharing, and
+compiler-training comparisons discussed in Section~\ref{sec:res-single}.
+The representation comparison is reported in Table~\ref{tab:readout-summary}.
+
+\begin{table}[t]
+\centering
+\caption{Single-document controls (Gemma; 400 questions from 57 documents).
+Reader controls use teacher KL; compiler controls use gold-answer
+cross-entropy and select checkpoint zero. Native F1 is .755; ICL is .882.}
+\label{tab:reader-ablations}
+\small\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lr@{}}
+\toprule
+Condition & F1 \\
+\midrule
+Post-block, shared width 32 & .740 \\
+Post-block, independent width 32 per layer & .744 \\
+Write-site, width 32 & .751 \\
+Write-site, width 2,304 & .735 \\
+Compiler fine-tuning & .755 \\
+Joint compiler and reader fine-tuning & .755 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Attribution of incorrect responses on teacher-correct questions
+in the 400-question diagnostic set (Section~\ref{sec:res-single}).
+$n$ is the number of errors for each model; correctness uses F1 $\geq .5$.
+The two matching categories overlap.}
+\label{tab:fact-attribution}
+\small\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Model & $n$ & Passage span & Other answer \\
+\midrule
+Native D2L & 65 & 57\% & 46\% \\
+Rank-effect reader & 59 & 63\% & 58\% \\
+Base model & 291 & 11\% & 10\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Among teacher-correct questions with answer tokens in the probe vocabulary,
+the mean answer-token percentile in the compiler-latent probe is .880 for
+native-correct responses ($n=222$) and .849 for native-incorrect responses
+($n=44$). These are the probe-covered subsets of 302 successes and 65 failures;
+percentiles measure token scores within the probe vocabulary, not generation
+accuracy or retention in the final adapter.
+
+\subsection{Passage fitting and question conditioning}
+\label{sec:res-refinement}
+These tables give the supporting measurements for the passage-fitting and
+question-conditioning controls in Section~\ref{sec:res-single}.
+
+\begin{table}[t]
+\centering
+\caption{Strict answer-aware passage fits: learning rate $10^{-5}$, step 10
+(160 documents, 864 questions). Overall F1 and its paired difference weight
+documents equally; coverage columns weight questions equally. Covered answers
+were elicited by the strict training probes (466 questions); uncovered answers
+were not (398 questions). Intervals are paired document-cluster 95\% intervals.}
+\label{tab:refinement}
+\scriptsize\setlength{\tabcolsep}{2pt}
+\begin{tabular}{@{}lrrrl@{}}
+\toprule
+Condition & Overall & Covered & Uncovered & $\Delta$ native [95\% CI] \\
+\midrule
+Native D2L & .742 & .846 & .626 & --- \\
+ICL teacher & .807 & .910 & .683 & --- \\
+\midrule
+Rank 8 & .743 & .882 & .588 & $+.002$ [$-.021$, $+.024$] \\
+Rank 16 & .746 & .888 & .587 & $+.004$ [$-.019$, $+.027$] \\
+Rank 32 & .752 & .899 & .584 & $+.010$ [$-.013$, $+.033$] \\
+Rank 64 & .738 & .903 & .553 & $-.003$ [$-.026$, $+.020$] \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\raggedright On the fitting probes, mean forward KL is .0105--.0111 and
+generated-response agreement with the teacher is .977--.980 F1 across ranks.
+These fitting diagnostics are distinct from the natural-question scores above.
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Question-conditioned writes ($K=1$, Gemma test set).
+The writer receives the evaluation question. Each paired contrast uses
+its run's native baseline.}
+\label{tab:conditioned}
+\small\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lrl@{}}
+\toprule
+Training & F1 & $\Delta$ native [95\% CI] \\
+\midrule
+Mixed-$K$ KL & .733 & $-.022$ [$-.034$, $-.010$] \\
+$K=1$ KL & .742 & $-.014$ [$-.027$, $-.000$] \\
+Contrastive KL & .727 & $-.026$ [$-.042$, $-.011$] \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,18 @@
+Doc-to-LoRA Analysis is a mixed-license repository. There is no blanket
+license for the entire checkout.
+
+* Original companion software: MIT.
+* Manuscript, original documentation, figures, and aggregate results marked
+  as such in REUSE.toml: Creative Commons Attribution 4.0 International
+  (CC BY 4.0), matching arXiv:2611.30825.
+* Benchmark-bearing evidence and frozen data artifacts: see REUSE.toml and
+  THIRD_PARTY.md. The QA evidence collection uses CC BY-SA 4.0; embedded
+  third-party material retains its upstream terms. PersonaMem-v2 score
+  evidence is provided under CC BY 4.0.
+* The MidBrain wordmark is excluded from these grants. No trademark rights
+  are granted.
+
+REUSE.toml records the applicable terms by path. LICENSES/ contains the full
+texts. THIRD_PARTY.md identifies the included material, upstream sources,
+attribution, and separately downloaded dependencies. These licenses apply
+only to rights the relevant licensors hold.

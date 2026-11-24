@@ -1,0 +1,277 @@
+\section{Evaluation and implementation details}
+\label{sec:extended-methods}
+
+\subsection{Implementation convention}
+For the interventions in Section~\ref{sec:d2l}, we map the released
+row-stored factors to our notation as
+$A_{l,d}=\widetilde A_l(d)$ and $B_{l,d}=s\widetilde B_l(d)^\top$.
+The fixed implementation scale is $s=2R^{3/2}$ with $R=8$;
+learned scalers are already included in the stored factors.
+The same convention applies to the shared bias adapter.
+
+\subsection{Set construction}
+\label{sec:set-details}
+All factual-QA evaluations use greedy generation with a 32-token limit, matched
+prompts, and D2L's evaluation normalization.
+Scores from different sets are never pooled, because the sets answer different
+diagnostic questions and have different document construction histories.
+
+The main comparisons use held-out development and test sets. Configurations
+are selected on development data. The same test set was used sequentially for
+the post-block, selected write-site, and gated-reader evaluations. The
+preregistered rule required an improvement over native D2L at $K=1$ and over
+normalization at $K=4$ and $K=8$. A post-block reader trained only at $K=1$
+provides the single-document reference.
+
+\textbf{Test set.} The test set holds 200 SQuAD validation source
+paragraphs with 1,127 questions, plus 40 development sources with 200 questions from
+disjoint articles. From 2,067 SQuAD validation paragraphs, 842 referenced by earlier
+experiments through document ID, content hash, question index, or 10-word overlap are
+excluded, as are paragraphs of the first 1,000 validation questions used by D2L for
+model selection. Articles are partitioned between development and test. Up to eight
+paragraphs per article with at least five questions serve as sources; remaining
+paragraphs serve as distractors. Random banks are nested across $K$ with distractors
+from other articles in the same split and a fixed random source position, so a nested
+bank reuses the same source and adds documents as $K$ grows.
+Bank identifiers and source positions are persisted.
+
+\textbf{Development set.} This set contains the first 180 unique SQuAD-train
+contexts in dataset order and their 1,260 questions. The released compiler's training
+definition holds these contexts out. Nested random banks with
+$K\in\{1,2,4,8,16\}$ draw distractors from the same 180-document pool and use a
+hashed source position. These contexts had served as fresh
+validation data for earlier single-document readers and were excluded from every
+reader's training rows, validation rows, and distractor pools in this paper.
+Development data from this set determine settings such as the normalization exponent
+and reader arm. We evaluate the selected configurations on the test set.
+
+\textbf{Diagnostic sets.} The first is a 57-document, 400-question SQuAD set for
+readout and retention diagnostics. The second is a 402-question SQuAD, DROP, and
+ROPES validation set for transplants and masks. The third is a previously unused
+160-passage, 864-question SQuAD set for per-passage fits. Its passages lie in the
+compiler's meta-training corpus. These sets locate the source of a failure or establish a
+ceiling for a particular intervention. We do not pool their scores across tasks.
+
+\textbf{DROP/ROPES set.} After excluding D2L's selection rows, this set contains
+612 test sources with 1,934 questions: 527 DROP documents with 1,530 questions,
+capped at three per document, and 85 ROPES documents with 404 questions. The
+94 DROP documents never used by any earlier experiment are flagged separately.
+
+\subsection{Single-document protocols (RQ1)}
+These protocols support Section~\ref{sec:res-single} and
+Tables~\ref{tab:readout-summary} and~\ref{tab:causal}.
+\textbf{Readout comparisons.} Shared and independent width-32 post-block corrections
+and write-site readers of width 32 and 2,304 use forward KL against the ICL teacher.
+The representation comparison holds a width-32 post-block reader and gold-answer
+cross-entropy fixed while varying its memory input: summed adapter effect,
+individual rank effects, or compiler latents. Each uses 52,354 SQuAD training
+questions, 4,365 updates, 400 document-disjoint validation questions, and 400
+held-out questions from 57 documents. Compiler-only and joint ablations train the
+hypernetwork alone or with the reader under the same schedule and select by fresh
+validation F1 with checkpoint zero eligible. \textbf{Retention and attribution.} A
+kernel-ridge probe predicts passage-token presence from the frozen
+$26\times8\times512$ pre-head latent, trained on 2,000 separate documents.
+Incorrect responses on teacher-correct questions (F1 $\geq0.5$) are matched to
+passage spans and other questions' reference answers. \textbf{Transplants and
+masks.} On the 402-question set, native hidden states are replaced by ICL states at
+selected position sets at every layer boundary, with cache-free replay and teacher
+states recomputed on the same answer history. Self-transplants reproduce native
+logits, and all-position transplants reproduce teacher logits. Masks preserve teacher prompt
+geometry and restrict document reads by position set, with baselines re-measured in
+the same runtime. \textbf{Per-passage fits.} Rank-8/16/32/64 down-projection
+adapters are fitted on 160 passages with 864 natural questions by full-batch forward
+KL on generated factual probes, 10 steps at learning rate $10^{-5}$ selected on 24
+development passages. Strict probes use reference spans and exclude generated
+questions with more than 0.5 token-F1 overlap with natural questions.
+Natural questions are stratified by whether the probes elicited their answer.
+\textbf{Question-conditioned writes.} A shared residual encoder reads the
+compiler latents and prompt-position states and uses the frozen LoRA head. Variants
+train at $K=1$ with 159,040 questions under teacher KL or an additional
+same-passage wrong-question hinge.
+
+\subsection{Layer interventions (RQ2)}
+\label{sec:composition-details}
+These interventions support Figure~\ref{fig:layers}
+and Table~\ref{tab:prompt-interventions}.
+\textbf{Oracles and schedules.} Layer-prefix oracles start the source-only mask at
+$L\in\{0,4,8,13,18,22\}$ of Gemma's 26 layers at $K=8$ and $K=16$. Bank-silent
+schedules use $L\in\{0,4,6,8,13\}$. Cross-model and cross-task evaluations use gate layers 0, 8, 18 and
+silent layers 6, 8 on Gemma-2-2B with the DROP/ROPES set, and gate layers 0, 11, 25 and
+silent layers 8, 11, the same fractions of its 36 layers, on Qwen3-4B with the
+development set. Each evaluation has its own ICL, native, normalized, and single-document
+rows. All gated conditions run inside the $K$-bank's
+compiled batch with the correction of Equation~\ref{eq:gate}. The layer-0 oracle
+reproduces native $K=1$'s response string on all but 24--30 of 1,260 development-set
+questions on Gemma, 71 of 1,934 on DROP and ROPES, and 115 of 1,260 on Qwen3-4B,
+whose responses average 13 words. The remaining strings diverge at greedy ties, and
+the paired F1 contrasts against native $K=1$ lie within $\pm0.004$ with intervals
+including zero. Schedule A keeps $g=0$ at every prompt position but the
+last, where it applies the mask, and applies the mask at every decode position and
+layer in one causal pass. Schedule C performs a clean prefill of the prompt, then for
+each layer computes the change after post-MLP normalization,
+\begin{equation}
+\Delta h_{\mathrm{replay}}
+=\mathcal{N}(z'_{\mathrm{masked}})-\mathcal{N}(z'_{\mathrm{silent}})
+\label{eq:cache-replay}
+\end{equation}
+where the silent output retains the shared bias and the masked output adds
+only the source's document contribution. It shifts the residual entering
+every later layer by the cumulative change, recomputes that layer's keys and values
+from the shifted residual with rotary embeddings, and overwrites the cache positions.
+Later layers' attention and MLP outputs are not re-evaluated. The last prompt
+position is then recomputed exactly under the masked bank over the replayed cache
+and decoding runs with the masked bank. A manual greedy loop over the static hybrid
+cache reproduces the library's generation, and the replay is exact at the first
+affected layer. Both properties are unit-tested. Response-only oracles keep native composition
+at every prompt position and layer and apply the mask at every layer of the generated
+positions, optionally also at the last prompt position. The layer-6 source-only
+reference uses the same banks.
+
+\subsection{Probe and reader implementation (RQ2)}
+\label{sec:rank-gates}
+The following definitions specify the probes and readers in
+Sections~\ref{sec:composition-diagnostics} and~\ref{sec:readers}.
+Let $a_{k,r}^{\top}$ and $b_{k,r}^{\top}$ be row $r$ of the implementation's
+$\widetilde A$ and $\widetilde B$ factors for document
+$d_k$. Expanding the native update into its rank contributions gives
+\begin{equation}
+\begin{aligned}
+c_{k,r}&=a_{k,r}^{\top}x\\
+z'&=z+s\sum_{k=1}^{K}\sum_{r=1}^{R}c_{k,r}b_{k,r}+B_0A_0x
+\end{aligned}
+\label{eq:rank-bank}
+\end{equation}
+Each row of $\widetilde A$ computes a coefficient from $x$, which multiplies the
+corresponding row vector from $\widetilde B$, transposed. Factors are fixed after compilation;
+coefficients depend on the current activation.
+
+\textbf{Probes.} The signed strength of a document rank and its two features are
+\begin{equation}
+\begin{aligned}
+m_{k,r}&=s\,c_{k,r}\lVert b_{k,r}\rVert_2\\
+\phi(m)&=[m,\ \operatorname{sign}(m)\log(1+|m|)]^{\top}
+\end{aligned}
+\label{eq:strength-features}
+\end{equation}
+The membership probe combines a state--rank score with these strength features:
+\begin{equation}
+\ell_{k,r}=
+\frac{\mathbf q(h)^{\top}\mathbf k_{k,r}}{\sqrt{64}}
++w^{\top}\phi(m_{k,r})+b
+\label{eq:probe-score}
+\end{equation}
+Here $h$ is the captured MLP-input residual, distinct from the down-projection
+input $x$. The query is $\mathbf q(h)=W_q^{\top}\mathrm{LN}(h)$,
+and $\mathbf k_{k,r}$ is the rank key after a learned projection. The two
+terms measure state--rank agreement and signed strength, respectively;
+$w$ weights the strength features and $b$ is a learned score bias.
+We fit the scorer with one AdamW pass at learning rate $10^{-3}$ over 1,500
+$K$-balanced banks ($K\in\{2,4,8,16\}$) from the reader-training rows. The objective
+is binary cross-entropy on rank membership. We score every (question, random bank)
+pair in the development set at $K=8$ and $K=16$ for response-position
+probes and at $K=8$ for the clean-prompt probe.
+For the reported document-level AUC, we average
+the eight rank logits of each document. For per-question AUC, we first average over
+the query positions. For
+clean-prefill collection the bank is cancelled during the forward pass while the
+coefficients and strengths are still computed from the bank.
+
+\textbf{Reader training.} Readers are trained for 4,291 updates on SQuAD training
+questions with the development-set documents excluded. All readers use AdamW with
+learning rate $10^{-4}$, weight decay $10^{-4}$ and gradient clipping at 1.
+Each update uses 12 questions, with one question per backward pass and data-parallel
+training across eight A100 GPUs. Mixed-$K$ vector-correction readers use balanced
+$K\in\{1,2,4,8,16\}$ blocks and cached frozen
+compiler latents. We validate every 500 updates by greedily generating answers to
+200 fresh questions (40 per $K$). We keep the best checkpoint by fresh macro-F1
+and the last checkpoint. The post-block reader uses gold-answer cross-entropy with the
+tokenizer's end-of-sequence token appended. The write-site and gated readers use the
+model's chat terminator, after finding that the appended token was a separate stop
+symbol on Gemma and that an answer-only target removed stop supervision. Write-site
+readers compute keys from the layer-normed $B$ rows and a scaled coefficient, values
+from the raw rank effects, add a sum-pooled bank feature, and emit the correction in
+the MLP branch's units. The deep variant adds slot embeddings from $(a_{k,r},b_{k,r})$ through
+two transformer blocks over the $8K$ slots, computed once per bank, and two
+cross-attention blocks from four read tokens. Gated readers use the strength
+features of Equation~\ref{eq:strength-features}, but add their projection to
+the rank key before taking the query--key product. The latent-assisted variant
+also receives compiler latents:
+\begin{equation}
+\ell_{k,r}=
+\frac{\mathbf q(u)^{\top}
+ [\mathbf k_{k,r}+W\phi(m_{k,r})]}{\sqrt{32}}
++b+4
+\label{eq:trained-gate-score}
+\end{equation}
+Here $u$ is the layer-normalized read state produced by the reader, not the
+probe's captured residual $h$. The gate has its own query projection $\mathbf q$,
+strength projection $W$, and score bias $b$, distinct from the probe parameters.
+The gate is
+\begin{equation}
+g_{k,r}=\frac{\sigma(\ell_{k,r})}{\sigma(4)}
+\label{eq:trained-gate}
+\end{equation}
+The query projection and score bias start at zero, so $\ell_{k,r}=4$ and
+$g_{k,r}=1$ at initialization. The upper bound is
+$1/\sigma(4)\approx1.0183$. The membership loss is the binary cross-entropy of $\sigma(\bar\ell_k)$, the
+document-mean logit, against bank membership, averaged over documents, layers, and
+response positions, with weight 1. Selection used the macro over $K\in\{1,4,8\}$ of
+the variant's paired difference from the reference (native at $K=1$,
+normalization at $K\geq4$). Ties were assigned to the cheaper arm. The test-set evaluation
+reused the recorded ICL, native, and normalized rows. Before evaluation,
+native outputs were checked against 12 recorded examples.
+
+\textbf{Applying the gates.} Each gate scales one document rank:
+\begin{equation}
+z'_{\mathrm{gated}}=z+s\sum_{k,r}g_{k,r}c_{k,r}b_{k,r}+B_0A_0x
+\label{eq:gated-ranks}
+\end{equation}
+The native adapter has already been applied when the gating hook runs, so the
+implementation adds only the difference:
+\begin{equation}
+z'_{\mathrm{gated}}-z'_{\mathrm{native}}
+=s\sum_{k,r}(g_{k,r}-1)c_{k,r}b_{k,r}
+\label{eq:gate}
+\end{equation}
+The base projection and shared bias cancel. This correction is added before
+post-MLP normalization. Gates of 1 leave the native output unchanged; gates of
+0 remove all document contributions while keeping the bias.
+
+\subsection{MidBrain and serving protocols (RQ3)}
+These protocols support Table~\ref{tab:user-memory-summary} and
+Figure~\ref{fig:serving-tradeoff}.
+\textbf{PersonaMem.} The evaluation uses 195 test personas and 4,878 questions. The
+fixed memory snapshot contains consolidated entries and
+persona/profile context derived from each history with no benchmark questions. Five
+development personas are excluded. The provider returns 100 episodes per question,
+retained across paired production conditions. Memory formatting follows the
+production configuration; evaluation uses an option-label-only answer prompt.
+The answering model is Qwen3-4B-Instruct-2507 with its released D2L
+checkpoint. Joint compilation includes persona, profile, and all entries in one
+document. Per-entry compilation uses one adapter per entry plus one for
+persona/profile.
+Label-only scoring selects the most likely option label in one
+forward pass. Paired persona-cluster intervals use 4,000 bootstrap resamples.
+\textbf{Cost.} For a memory of $M$ tokens in $K$ documents and a request with $Q$
+input and $T$ output tokens, write $N=Q+T$. With $P$ the linear MACs per token, $a$ the attention
+MACs per attended position, and $\rho$ the adapter MACs per token and document,
+\begin{align}
+C_{\mathrm{ICL}} &\approx (M+N)P+\tfrac{a}{2}(M+N)^2\label{eq:cost-icl}\\
+C_{\mathrm{D2L}} &\approx N\big(P+\rho(K+1)\big)+\tfrac{a}{2}N^2\label{eq:cost-d2l}
+\end{align}
+The $K+1$ adapters comprise $K$ documents and one shared bias. For storage,
+let $p$ be parameters per adapter, $b$ bytes per parameter, $L$ layers,
+$H$ KV heads, and $D$ the head dimension:
+\begin{align}
+S_{\mathrm{user}}&=Kpb\label{eq:storage-adapter}\\
+S_{\mathrm{KV}}&=2LHDMb\label{eq:storage-kv}
+\end{align}
+The factor 2 counts keys and values. The shared bias adds $pb$ once to
+model state, not to each user's stored document adapters. It is included in
+per-request MACs. Measurements use one A100 (40\,GB), PyTorch 2.9.0+cu130, upstream D2L LoRA
+execution, 64 forced output tokens, the median of five repetitions, and multi-user
+batches of 1, 8, and 16 distinct four-passage memories.
+Compilation is a write-time cost and is reported separately.
+Factual-QA intervals are paired source-document bootstrap intervals with
+10,000 resamples after averaging within each source. PersonaMem uses the
+4,000-resample persona-cluster procedure above. Tables identify their averaging unit.

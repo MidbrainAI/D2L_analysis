@@ -1,0 +1,220 @@
+{
+  "experiment": "GATED_READERS-test-confirmation",
+  "cells": {
+    "1": {
+      "questions": 1127,
+      "f1": 0.7501829526991378,
+      "em": 0.5927240461401952,
+      "paired_document_mean_contrasts": {
+        "native": {
+          "difference": -0.005431392232778806,
+          "ci95": [
+            -0.014949483811443036,
+            0.004242942597866341
+          ],
+          "baseline_question_mean": 0.7551741321282199
+        },
+        "normalized": {
+          "difference": -0.005431392232778806,
+          "ci95": [
+            -0.014949483811443036,
+            0.004242942597866341
+          ],
+          "baseline_question_mean": 0.7551741321282199
+        }
+      }
+    },
+    "2": {
+      "questions": 1127,
+      "f1": 0.6052581061918795,
+      "em": 0.4454303460514641,
+      "paired_document_mean_contrasts": {
+        "native": {
+          "difference": -0.010484346714072166,
+          "ci95": [
+            -0.026063768249387987,
+            0.005424363477397965
+          ],
+          "baseline_question_mean": 0.6180197944836857
+        },
+        "normalized": {
+          "difference": 0.0006503918511361628,
+          "ci95": [
+            -0.014926333374973205,
+            0.017038367572858135
+          ],
+          "baseline_question_mean": 0.6035750857324689
+        }
+      }
+    },
+    "4": {
+      "questions": 1127,
+      "f1": 0.41768033984204206,
+      "em": 0.25998225377107365,
+      "paired_document_mean_contrasts": {
+        "native": {
+          "difference": -0.026723260163339875,
+          "ci95": [
+            -0.04703803559225816,
+            -0.0071318944431918545
+          ],
+          "baseline_question_mean": 0.44465876157323797
+        },
+        "normalized": {
+          "difference": -0.0011405952061232965,
+          "ci95": [
+            -0.019316873520629656,
+            0.017153695382038116
+          ],
+          "baseline_question_mean": 0.42134093060009586
+        }
+      }
+    },
+    "8": {
+      "questions": 1127,
+      "f1": 0.28855543605199024,
+      "em": 0.15705412599822538,
+      "paired_document_mean_contrasts": {
+        "native": {
+          "difference": 0.09004705879210657,
+          "ci95": [
+            0.06742339041222419,
+            0.11329761670433319
+          ],
+          "baseline_question_mean": 0.1996904286632051
+        },
+        "normalized": {
+          "difference": 0.008063947073462687,
+          "ci95": [
+            -0.010655580171192105,
+            0.027069782332321737
+          ],
+          "baseline_question_mean": 0.2825328534540222
+        }
+      }
+    },
+    "16": {
+      "questions": 1127,
+      "f1": 0.1843475038723462,
+      "em": 0.08873114463176575,
+      "paired_document_mean_contrasts": {
+        "native": {
+          "difference": 0.16114044110479905,
+          "ci95": [
+            0.13846731304136614,
+            0.1843084622802679
+          ],
+          "baseline_question_mean": 0.026085111204001123
+        },
+        "normalized": {
+          "difference": -0.04462521723875874,
+          "ci95": [
+            -0.06420009334956565,
+            -0.025172424976714503
+          ],
+          "baseline_question_mean": 0.22893875120357754
+        }
+      }
+    }
+  },
+  "sources": 200,
+  "rows": 5635,
+  "seed": 218,
+  "bootstrap": {
+    "seed": 218,
+    "resamples": 10000,
+    "unit": "source document"
+  },
+  "plan_sha256": "2dd047242ffc17d5231963b51890de385080a170e5f5aad0fb037233d5545294",
+  "runtime": {
+    "python": "3.11.13 (main, Jul  8 2025, 20:59:57) [Clang 20.1.4 ]",
+    "torch": "2.14.0+cu130",
+    "cuda": "13.0",
+    "transformers": "4.51.3",
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "plan_sha256": "2dd047242ffc17d5231963b51890de385080a170e5f5aad0fb037233d5545294"
+  },
+  "input_sha256": {
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-000.json": "0348ce2eca038eaeee3cd75895312aa6f681ed5a98bc3a44de24b9d124e3be31",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-001.json": "1b22ca38279f09e957eff1c178439bec74a56f18bbd9ab5c6a5dc4cbf706d9ba",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-002.json": "64a3320839aa3c9499a55a9c21003ba2d54ff102686fdb8a0226e853a6a07a70",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-003.json": "61584a18df144416f85d78658c8748a032db39e2a9afdb8a2d907624ecb3920e",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-004.json": "558c863dbe951f7018915879812422aa861c2465d4bdacc4b7dc027ad4c94872",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-005.json": "c14338f4558248503fddf971c62d6519e81c725bcf0533beb449b57e4c252cfd",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-006.json": "502a7d2da2c5cef4d3170d081cb861a359caf71507d3f31c7aee9a2e58136960",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-007.json": "63c002f6bd96585d90b479f2465f6ec99366d488a8fad98a188ffbe0ceb3dfcf",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-008.json": "b99dbc16cf55269c097e3f2833248c6981b3f84cea2f45985b9081a2bdee3145",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-009.json": "98dedf906d38b0df521223016e32e456c6817cb5b04bcc6df3c5fc05f3909ba2",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-010.json": "f3aa2930230af8a4ad07669e38735745859c71eae8f58ae6d56a8546e2fd3cb3",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-011.json": "0ee0df91d0bd583bc93168b1f6e997ce74b89fcb05cb46e51d5aeb4af285c87a",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-012.json": "a67e0ddaf171d0397e81564843004ceb034f490c50a9f3c062029951e25e2c1b",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-013.json": "84d6031b1e2716c8a04d1907a68c4f42405a70fb17f56fd434ae49e1e10fbe24",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-014.json": "aa72479b1156ac1f5cb13a3af61afaa9742ab4519eac19271e8fda5f80d17bfc",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-015.json": "bff97ce8dc6b4cf6040eab5f1f2ced3dd48fcb133df3988eaaee4d01f880e9db",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-016.json": "bed64286368dc441399e03236c014057cbd60442343dab2fb716dbc1cd050ffb",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-017.json": "8eb123c5cb0b4e092e3addceab2d25201dee832d93552b4825cae7c8f83e3ae7",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-018.json": "e262e59132c332883dd6f0e03560965603fc9e85c789f28ebb19f5234d48b8dd",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-019.json": "63669a5a9a502a5c10b3206db2763573ade3e66c9a05007c04a53186eaf188eb",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-020.json": "6b1814155719c36a51db52674dcd4d16a0e6b79e3c10679bb152b27bdb2444cf",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-021.json": "e951fe3eb5f8572656f4bc78cdfd3ef6d4206941d57bc435d684cb10c7d26b21",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-022.json": "51f6348a1cddee0afe36114e471b5a93b05d6b61bf0df696d8bba7ba2e0336ca",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-023.json": "29d835a6b35cf74878ef08bb00f41938f4b41bb2bc065e23a62c8677d5d1067f",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-024.json": "4ff4e210feb3a54a0b89222de501badaed918f585875ba1089f46a8ac4be0914",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-025.json": "84b9496cb3fcdb914aa914bee4313543e5c1b966e5508b90992ba1887ed6d93b",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-026.json": "8008b64ae4d9d2bb07bdcd462d5b56b0830683ea5077b038119da48072302cc4",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-027.json": "f86d25c465a9f0ca0a8a7b4ab343e747a19e86ed9f0caf986be0eb298b6e3682",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-028.json": "93ecc1c62a214fdaa718d01fc6f32865d18321b86ff14fd3c2fcdb2a59ca83a7",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-029.json": "d199b5e88250456093d5904c1c195fe7d063d66c9977781efdc85b7ab3c36fbb",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-030.json": "71e38cf904e173d2523a764c8496f12cdfcff629ef1df3ef37d2c36211eae7d0",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-031.json": "a315d4bb30704efcdf4365b735f23c04446e2967e639984a45acf46a334a6d37",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-032.json": "3e60d9078ab4cffbb11c0b5b3576952c89baf849c266da32c20ed4e86baa0364",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-033.json": "1ce45b9dc3f3def08cb19d8871be714285d93dcb52a582f7fe4b7f63f4d4ffec",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-034.json": "8d85d0089962ce1bbe72e2bd15ab881f633155c8b3858574eefc3b209ab139ab",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-035.json": "11115860fce2c5c044e438338d8ae8858ba3d883a1f6fdd5c0cf6d3e410756b4",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-036.json": "d36857ad7f6fb207e0920bbe0011c131f3dd364174f19af83dcc6b1078e7b92c",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-037.json": "d228aa76e2615884204fcdadc204f4e4835b25dad2d79ba47b276322e1dddc87",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-038.json": "ccb1a39e96cfc5d065f082cd6bca26bbd14ac29138835a03e112241478e214ff",
+    "artifacts/distractor_curves/state-v5/units/gemma2-test-base-039.json": "9ced45c5470bcf31100cc4c284aef18f853d944bb853c30e3fe325fda7b32d6c",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-000.json": "29175dafe81ed1c4443f2ecb6ecae2b87550b10eaa7bd586295b6d737604e9c8",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-001.json": "a6f254d7140d947a58d666b575ce2700b6445f71d1932006f97fc0b3c0cc66db",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-002.json": "d7dbc892dcbf450f4c3d8ec6f75f8751ad71cdbf190a9b7beb7433c99ec1ad29",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-003.json": "40c693284316308ad3aa9fc8a361fbaba48122e782b2ad70a237950fc00ee9a1",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-004.json": "0ab0d4332f58a2449c6c4f7f752e3e029a263a81057f485604ce6e0687d0202a",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-005.json": "b324304a098d3233dde45b0a9d637b719555062a9b407a25967f366eee92371a",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-006.json": "277d483ee1907613366b7bacf06b77d458c81bd1b3db7ad41fb69058c221237c",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-007.json": "d0a0ceb6292fe54a908d917e524f4ba9d21d2013d904f9d3c0ba895b940596ee",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-008.json": "c4894567d219bf1c996bcb764770cb7bb69a788a7fc64d47cea02d3891870d9a",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-009.json": "663ac68f473213f27169b44e6ca94742b5fe79afe2dd865ff8dad6df62cde848",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-010.json": "119411bb70c9398d3d5bb323a1260b196d38fc6bbea1565235e77a891396ac54",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-011.json": "024dcd5885e6f4be056f1fbfb9e7c59bff8437d9a3fb0b3255a01dc03b3d2e20",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-012.json": "26b5cad96797175a91772739993c075a8a82412e3dd984bed6df6fdef8cc6f38",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-013.json": "4e76c214bd19195876399848b9d1d746021478bd90b0aa98e429d666a735e313",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-014.json": "90fac0e5a6f8632fc75768253353d193671aa25066e06fa1858a0631eae51ab6",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-015.json": "17d0f7c364f20ab2a6deb88f31c236c335e9b3aa780eb9ca91711a2fef141d7c",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-016.json": "6ae4942e98a0d8a62e0440b7d3a452310828939ffbe5fa545852f8fd53c7766b",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-017.json": "594409f730044a94415d8f919b14561fc6b402cb3fd49cb580425e41157eb5df",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-018.json": "f47188ab9c494c9b8e8ecd3afaad9b980f6ec74a0332000d76484af3b540cef1",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-019.json": "a740dfbe50aea75531147a3d72475e164dfc1554d9dad9d928a2db9b49e6f278",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-020.json": "f7844c2ae20d07f218a59859756139ff3d10e99b7432755e92c1bb667f0d9c8b",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-021.json": "64e555dae85730dba438c3b04435e5e55787178e98c0ed7e7cc553e20651e77d",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-022.json": "b055862694894ed6ae289a9db1da54da7e50a06346d0fb42c36c0edcd09c96e4",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-023.json": "74289cec07f8ad008dcd011e9d103ddf4123cad271b7987a26dd3f73cfa06e85",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-024.json": "372f89b1f39461aa94c34a5aaf514dfa6254ef35b494d3e1eedbd7dc9951b869",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-025.json": "0e3b49aaa58a13e5054febde79599dee9698284dd83d8f65039cb71b8414c9d3",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-026.json": "232e7b6028e75464ee34ee1d9a1bb9ad306e730bbdbb74327e94ceae490a9909",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-027.json": "f0066ab3dfd6a60457871b0d067f32ce91c71947f9725324a676a0cef19f987a",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-028.json": "a1b72ba05304ca2d7b0418250793f35b426508975a64a97e7c479303050e7f57",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-029.json": "72fbc680b3a2354b28774ec33f872d6867abdfc05f8b48f9bb285df949e75360",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-030.json": "0195bf090a3875bbbb228b6dc15c19f285ac07c6c576bfce4dc7df4284632c28",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-031.json": "a9adc7c73e28cd5179d40aa14fc95358a5195f4283f5fa78143174efd6c69ac2",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-032.json": "423bf8be7ca8f29390a2054789aca4ed389aa084e2c102503fdffcff500a65be",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-033.json": "bbc0c2980d1a55e5dd671fa0aeb075f0f0432276e9e3a7ce8f6d22429cc2c024",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-034.json": "013327c29b5dd1d8e5c14d22dfbd682f227ef1b872c9c88fcd0f80382ae7af35",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-035.json": "929586cd6eb1e6cf0d76f656c63332d21d362ab6f7aaecdd08a16ccfa10840b2",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-036.json": "8baa635d741c65092d6f9fb800363eef08926bdf29ed8fda68d48a3440200dbc",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-037.json": "fc3ab89d7beac683bf43e747a820c1e3d3a8c8095295f27faf878681a5e64fc8",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-038.json": "b070d80c9ecf13c4ca166749350bd4ebfad726637ff076104b72a4dec27143ef",
+    "artifacts/gated_readers/test-confirmation-v1/state/units/gated-test-039.json": "b77303a0f59da70724e60cc07faaf45ce2ee33242fb5c61917bcccad44aecffb"
+  },
+  "elapsed_seconds": 1387.8254182338715
+}

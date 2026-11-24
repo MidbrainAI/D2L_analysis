@@ -1,0 +1,9 @@
+{
+  "extends": "common.json",
+  "variant": "gemma2",
+  "checkpoint_sha256": "36b0ed4399cef3e1e3a6cbedb551e8f9a9c939d4d424bb1d3864c7d702e62dac",
+  "model": {
+    "revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+    "attention": "eager"
+  }
+}

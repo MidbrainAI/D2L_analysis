@@ -1,0 +1,44 @@
+% Question-mean point estimates; see results/composition/distractor-curves/.
+% Qwen containment is plotted to avoid treating answer-format F1 gains as content gains.
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}
+\begin{groupplot}[
+ group style={group size=2 by 1,horizontal sep=0.75cm},
+ scale only axis,width=0.34\columnwidth,height=2.7cm,
+ xmode=log,log basis x=2,xtick={1,2,4,8,16},
+ xticklabels={1,2,4,8,16},xmin=1,xmax=16,ymin=0,ymax=1,
+ xlabel={Documents $K$},grid=major,
+  tick label style={font=\scriptsize},label style={font=\scriptsize},
+  title style={font=\scriptsize},
+  legend style={font=\scriptsize,draw=none,legend columns=2}]
+\nextgroupplot[title={Gemma-2-2B (F1)},ylabel={Token F1},legend to name=compositionlegend]
+\addplot[black,mark=square*,thick] coordinates {(1,.872696)(2,.863)(4,.858)(8,.849)(16,.825)};
+\addlegendentry{ICL}
+\addplot[red!75!black,mark=*,thick] coordinates {(1,.755174)(2,.618)(4,.445)(8,.200)(16,.026)};
+\addlegendentry{Native D2L}
+\addplot[blue!75!black,mark=triangle*,thick] coordinates {(1,.755174)(2,.603575)(4,.421341)(8,.282533)(16,.228939)};
+\addlegendentry{Normalized}
+\addplot[teal!80!black,mark=diamond*,thick] coordinates {(1,.760839)(2,.624)(4,.465)(8,.268)(16,.117)};
+\addlegendentry{Post-block reader}
+\addplot[violet!80!black,mark=pentagon*,thick,dashed] coordinates {(1,.758)(2,.633)(4,.492)(8,.348)(16,.251)};
+\addlegendentry{Write-site reader}
+\addplot[orange!85!black,mark=x,thick,dashdotted] coordinates {(1,.750183)(2,.605258)(4,.417680)(8,.288555)(16,.184348)};
+\addlegendentry{Gated reader}
+\nextgroupplot[title={Qwen3-4B (containment)}]
+\addplot[black,mark=square*,thick] coordinates {(1,.880213)(2,.876664)(4,.882875)(8,.891748)(16,.893523)};
+\addplot[red!75!black,mark=*,thick] coordinates {(1,.683230)(2,.484472)(4,.321207)(8,.069210)(16,0)};
+\addplot[blue!75!black,mark=triangle*,thick] coordinates {(1,.683230)(2,.433895)(4,.270630)(8,.197870)(16,.147294)};
+\addplot[teal!80!black,mark=diamond*,thick] coordinates {(1,.633540)(2,.471162)(4,.342502)(8,.187223)(16,.072760)};
+\addplot[orange!85!black,mark=x,thick,dashdotted] coordinates {(1,.619343)(2,.435670)(4,.271517)(8,.180124)(16,.104703)};
+\end{groupplot}
+\end{tikzpicture}
+\par\smallskip\ref{compositionlegend}
+\caption{Accuracy as the number of documents $K$ increases: token F1 for Gemma
+and answer containment for Qwen. D2L falls below ICL already at $K=1$.
+ICL stays relatively stable as distractors are added, while native D2L,
+normalization, and the readers all degrade. All plotted readers are mixed-$K$.
+Gemma includes all three readers; Qwen includes post-block and gated readers.
+Gated readers use one seed, the other Gemma readers three.}
+\label{fig:composition}
+\end{figure}

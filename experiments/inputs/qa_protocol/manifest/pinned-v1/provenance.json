@@ -1,0 +1,25 @@
+{
+  "chunk_audit": "inputs/qa_protocol/audit/pinned-v1/chunk-audit.json",
+  "manifest_sha256": "41f956e306640b15acdafb5ff4be3d476e2d1ae50fc7732acbdd3e38cdb01d55",
+  "plan_order": "split,family,document_hash,query_id",
+  "rejected_rows": 0,
+  "retained_rows": 197574,
+  "schema_version": 1,
+  "source_digests": [
+    {
+      "family": "drop",
+      "path": "inputs/qa_protocol/sources/pinned-v1/drop.jsonl",
+      "sha256": "f9b7a819f2010bc367636b794a2abb5a40bc251563c59b7dc2cb3075c856a815"
+    },
+    {
+      "family": "ropes",
+      "path": "inputs/qa_protocol/sources/pinned-v1/ropes.jsonl",
+      "sha256": "52210d9779b6c843f1da915d441ab14e906bb5a814a5e5773c82f3aa6e45db38"
+    },
+    {
+      "family": "squad",
+      "path": "inputs/qa_protocol/sources/pinned-v1/squad.jsonl",
+      "sha256": "658fb7131bdd2cbb764f271bacec8ca8f8130ed8084119d8fe11ab11b1e3b052"
+    }
+  ]
+}

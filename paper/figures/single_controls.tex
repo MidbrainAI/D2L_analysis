@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{Post-block readers improve on native D2L but remain below ICL.
+The three readers are trained at $K=1$ only on gold answers.}
+\label{tab:readout-summary}
+\small
+\begin{tabular}{@{}lr@{}}
+\toprule
+Readout & F1 \\
+\midrule
+ICL (baseline) & .882 \\
+Native D2L & .755 \\
+Reader: summed adapter effect & .781 \\
+Reader: compiler latent & .785 \\
+Reader: individual rank effects & .789 \\
+\bottomrule
+\end{tabular}
+\end{table}

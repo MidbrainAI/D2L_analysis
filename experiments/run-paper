@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd -- "$(dirname -- "${BASH_SOURCE[0]}")"
+export PYTHONPATH="$PWD${PYTHONPATH:+:$PYTHONPATH}"
+for dir in scripts/*/; do
+    export PYTHONPATH="$PYTHONPATH:$PWD/${dir%/}"
+done
+exec python "$@"

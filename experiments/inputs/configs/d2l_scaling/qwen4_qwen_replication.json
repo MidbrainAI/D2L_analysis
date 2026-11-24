@@ -1,0 +1,12 @@
+{
+  "extends": "common.json",
+  "variant": "qwen4",
+  "run_name": "gemma2-squad-matched-distill-scale60k-seed141",
+  "checkpoint_sha256": "6438b46c828dd3b5f88f21add0f7f5cacc7994d47bf15eda266786a506044591",
+  "model": {
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "attention": "eager"
+  },
+  "data": {"datasets": ["squad"]},
+  "scaling": {"bank_sizes": [1], "seeds": [200]}
+}

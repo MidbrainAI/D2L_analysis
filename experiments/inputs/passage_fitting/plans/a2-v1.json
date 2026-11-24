@@ -1,0 +1,9022 @@
+{
+ "config": {
+  "blind_ranks": [
+   8,
+   32
+  ],
+  "blind_rounds": 6,
+  "checkpoints": [
+   5,
+   10,
+   25,
+   50,
+   100,
+   200,
+   400
+  ],
+  "dev_documents": [
+   "qa_protocol-doc-ae2b4b1a059ae74a81b4e153",
+   "qa_protocol-doc-6f74c6fed870c6b6de61e305",
+   "qa_protocol-doc-6bb819b3e38cc7ce0653a003",
+   "qa_protocol-doc-eca58ad514cb50130132be92",
+   "qa_protocol-doc-435d43ba54ac4e3184ce5aee",
+   "qa_protocol-doc-5fb068dbbeb83f8de35cda02",
+   "qa_protocol-doc-53a48b5ab8603c523d7344fb",
+   "qa_protocol-doc-ddc7b59c23956072cbe1297c",
+   "qa_protocol-doc-6bb949b573434b7497fe54af",
+   "qa_protocol-doc-8c74c9c1e42bc12897d22406",
+   "qa_protocol-doc-39e231f713bd6114b00a43f3",
+   "qa_protocol-doc-f8fcbcce6c18ba4a34c39250",
+   "qa_protocol-doc-387c49fe0944f49574a0e788",
+   "qa_protocol-doc-6be9ec4a20e84c4037ebdbf1",
+   "qa_protocol-doc-995a9e281848d4a43862b5fa",
+   "qa_protocol-doc-b6b8bec4e853c9411784acf1",
+   "qa_protocol-doc-e0cf3932d91617130d2df1b9",
+   "qa_protocol-doc-5f45c0642a4739454bdb16b7",
+   "qa_protocol-doc-fb0dd2d04aefbf30f8b92f32",
+   "qa_protocol-doc-b3c1790d869f728c84d697fc",
+   "qa_protocol-doc-7185608fbee98260c90aa664",
+   "qa_protocol-doc-e32b9502f3f6102be06e5a37",
+   "qa_protocol-doc-715ceb24a635319bb82269b0",
+   "qa_protocol-doc-45385992c68db63f6fc1be45"
+  ],
+  "diagnostic_eval_mode": "cached",
+  "eval_mode": "cache_free",
+  "exclusions_path": "inputs/passage_fit_suite/exclusions-v1.json",
+  "final_documents": [
+   "qa_protocol-doc-2dad982f483efc0922f70d34",
+   "qa_protocol-doc-185159e3203da416fa67fdaa",
+   "qa_protocol-doc-066d5f53cd7b6a4020e5a4f7",
+   "qa_protocol-doc-0d3c6a026bd7818f16a8e2e2",
+   "qa_protocol-doc-1b21039154db589a9c47e3f0",
+   "qa_protocol-doc-2306524cd8e11686cb8ff7d8",
+   "qa_protocol-doc-2d5fce0c2f173dda0ba4ee9d",
+   "qa_protocol-doc-30bd817e80e03c1192cf1591",
+   "qa_protocol-doc-1f134765b8e3babb2237c37c",
+   "qa_protocol-doc-106188feadfebf655f5a047c",
+   "qa_protocol-doc-203543ecaca97ca449473483",
+   "qa_protocol-doc-29235be4d644da44515c844c",
+   "qa_protocol-doc-012614e2421e08f7344261db",
+   "qa_protocol-doc-233db152c33f7607e41c3315",
+   "qa_protocol-doc-25d1ec37e95aa2f72e379b3c",
+   "qa_protocol-doc-03aa01d983f8312c3333e351",
+   "qa_protocol-doc-2dce36e367f92fa93687f816",
+   "qa_protocol-doc-1555a8b1e8c921c1daed4d46",
+   "qa_protocol-doc-0e6889f25178c7fe18b54816",
+   "qa_protocol-doc-23ccd1dd0b7d35608e7d454e",
+   "qa_protocol-doc-232a5b84c6c94c04a075ede1",
+   "qa_protocol-doc-197e8cc225d94c97c82fee13",
+   "qa_protocol-doc-1c9d4364cd58e1bdd77ce1b1",
+   "qa_protocol-doc-00878f338b91f64faa8d66ed",
+   "qa_protocol-doc-107bef4acb3c4ba5803627c3",
+   "qa_protocol-doc-233f045266eb5e795ebc9a2d",
+   "qa_protocol-doc-036350f3d153c8934b986c62",
+   "qa_protocol-doc-2c4b8ab13e4c7a945a0b7975",
+   "qa_protocol-doc-03fa705fe105dd98cd3b9b18",
+   "qa_protocol-doc-218048c53bec7e97670b8556",
+   "qa_protocol-doc-01349f2cc0f8bd1264755542",
+   "qa_protocol-doc-2ed1d64a644008ab6b52eab6",
+   "qa_protocol-doc-1ab8703d0d031d447578687f",
+   "qa_protocol-doc-1e6de4dae559cc7b23d8583a",
+   "qa_protocol-doc-31c22665f3097011ef47861a",
+   "qa_protocol-doc-0fa80948cc3ac940e92a0134",
+   "qa_protocol-doc-277b2f2d3f0c9b4895a50888",
+   "qa_protocol-doc-1a1c24bfebec783eed1e85ba",
+   "qa_protocol-doc-0a10d7b71477aea8e89214e1",
+   "qa_protocol-doc-02d61ba0faf6cc11ea61db3d",
+   "qa_protocol-doc-0c09e66871a30c0f27fd4b2e",
+   "qa_protocol-doc-2950152a039c7ec93192f129",
+   "qa_protocol-doc-263366918c3b12284b82819b",
+   "qa_protocol-doc-11a6881ffb176de150164b9e",
+   "qa_protocol-doc-0bcc9ca5bc9d0c73e1da5e60",
+   "qa_protocol-doc-0a5deeef87c6decc38342086",
+   "qa_protocol-doc-00e7fc5922da1de4c8af715b",
+   "qa_protocol-doc-298493dc246a02c29162c321",
+   "qa_protocol-doc-25bffdeca584533f8661a842",
+   "qa_protocol-doc-1e4432a6f0174abeb2ece196",
+   "qa_protocol-doc-2f801c2d8984433e83ef8d0d",
+   "qa_protocol-doc-307770c06851bd7310785fc4",
+   "qa_protocol-doc-200c7ab9d8640b7081a942c8",
+   "qa_protocol-doc-1d404076c8b7ac936d0e5ca0",
+   "qa_protocol-doc-2d7b353e30cee80d44d9ca5f",
+   "qa_protocol-doc-2ddf74ed0e8f2d27473da6e2",
+   "qa_protocol-doc-311c277ca4008081a69bdcc9",
+   "qa_protocol-doc-223a7b95383f0cd070ad33d0",
+   "qa_protocol-doc-32b4b22c6e0c0488d922a9f9",
+   "qa_protocol-doc-04f331a17c3c5c0c4ab9515d",
+   "qa_protocol-doc-218e654161ac2217a97e0122",
+   "qa_protocol-doc-278d8d4a5399c2e3615ae7ea",
+   "qa_protocol-doc-1cdcbe6ba3c076f80e3311cb",
+   "qa_protocol-doc-1858cf8d5e83fde5110e380f",
+   "qa_protocol-doc-06840dfb6f55fe10dfa05f17",
+   "qa_protocol-doc-0991cc556b90dc07b886d93e",
+   "qa_protocol-doc-18a035588d907ea79a308571",
+   "qa_protocol-doc-13a01ef1136a78dfcaf7d520",
+   "qa_protocol-doc-22df863ea441581bb5111879",
+   "qa_protocol-doc-2ddc7ea7137aa3182b532fbb",
+   "qa_protocol-doc-1ebdabc38e40d9a93e5eaf47",
+   "qa_protocol-doc-2b3d3210101b00316757436d",
+   "qa_protocol-doc-2a4711bebb41c066e1b1026a",
+   "qa_protocol-doc-1bb85f38bb59d53131e14008",
+   "qa_protocol-doc-10583dfe6b386445a0f25450",
+   "qa_protocol-doc-0969e8b0dc8357229b3a2ec1",
+   "qa_protocol-doc-0b823c503c28fafe624330b1",
+   "qa_protocol-doc-14538d888344b74f5d725ca0",
+   "qa_protocol-doc-28f7267ba5b9e8227e4eaa81",
+   "qa_protocol-doc-191df6c7597da18910af9c25",
+   "qa_protocol-doc-2e2517e015a6b9d2c709afe9",
+   "qa_protocol-doc-3103f79d8f1a17077dd5ae9d",
+   "qa_protocol-doc-05e45e423b493c4144accbc0",
+   "qa_protocol-doc-228912a8a21757ef9c318e79",
+   "qa_protocol-doc-228af369429bd2abbb0439e6",
+   "qa_protocol-doc-0c0285104727198378adc337",
+   "qa_protocol-doc-281bc6af66dd273fad32dbd8",
+   "qa_protocol-doc-27c24a422394abbd466ad532",
+   "qa_protocol-doc-0e758477e36c4da9172db625",
+   "qa_protocol-doc-09e431380a416a598b29e12a",
+   "qa_protocol-doc-197a81d500ea8a94f7ee84f1",
+   "qa_protocol-doc-23eed6ac6c35381ad3eb74fd",
+   "qa_protocol-doc-0fa6bd009a083da85e91b3ab",
+   "qa_protocol-doc-1c0817dd3329c48512171135",
+   "qa_protocol-doc-2e6b0910b4f3e536fdbf3a1c",
+   "qa_protocol-doc-0ffd74c4638d79c0778bfc18",
+   "qa_protocol-doc-074ea85b6d894ef344c24416",
+   "qa_protocol-doc-20bbaf0fd35c08734f652d54",
+   "qa_protocol-doc-0c1786c207296044b2c6aa4b",
+   "qa_protocol-doc-16c288b4e33f81341aca902b",
+   "qa_protocol-doc-14a78a497cc5bd60b9977342",
+   "qa_protocol-doc-2c9164caff2da2b315ee7462",
+   "qa_protocol-doc-2992604d798ea1ed69582875",
+   "qa_protocol-doc-1aa708a9e82a055e6f1522e6",
+   "qa_protocol-doc-139395723a0041c42ab90966",
+   "qa_protocol-doc-24ac3e406451235954e169c5",
+   "qa_protocol-doc-23467927e5a0c9c3376567e0",
+   "qa_protocol-doc-2e19759a96eb909b8938d403",
+   "qa_protocol-doc-30a491b7a29255873b20c1c9",
+   "qa_protocol-doc-22a5ef76d5e2e85a4012f3c1",
+   "qa_protocol-doc-1685ac70a4a0ec031770b145",
+   "qa_protocol-doc-16b72baf2622b77c2aaeb3a4",
+   "qa_protocol-doc-08679596069afa7cc33387ba",
+   "qa_protocol-doc-19f436e78d13d64233e91a93",
+   "qa_protocol-doc-24275133070be5f8f3e1d94d",
+   "qa_protocol-doc-04b1f4203f876606a898fe03",
+   "qa_protocol-doc-157e0a348ed8ec215a0ef3da",
+   "qa_protocol-doc-1770cf23e83a69045683257e",
+   "qa_protocol-doc-0b4c83db8867f5f519e1e06e",
+   "qa_protocol-doc-015c4564e2d15b1bf57dec00",
+   "qa_protocol-doc-2a5a72b9e9634e0d8b2fb39c",
+   "qa_protocol-doc-0f74a2d47525b6a76bf11b27",
+   "qa_protocol-doc-06178d7259df3a698499656c",
+   "qa_protocol-doc-0c33ddf4955154e96e7fc2b2",
+   "qa_protocol-doc-23da841aaf74b2868c771ddd",
+   "qa_protocol-doc-2220683299bb69c95e721152",
+   "qa_protocol-doc-30ed28ba0787be16ba1d59ee",
+   "qa_protocol-doc-1430d07d1c0d98fafa01639b",
+   "qa_protocol-doc-30e4947b23f80c2b3dc8b79c",
+   "qa_protocol-doc-1f24ef74f4bb1af6ce9a5890",
+   "qa_protocol-doc-1256f954377d32a7be28b740",
+   "qa_protocol-doc-097e8f91dc15ca09f327b8f3",
+   "qa_protocol-doc-17f521b04dcbe83e9acb7db9",
+   "qa_protocol-doc-323c806682cd02ed9a2dc91a",
+   "qa_protocol-doc-015e1ad81939889d8e53784c",
+   "qa_protocol-doc-138561385f30b53cfa003137",
+   "qa_protocol-doc-0771f979db335ad8a671ee43",
+   "qa_protocol-doc-2fc9bd641e1cede978201c69",
+   "qa_protocol-doc-1a9a7443a1c9e31dca2190b2",
+   "qa_protocol-doc-2ee2884b2b3e3fa4720f5f83",
+   "qa_protocol-doc-2d458ef63a30fa7f271d5b48",
+   "qa_protocol-doc-24989063c67b895cd374b596",
+   "qa_protocol-doc-24be4e2a11fa1224a5c797a5",
+   "qa_protocol-doc-2155367da621c2ac41cefc35",
+   "qa_protocol-doc-20d52ffef277219bc2a27ed6",
+   "qa_protocol-doc-244e8d247bda88d4af3bc76f",
+   "qa_protocol-doc-28b8a393afcfb938a31e287c",
+   "qa_protocol-doc-30947fadb9fd54df1f7a8d67",
+   "qa_protocol-doc-11bfa48d4947d8e7f71c68c8",
+   "qa_protocol-doc-1cabea7592e36322ff29e340",
+   "qa_protocol-doc-2843159cd6a1048608838002",
+   "qa_protocol-doc-268f8d8d76cb7af8cd36bb89",
+   "qa_protocol-doc-032be8644d150c2c94cae68d",
+   "qa_protocol-doc-1a3cff24a41690bce931a08a",
+   "qa_protocol-doc-298202cc0c199ba8cc235518",
+   "qa_protocol-doc-12786f6956f9ce272b1bc011",
+   "qa_protocol-doc-1bb8617ad50b842668e05da8",
+   "qa_protocol-doc-09c56511f8621b89f632fa39",
+   "qa_protocol-doc-0fb02d3c93e46861bf5b5a30",
+   "qa_protocol-doc-0b05afd9838eaa383bfb7f86"
+  ],
+  "learning_rates": [
+   1e-05,
+   3e-05,
+   0.0001
+  ],
+  "manifest_path": "inputs/qa_protocol/manifest/pinned-v1/manifest.json",
+  "max_blind_questions": 192,
+  "max_new_tokens": 32,
+  "micro_batch": 16,
+  "oracle_samples": 8,
+  "ranks": [
+   8,
+   16,
+   32,
+   64
+  ],
+  "relaxed_overlap": 0.8,
+  "relaxed_ranks": [
+   8,
+   32
+  ],
+  "retention_questions": 100,
+  "samples_per_prompt": 4,
+  "schedule_steps": 400,
+  "smoke": false,
+  "suite_path": "inputs/passage_fit_suite/suite/f056be043439ad44/suite.json",
+  "suite_sha256": "9f176fd3f09b8e63e99fb88551ca2b2f450d3e23e41f2f4b7aa90dbbced921de",
+  "wrongdoc_ranks": [
+   8
+  ]
+ },
+ "experiment": "PASSAGE_FITTING",
+ "schema": "unit-plan-v1",
+ "stages": [
+  {
+   "name": "prep"
+  },
+  {
+   "after": [
+    "prep"
+   ],
+   "name": "dev"
+  },
+  {
+   "after": [
+    "prep",
+    "dev"
+   ],
+   "expand": "passage_fitting_format_ceiling_full:select_final",
+   "name": "final"
+  }
+ ],
+ "units": [
+  {
+   "args": {},
+   "cost": 0.5,
+   "id": "retention",
+   "kind": "retention",
+   "priority": 10,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-ae2b4b1a059ae74a81b4e153"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-ae2b4b1a059ae74a81b4e153",
+   "kind": "prep",
+   "priority": 5,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-6f74c6fed870c6b6de61e305"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-6f74c6fed870c6b6de61e305",
+   "kind": "prep",
+   "priority": 5,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-6bb819b3e38cc7ce0653a003"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-6bb819b3e38cc7ce0653a003",
+   "kind": "prep",
+   "priority": 5,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-eca58ad514cb50130132be92"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-eca58ad514cb50130132be92",
+   "kind": "prep",
+   "priority": 5,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-435d43ba54ac4e3184ce5aee"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-435d43ba54ac4e3184ce5aee",
+   "kind": "prep",
+   "priority": 5,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-5fb068dbbeb83f8de35cda02"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-5fb068dbbeb83f8de35cda02",
+   "kind": "prep",
+   "priority": 5,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-53a48b5ab8603c523d7344fb"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-53a48b5ab8603c523d7344fb",
+   "kind": "prep",
+   "priority": 5,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-ddc7b59c23956072cbe1297c"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-ddc7b59c23956072cbe1297c",
+   "kind": "prep",
+   "priority": 5,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-6bb949b573434b7497fe54af"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-6bb949b573434b7497fe54af",
+   "kind": "prep",
+   "priority": 5,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-8c74c9c1e42bc12897d22406"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-8c74c9c1e42bc12897d22406",
+   "kind": "prep",
+   "priority": 5,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-39e231f713bd6114b00a43f3"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-39e231f713bd6114b00a43f3",
+   "kind": "prep",
+   "priority": 5,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-f8fcbcce6c18ba4a34c39250"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-f8fcbcce6c18ba4a34c39250",
+   "kind": "prep",
+   "priority": 5,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-387c49fe0944f49574a0e788"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-387c49fe0944f49574a0e788",
+   "kind": "prep",
+   "priority": 5,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-6be9ec4a20e84c4037ebdbf1"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-6be9ec4a20e84c4037ebdbf1",
+   "kind": "prep",
+   "priority": 5,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-995a9e281848d4a43862b5fa"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-995a9e281848d4a43862b5fa",
+   "kind": "prep",
+   "priority": 5,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-b6b8bec4e853c9411784acf1"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-b6b8bec4e853c9411784acf1",
+   "kind": "prep",
+   "priority": 5,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-e0cf3932d91617130d2df1b9"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-e0cf3932d91617130d2df1b9",
+   "kind": "prep",
+   "priority": 5,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-5f45c0642a4739454bdb16b7"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-5f45c0642a4739454bdb16b7",
+   "kind": "prep",
+   "priority": 5,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-fb0dd2d04aefbf30f8b92f32"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-fb0dd2d04aefbf30f8b92f32",
+   "kind": "prep",
+   "priority": 5,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-b3c1790d869f728c84d697fc"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-b3c1790d869f728c84d697fc",
+   "kind": "prep",
+   "priority": 5,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-7185608fbee98260c90aa664"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-7185608fbee98260c90aa664",
+   "kind": "prep",
+   "priority": 5,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-e32b9502f3f6102be06e5a37"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-e32b9502f3f6102be06e5a37",
+   "kind": "prep",
+   "priority": 5,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-715ceb24a635319bb82269b0"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-715ceb24a635319bb82269b0",
+   "kind": "prep",
+   "priority": 5,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-45385992c68db63f6fc1be45"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-45385992c68db63f6fc1be45",
+   "kind": "prep",
+   "priority": 5,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-2dad982f483efc0922f70d34"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-2dad982f483efc0922f70d34",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-185159e3203da416fa67fdaa"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-185159e3203da416fa67fdaa",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-066d5f53cd7b6a4020e5a4f7"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-066d5f53cd7b6a4020e5a4f7",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-0d3c6a026bd7818f16a8e2e2"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-0d3c6a026bd7818f16a8e2e2",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-1b21039154db589a9c47e3f0"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-1b21039154db589a9c47e3f0",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-2306524cd8e11686cb8ff7d8"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-2306524cd8e11686cb8ff7d8",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-2d5fce0c2f173dda0ba4ee9d"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-2d5fce0c2f173dda0ba4ee9d",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-30bd817e80e03c1192cf1591"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-30bd817e80e03c1192cf1591",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-1f134765b8e3babb2237c37c"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-1f134765b8e3babb2237c37c",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-106188feadfebf655f5a047c"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-106188feadfebf655f5a047c",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-203543ecaca97ca449473483"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-203543ecaca97ca449473483",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-29235be4d644da44515c844c"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-29235be4d644da44515c844c",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-012614e2421e08f7344261db"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-012614e2421e08f7344261db",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-233db152c33f7607e41c3315"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-233db152c33f7607e41c3315",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-25d1ec37e95aa2f72e379b3c"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-25d1ec37e95aa2f72e379b3c",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-03aa01d983f8312c3333e351"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-03aa01d983f8312c3333e351",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-2dce36e367f92fa93687f816"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-2dce36e367f92fa93687f816",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-1555a8b1e8c921c1daed4d46"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-1555a8b1e8c921c1daed4d46",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-0e6889f25178c7fe18b54816"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-0e6889f25178c7fe18b54816",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-23ccd1dd0b7d35608e7d454e"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-23ccd1dd0b7d35608e7d454e",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-232a5b84c6c94c04a075ede1"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-232a5b84c6c94c04a075ede1",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-197e8cc225d94c97c82fee13"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-197e8cc225d94c97c82fee13",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-1c9d4364cd58e1bdd77ce1b1"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-1c9d4364cd58e1bdd77ce1b1",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-00878f338b91f64faa8d66ed"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-00878f338b91f64faa8d66ed",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-107bef4acb3c4ba5803627c3"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-107bef4acb3c4ba5803627c3",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-233f045266eb5e795ebc9a2d"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-233f045266eb5e795ebc9a2d",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-036350f3d153c8934b986c62"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-036350f3d153c8934b986c62",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-2c4b8ab13e4c7a945a0b7975"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-2c4b8ab13e4c7a945a0b7975",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-03fa705fe105dd98cd3b9b18"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-03fa705fe105dd98cd3b9b18",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-218048c53bec7e97670b8556"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-218048c53bec7e97670b8556",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-01349f2cc0f8bd1264755542"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-01349f2cc0f8bd1264755542",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-2ed1d64a644008ab6b52eab6"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-2ed1d64a644008ab6b52eab6",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-1ab8703d0d031d447578687f"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-1ab8703d0d031d447578687f",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-1e6de4dae559cc7b23d8583a"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-1e6de4dae559cc7b23d8583a",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-31c22665f3097011ef47861a"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-31c22665f3097011ef47861a",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-0fa80948cc3ac940e92a0134"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-0fa80948cc3ac940e92a0134",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-277b2f2d3f0c9b4895a50888"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-277b2f2d3f0c9b4895a50888",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-1a1c24bfebec783eed1e85ba"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-1a1c24bfebec783eed1e85ba",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-0a10d7b71477aea8e89214e1"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-0a10d7b71477aea8e89214e1",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-02d61ba0faf6cc11ea61db3d"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-02d61ba0faf6cc11ea61db3d",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-0c09e66871a30c0f27fd4b2e"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-0c09e66871a30c0f27fd4b2e",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-2950152a039c7ec93192f129"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-2950152a039c7ec93192f129",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-263366918c3b12284b82819b"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-263366918c3b12284b82819b",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-11a6881ffb176de150164b9e"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-11a6881ffb176de150164b9e",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-0bcc9ca5bc9d0c73e1da5e60"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-0bcc9ca5bc9d0c73e1da5e60",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-0a5deeef87c6decc38342086"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-0a5deeef87c6decc38342086",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-00e7fc5922da1de4c8af715b"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-00e7fc5922da1de4c8af715b",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-298493dc246a02c29162c321"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-298493dc246a02c29162c321",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-25bffdeca584533f8661a842"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-25bffdeca584533f8661a842",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-1e4432a6f0174abeb2ece196"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-1e4432a6f0174abeb2ece196",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-2f801c2d8984433e83ef8d0d"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-2f801c2d8984433e83ef8d0d",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-307770c06851bd7310785fc4"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-307770c06851bd7310785fc4",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-200c7ab9d8640b7081a942c8"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-200c7ab9d8640b7081a942c8",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-1d404076c8b7ac936d0e5ca0"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-1d404076c8b7ac936d0e5ca0",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-2d7b353e30cee80d44d9ca5f"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-2d7b353e30cee80d44d9ca5f",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-2ddf74ed0e8f2d27473da6e2"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-2ddf74ed0e8f2d27473da6e2",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-311c277ca4008081a69bdcc9"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-311c277ca4008081a69bdcc9",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-223a7b95383f0cd070ad33d0"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-223a7b95383f0cd070ad33d0",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-32b4b22c6e0c0488d922a9f9"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-32b4b22c6e0c0488d922a9f9",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-04f331a17c3c5c0c4ab9515d"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-04f331a17c3c5c0c4ab9515d",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-218e654161ac2217a97e0122"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-218e654161ac2217a97e0122",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-278d8d4a5399c2e3615ae7ea"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-278d8d4a5399c2e3615ae7ea",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-1cdcbe6ba3c076f80e3311cb"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-1cdcbe6ba3c076f80e3311cb",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-1858cf8d5e83fde5110e380f"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-1858cf8d5e83fde5110e380f",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-06840dfb6f55fe10dfa05f17"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-06840dfb6f55fe10dfa05f17",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-0991cc556b90dc07b886d93e"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-0991cc556b90dc07b886d93e",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-18a035588d907ea79a308571"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-18a035588d907ea79a308571",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-13a01ef1136a78dfcaf7d520"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-13a01ef1136a78dfcaf7d520",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-22df863ea441581bb5111879"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-22df863ea441581bb5111879",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-2ddc7ea7137aa3182b532fbb"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-2ddc7ea7137aa3182b532fbb",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-1ebdabc38e40d9a93e5eaf47"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-1ebdabc38e40d9a93e5eaf47",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-2b3d3210101b00316757436d"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-2b3d3210101b00316757436d",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-2a4711bebb41c066e1b1026a"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-2a4711bebb41c066e1b1026a",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-1bb85f38bb59d53131e14008"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-1bb85f38bb59d53131e14008",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-10583dfe6b386445a0f25450"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-10583dfe6b386445a0f25450",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-0969e8b0dc8357229b3a2ec1"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-0969e8b0dc8357229b3a2ec1",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-0b823c503c28fafe624330b1"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-0b823c503c28fafe624330b1",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-14538d888344b74f5d725ca0"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-14538d888344b74f5d725ca0",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-28f7267ba5b9e8227e4eaa81"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-28f7267ba5b9e8227e4eaa81",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-191df6c7597da18910af9c25"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-191df6c7597da18910af9c25",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-2e2517e015a6b9d2c709afe9"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-2e2517e015a6b9d2c709afe9",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-3103f79d8f1a17077dd5ae9d"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-3103f79d8f1a17077dd5ae9d",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-05e45e423b493c4144accbc0"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-05e45e423b493c4144accbc0",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-228912a8a21757ef9c318e79"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-228912a8a21757ef9c318e79",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-228af369429bd2abbb0439e6"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-228af369429bd2abbb0439e6",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-0c0285104727198378adc337"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-0c0285104727198378adc337",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-281bc6af66dd273fad32dbd8"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-281bc6af66dd273fad32dbd8",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-27c24a422394abbd466ad532"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-27c24a422394abbd466ad532",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-0e758477e36c4da9172db625"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-0e758477e36c4da9172db625",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-09e431380a416a598b29e12a"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-09e431380a416a598b29e12a",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-197a81d500ea8a94f7ee84f1"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-197a81d500ea8a94f7ee84f1",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-23eed6ac6c35381ad3eb74fd"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-23eed6ac6c35381ad3eb74fd",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-0fa6bd009a083da85e91b3ab"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-0fa6bd009a083da85e91b3ab",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-1c0817dd3329c48512171135"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-1c0817dd3329c48512171135",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-2e6b0910b4f3e536fdbf3a1c"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-2e6b0910b4f3e536fdbf3a1c",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-0ffd74c4638d79c0778bfc18"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-0ffd74c4638d79c0778bfc18",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-074ea85b6d894ef344c24416"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-074ea85b6d894ef344c24416",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-20bbaf0fd35c08734f652d54"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-20bbaf0fd35c08734f652d54",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-0c1786c207296044b2c6aa4b"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-0c1786c207296044b2c6aa4b",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-16c288b4e33f81341aca902b"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-16c288b4e33f81341aca902b",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-14a78a497cc5bd60b9977342"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-14a78a497cc5bd60b9977342",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-2c9164caff2da2b315ee7462"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-2c9164caff2da2b315ee7462",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-2992604d798ea1ed69582875"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-2992604d798ea1ed69582875",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-1aa708a9e82a055e6f1522e6"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-1aa708a9e82a055e6f1522e6",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-139395723a0041c42ab90966"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-139395723a0041c42ab90966",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-24ac3e406451235954e169c5"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-24ac3e406451235954e169c5",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-23467927e5a0c9c3376567e0"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-23467927e5a0c9c3376567e0",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-2e19759a96eb909b8938d403"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-2e19759a96eb909b8938d403",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-30a491b7a29255873b20c1c9"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-30a491b7a29255873b20c1c9",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-22a5ef76d5e2e85a4012f3c1"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-22a5ef76d5e2e85a4012f3c1",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-1685ac70a4a0ec031770b145"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-1685ac70a4a0ec031770b145",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-16b72baf2622b77c2aaeb3a4"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-16b72baf2622b77c2aaeb3a4",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-08679596069afa7cc33387ba"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-08679596069afa7cc33387ba",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-19f436e78d13d64233e91a93"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-19f436e78d13d64233e91a93",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-24275133070be5f8f3e1d94d"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-24275133070be5f8f3e1d94d",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-04b1f4203f876606a898fe03"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-04b1f4203f876606a898fe03",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-157e0a348ed8ec215a0ef3da"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-157e0a348ed8ec215a0ef3da",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-1770cf23e83a69045683257e"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-1770cf23e83a69045683257e",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-0b4c83db8867f5f519e1e06e"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-0b4c83db8867f5f519e1e06e",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-015c4564e2d15b1bf57dec00"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-015c4564e2d15b1bf57dec00",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-2a5a72b9e9634e0d8b2fb39c"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-2a5a72b9e9634e0d8b2fb39c",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-0f74a2d47525b6a76bf11b27"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-0f74a2d47525b6a76bf11b27",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-06178d7259df3a698499656c"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-06178d7259df3a698499656c",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-0c33ddf4955154e96e7fc2b2"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-0c33ddf4955154e96e7fc2b2",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-23da841aaf74b2868c771ddd"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-23da841aaf74b2868c771ddd",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-2220683299bb69c95e721152"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-2220683299bb69c95e721152",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-30ed28ba0787be16ba1d59ee"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-30ed28ba0787be16ba1d59ee",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-1430d07d1c0d98fafa01639b"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-1430d07d1c0d98fafa01639b",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-30e4947b23f80c2b3dc8b79c"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-30e4947b23f80c2b3dc8b79c",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-1f24ef74f4bb1af6ce9a5890"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-1f24ef74f4bb1af6ce9a5890",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-1256f954377d32a7be28b740"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-1256f954377d32a7be28b740",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-097e8f91dc15ca09f327b8f3"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-097e8f91dc15ca09f327b8f3",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-17f521b04dcbe83e9acb7db9"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-17f521b04dcbe83e9acb7db9",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-323c806682cd02ed9a2dc91a"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-323c806682cd02ed9a2dc91a",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-015e1ad81939889d8e53784c"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-015e1ad81939889d8e53784c",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-138561385f30b53cfa003137"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-138561385f30b53cfa003137",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-0771f979db335ad8a671ee43"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-0771f979db335ad8a671ee43",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-2fc9bd641e1cede978201c69"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-2fc9bd641e1cede978201c69",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-1a9a7443a1c9e31dca2190b2"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-1a9a7443a1c9e31dca2190b2",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-2ee2884b2b3e3fa4720f5f83"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-2ee2884b2b3e3fa4720f5f83",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-2d458ef63a30fa7f271d5b48"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-2d458ef63a30fa7f271d5b48",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-24989063c67b895cd374b596"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-24989063c67b895cd374b596",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-24be4e2a11fa1224a5c797a5"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-24be4e2a11fa1224a5c797a5",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-2155367da621c2ac41cefc35"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-2155367da621c2ac41cefc35",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-20d52ffef277219bc2a27ed6"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-20d52ffef277219bc2a27ed6",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-244e8d247bda88d4af3bc76f"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-244e8d247bda88d4af3bc76f",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-28b8a393afcfb938a31e287c"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-28b8a393afcfb938a31e287c",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-30947fadb9fd54df1f7a8d67"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-30947fadb9fd54df1f7a8d67",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-11bfa48d4947d8e7f71c68c8"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-11bfa48d4947d8e7f71c68c8",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-1cabea7592e36322ff29e340"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-1cabea7592e36322ff29e340",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-2843159cd6a1048608838002"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-2843159cd6a1048608838002",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-268f8d8d76cb7af8cd36bb89"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-268f8d8d76cb7af8cd36bb89",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-032be8644d150c2c94cae68d"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-032be8644d150c2c94cae68d",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-1a3cff24a41690bce931a08a"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-1a3cff24a41690bce931a08a",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-298202cc0c199ba8cc235518"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-298202cc0c199ba8cc235518",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-12786f6956f9ce272b1bc011"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-12786f6956f9ce272b1bc011",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-1bb8617ad50b842668e05da8"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-1bb8617ad50b842668e05da8",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-09c56511f8621b89f632fa39"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-09c56511f8621b89f632fa39",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-0fb02d3c93e46861bf5b5a30"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-0fb02d3c93e46861bf5b5a30",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "document_id": "qa_protocol-doc-0b05afd9838eaa383bfb7f86"
+   },
+   "cost": 0.3,
+   "id": "prep.qa_protocol-doc-0b05afd9838eaa383bfb7f86",
+   "kind": "prep",
+   "priority": 0,
+   "stage": "prep"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-ae2b4b1a059ae74a81b4e153",
+    "lr": 1e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-ae2b4b1a059ae74a81b4e153.r8.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-ae2b4b1a059ae74a81b4e153",
+    "lr": 3e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-ae2b4b1a059ae74a81b4e153.r8.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-ae2b4b1a059ae74a81b4e153",
+    "lr": 0.0001,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-ae2b4b1a059ae74a81b4e153.r8.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-ae2b4b1a059ae74a81b4e153",
+    "lr": 1e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-ae2b4b1a059ae74a81b4e153.r16.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-ae2b4b1a059ae74a81b4e153",
+    "lr": 3e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-ae2b4b1a059ae74a81b4e153.r16.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-ae2b4b1a059ae74a81b4e153",
+    "lr": 0.0001,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-ae2b4b1a059ae74a81b4e153.r16.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-ae2b4b1a059ae74a81b4e153",
+    "lr": 1e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-ae2b4b1a059ae74a81b4e153.r32.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-ae2b4b1a059ae74a81b4e153",
+    "lr": 3e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-ae2b4b1a059ae74a81b4e153.r32.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-ae2b4b1a059ae74a81b4e153",
+    "lr": 0.0001,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-ae2b4b1a059ae74a81b4e153.r32.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-ae2b4b1a059ae74a81b4e153",
+    "lr": 1e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-ae2b4b1a059ae74a81b4e153.r64.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-ae2b4b1a059ae74a81b4e153",
+    "lr": 3e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-ae2b4b1a059ae74a81b4e153.r64.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-ae2b4b1a059ae74a81b4e153",
+    "lr": 0.0001,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-ae2b4b1a059ae74a81b4e153.r64.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6f74c6fed870c6b6de61e305",
+    "lr": 1e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6f74c6fed870c6b6de61e305.r8.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6f74c6fed870c6b6de61e305",
+    "lr": 3e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6f74c6fed870c6b6de61e305.r8.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6f74c6fed870c6b6de61e305",
+    "lr": 0.0001,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6f74c6fed870c6b6de61e305.r8.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6f74c6fed870c6b6de61e305",
+    "lr": 1e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6f74c6fed870c6b6de61e305.r16.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6f74c6fed870c6b6de61e305",
+    "lr": 3e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6f74c6fed870c6b6de61e305.r16.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6f74c6fed870c6b6de61e305",
+    "lr": 0.0001,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6f74c6fed870c6b6de61e305.r16.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6f74c6fed870c6b6de61e305",
+    "lr": 1e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6f74c6fed870c6b6de61e305.r32.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6f74c6fed870c6b6de61e305",
+    "lr": 3e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6f74c6fed870c6b6de61e305.r32.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6f74c6fed870c6b6de61e305",
+    "lr": 0.0001,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6f74c6fed870c6b6de61e305.r32.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6f74c6fed870c6b6de61e305",
+    "lr": 1e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6f74c6fed870c6b6de61e305.r64.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6f74c6fed870c6b6de61e305",
+    "lr": 3e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6f74c6fed870c6b6de61e305.r64.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6f74c6fed870c6b6de61e305",
+    "lr": 0.0001,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6f74c6fed870c6b6de61e305.r64.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6bb819b3e38cc7ce0653a003",
+    "lr": 1e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6bb819b3e38cc7ce0653a003.r8.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6bb819b3e38cc7ce0653a003",
+    "lr": 3e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6bb819b3e38cc7ce0653a003.r8.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6bb819b3e38cc7ce0653a003",
+    "lr": 0.0001,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6bb819b3e38cc7ce0653a003.r8.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6bb819b3e38cc7ce0653a003",
+    "lr": 1e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6bb819b3e38cc7ce0653a003.r16.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6bb819b3e38cc7ce0653a003",
+    "lr": 3e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6bb819b3e38cc7ce0653a003.r16.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6bb819b3e38cc7ce0653a003",
+    "lr": 0.0001,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6bb819b3e38cc7ce0653a003.r16.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6bb819b3e38cc7ce0653a003",
+    "lr": 1e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6bb819b3e38cc7ce0653a003.r32.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6bb819b3e38cc7ce0653a003",
+    "lr": 3e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6bb819b3e38cc7ce0653a003.r32.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6bb819b3e38cc7ce0653a003",
+    "lr": 0.0001,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6bb819b3e38cc7ce0653a003.r32.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6bb819b3e38cc7ce0653a003",
+    "lr": 1e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6bb819b3e38cc7ce0653a003.r64.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6bb819b3e38cc7ce0653a003",
+    "lr": 3e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6bb819b3e38cc7ce0653a003.r64.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6bb819b3e38cc7ce0653a003",
+    "lr": 0.0001,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6bb819b3e38cc7ce0653a003.r64.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-eca58ad514cb50130132be92",
+    "lr": 1e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-eca58ad514cb50130132be92.r8.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-eca58ad514cb50130132be92",
+    "lr": 3e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-eca58ad514cb50130132be92.r8.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-eca58ad514cb50130132be92",
+    "lr": 0.0001,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-eca58ad514cb50130132be92.r8.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-eca58ad514cb50130132be92",
+    "lr": 1e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-eca58ad514cb50130132be92.r16.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-eca58ad514cb50130132be92",
+    "lr": 3e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-eca58ad514cb50130132be92.r16.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-eca58ad514cb50130132be92",
+    "lr": 0.0001,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-eca58ad514cb50130132be92.r16.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-eca58ad514cb50130132be92",
+    "lr": 1e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-eca58ad514cb50130132be92.r32.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-eca58ad514cb50130132be92",
+    "lr": 3e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-eca58ad514cb50130132be92.r32.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-eca58ad514cb50130132be92",
+    "lr": 0.0001,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-eca58ad514cb50130132be92.r32.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-eca58ad514cb50130132be92",
+    "lr": 1e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-eca58ad514cb50130132be92.r64.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-eca58ad514cb50130132be92",
+    "lr": 3e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-eca58ad514cb50130132be92.r64.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-eca58ad514cb50130132be92",
+    "lr": 0.0001,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-eca58ad514cb50130132be92.r64.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-435d43ba54ac4e3184ce5aee",
+    "lr": 1e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-435d43ba54ac4e3184ce5aee.r8.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-435d43ba54ac4e3184ce5aee",
+    "lr": 3e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-435d43ba54ac4e3184ce5aee.r8.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-435d43ba54ac4e3184ce5aee",
+    "lr": 0.0001,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-435d43ba54ac4e3184ce5aee.r8.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-435d43ba54ac4e3184ce5aee",
+    "lr": 1e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-435d43ba54ac4e3184ce5aee.r16.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-435d43ba54ac4e3184ce5aee",
+    "lr": 3e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-435d43ba54ac4e3184ce5aee.r16.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-435d43ba54ac4e3184ce5aee",
+    "lr": 0.0001,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-435d43ba54ac4e3184ce5aee.r16.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-435d43ba54ac4e3184ce5aee",
+    "lr": 1e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-435d43ba54ac4e3184ce5aee.r32.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-435d43ba54ac4e3184ce5aee",
+    "lr": 3e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-435d43ba54ac4e3184ce5aee.r32.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-435d43ba54ac4e3184ce5aee",
+    "lr": 0.0001,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-435d43ba54ac4e3184ce5aee.r32.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-435d43ba54ac4e3184ce5aee",
+    "lr": 1e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-435d43ba54ac4e3184ce5aee.r64.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-435d43ba54ac4e3184ce5aee",
+    "lr": 3e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-435d43ba54ac4e3184ce5aee.r64.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-435d43ba54ac4e3184ce5aee",
+    "lr": 0.0001,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-435d43ba54ac4e3184ce5aee.r64.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-5fb068dbbeb83f8de35cda02",
+    "lr": 1e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-5fb068dbbeb83f8de35cda02.r8.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-5fb068dbbeb83f8de35cda02",
+    "lr": 3e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-5fb068dbbeb83f8de35cda02.r8.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-5fb068dbbeb83f8de35cda02",
+    "lr": 0.0001,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-5fb068dbbeb83f8de35cda02.r8.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-5fb068dbbeb83f8de35cda02",
+    "lr": 1e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-5fb068dbbeb83f8de35cda02.r16.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-5fb068dbbeb83f8de35cda02",
+    "lr": 3e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-5fb068dbbeb83f8de35cda02.r16.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-5fb068dbbeb83f8de35cda02",
+    "lr": 0.0001,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-5fb068dbbeb83f8de35cda02.r16.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-5fb068dbbeb83f8de35cda02",
+    "lr": 1e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-5fb068dbbeb83f8de35cda02.r32.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-5fb068dbbeb83f8de35cda02",
+    "lr": 3e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-5fb068dbbeb83f8de35cda02.r32.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-5fb068dbbeb83f8de35cda02",
+    "lr": 0.0001,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-5fb068dbbeb83f8de35cda02.r32.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-5fb068dbbeb83f8de35cda02",
+    "lr": 1e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-5fb068dbbeb83f8de35cda02.r64.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-5fb068dbbeb83f8de35cda02",
+    "lr": 3e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-5fb068dbbeb83f8de35cda02.r64.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-5fb068dbbeb83f8de35cda02",
+    "lr": 0.0001,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-5fb068dbbeb83f8de35cda02.r64.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-53a48b5ab8603c523d7344fb",
+    "lr": 1e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-53a48b5ab8603c523d7344fb.r8.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-53a48b5ab8603c523d7344fb",
+    "lr": 3e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-53a48b5ab8603c523d7344fb.r8.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-53a48b5ab8603c523d7344fb",
+    "lr": 0.0001,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-53a48b5ab8603c523d7344fb.r8.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-53a48b5ab8603c523d7344fb",
+    "lr": 1e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-53a48b5ab8603c523d7344fb.r16.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-53a48b5ab8603c523d7344fb",
+    "lr": 3e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-53a48b5ab8603c523d7344fb.r16.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-53a48b5ab8603c523d7344fb",
+    "lr": 0.0001,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-53a48b5ab8603c523d7344fb.r16.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-53a48b5ab8603c523d7344fb",
+    "lr": 1e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-53a48b5ab8603c523d7344fb.r32.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-53a48b5ab8603c523d7344fb",
+    "lr": 3e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-53a48b5ab8603c523d7344fb.r32.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-53a48b5ab8603c523d7344fb",
+    "lr": 0.0001,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-53a48b5ab8603c523d7344fb.r32.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-53a48b5ab8603c523d7344fb",
+    "lr": 1e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-53a48b5ab8603c523d7344fb.r64.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-53a48b5ab8603c523d7344fb",
+    "lr": 3e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-53a48b5ab8603c523d7344fb.r64.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-53a48b5ab8603c523d7344fb",
+    "lr": 0.0001,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-53a48b5ab8603c523d7344fb.r64.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-ddc7b59c23956072cbe1297c",
+    "lr": 1e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-ddc7b59c23956072cbe1297c.r8.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-ddc7b59c23956072cbe1297c",
+    "lr": 3e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-ddc7b59c23956072cbe1297c.r8.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-ddc7b59c23956072cbe1297c",
+    "lr": 0.0001,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-ddc7b59c23956072cbe1297c.r8.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-ddc7b59c23956072cbe1297c",
+    "lr": 1e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-ddc7b59c23956072cbe1297c.r16.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-ddc7b59c23956072cbe1297c",
+    "lr": 3e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-ddc7b59c23956072cbe1297c.r16.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-ddc7b59c23956072cbe1297c",
+    "lr": 0.0001,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-ddc7b59c23956072cbe1297c.r16.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-ddc7b59c23956072cbe1297c",
+    "lr": 1e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-ddc7b59c23956072cbe1297c.r32.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-ddc7b59c23956072cbe1297c",
+    "lr": 3e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-ddc7b59c23956072cbe1297c.r32.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-ddc7b59c23956072cbe1297c",
+    "lr": 0.0001,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-ddc7b59c23956072cbe1297c.r32.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-ddc7b59c23956072cbe1297c",
+    "lr": 1e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-ddc7b59c23956072cbe1297c.r64.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-ddc7b59c23956072cbe1297c",
+    "lr": 3e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-ddc7b59c23956072cbe1297c.r64.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-ddc7b59c23956072cbe1297c",
+    "lr": 0.0001,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-ddc7b59c23956072cbe1297c.r64.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6bb949b573434b7497fe54af",
+    "lr": 1e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6bb949b573434b7497fe54af.r8.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6bb949b573434b7497fe54af",
+    "lr": 3e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6bb949b573434b7497fe54af.r8.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6bb949b573434b7497fe54af",
+    "lr": 0.0001,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6bb949b573434b7497fe54af.r8.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6bb949b573434b7497fe54af",
+    "lr": 1e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6bb949b573434b7497fe54af.r16.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6bb949b573434b7497fe54af",
+    "lr": 3e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6bb949b573434b7497fe54af.r16.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6bb949b573434b7497fe54af",
+    "lr": 0.0001,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6bb949b573434b7497fe54af.r16.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6bb949b573434b7497fe54af",
+    "lr": 1e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6bb949b573434b7497fe54af.r32.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6bb949b573434b7497fe54af",
+    "lr": 3e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6bb949b573434b7497fe54af.r32.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6bb949b573434b7497fe54af",
+    "lr": 0.0001,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6bb949b573434b7497fe54af.r32.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6bb949b573434b7497fe54af",
+    "lr": 1e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6bb949b573434b7497fe54af.r64.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6bb949b573434b7497fe54af",
+    "lr": 3e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6bb949b573434b7497fe54af.r64.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6bb949b573434b7497fe54af",
+    "lr": 0.0001,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6bb949b573434b7497fe54af.r64.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-8c74c9c1e42bc12897d22406",
+    "lr": 1e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-8c74c9c1e42bc12897d22406.r8.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-8c74c9c1e42bc12897d22406",
+    "lr": 3e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-8c74c9c1e42bc12897d22406.r8.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-8c74c9c1e42bc12897d22406",
+    "lr": 0.0001,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-8c74c9c1e42bc12897d22406.r8.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-8c74c9c1e42bc12897d22406",
+    "lr": 1e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-8c74c9c1e42bc12897d22406.r16.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-8c74c9c1e42bc12897d22406",
+    "lr": 3e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-8c74c9c1e42bc12897d22406.r16.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-8c74c9c1e42bc12897d22406",
+    "lr": 0.0001,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-8c74c9c1e42bc12897d22406.r16.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-8c74c9c1e42bc12897d22406",
+    "lr": 1e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-8c74c9c1e42bc12897d22406.r32.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-8c74c9c1e42bc12897d22406",
+    "lr": 3e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-8c74c9c1e42bc12897d22406.r32.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-8c74c9c1e42bc12897d22406",
+    "lr": 0.0001,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-8c74c9c1e42bc12897d22406.r32.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-8c74c9c1e42bc12897d22406",
+    "lr": 1e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-8c74c9c1e42bc12897d22406.r64.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-8c74c9c1e42bc12897d22406",
+    "lr": 3e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-8c74c9c1e42bc12897d22406.r64.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-8c74c9c1e42bc12897d22406",
+    "lr": 0.0001,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-8c74c9c1e42bc12897d22406.r64.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-39e231f713bd6114b00a43f3",
+    "lr": 1e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-39e231f713bd6114b00a43f3.r8.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-39e231f713bd6114b00a43f3",
+    "lr": 3e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-39e231f713bd6114b00a43f3.r8.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-39e231f713bd6114b00a43f3",
+    "lr": 0.0001,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-39e231f713bd6114b00a43f3.r8.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-39e231f713bd6114b00a43f3",
+    "lr": 1e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-39e231f713bd6114b00a43f3.r16.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-39e231f713bd6114b00a43f3",
+    "lr": 3e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-39e231f713bd6114b00a43f3.r16.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-39e231f713bd6114b00a43f3",
+    "lr": 0.0001,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-39e231f713bd6114b00a43f3.r16.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-39e231f713bd6114b00a43f3",
+    "lr": 1e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-39e231f713bd6114b00a43f3.r32.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-39e231f713bd6114b00a43f3",
+    "lr": 3e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-39e231f713bd6114b00a43f3.r32.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-39e231f713bd6114b00a43f3",
+    "lr": 0.0001,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-39e231f713bd6114b00a43f3.r32.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-39e231f713bd6114b00a43f3",
+    "lr": 1e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-39e231f713bd6114b00a43f3.r64.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-39e231f713bd6114b00a43f3",
+    "lr": 3e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-39e231f713bd6114b00a43f3.r64.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-39e231f713bd6114b00a43f3",
+    "lr": 0.0001,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-39e231f713bd6114b00a43f3.r64.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-f8fcbcce6c18ba4a34c39250",
+    "lr": 1e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-f8fcbcce6c18ba4a34c39250.r8.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-f8fcbcce6c18ba4a34c39250",
+    "lr": 3e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-f8fcbcce6c18ba4a34c39250.r8.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-f8fcbcce6c18ba4a34c39250",
+    "lr": 0.0001,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-f8fcbcce6c18ba4a34c39250.r8.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-f8fcbcce6c18ba4a34c39250",
+    "lr": 1e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-f8fcbcce6c18ba4a34c39250.r16.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-f8fcbcce6c18ba4a34c39250",
+    "lr": 3e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-f8fcbcce6c18ba4a34c39250.r16.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-f8fcbcce6c18ba4a34c39250",
+    "lr": 0.0001,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-f8fcbcce6c18ba4a34c39250.r16.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-f8fcbcce6c18ba4a34c39250",
+    "lr": 1e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-f8fcbcce6c18ba4a34c39250.r32.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-f8fcbcce6c18ba4a34c39250",
+    "lr": 3e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-f8fcbcce6c18ba4a34c39250.r32.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-f8fcbcce6c18ba4a34c39250",
+    "lr": 0.0001,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-f8fcbcce6c18ba4a34c39250.r32.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-f8fcbcce6c18ba4a34c39250",
+    "lr": 1e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-f8fcbcce6c18ba4a34c39250.r64.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-f8fcbcce6c18ba4a34c39250",
+    "lr": 3e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-f8fcbcce6c18ba4a34c39250.r64.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-f8fcbcce6c18ba4a34c39250",
+    "lr": 0.0001,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-f8fcbcce6c18ba4a34c39250.r64.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-387c49fe0944f49574a0e788",
+    "lr": 1e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-387c49fe0944f49574a0e788.r8.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-387c49fe0944f49574a0e788",
+    "lr": 3e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-387c49fe0944f49574a0e788.r8.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-387c49fe0944f49574a0e788",
+    "lr": 0.0001,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-387c49fe0944f49574a0e788.r8.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-387c49fe0944f49574a0e788",
+    "lr": 1e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-387c49fe0944f49574a0e788.r16.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-387c49fe0944f49574a0e788",
+    "lr": 3e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-387c49fe0944f49574a0e788.r16.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-387c49fe0944f49574a0e788",
+    "lr": 0.0001,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-387c49fe0944f49574a0e788.r16.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-387c49fe0944f49574a0e788",
+    "lr": 1e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-387c49fe0944f49574a0e788.r32.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-387c49fe0944f49574a0e788",
+    "lr": 3e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-387c49fe0944f49574a0e788.r32.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-387c49fe0944f49574a0e788",
+    "lr": 0.0001,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-387c49fe0944f49574a0e788.r32.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-387c49fe0944f49574a0e788",
+    "lr": 1e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-387c49fe0944f49574a0e788.r64.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-387c49fe0944f49574a0e788",
+    "lr": 3e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-387c49fe0944f49574a0e788.r64.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-387c49fe0944f49574a0e788",
+    "lr": 0.0001,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-387c49fe0944f49574a0e788.r64.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6be9ec4a20e84c4037ebdbf1",
+    "lr": 1e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6be9ec4a20e84c4037ebdbf1.r8.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6be9ec4a20e84c4037ebdbf1",
+    "lr": 3e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6be9ec4a20e84c4037ebdbf1.r8.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6be9ec4a20e84c4037ebdbf1",
+    "lr": 0.0001,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6be9ec4a20e84c4037ebdbf1.r8.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6be9ec4a20e84c4037ebdbf1",
+    "lr": 1e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6be9ec4a20e84c4037ebdbf1.r16.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6be9ec4a20e84c4037ebdbf1",
+    "lr": 3e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6be9ec4a20e84c4037ebdbf1.r16.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6be9ec4a20e84c4037ebdbf1",
+    "lr": 0.0001,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6be9ec4a20e84c4037ebdbf1.r16.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6be9ec4a20e84c4037ebdbf1",
+    "lr": 1e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6be9ec4a20e84c4037ebdbf1.r32.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6be9ec4a20e84c4037ebdbf1",
+    "lr": 3e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6be9ec4a20e84c4037ebdbf1.r32.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6be9ec4a20e84c4037ebdbf1",
+    "lr": 0.0001,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6be9ec4a20e84c4037ebdbf1.r32.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6be9ec4a20e84c4037ebdbf1",
+    "lr": 1e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6be9ec4a20e84c4037ebdbf1.r64.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6be9ec4a20e84c4037ebdbf1",
+    "lr": 3e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6be9ec4a20e84c4037ebdbf1.r64.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-6be9ec4a20e84c4037ebdbf1",
+    "lr": 0.0001,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-6be9ec4a20e84c4037ebdbf1.r64.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-995a9e281848d4a43862b5fa",
+    "lr": 1e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-995a9e281848d4a43862b5fa.r8.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-995a9e281848d4a43862b5fa",
+    "lr": 3e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-995a9e281848d4a43862b5fa.r8.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-995a9e281848d4a43862b5fa",
+    "lr": 0.0001,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-995a9e281848d4a43862b5fa.r8.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-995a9e281848d4a43862b5fa",
+    "lr": 1e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-995a9e281848d4a43862b5fa.r16.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-995a9e281848d4a43862b5fa",
+    "lr": 3e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-995a9e281848d4a43862b5fa.r16.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-995a9e281848d4a43862b5fa",
+    "lr": 0.0001,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-995a9e281848d4a43862b5fa.r16.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-995a9e281848d4a43862b5fa",
+    "lr": 1e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-995a9e281848d4a43862b5fa.r32.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-995a9e281848d4a43862b5fa",
+    "lr": 3e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-995a9e281848d4a43862b5fa.r32.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-995a9e281848d4a43862b5fa",
+    "lr": 0.0001,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-995a9e281848d4a43862b5fa.r32.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-995a9e281848d4a43862b5fa",
+    "lr": 1e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-995a9e281848d4a43862b5fa.r64.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-995a9e281848d4a43862b5fa",
+    "lr": 3e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-995a9e281848d4a43862b5fa.r64.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-995a9e281848d4a43862b5fa",
+    "lr": 0.0001,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-995a9e281848d4a43862b5fa.r64.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-b6b8bec4e853c9411784acf1",
+    "lr": 1e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-b6b8bec4e853c9411784acf1.r8.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-b6b8bec4e853c9411784acf1",
+    "lr": 3e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-b6b8bec4e853c9411784acf1.r8.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-b6b8bec4e853c9411784acf1",
+    "lr": 0.0001,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-b6b8bec4e853c9411784acf1.r8.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-b6b8bec4e853c9411784acf1",
+    "lr": 1e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-b6b8bec4e853c9411784acf1.r16.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-b6b8bec4e853c9411784acf1",
+    "lr": 3e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-b6b8bec4e853c9411784acf1.r16.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-b6b8bec4e853c9411784acf1",
+    "lr": 0.0001,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-b6b8bec4e853c9411784acf1.r16.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-b6b8bec4e853c9411784acf1",
+    "lr": 1e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-b6b8bec4e853c9411784acf1.r32.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-b6b8bec4e853c9411784acf1",
+    "lr": 3e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-b6b8bec4e853c9411784acf1.r32.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-b6b8bec4e853c9411784acf1",
+    "lr": 0.0001,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-b6b8bec4e853c9411784acf1.r32.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-b6b8bec4e853c9411784acf1",
+    "lr": 1e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-b6b8bec4e853c9411784acf1.r64.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-b6b8bec4e853c9411784acf1",
+    "lr": 3e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-b6b8bec4e853c9411784acf1.r64.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-b6b8bec4e853c9411784acf1",
+    "lr": 0.0001,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-b6b8bec4e853c9411784acf1.r64.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-e0cf3932d91617130d2df1b9",
+    "lr": 1e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-e0cf3932d91617130d2df1b9.r8.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-e0cf3932d91617130d2df1b9",
+    "lr": 3e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-e0cf3932d91617130d2df1b9.r8.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-e0cf3932d91617130d2df1b9",
+    "lr": 0.0001,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-e0cf3932d91617130d2df1b9.r8.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-e0cf3932d91617130d2df1b9",
+    "lr": 1e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-e0cf3932d91617130d2df1b9.r16.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-e0cf3932d91617130d2df1b9",
+    "lr": 3e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-e0cf3932d91617130d2df1b9.r16.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-e0cf3932d91617130d2df1b9",
+    "lr": 0.0001,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-e0cf3932d91617130d2df1b9.r16.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-e0cf3932d91617130d2df1b9",
+    "lr": 1e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-e0cf3932d91617130d2df1b9.r32.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-e0cf3932d91617130d2df1b9",
+    "lr": 3e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-e0cf3932d91617130d2df1b9.r32.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-e0cf3932d91617130d2df1b9",
+    "lr": 0.0001,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-e0cf3932d91617130d2df1b9.r32.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-e0cf3932d91617130d2df1b9",
+    "lr": 1e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-e0cf3932d91617130d2df1b9.r64.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-e0cf3932d91617130d2df1b9",
+    "lr": 3e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-e0cf3932d91617130d2df1b9.r64.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-e0cf3932d91617130d2df1b9",
+    "lr": 0.0001,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-e0cf3932d91617130d2df1b9.r64.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-5f45c0642a4739454bdb16b7",
+    "lr": 1e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-5f45c0642a4739454bdb16b7.r8.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-5f45c0642a4739454bdb16b7",
+    "lr": 3e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-5f45c0642a4739454bdb16b7.r8.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-5f45c0642a4739454bdb16b7",
+    "lr": 0.0001,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-5f45c0642a4739454bdb16b7.r8.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-5f45c0642a4739454bdb16b7",
+    "lr": 1e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-5f45c0642a4739454bdb16b7.r16.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-5f45c0642a4739454bdb16b7",
+    "lr": 3e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-5f45c0642a4739454bdb16b7.r16.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-5f45c0642a4739454bdb16b7",
+    "lr": 0.0001,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-5f45c0642a4739454bdb16b7.r16.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-5f45c0642a4739454bdb16b7",
+    "lr": 1e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-5f45c0642a4739454bdb16b7.r32.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-5f45c0642a4739454bdb16b7",
+    "lr": 3e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-5f45c0642a4739454bdb16b7.r32.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-5f45c0642a4739454bdb16b7",
+    "lr": 0.0001,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-5f45c0642a4739454bdb16b7.r32.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-5f45c0642a4739454bdb16b7",
+    "lr": 1e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-5f45c0642a4739454bdb16b7.r64.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-5f45c0642a4739454bdb16b7",
+    "lr": 3e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-5f45c0642a4739454bdb16b7.r64.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-5f45c0642a4739454bdb16b7",
+    "lr": 0.0001,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-5f45c0642a4739454bdb16b7.r64.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-fb0dd2d04aefbf30f8b92f32",
+    "lr": 1e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-fb0dd2d04aefbf30f8b92f32.r8.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-fb0dd2d04aefbf30f8b92f32",
+    "lr": 3e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-fb0dd2d04aefbf30f8b92f32.r8.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-fb0dd2d04aefbf30f8b92f32",
+    "lr": 0.0001,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-fb0dd2d04aefbf30f8b92f32.r8.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-fb0dd2d04aefbf30f8b92f32",
+    "lr": 1e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-fb0dd2d04aefbf30f8b92f32.r16.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-fb0dd2d04aefbf30f8b92f32",
+    "lr": 3e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-fb0dd2d04aefbf30f8b92f32.r16.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-fb0dd2d04aefbf30f8b92f32",
+    "lr": 0.0001,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-fb0dd2d04aefbf30f8b92f32.r16.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-fb0dd2d04aefbf30f8b92f32",
+    "lr": 1e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-fb0dd2d04aefbf30f8b92f32.r32.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-fb0dd2d04aefbf30f8b92f32",
+    "lr": 3e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-fb0dd2d04aefbf30f8b92f32.r32.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-fb0dd2d04aefbf30f8b92f32",
+    "lr": 0.0001,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-fb0dd2d04aefbf30f8b92f32.r32.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-fb0dd2d04aefbf30f8b92f32",
+    "lr": 1e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-fb0dd2d04aefbf30f8b92f32.r64.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-fb0dd2d04aefbf30f8b92f32",
+    "lr": 3e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-fb0dd2d04aefbf30f8b92f32.r64.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-fb0dd2d04aefbf30f8b92f32",
+    "lr": 0.0001,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-fb0dd2d04aefbf30f8b92f32.r64.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-b3c1790d869f728c84d697fc",
+    "lr": 1e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-b3c1790d869f728c84d697fc.r8.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-b3c1790d869f728c84d697fc",
+    "lr": 3e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-b3c1790d869f728c84d697fc.r8.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-b3c1790d869f728c84d697fc",
+    "lr": 0.0001,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-b3c1790d869f728c84d697fc.r8.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-b3c1790d869f728c84d697fc",
+    "lr": 1e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-b3c1790d869f728c84d697fc.r16.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-b3c1790d869f728c84d697fc",
+    "lr": 3e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-b3c1790d869f728c84d697fc.r16.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-b3c1790d869f728c84d697fc",
+    "lr": 0.0001,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-b3c1790d869f728c84d697fc.r16.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-b3c1790d869f728c84d697fc",
+    "lr": 1e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-b3c1790d869f728c84d697fc.r32.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-b3c1790d869f728c84d697fc",
+    "lr": 3e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-b3c1790d869f728c84d697fc.r32.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-b3c1790d869f728c84d697fc",
+    "lr": 0.0001,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-b3c1790d869f728c84d697fc.r32.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-b3c1790d869f728c84d697fc",
+    "lr": 1e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-b3c1790d869f728c84d697fc.r64.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-b3c1790d869f728c84d697fc",
+    "lr": 3e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-b3c1790d869f728c84d697fc.r64.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-b3c1790d869f728c84d697fc",
+    "lr": 0.0001,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-b3c1790d869f728c84d697fc.r64.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-7185608fbee98260c90aa664",
+    "lr": 1e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-7185608fbee98260c90aa664.r8.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-7185608fbee98260c90aa664",
+    "lr": 3e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-7185608fbee98260c90aa664.r8.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-7185608fbee98260c90aa664",
+    "lr": 0.0001,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-7185608fbee98260c90aa664.r8.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-7185608fbee98260c90aa664",
+    "lr": 1e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-7185608fbee98260c90aa664.r16.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-7185608fbee98260c90aa664",
+    "lr": 3e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-7185608fbee98260c90aa664.r16.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-7185608fbee98260c90aa664",
+    "lr": 0.0001,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-7185608fbee98260c90aa664.r16.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-7185608fbee98260c90aa664",
+    "lr": 1e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-7185608fbee98260c90aa664.r32.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-7185608fbee98260c90aa664",
+    "lr": 3e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-7185608fbee98260c90aa664.r32.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-7185608fbee98260c90aa664",
+    "lr": 0.0001,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-7185608fbee98260c90aa664.r32.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-7185608fbee98260c90aa664",
+    "lr": 1e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-7185608fbee98260c90aa664.r64.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-7185608fbee98260c90aa664",
+    "lr": 3e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-7185608fbee98260c90aa664.r64.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-7185608fbee98260c90aa664",
+    "lr": 0.0001,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-7185608fbee98260c90aa664.r64.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-e32b9502f3f6102be06e5a37",
+    "lr": 1e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-e32b9502f3f6102be06e5a37.r8.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-e32b9502f3f6102be06e5a37",
+    "lr": 3e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-e32b9502f3f6102be06e5a37.r8.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-e32b9502f3f6102be06e5a37",
+    "lr": 0.0001,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-e32b9502f3f6102be06e5a37.r8.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-e32b9502f3f6102be06e5a37",
+    "lr": 1e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-e32b9502f3f6102be06e5a37.r16.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-e32b9502f3f6102be06e5a37",
+    "lr": 3e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-e32b9502f3f6102be06e5a37.r16.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-e32b9502f3f6102be06e5a37",
+    "lr": 0.0001,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-e32b9502f3f6102be06e5a37.r16.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-e32b9502f3f6102be06e5a37",
+    "lr": 1e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-e32b9502f3f6102be06e5a37.r32.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-e32b9502f3f6102be06e5a37",
+    "lr": 3e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-e32b9502f3f6102be06e5a37.r32.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-e32b9502f3f6102be06e5a37",
+    "lr": 0.0001,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-e32b9502f3f6102be06e5a37.r32.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-e32b9502f3f6102be06e5a37",
+    "lr": 1e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-e32b9502f3f6102be06e5a37.r64.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-e32b9502f3f6102be06e5a37",
+    "lr": 3e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-e32b9502f3f6102be06e5a37.r64.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-e32b9502f3f6102be06e5a37",
+    "lr": 0.0001,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-e32b9502f3f6102be06e5a37.r64.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-715ceb24a635319bb82269b0",
+    "lr": 1e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-715ceb24a635319bb82269b0.r8.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-715ceb24a635319bb82269b0",
+    "lr": 3e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-715ceb24a635319bb82269b0.r8.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-715ceb24a635319bb82269b0",
+    "lr": 0.0001,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-715ceb24a635319bb82269b0.r8.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-715ceb24a635319bb82269b0",
+    "lr": 1e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-715ceb24a635319bb82269b0.r16.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-715ceb24a635319bb82269b0",
+    "lr": 3e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-715ceb24a635319bb82269b0.r16.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-715ceb24a635319bb82269b0",
+    "lr": 0.0001,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-715ceb24a635319bb82269b0.r16.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-715ceb24a635319bb82269b0",
+    "lr": 1e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-715ceb24a635319bb82269b0.r32.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-715ceb24a635319bb82269b0",
+    "lr": 3e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-715ceb24a635319bb82269b0.r32.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-715ceb24a635319bb82269b0",
+    "lr": 0.0001,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-715ceb24a635319bb82269b0.r32.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-715ceb24a635319bb82269b0",
+    "lr": 1e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-715ceb24a635319bb82269b0.r64.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-715ceb24a635319bb82269b0",
+    "lr": 3e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-715ceb24a635319bb82269b0.r64.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-715ceb24a635319bb82269b0",
+    "lr": 0.0001,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-715ceb24a635319bb82269b0.r64.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-45385992c68db63f6fc1be45",
+    "lr": 1e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-45385992c68db63f6fc1be45.r8.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-45385992c68db63f6fc1be45",
+    "lr": 3e-05,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-45385992c68db63f6fc1be45.r8.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-45385992c68db63f6fc1be45",
+    "lr": 0.0001,
+    "rank": 8,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-45385992c68db63f6fc1be45.r8.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-45385992c68db63f6fc1be45",
+    "lr": 1e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-45385992c68db63f6fc1be45.r16.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-45385992c68db63f6fc1be45",
+    "lr": 3e-05,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-45385992c68db63f6fc1be45.r16.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-45385992c68db63f6fc1be45",
+    "lr": 0.0001,
+    "rank": 16,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-45385992c68db63f6fc1be45.r16.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-45385992c68db63f6fc1be45",
+    "lr": 1e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-45385992c68db63f6fc1be45.r32.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-45385992c68db63f6fc1be45",
+    "lr": 3e-05,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-45385992c68db63f6fc1be45.r32.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-45385992c68db63f6fc1be45",
+    "lr": 0.0001,
+    "rank": 32,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-45385992c68db63f6fc1be45.r32.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-45385992c68db63f6fc1be45",
+    "lr": 1e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-45385992c68db63f6fc1be45.r64.oracle.lr1e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-45385992c68db63f6fc1be45",
+    "lr": 3e-05,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-45385992c68db63f6fc1be45.r64.oracle.lr3e-05",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  },
+  {
+   "args": {
+    "checkpoints": [
+     5,
+     10,
+     25,
+     50,
+     100,
+     200,
+     400
+    ],
+    "coverage": "oracle",
+    "document_id": "qa_protocol-doc-45385992c68db63f6fc1be45",
+    "lr": 0.0001,
+    "rank": 64,
+    "stop_step": 400,
+    "wrongdoc": null
+   },
+   "cost": 4.0,
+   "id": "fit.dev.qa_protocol-doc-45385992c68db63f6fc1be45.r64.oracle.lr0.0001",
+   "kind": "fit",
+   "priority": 0,
+   "stage": "dev"
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+% Analytical MACs: tab:cost-length. Measured throughput: tab:throughput.
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}
+\begin{groupplot}[group style={group size=2 by 1,horizontal sep=1.2cm},
+ scale only axis,width=.31\columnwidth,height=2.6cm,grid=major,
+ tick label style={font=\scriptsize},label style={font=\scriptsize},
+ title style={font=\scriptsize},
+ legend style={font=\scriptsize,draw=none,at={(.5,-.28)},anchor=north,legend columns=1}]
+\nextgroupplot[title={(a) Analytical compute},
+ xlabel={Memory tokens},ylabel={GMAC/request (log)},
+ xmode=log,log basis x=2,ymode=log,
+ xtick={150,1024,4096},xticklabels={150,1024,4096},
+ ymin=100,ymax=20000]
+\addplot[black,dashed,mark=square*,thick] coordinates {(150,583)(512,1544.8)(1024,2929.1)(2048,5781.3)(4096,11820.7)};
+\addlegendentry{ICL: full prefill}
+\addplot[teal!80!black,mark=diamond*,thick] coordinates {(150,188.8)(512,188.8)(1024,188.8)(2048,188.8)(4096,188.8)};
+\addlegendentry{Native D2L}
+\nextgroupplot[title={(b) Batched serving throughput},
+ xlabel={Batch size},ylabel={Aggregate tokens/s},
+ xtick={1,8,16},xmin=0,xmax=17,ymin=0,ymax=350]
+\addplot[teal!80!black,dashed,mark=diamond*,thick] coordinates {(1,24.3)(8,165.3)(16,290.9)};
+\addlegendentry{Gemma ICL}
+\addplot[teal!80!black,mark=diamond*,thick] coordinates {(1,20.1)(8,157.8)(16,315.8)};
+\addlegendentry{Gemma D2L}
+\addplot[blue!75!black,dashed,mark=triangle*,thick] coordinates {(1,21.5)(8,122.0)(16,162.5)};
+\addlegendentry{Qwen ICL}
+\addplot[blue!75!black,mark=triangle*,thick] coordinates {(1,17.1)(8,134.9)(16,269.4)};
+\addlegendentry{Qwen D2L}
+\end{groupplot}
+\end{tikzpicture}
+\caption{Recurring compute and serving throughput. (a) Gemma, one document,
+40 question tokens and 32 output tokens. (b) One A100, four documents per user
+and 64 output tokens per user. Each batch contains one request per user,
+with distinct user-specific memory. Throughput includes prefill and decoding;
+ICL performs full prefill per request. Compilation is excluded.}
+\label{fig:serving-tradeoff}
+\end{figure}

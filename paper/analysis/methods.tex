@@ -1,0 +1,215 @@
+\section{Methods}
+\label{sec:methods}
+
+\subsection{Compiled representation and composition}
+\label{sec:d2l}
+
+We use the released D2L compilers~\citep{charakorn2026doctolora} for
+Gemma-2-2B-it~\citep{gemmateam2024gemma2} and Qwen3-4B-Instruct-2507~\citep{yang2025qwen3}.
+The architecture, composition rule and bias adapter described here are from D2L.
+We introduce the per-rank notation and gating interventions below.
+Figure~\ref{fig:architecture} shows the native D2L pipeline. At write time, a
+frozen copy of the target model reads a document $d$. A Perceiver-style
+hypernetwork then converts the resulting layer activations into a LoRA
+adapter: for each MLP layer $l$, it produces two rank-8 matrices,
+$A_{l,d}$ and $B_{l,d}$, for the layer's down-projection. The hypernetwork was
+trained by context distillation. The target model is frozen; compiler and
+adapter updates are restricted to the fine-tuning and passage-fitting controls.
+Thus, a document is compiled once
+into model state and does not need to remain in the serving prompt.
+
+We describe one layer at one token position, omitting layer and token indices
+throughout the equations below. Let $x$ be the MLP down-projection input,
+$z$ its base output, and $z'$ its modified output. The residual $h_{\mathrm{res}}$
+enters the MLP branch after attention, and $h_{\mathrm{out}}$ is the block output
+passed to the next layer. $\mathcal{N}$ is Gemma's post-MLP normalization,
+or the identity for Qwen.
+
+For document $d$, $A_d$ maps $x$ into rank space and $B_d$ maps back to the
+down-projection output space. We include all adapter scaling in these factors,
+absorbing the fixed implementation scale into $B_d$. The same convention
+applies to the shared bias factors $A_0,B_0$. Native D2L sums over the supplied documents:
+\begin{equation}
+\begin{aligned}
+z&=W_{\mathrm{down}}x\\
+z'&=z+\sum_d B_dA_dx+B_0A_0x\\
+h_{\mathrm{out}}&=h_{\mathrm{res}}+\mathcal{N}(z')
+\end{aligned}
+\label{eq:sum}
+\end{equation}
+Both document and bias adapters have rank $R=8$. The shared bias is added once;
+the subscript 0 does not denote the first document or rank.
+Appendix~\ref{sec:extended-methods} relates this matrix orientation to the
+row-stored factors in the implementation.
+
+\input{figures/architecture}
+
+The ICL reference gives the same model the same documents as text in its
+context. We call this text-conditioned model the \emph{teacher}, because its
+behavior is the reference that the compiled state is intended to reproduce. A
+single-document comparison measures how closely the adapter reproduces the
+model's behavior when it reads the document directly. For composition, a \emph{bank} is
+the set of $K$ documents whose adapter contributions are summed for one request
+(Figure~\ref{fig:architecture}). Each bank has one answer-bearing document,
+called the \emph{source}, and $K-1$ documents that do not answer the question,
+called \emph{distractors}. This arrangement tests whether the source's useful
+information survives the addition of unrelated compiled states.
+This is a distractor-robustness test, not a test of combining jointly necessary
+sources. Source selection is an oracle control here; a general user-memory
+system must also allow several memories to contribute to one request.
+
+\subsection{Evaluation sets}
+\label{sec:suites}
+
+We use SQuAD, DROP, and ROPES, the factual-QA benchmarks used by the original
+D2L study~\citep{rajpurkar2016squad,dua2019drop,lin2019ropes,charakorn2026doctolora}.
+Unless a paragraph states otherwise, the metric is token F1. Qwen answers in full sentences, which
+token F1 scores poorly against short reference spans, so for Qwen we also report
+answer containment and compare each condition with Qwen's own single-document
+score. Appendix~\ref{sec:set-details} gives the
+construction and size of every set.
+
+\begin{table}[t]
+\centering
+\caption{Factual-QA evaluation sets. Diagnostic baselines are specific to
+the set and intervention runtime; their scores are not pooled.}
+\label{tab:evaluation-sets}
+\scriptsize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lrl@{}}
+\toprule
+Set & Questions & Purpose / results \\
+\midrule
+SQuAD test (200 sources) & 1,127 & Reader comparison, Fig.~\ref{fig:composition} \\
+SQuAD development (180) & 1,260 & Localization, Fig.~\ref{fig:layers} \\
+SQuAD diagnostic (57) & 400 & Readout, Table~\ref{tab:readout-summary} \\
+Mixed-task diagnostic & 402 & Transplants/masks, Table~\ref{tab:causal} \\
+SQuAD passage fits (160) & 864 & Rank/coverage, Appendix~\ref{sec:single-tables} \\
+DROP/ROPES (612) & 1,934 & Localization, Fig.~\ref{fig:layers}(b) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Single-document diagnostics}
+\label{sec:diagnostics}
+
+\textbf{Retention (RQ1.1).} A trained probe predicts passage-token presence
+from the compiler latent before conversion into LoRA factors. This measures
+the latent, not the final adapter. Separately, we check whether incorrect D2L
+answers match passage spans or another question's reference answer.
+
+\textbf{Readout, compiler, and rank (RQ1.2).} We compare the post-block,
+write-site, and gated readers defined in Section~\ref{sec:readers} with native D2L, fine-tune the compiler alone or
+jointly with a reader, and fit rank-8--64 adapters to individual passages using
+generated questions. We report passage-fit accuracy separately for answers
+covered and not covered by those questions. We also test a question-conditioned compiler.
+
+\textbf{Missing computation (RQ1.3).} Hidden-state transplants replace native
+states with teacher states at question positions, question plus answer-history
+positions, or all shared positions. Document-attention masks restrict which
+positions can read the document.
+
+\subsection{Multi-document diagnostics}
+\label{sec:composition-diagnostics}
+
+\textbf{Update size (RQ2.1).} Uniform normalization scales each document's
+$A_d$ by $K^{-\beta}$. Development data select $\beta=0.5$ on both models.
+This reduces update magnitude without selecting documents.
+
+A \emph{source-only mask} retains the known source's adapter contribution and
+removes all distractor contributions. A \emph{silent bank} removes all document
+contributions. Both retain the shared bias. These diagnostic masks are prescribed;
+Section~\ref{sec:readers} describes learned readers, including predicted rank gates.
+
+\textbf{Damage and useful work by layer (RQ2.2).} A \emph{layer-prefix oracle}
+retains native composition below layer $L$ and applies the source-only mask
+from $L$ onward, measuring interference accumulated in the earlier layers.
+A \emph{bank-silent schedule} instead silences the bank below $L$, measuring
+the cost of withholding early source contributions. Additional interventions
+delay masking or source application until the end of prompt processing,
+testing whether later intervention can recover accuracy.
+Appendix~\ref{sec:composition-details} specifies the schedules and cache handling.
+
+\textbf{Separability (RQ2.3).} Membership probes predict source membership
+from a layer's hidden state and a key for each rank. We measure held-out AUC
+and test whether gates derived from the probes improve generated answers.
+
+\subsection{Trained readers}
+\label{sec:readers}
+
+We test three readers that modify how frozen document adapters affect the model,
+targeting single-document accuracy (RQ1.2) and distractor interference (RQ2.3).
+
+In reader inputs, $A_d,B_d$ denote the factors for all documents in the bank.
+A \emph{gated reader} predicts a vector $g_d$ of eight rank multipliers
+for each document:
+\begin{equation}
+\begin{aligned}
+g_d&=\boldsymbol{G_d}(h_{\mathrm{res}},x;A_d,B_d)\\
+z'&=z+\sum_d B_d(\boldsymbol{g_d\odot} A_dx)+B_0A_0x
+\end{aligned}
+\label{eq:gated-reader}
+\end{equation}
+A \emph{write-site reader} uses the native down-projection output to predict
+a correction, then adds it to that output:
+\begin{equation}
+z'\leftarrow z'+\boldsymbol{R_{\mathrm{write}}}(h_{\mathrm{res}},x,z';A_d,B_d)
+\label{eq:write-site-reader}
+\end{equation}
+A \emph{post-block reader} instead adds its correction to the native block
+output. It receives the individual rank effects and the shared bias effect:
+\begin{equation}
+\begin{aligned}
+E_d&=B_d\operatorname{diag}(A_dx)\\
+h'_{\mathrm{out}}&=h_{\mathrm{out}}+\boldsymbol{R_{\mathrm{post}}}(h_{\mathrm{out}};E_d,B_0A_0x)
+\end{aligned}
+\label{eq:post-block-reader}
+\end{equation}
+Here $\operatorname{diag}$ places a vector's entries on a diagonal matrix.
+Each column of $E_d$ is one rank's contribution; the reader receives $E_d$
+for every document.
+This correction is added after normalization and residual addition.
+
+The compiled factors and shared bias remain frozen. All readers are trained on
+SQuAD; the single-document reference uses $K=1$ only, while the composition
+readers use mixed-$K$ banks. Gates start at one and additive corrections at
+zero, so every reader initially reproduces native D2L. Gated readers also
+receive source-membership supervision. Appendix~\ref{sec:rank-gates} gives the
+architectures and training protocols.
+
+\subsection{D2L on MidBrain}
+\label{sec:deployment}
+
+\textbf{MidBrain on PersonaMem-v2 (RQ3).} The memories are produced by the
+unchanged production MidBrain pipeline. It combines episodic and consolidated
+retrieval, retaining episodic memories as unmodified source material.
+Individual episodes are expected to be accessed infrequently, whereas the
+smaller set of consolidated memories is reused more often. We therefore
+compile consolidated memory, where repeated use can amortize compilation,
+and retain retrieved episodes as text.
+
+We use full history as text as the
+baseline and compare MidBrain's
+consolidated-memory prompt supplied as text with the same prompt compiled
+jointly as one document per user. This includes persona/profile context and
+consolidated entries. Retrieved episodes remain text, with the same episodes
+supplied in both production conditions. We also compare these conditions
+without episodic retrieval and test compiling consolidated entries separately.
+For the matched multi-adapter comparison, we compile persona/profile context
+as one document and each consolidated entry separately, retaining the same
+retrieved episodes as text. We compare native summation with $K^{-0.5}$
+normalization, where $K$ includes the persona/profile adapter.
+We score the four option labels directly at the first answer position,
+without generating chain-of-thought reasoning. This differs from the original
+PersonaMem-v2 evaluation, which permits reasoning before the final
+answer~\citep{jiang2025personamemv2}, and may contribute to differences in
+absolute accuracy.
+
+\textbf{Cost (RQ3).} We compare request-time prefill and decoding with
+document text in context against prefill and decoding with its compiled
+LoRA adapter. We calculate per-request MACs, attended positions, and
+resident bytes for both conditions.
+Separately, we measure latency, throughput, and GPU memory for ICL with full prefill and D2L on one
+A100 using the released implementation. Throughput is measured with fixed
+batch sizes of 1, 8, and 16, with one request and distinct memory per user;
+this measures batched execution rather than concurrent-request scheduling.
+Compilation is a write-time cost excluded from the request-time comparison.

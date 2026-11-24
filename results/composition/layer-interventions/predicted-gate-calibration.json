@@ -1,0 +1,142 @@
+{
+ "predicted_B6-b_rows-L6-prompt_mean-soft": {
+  "1": {
+   "rows": 1260,
+   "source_logit_mean": -1.75911564484127,
+   "distractor_logit_mean": null,
+   "source_logit_sd": 0.8211978713906102,
+   "distractor_logit_sd": null,
+   "source_is_top_document": 1.0,
+   "gates": {
+    "sigmoid(x)": {
+     "source": 0.17328888105195892,
+     "distractor": null
+    },
+    "sigmoid(x+2)": {
+     "source": 0.5508648742122795,
+     "distractor": null
+    },
+    "sigmoid(x+3)": {
+     "source": 0.7487475565068905,
+     "distractor": null
+    },
+    "exp(x-max)": {
+     "source": 0.5859025754246365,
+     "distractor": null
+    },
+    "sigmoid(2(x-mean))": {
+     "source": 0.4988110070131352,
+     "distractor": null
+    },
+    "doc exp(mean-max)": {
+     "source": 1.0,
+     "distractor": null
+    }
+   }
+  },
+  "8": {
+   "rows": 1260,
+   "source_logit_mean": -1.7591825198412698,
+   "distractor_logit_mean": -2.7071710884353744,
+   "source_logit_sd": 0.8216901206434789,
+   "distractor_logit_sd": 1.0416627647555519,
+   "source_is_top_document": 0.396031746031746,
+   "gates": {
+    "sigmoid(x)": {
+     "source": 0.17330332954594288,
+     "distractor": 0.09003756728691509
+    },
+    "sigmoid(x+2)": {
+     "source": 0.5508378430201627,
+     "distractor": 0.35989432493130935
+    },
+    "sigmoid(x+3)": {
+     "source": 0.7487124400755679,
+     "distractor": 0.5620737763510922
+    },
+    "exp(x-max)": {
+     "source": 0.4182331129969712,
+     "distractor": 0.22388382031958548
+    },
+    "sigmoid(2(x-mean))": {
+     "source": 0.7654746244992824,
+     "distractor": 0.4723659756763417
+    },
+    "doc exp(mean-max)": {
+     "source": 0.7733799519074475,
+     "distractor": 0.40809626113441094
+    }
+   }
+  }
+ },
+ "predicted_B8-b_rows-L8-prompt_mean-soft": {
+  "1": {
+   "rows": 1260,
+   "source_logit_mean": -1.9519018650793651,
+   "distractor_logit_mean": null,
+   "source_logit_sd": 1.0201799647234349,
+   "distractor_logit_sd": null,
+   "source_is_top_document": 1.0,
+   "gates": {
+    "sigmoid(x)": {
+     "source": 0.16093040175284481,
+     "distractor": null
+    },
+    "sigmoid(x+2)": {
+     "source": 0.5061241991336609,
+     "distractor": null
+    },
+    "sigmoid(x+3)": {
+     "source": 0.7046048473743348,
+     "distractor": null
+    },
+    "exp(x-max)": {
+     "source": 0.439958535159107,
+     "distractor": null
+    },
+    "sigmoid(2(x-mean))": {
+     "source": 0.4981068503056032,
+     "distractor": null
+    },
+    "doc exp(mean-max)": {
+     "source": 1.0,
+     "distractor": null
+    }
+   }
+  },
+  "8": {
+   "rows": 1260,
+   "source_logit_mean": -1.952603878968254,
+   "distractor_logit_mean": -2.916382831632653,
+   "source_logit_sd": 1.0209332756217029,
+   "distractor_logit_sd": 1.2457572458764428,
+   "source_is_top_document": 0.4523809523809524,
+   "gates": {
+    "sigmoid(x)": {
+     "source": 0.16089138299115294,
+     "distractor": 0.08292357720199732
+    },
+    "sigmoid(x+2)": {
+     "source": 0.5059714173553488,
+     "distractor": 0.3321895371216485
+    },
+    "sigmoid(x+3)": {
+     "source": 0.7044405083903943,
+     "distractor": 0.525305754017188
+    },
+    "exp(x-max)": {
+     "source": 0.28556846171396566,
+     "distractor": 0.1457300674804444
+    },
+    "sigmoid(2(x-mean))": {
+     "source": 0.7397320402424732,
+     "distractor": 0.48585164129704295
+    },
+    "doc exp(mean-max)": {
+     "source": 0.8139982397174433,
+     "distractor": 0.41333445727679574
+    }
+   }
+  }
+ }
+}

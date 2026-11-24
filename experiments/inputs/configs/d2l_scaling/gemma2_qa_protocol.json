@@ -1,0 +1,69 @@
+{
+  "extends": "common.json",
+  "variant": "gemma2",
+  "run_name": "gemma2-qa_protocol",
+  "checkpoint_sha256": "36b0ed4399cef3e1e3a6cbedb551e8f9a9c939d4d424bb1d3864c7d702e62dac",
+  "model": {
+    "revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+    "attention": "eager"
+  },
+  "data": {
+    "datasets": ["squad", "drop", "ropes"],
+    "router_training_datasets": ["squad", "drop", "ropes"],
+    "max_train_documents": 100000,
+    "max_eval_documents": 100000,
+    "validation_fraction": 0.2,
+    "compile_all_documents": true,
+    "sources": [
+      {
+        "dataset": "squad",
+        "path": "rajpurkar/squad",
+        "revision": "7b6d24c440a36b6815f21b70d25016731768db1f",
+        "split": "train",
+        "role": "train"
+      },
+      {
+        "dataset": "drop",
+        "path": "ucinlp/drop",
+        "revision": "95cda593fae71b60b5b19f82de3fcf3298c1239c",
+        "split": "train",
+        "role": "train"
+      },
+      {
+        "dataset": "ropes",
+        "path": "allenai/ropes",
+        "revision": "d59f1e2ee2b423d7c6ba71edd47fceb4158b07dd",
+        "split": "train",
+        "role": "train"
+      },
+      {
+        "dataset": "squad",
+        "path": "rajpurkar/squad",
+        "revision": "7b6d24c440a36b6815f21b70d25016731768db1f",
+        "split": "validation",
+        "role": "test"
+      },
+      {
+        "dataset": "drop",
+        "path": "ucinlp/drop",
+        "revision": "95cda593fae71b60b5b19f82de3fcf3298c1239c",
+        "split": "validation",
+        "role": "test"
+      },
+      {
+        "dataset": "ropes",
+        "path": "allenai/ropes",
+        "revision": "d59f1e2ee2b423d7c6ba71edd47fceb4158b07dd",
+        "split": "validation",
+        "role": "test"
+      }
+    ]
+  },
+  "scaling": {
+    "bank_sizes": [1],
+    "seeds": [174],
+    "anchor_seed": 174,
+    "anchor_docs": 32,
+    "max_queries_per_anchor": 4
+  }
+}

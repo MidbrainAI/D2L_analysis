@@ -1,0 +1,25 @@
+{
+  "extends": "common.json",
+  "variant": "gemma2",
+  "run_name": "gemma2-squad-matched-distill-scale60k-seed141",
+  "checkpoint_sha256": "36b0ed4399cef3e1e3a6cbedb551e8f9a9c939d4d424bb1d3864c7d702e62dac",
+  "model": {
+    "revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+    "attention": "eager"
+  },
+  "data": {
+    "datasets": ["squad"],
+    "router_training_datasets": ["squad"],
+    "max_train_documents": 18000,
+    "max_eval_documents": 512,
+    "validation_fraction": 0.2,
+    "compile_all_documents": true
+  },
+  "scaling": {
+    "bank_sizes": [1],
+    "seeds": [141],
+    "anchor_seed": 141,
+    "anchor_docs": 32,
+    "max_queries_per_anchor": 4
+  }
+}
